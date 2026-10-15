@@ -1,0 +1,224 @@
+generator client {
+  provider     = "prisma-client"
+  output       = "../src/generated/prisma"
+  moduleFormat = "cjs"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  SUPER_ADMIN
+  EDITOR
+  VIEWER
+}
+
+enum MachineStatus {
+  DRAFT
+  PUBLISHED
+  HIDDEN
+}
+
+enum ReleaseStatus {
+  PENDING
+  BUILDING
+  SUCCESS
+  FAILED
+}
+
+model User {
+  id           String         @id @default(cuid())
+  username     String         @unique
+  displayName  String
+  passwordHash String
+  role         Role           @default(EDITOR)
+  active       Boolean        @default(true)
+  lastLoginAt  DateTime?
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  refreshTokens RefreshToken[]
+  auditLogs    AuditLog[]
+  releases     Release[]
+}
+
+/// Only a hash of the token is stored; `family` lets a reused (stolen) token revoke its whole chain.
+model RefreshToken {
+  id        String    @id @default(cuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String    @unique
+  family    String
+  expiresAt DateTime
+  revokedAt DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId])
+  @@index([family])
+}
+
+model Category {
+  id        String          @id @default(cuid())
+  slug      String          @unique
+  nameZh    String
+  nameEn    String
+  icon      String?
+  sort      Int             @default(0)
+  createdAt DateTime        @default(now())
+  updatedAt DateTime        @updatedAt
+  machines  Machine[]
+  templates ParamTemplate[]
+}
+
+/// Default parameter keys for a category, used to prefill new machines so keys stay consistent.
+model ParamTemplate {
+  id         String   @id @default(cuid())
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id], onDelete: Cascade)
+  key        String
+  labelZh    String
+  labelEn    String
+  sort       Int      @default(0)
+
+  @@unique([categoryId, key])
+}
+
+model Machine {
+  id            String         @id @default(cuid())
+  slug          String         @unique
+  model         String
+  /// Lowercased model with spaces/-/_/·/. removed, so "dz390" finds "DZ-390".
+  modelKey      String
+  categoryId    String
+  category      Category       @relation(fields: [categoryId], references: [id])
+  nameZh        String
+  nameEn        String
+  summaryZh     String?
+  summaryEn     String?
+  status        MachineStatus  @default(DRAFT)
+  featured      Boolean        @default(false)
+  sort          Int            @default(0)
+  seoTitleZh    String?
+  seoTitleEn    String?
+  seoDescZh     String?
+  seoDescEn     String?
+  /// Internal only, never published (e.g. brochure transcription notes).
+  notes         String?
+  source        Json?
+  createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
+  params        MachineParam[]
+  images        MachineImage[]
+
+  @@index([categoryId, sort])
+  @@index([status])
+  @@index([modelKey])
+}
+
+model MachineParam {
+  id        String  @id @default(cuid())
+  machineId String
+  machine   Machine @relation(fields: [machineId], references: [id], onDelete: Cascade)
+  key       String
+  labelZh   String
+  labelEn   String
+  valueZh   String
+  valueEn   String
+  sort      Int     @default(0)
+
+  @@unique([machineId, key])
+  @@index([machineId, sort])
+}
+
+model Media {
+  id           String         @id @default(cuid())
+  path         String         @unique
+  originalName String?
+  mime         String
+  width        Int
+  height       Int
+  size         Int
+  sha256       String         @unique
+  usage        String         @default("machine")
+  createdAt    DateTime       @default(now())
+  machineImages MachineImage[]
+}
+
+model MachineImage {
+  id        String  @id @default(cuid())
+  machineId String
+  machine   Machine @relation(fields: [machineId], references: [id], onDelete: Cascade)
+  mediaId   String
+  media     Media   @relation(fields: [mediaId], references: [id], onDelete: Restrict)
+  isCover   Boolean @default(false)
+  sort      Int     @default(0)
+
+  @@unique([machineId, mediaId])
+  @@index([machineId, sort])
+}
+
+model SiteSetting {
+  key       String   @id
+  value     Json
+  updatedAt DateTime @updatedAt
+}
+
+model Release {
+  id          String        @id @default(cuid())
+  version     Int           @unique @default(autoincrement())
+  note        String?
+  snapshot    Json
+  status      ReleaseStatus @default(PENDING)
+  log         String?
+  createdById String?
+  createdBy   User?         @relation(fields: [createdById], references: [id], onDelete: SetNull)
+  rollbackOf  Int?
+  createdAt   DateTime      @default(now())
+  finishedAt  DateTime?
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  userId     String?
+  user       User?    @relation(fields: [userId], references: [id], onDelete: SetNull)
+  action     String
+  entity     String
+  entityId   String?
+  diff       Json?
+  ip         String?
+  createdAt  DateTime @default(now())
+
+  @@index([entity, entityId])
+  @@index([createdAt])
+}
+
+/// Raw analytics events from the showcase site; aggregated daily into DailyStat.
+model TrackEvent {
+  id         BigInt   @id @default(autoincrement())
+  type       String
+  path       String
+  lang       String?
+  machineSlug String?
+  query      String?
+  resultCount Int?
+  /// Inquiry events: form / email / whatsapp / phone / wechat.
+  channel    String?
+  referrer   String?
+  country    String?
+  device     String?
+  visitorId  String
+  createdAt  DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([type, createdAt])
+  @@index([machineSlug])
+}
+
+model DailyStat {
+  date      DateTime @db.Date
+  metric    String
+  dimension String   @default("")
+  value     Int
+
+  @@id([date, metric, dimension])
+}

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.devdb/
+/uploads/
+.env
+src/generated/
+*.tsbuildinfo
+/publish/
+/backups/
+/backups-dev/

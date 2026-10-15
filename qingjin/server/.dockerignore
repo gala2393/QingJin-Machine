@@ -1,0 +1,9 @@
+node_modules
+dist
+.devdb
+uploads
+.env
+*.tsbuildinfo
+publish
+backups
+backups-dev
