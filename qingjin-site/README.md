@@ -23,7 +23,7 @@ npx astro check    # 类型检查
 | `/{lang}/products/{id}/` | 产品详情与参数表 |
 | `/{lang}/compare/` | 机型对比（最多 4 台，可用 `?ids=a,b,c` 直接打开） |
 | `/{lang}/about/` | 工厂实拍与资质证书 |
-| `/{lang}/contact/` | 联系方式与询价表单（支持 `?model=` 预填） |
+| `/{lang}/contact/` | 联系方式与微信二维码（支持 `?model=` 显示咨询机型） |
 
 ## 需要修改的内容
 
