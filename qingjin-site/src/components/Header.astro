@@ -1,0 +1,248 @@
+---
+import type { Lang } from '../types';
+import { t, formatLocaleUrl } from '../i18n/ui';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+const currentPath = Astro.url.pathname;
+
+const navItems = [
+  { href: formatLocaleUrl(lang, '/'), label: t(lang, 'nav.home'), exact: true },
+  { href: formatLocaleUrl(lang, '/products/'), label: t(lang, 'nav.products'), exact: false },
+  { href: formatLocaleUrl(lang, '/compare/'), label: t(lang, 'nav.compare'), exact: false, isCompare: true },
+  { href: formatLocaleUrl(lang, '/about/'), label: t(lang, 'nav.about'), exact: false },
+  { href: formatLocaleUrl(lang, '/contact/'), label: t(lang, 'nav.contact'), exact: false },
+];
+
+const targetLang: Lang = lang === 'zh' ? 'en' : 'zh';
+let altPath = currentPath;
+if (currentPath.startsWith('/zh/')) {
+  altPath = currentPath.replace(/^\/zh\//, '/en/');
+} else if (currentPath.startsWith('/en/')) {
+  altPath = currentPath.replace(/^\/en\//, '/zh/');
+} else if (currentPath === '/zh') {
+  altPath = '/en/';
+} else if (currentPath === '/en') {
+  altPath = '/zh/';
+} else {
+  altPath = `/${targetLang}/`;
+}
+---
+
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs transition-colors">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      
+      <!-- Brand Logo -->
+      <a href={formatLocaleUrl(lang, '/')} class="flex items-center gap-3 group focus:outline-hidden focus:ring-2 focus:ring-primary rounded-lg p-1">
+        <img
+          src="/images/brand/mark.png"
+          alt="青瑾机械 QING JIN"
+          class="h-11 w-auto object-contain transition-transform group-hover:scale-105"
+          width="44"
+          height="44"
+          onerror="this.style.display='none'"
+        />
+        <div class="flex flex-col">
+          <span class="text-xl sm:text-2xl font-bold tracking-tight text-navy leading-none font-sans">
+            青瑾<span class="text-primary font-normal text-xs ml-0.5 align-super">®</span>机械
+          </span>
+          <span class="text-[10px] sm:text-[11px] tracking-wider text-slate-500 font-semibold uppercase font-sans">
+            QING JIN MACHINERY
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2" aria-label="Main navigation">
+        {navItems.map((item) => {
+          const isActive = item.exact 
+            ? currentPath === item.href || currentPath === item.href.slice(0, -1)
+            : currentPath.startsWith(item.href);
+
+          return (
+            <a
+              href={item.href}
+              class={`relative px-3 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                isActive
+                  ? 'text-primary bg-primary-light/60'
+                  : 'text-slate-700 hover:text-primary hover:bg-slate-100/70'
+              }`}
+            >
+              {item.label}
+              {item.isCompare && (
+                <span
+                  data-header-compare-count
+                  class="hidden ml-1.5 px-1.5 py-0.5 text-xs font-bold bg-primary text-white rounded-full leading-none transition-transform"
+                >
+                  0
+                </span>
+              )}
+            </a>
+          );
+        })}
+      </nav>
+
+      <!-- Right Header Actions: Lang switch & CTA -->
+      <div class="hidden sm:flex items-center gap-3">
+        <!-- Language Switcher -->
+        <a
+          href={altPath}
+          data-lang-switcher
+          aria-label={lang === 'zh' ? 'Switch to English' : '切换到中文'}
+          class="flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-lg border border-slate-200 text-slate-700 hover:text-primary hover:border-primary/40 hover:bg-slate-50 transition-all focus:outline-hidden focus:ring-2 focus:ring-primary"
+        >
+          <svg class="w-4 h-4 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
+          </svg>
+          <span>{lang === 'zh' ? 'EN / English' : '中文 / Chinese'}</span>
+        </a>
+
+        <!-- Fast Contact CTA -->
+        <a
+          href={formatLocaleUrl(lang, '/contact/')}
+          class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold text-white bg-primary hover:bg-primary-hover shadow-xs hover:shadow-md transition-all rounded-lg focus:outline-hidden focus:ring-2 focus:ring-primary"
+        >
+          <span>{t(lang, 'nav.inquireNow')}</span>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a
+          href={altPath}
+          data-lang-switcher
+          class="p-2 text-xs font-bold rounded-lg border border-slate-200 text-slate-700 hover:text-primary"
+          aria-label="Switch Language"
+        >
+          {lang === 'zh' ? 'EN' : '中'}
+        </a>
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-label="Toggle mobile menu"
+          aria-expanded="false"
+          class="p-2 rounded-lg text-slate-600 hover:text-navy hover:bg-slate-100 focus:outline-hidden focus:ring-2 focus:ring-primary"
+        >
+          <svg id="menu-icon-bars" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-menu-drawer" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-lg">
+    <nav class="flex flex-col space-y-1" aria-label="Mobile navigation">
+      {navItems.map((item) => {
+        const isActive = item.exact 
+          ? currentPath === item.href || currentPath === item.href.slice(0, -1)
+          : currentPath.startsWith(item.href);
+
+        return (
+          <a
+            href={item.href}
+            class={`flex items-center justify-between px-3 py-2.5 rounded-lg text-base font-semibold ${
+              isActive
+                ? 'text-primary bg-primary-light/70'
+                : 'text-slate-800 hover:text-primary hover:bg-slate-50'
+            }`}
+          >
+            <span>{item.label}</span>
+            {item.isCompare && (
+              <span
+                data-mobile-compare-count
+                class="hidden px-2 py-0.5 text-xs font-bold bg-primary text-white rounded-full"
+              >
+                0
+              </span>
+            )}
+          </a>
+        );
+      })}
+    </nav>
+    <div class="pt-4 border-t border-slate-100 flex flex-col gap-2">
+      <a
+        href={formatLocaleUrl(lang, '/contact/')}
+        class="w-full text-center px-4 py-2.5 text-sm font-semibold text-white bg-primary hover:bg-primary-hover rounded-lg shadow-xs"
+      >
+        {t(lang, 'nav.inquireNow')}
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile drawer toggle
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const drawer = document.getElementById('mobile-menu-drawer');
+  const iconBars = document.getElementById('menu-icon-bars');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  if (menuBtn && drawer && iconBars && iconClose) {
+    menuBtn.addEventListener('click', () => {
+      const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+      menuBtn.setAttribute('aria-expanded', String(!isExpanded));
+      drawer.classList.toggle('hidden');
+      iconBars.classList.toggle('hidden');
+      iconClose.classList.toggle('hidden');
+    });
+  }
+
+  // Preserve query parameters and hash on language switcher click
+  document.querySelectorAll('a[data-lang-switcher]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      const href = el.getAttribute('href') || '/';
+      const search = window.location.search || '';
+      const hash = window.location.hash || '';
+      window.location.href = href + search + hash;
+    });
+  });
+
+  // Sync compare badges across pages
+  function updateCompareBadges() {
+    try {
+      const raw = localStorage.getItem('qj-compare');
+      const list = raw ? JSON.parse(raw) : [];
+      const count = Array.isArray(list) ? list.length : 0;
+      
+      const headerCounts = document.querySelectorAll('[data-header-compare-count]');
+      headerCounts.forEach((badge) => {
+        if (count > 0) {
+          badge.textContent = String(count);
+          badge.classList.remove('hidden');
+        } else {
+          badge.classList.add('hidden');
+        }
+      });
+
+      const mobileCounts = document.querySelectorAll('[data-mobile-compare-count]');
+      mobileCounts.forEach((badge) => {
+        if (count > 0) {
+          badge.textContent = String(count);
+          badge.classList.remove('hidden');
+        } else {
+          badge.classList.add('hidden');
+        }
+      });
+    } catch {
+      // Ignore localStorage errors
+    }
+  }
+
+  window.addEventListener('storage', updateCompareBadges);
+  window.addEventListener('qj:compare-updated', updateCompareBadges);
+  updateCompareBadges();
+</script>

@@ -1,0 +1,216 @@
+---
+import type { Lang } from '../types';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CompareTray from '../components/CompareTray.astro';
+import Analytics from '../components/Analytics.astro';
+import { siteInfo } from '../utils';
+import '../styles/global.css';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  lang,
+  title,
+  description = siteInfo.tagline[lang] + ' · ' + siteInfo.factoryPitch[lang],
+  ogImage = '/images/hero/hero-machines.webp',
+} = Astro.props;
+
+const siteUrl = 'https://www.qingjin-machinery.com';
+const pathname = Astro.url.pathname;
+const canonicalUrl = new URL(pathname, siteUrl).toString();
+
+// Construct hreflang alternates
+let zhPath = pathname;
+let enPath = pathname;
+if (pathname.startsWith('/zh/')) {
+  enPath = pathname.replace(/^\/zh\//, '/en/');
+} else if (pathname.startsWith('/en/')) {
+  zhPath = pathname.replace(/^\/en\//, '/zh/');
+} else if (pathname === '/zh') {
+  zhPath = '/zh/';
+  enPath = '/en/';
+} else if (pathname === '/en') {
+  zhPath = '/zh/';
+  enPath = '/en/';
+} else {
+  zhPath = `/zh${pathname}`;
+  enPath = `/en${pathname}`;
+}
+
+const zhUrl = new URL(zhPath, siteUrl).toString();
+const enUrl = new URL(enPath, siteUrl).toString();
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : new URL(ogImage, siteUrl).toString();
+---
+
+<!DOCTYPE html>
+<html lang={lang === 'zh' ? 'zh-CN' : 'en'} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>{title} | {siteInfo.name[lang]}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Hreflang Alternates -->
+    <link rel="alternate" hreflang="zh" href={zhUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={zhUrl} />
+
+    <!-- Open Graph / Meta -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteInfo.name[lang]} />
+    <meta property="og:title" content={`${title} | ${siteInfo.name[lang]}`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:locale" content={lang === 'zh' ? 'zh_CN' : 'en_US'} />
+
+    <!-- Preconnect & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col bg-white text-navy antialiased selection:bg-brand-blue selection:text-white">
+    <!-- Header -->
+    <Header lang={lang} />
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <!-- Compare Floating Tray -->
+    <CompareTray lang={lang} />
+
+    <!-- Toast Notification Container -->
+    <div
+      id="qj-toast"
+      class="fixed top-24 right-5 z-50 pointer-events-none transition-all duration-300 opacity-0 translate-y-2 flex items-center gap-3 px-4 py-3 rounded-xl shadow-xl text-sm font-semibold border max-w-sm"
+      role="status"
+      aria-live="polite"
+    >
+      <span id="qj-toast-msg"></span>
+    </div>
+
+    <!-- Footer -->
+    <Footer lang={lang} />
+
+    <Analytics />
+
+    <!-- Global Client Script: Compare logic, toast alerts -->
+    <script>
+      // Global toast helper
+      window.showQjToast = function (message: string, isError = false) {
+        const toast = document.getElementById('qj-toast');
+        const msgEl = document.getElementById('qj-toast-msg');
+        if (!toast || !msgEl) return;
+
+        msgEl.textContent = message;
+        toast.className = `fixed top-24 right-5 z-50 transition-all duration-300 opacity-100 translate-y-0 flex items-center gap-2 px-4 py-3 rounded-xl shadow-xl text-sm font-semibold border max-w-sm ${
+          isError
+            ? 'bg-red-50 text-red-700 border-red-200'
+            : 'bg-slate-900 text-white border-slate-700'
+        }`;
+
+        setTimeout(() => {
+          toast.className =
+            'fixed top-24 right-5 z-50 pointer-events-none transition-all duration-300 opacity-0 translate-y-2 flex items-center gap-3 px-4 py-3 rounded-xl shadow-xl text-sm font-semibold border max-w-sm';
+        }, 3200);
+      };
+
+      // Synchronize Compare Buttons state across cards and detail pages
+      function syncAllCompareButtons() {
+        try {
+          const raw = localStorage.getItem('qj-compare');
+          const list: string[] = raw ? JSON.parse(raw) : [];
+
+          const buttons = document.querySelectorAll<HTMLButtonElement>('[data-compare-btn]');
+          buttons.forEach((btn) => {
+            const id = btn.getAttribute('data-machine-id');
+            if (!id) return;
+
+            const isSelected = list.includes(id);
+            const icon = btn.querySelector('.check-icon');
+            const txtSpan = btn.querySelector('.compare-btn-text');
+            const txtAdd = btn.getAttribute('data-txt-add') || '加入对比';
+            const txtAdded = btn.getAttribute('data-txt-added') || '已加入对比';
+
+            if (isSelected) {
+              btn.classList.add('bg-primary-light', 'text-primary', 'border-primary/40');
+              btn.classList.remove('text-slate-600', 'border-slate-200');
+              if (icon) icon.classList.remove('hidden');
+              if (txtSpan) txtSpan.textContent = txtAdded;
+            } else {
+              btn.classList.remove('bg-primary-light', 'text-primary', 'border-primary/40');
+              btn.classList.add('text-slate-600', 'border-slate-200');
+              if (icon) icon.classList.add('hidden');
+              if (txtSpan) txtSpan.textContent = txtAdd;
+            }
+          });
+        } catch {
+          // ignore localStorage errors
+        }
+      }
+
+      // Handle click on any compare button
+      document.addEventListener('click', (e) => {
+        const target = (e.target as HTMLElement)?.closest('[data-compare-btn]') as HTMLButtonElement | null;
+        if (!target) return;
+
+        const id = target.getAttribute('data-machine-id');
+        if (!id) return;
+
+        try {
+          const raw = localStorage.getItem('qj-compare');
+          let list: string[] = raw ? JSON.parse(raw) : [];
+          if (!Array.isArray(list)) list = [];
+
+          const isZh = (document.documentElement.lang || '').startsWith('zh');
+          const maxMsg =
+            target.getAttribute('data-msg-max') ||
+            (isZh ? '最多支持同时对比 4 款机型' : 'You can compare up to 4 machines at a time');
+          const addedMsg = isZh ? '已加入对比列表' : 'Added to comparison list';
+          const removedMsg = isZh ? '已从对比列表中移除' : 'Removed from comparison list';
+
+          if (list.includes(id)) {
+            list = list.filter((item) => item !== id);
+            localStorage.setItem('qj-compare', JSON.stringify(list));
+            window.dispatchEvent(new CustomEvent('qj:compare-updated'));
+            window.showQjToast?.(removedMsg);
+          } else {
+            if (list.length >= 4) {
+              window.showQjToast?.(maxMsg, true);
+              return;
+            }
+            list.push(id);
+            localStorage.setItem('qj-compare', JSON.stringify(list));
+            window.dispatchEvent(new CustomEvent('qj:compare-updated'));
+            window.showQjToast?.(addedMsg);
+          }
+        } catch {
+          // localStorage disabled
+        }
+      });
+
+      window.addEventListener('storage', syncAllCompareButtons);
+      window.addEventListener('qj:compare-updated', syncAllCompareButtons);
+      syncAllCompareButtons();
+    </script>
+  </body>
+</html>

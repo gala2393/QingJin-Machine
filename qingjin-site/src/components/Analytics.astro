@@ -1,0 +1,57 @@
+---
+import { siteInfo } from '../utils';
+
+// Filled in by the admin's publish step; empty in local dev and preview builds, which disables tracking.
+const endpoint = siteInfo.trackEndpoint ?? '';
+---
+
+{endpoint && (
+  <script is:inline define:vars={{ endpoint }}>
+    (function () {
+      // No cookies or storage: the server derives a daily-rotating anonymous id from IP + user agent.
+      if (navigator.doNotTrack === '1' || navigator.webdriver) return;
+      var lang = (document.documentElement.lang || '').indexOf('zh') === 0 ? 'zh' : 'en';
+      function send(type, data) {
+        try {
+          var payload = { type: type, path: location.pathname, lang: lang };
+          for (var k in data || {}) payload[k] = data[k];
+          var body = JSON.stringify(payload);
+          // text/plain keeps this a "simple" request: no CORS preflight, and sendBeacon survives page unload.
+          if (navigator.sendBeacon && navigator.sendBeacon(endpoint, new Blob([body], { type: 'text/plain' }))) return;
+          fetch(endpoint, { method: 'POST', body: body, keepalive: true, mode: 'no-cors', headers: { 'Content-Type': 'text/plain' } });
+        } catch (e) {}
+      }
+      window.qjTrack = send;
+
+      var referrer = '';
+      try {
+        if (document.referrer) {
+          var r = new URL(document.referrer);
+          if (r.host !== location.host) referrer = r.hostname;
+        }
+      } catch (e) {}
+      var m = location.pathname.match(/^\/(?:zh|en)\/products\/([^/]+)\/?$/);
+      send('pageview', { referrer: referrer, machine: m ? decodeURIComponent(m[1]) : undefined });
+
+      document.addEventListener(
+        'click',
+        function (e) {
+          var el = e.target && e.target.closest ? e.target.closest('a[href], [data-compare-btn]') : null;
+          if (!el) return;
+          if (el.hasAttribute('data-compare-btn')) {
+            // Capture phase runs before the compare toggle, so the stored list still shows the old state.
+            var id = el.getAttribute('data-machine-id');
+            var list = [];
+            try { list = JSON.parse(localStorage.getItem('qj-compare') || '[]'); } catch (err) {}
+            if (id && list.indexOf(id) < 0) send('compare', { machine: id });
+            return;
+          }
+          var href = el.getAttribute('href') || '';
+          var channel = /^mailto:/i.test(href) ? 'email' : /^tel:/i.test(href) ? 'phone' : /wa\.me|whatsapp/i.test(href) ? 'whatsapp' : /^weixin:/i.test(href) ? 'wechat' : '';
+          if (channel) send('inquiry', { channel: channel });
+        },
+        true
+      );
+    })();
+  </script>
+)}

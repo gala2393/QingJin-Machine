@@ -1,0 +1,186 @@
+---
+import Base from '../../../layouts/Base.astro';
+import type { Lang } from '../../../types';
+import { t } from '../../../i18n/ui';
+import { siteInfo } from '../../../utils';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'zh' } }, { params: { lang: 'en' } }];
+}
+
+const { lang } = Astro.params as { lang: Lang };
+---
+
+<Base
+  lang={lang}
+  title={t(lang, 'contact.title')}
+  description={`${siteInfo.name[lang]} · ${t(lang, 'contact.subtitle')}`}
+>
+  <!-- Page Header -->
+  <div class="bg-surface border-b border-slate-200/80 pt-10 pb-8 sm:pt-14 sm:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-2">
+          {t(lang, 'contact.title')}
+        </h1>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          {t(lang, 'contact.subtitle')}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- Left: Contact Details Cards (7 cols on lg) -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="space-y-4">
+          <h2 class="text-xl sm:text-2xl font-extrabold text-navy tracking-tight">
+            {lang === 'zh' ? '青瑾机械联系方式' : 'Contact Information'}
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            {lang === 'zh'
+              ? '欢迎通过电话、邮件、WhatsApp 或微信直接与我们取得联系。支持寄送样品物料至工厂，我们为您安排免费试机与视频验证。'
+              : 'Feel free to reach out via phone, email, WhatsApp, or WeChat. You are also welcome to send raw material samples to our workshop for free testing.'}
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Factory Address Card -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-primary-light text-primary flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div class="text-xs sm:text-sm">
+              <h3 class="font-bold text-navy mb-1">{t(lang, 'contact.factoryAddress')}</h3>
+              <p class="text-slate-600 leading-relaxed">{siteInfo.address[lang]}</p>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div class="text-xs sm:text-sm">
+              <h3 class="font-bold text-navy mb-1">{t(lang, 'contact.phone')}</h3>
+              <a href={`tel:${siteInfo.contact.phone.replace(/[^\d+]/g, '')}`} class="font-mono text-slate-700 font-semibold hover:text-primary">{siteInfo.contact.phone}</a>
+            </div>
+          </div>
+
+          <!-- Email Card -->
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-blue-50 text-brand-blue flex items-center justify-center shrink-0">
+              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <div class="text-xs sm:text-sm">
+              <h3 class="font-bold text-navy mb-1">{t(lang, 'contact.email')}</h3>
+              <a href={`mailto:${siteInfo.contact.email}`} class="font-mono text-primary font-semibold hover:underline">
+                {siteInfo.contact.email}
+              </a>
+            </div>
+          </div>
+
+          <!-- WhatsApp & WeChat -->
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-xs text-xs">
+              <span class="block font-bold text-navy mb-1">{t(lang, 'contact.whatsapp')}</span>
+              <a href={`https://wa.me/${siteInfo.contact.whatsapp.replace(/\D/g, '')}`} target="_blank" rel="noopener" class="font-mono text-slate-700 block truncate hover:text-primary">{siteInfo.contact.whatsapp}</a>
+            </div>
+            <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-xs text-xs">
+              <span class="block font-bold text-navy mb-1">{t(lang, 'contact.wechat')}</span>
+              <span class="font-mono text-slate-700 block truncate">{siteInfo.contact.wechat}</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testing sample callout -->
+        <div class="p-5 bg-primary-light/60 border border-primary/20 rounded-2xl text-xs space-y-2">
+          <p class="font-bold text-primary text-sm flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+            </svg>
+            <span>{lang === 'zh' ? '寄样试机注意事项' : 'Sample Testing Instructions'}</span>
+          </p>
+          <p class="text-slate-700 leading-relaxed">
+            {lang === 'zh'
+              ? '寄送前请联系销售人员确认物料重量与包装袋规格，寄件请备注您的公司名称或联系方式以便测试对接。'
+              : 'Please inform our sales engineer before dispatching material samples. Include your company name and contact info on the parcel.'}
+          </p>
+        </div>
+      </div>
+
+      <!-- Right: WeChat QR (5 cols on lg) -->
+      <div class="lg:col-span-5 lg:sticky lg:top-24 space-y-4">
+        <div id="model-ask" class="hidden p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs sm:text-sm">
+          <p class="text-amber-900">
+            <span class="font-bold">{t(lang, 'contact.modelAsk')}：</span>
+            <span id="model-ask-value" class="font-mono font-bold"></span>
+          </p>
+          <p class="text-amber-800/80 mt-1">{t(lang, 'contact.modelHint')}</p>
+        </div>
+
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-xl text-center">
+          <div class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 mb-3">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M8.69 3C4.99 3 2 5.52 2 8.63c0 1.75.95 3.32 2.44 4.36l-.6 1.86 2.2-1.12c.8.2 1.63.31 2.5.31.24 0 .48-.01.71-.03a5.2 5.2 0 0 1-.2-1.43c0-3.04 2.9-5.5 6.48-5.5.25 0 .5.01.74.04C15.6 4.63 12.46 3 8.69 3Zm-2.3 2.86a.86.86 0 1 1 0 1.72.86.86 0 0 1 0-1.72Zm4.6 0a.86.86 0 1 1 0 1.72.86.86 0 0 1 0-1.72ZM15.53 8.3c-3.04 0-5.5 2.05-5.5 4.58 0 2.53 2.46 4.58 5.5 4.58.66 0 1.3-.1 1.89-.27l1.86.98-.5-1.57c1.36-.84 2.22-2.18 2.22-3.72 0-2.53-2.46-4.58-5.47-4.58Zm-1.86 2.47a.72.72 0 1 1 0 1.44.72.72 0 0 1 0-1.44Zm3.7 0a.72.72 0 1 1 0 1.44.72.72 0 0 1 0-1.44Z" />
+            </svg>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-extrabold text-navy tracking-tight mb-1">
+            {t(lang, 'contact.wechatQrTitle')}
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-500 mb-6 max-w-xs mx-auto">
+            {t(lang, 'contact.wechatQrDesc')}
+          </p>
+
+          <div class="mx-auto w-56 h-56 sm:w-64 sm:h-64 rounded-2xl overflow-hidden">
+            {siteInfo.wechatQr ? (
+              <img
+                src={siteInfo.wechatQr}
+                alt={t(lang, 'contact.wechatQrTitle')}
+                width="256"
+                height="256"
+                loading="lazy"
+                class="w-full h-full object-contain bg-white border border-slate-200 rounded-2xl p-2"
+              />
+            ) : (
+              <div class="w-full h-full flex flex-col items-center justify-center gap-3 bg-slate-50 border-2 border-dashed border-slate-300 rounded-2xl text-slate-400">
+                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 3.75 9.375v-4.5ZM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 0 1-1.125-1.125v-4.5ZM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0 1 13.5 9.375v-4.5Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75ZM6.75 16.5h.75v.75h-.75v-.75ZM16.5 6.75h.75v.75h-.75v-.75ZM13.5 13.5h.75v.75h-.75v-.75ZM13.5 19.5h.75v.75h-.75v-.75ZM19.5 13.5h.75v.75h-.75v-.75ZM19.5 19.5h.75v.75h-.75v-.75ZM16.5 16.5h.75v.75h-.75v-.75Z" />
+                </svg>
+                <span class="text-xs font-semibold">{t(lang, 'contact.wechatQrPending')}</span>
+              </div>
+            )}
+          </div>
+
+          {siteInfo.contact.wechat && (
+            <p class="mt-5 text-xs sm:text-sm text-slate-600">
+              {t(lang, 'contact.wechat')}：<span class="font-mono font-bold text-navy">{siteInfo.contact.wechat}</span>
+            </p>
+          )}
+        </div>
+      </div>
+
+    </div>
+  </section>
+</Base>
+
+<script>
+  // Product and compare pages link here with ?model=..., so echo it back for the visitor to quote.
+  const model = new URLSearchParams(window.location.search).get('model')?.trim();
+  const box = document.getElementById('model-ask');
+  const value = document.getElementById('model-ask-value');
+  if (model && box && value) {
+    value.textContent = model;
+    box.classList.remove('hidden');
+  }
+</script>

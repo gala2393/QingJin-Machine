@@ -1,0 +1,66 @@
+[
+  {
+    "id": "filling",
+    "name": {
+      "zh": "智能分装机",
+      "en": "Intelligent Filling Machines"
+    },
+    "count": 25
+  },
+  {
+    "id": "packaging",
+    "name": {
+      "zh": "智能包装机",
+      "en": "Intelligent Packaging Machines"
+    },
+    "count": 30
+  },
+  {
+    "id": "liquid",
+    "name": {
+      "zh": "液体包装机",
+      "en": "Liquid Packaging Machines"
+    },
+    "count": 14
+  },
+  {
+    "id": "paste",
+    "name": {
+      "zh": "膏体包装机",
+      "en": "Paste Packaging Machines"
+    },
+    "count": 12
+  },
+  {
+    "id": "semi-auto",
+    "name": {
+      "zh": "半自动灌装机",
+      "en": "Semi-Automatic Filling Machines"
+    },
+    "count": 2
+  },
+  {
+    "id": "vacuum",
+    "name": {
+      "zh": "真空包装机",
+      "en": "Vacuum Packaging Machines"
+    },
+    "count": 14
+  },
+  {
+    "id": "feeder",
+    "name": {
+      "zh": "智能上料机",
+      "en": "Intelligent Feeders"
+    },
+    "count": 4
+  },
+  {
+    "id": "conveyor",
+    "name": {
+      "zh": "传送带",
+      "en": "Conveyor Belts"
+    },
+    "count": 6
+  }
+]

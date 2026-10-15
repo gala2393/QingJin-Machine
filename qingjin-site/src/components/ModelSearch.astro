@@ -1,0 +1,251 @@
+---
+import type { Lang } from '../types';
+import { formatLocaleUrl } from '../i18n/ui';
+import { machines, getCategoryName } from '../utils';
+
+interface Props {
+  lang: Lang;
+}
+
+const { lang } = Astro.props;
+
+const index = machines.map((m) => ({
+  id: m.id,
+  model: m.model,
+  name: m.name[lang],
+  alt: m.name[lang === 'zh' ? 'en' : 'zh'],
+  cat: getCategoryName(m.category, lang),
+  image: m.image,
+}));
+
+const productsUrl = formatLocaleUrl(lang, '/products/');
+const examples = ['DZ-390', 'FB-999', 'QB-LS500Ml', 'TS-200'];
+const text =
+  lang === 'zh'
+    ? {
+        placeholder: '输入型号或名称，如 DZ-390',
+        button: '搜索',
+        hint: '热门型号：',
+        empty: '没有找到匹配的型号，按回车在全部产品中搜索',
+        all: '查看全部搜索结果',
+      }
+    : {
+        placeholder: 'Enter a model or name, e.g. DZ-390',
+        button: 'Search',
+        hint: 'Popular: ',
+        empty: 'No matching model. Press Enter to search all products',
+        all: 'See all results',
+      };
+---
+
+<div class="relative w-full max-w-2xl mx-auto lg:mx-0" data-model-search data-products-url={productsUrl}>
+  <script is:inline type="application/json" data-model-index set:html={JSON.stringify(index)} />
+  <form role="search" class="flex items-stretch gap-2" data-model-search-form>
+    <label class="relative flex-1 min-w-0">
+      <span class="sr-only">{text.placeholder}</span>
+      <svg class="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" />
+      </svg>
+      <input
+        type="search"
+        name="q"
+        autocomplete="off"
+        enterkeyhint="search"
+        placeholder={text.placeholder}
+        role="combobox"
+        aria-autocomplete="list"
+        aria-expanded="false"
+        aria-controls="model-search-list"
+        class="w-full h-12 sm:h-14 pl-11 pr-3 rounded-xl border border-slate-300 bg-white text-base text-navy placeholder:text-slate-400 shadow-sm focus:outline-hidden focus:border-primary focus:ring-2 focus:ring-primary/30"
+        data-model-search-input
+      />
+    </label>
+    <button
+      type="submit"
+      class="shrink-0 h-12 sm:h-14 px-5 sm:px-7 rounded-xl font-bold text-white bg-primary hover:bg-primary-hover shadow-md transition-colors focus:outline-hidden focus:ring-2 focus:ring-primary/40"
+    >
+      {text.button}
+    </button>
+  </form>
+
+  <div
+    id="model-search-list"
+    role="listbox"
+    class="hidden absolute z-40 left-0 right-0 mt-2 max-h-[60vh] overflow-y-auto overscroll-contain rounded-xl border border-slate-200 bg-white shadow-xl text-left"
+    data-model-search-list
+  ></div>
+
+  <p class="mt-3 flex flex-wrap items-center justify-center lg:justify-start gap-2 text-xs text-slate-500">
+    <span>{text.hint}</span>
+    {examples.map((ex) => (
+      <button
+        type="button"
+        class="px-2.5 py-1 rounded-full bg-white border border-slate-200 font-mono font-semibold text-slate-600 hover:border-primary hover:text-primary transition-colors"
+        data-model-search-example={ex}
+      >
+        {ex}
+      </button>
+    ))}
+  </p>
+
+  <template data-model-search-empty>{text.empty}</template>
+  <template data-model-search-all>{text.all}</template>
+</div>
+
+<script>
+  interface Entry {
+    id: string;
+    model: string;
+    name: string;
+    alt: string;
+    cat: string;
+    image: string;
+  }
+
+  const compact = (s: string) => s.toLowerCase().replace(/[\s\-_·.]/g, '');
+
+  function score(e: Entry, q: string): number {
+    const model = compact(e.model);
+    if (model === q) return 0;
+    if (model.startsWith(q)) return 1;
+    if (model.includes(q)) return 2;
+    if (compact(e.name).includes(q)) return 3;
+    if (compact(e.alt).includes(q)) return 4;
+    return -1;
+  }
+
+  const escapeHtml = (s: string) =>
+    s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c] as string);
+
+  document.querySelectorAll<HTMLElement>('[data-model-search]').forEach((root) => {
+    const input = root.querySelector<HTMLInputElement>('[data-model-search-input]');
+    const form = root.querySelector<HTMLFormElement>('[data-model-search-form]');
+    const list = root.querySelector<HTMLElement>('[data-model-search-list]');
+    const dataEl = root.querySelector('[data-model-index]');
+    if (!input || !form || !list || !dataEl) return;
+
+    const entries: Entry[] = JSON.parse(dataEl.textContent || '[]');
+    const productsUrl = root.dataset.productsUrl || '/';
+    const detailBase = productsUrl;
+    const emptyText = root.querySelector('[data-model-search-empty]')?.innerHTML || '';
+    const allText = root.querySelector('[data-model-search-all]')?.innerHTML || '';
+    let results: Entry[] = [];
+    let active = -1;
+
+    const searchUrl = (q: string) => `${productsUrl}?q=${encodeURIComponent(q.trim())}`;
+
+    function close() {
+      list!.classList.add('hidden');
+      input!.setAttribute('aria-expanded', 'false');
+      active = -1;
+    }
+
+    function render() {
+      const raw = input!.value.trim();
+      const q = compact(raw);
+      if (!q) {
+        close();
+        return;
+      }
+      results = entries
+        .map((e) => ({ e, s: score(e, q) }))
+        .filter((r) => r.s >= 0)
+        .sort((a, b) => a.s - b.s || a.e.model.localeCompare(b.e.model))
+        .slice(0, 8)
+        .map((r) => r.e);
+      active = -1;
+
+      if (!results.length) {
+        list!.innerHTML = `<div class="px-4 py-4 text-sm text-slate-500">${emptyText}</div>`;
+      } else {
+        list!.innerHTML =
+          results
+            .map(
+              (e, i) => `
+            <a role="option" id="model-opt-${i}" href="${detailBase}${e.id}/" data-index="${i}"
+               class="flex items-center gap-3 px-3 py-2.5 border-b border-slate-100 hover:bg-primary-light focus:bg-primary-light focus:outline-hidden">
+              <img src="${e.image}" alt="" loading="lazy" class="w-12 h-12 shrink-0 rounded-lg bg-slate-50 object-contain border border-slate-100" />
+              <span class="min-w-0 flex-1">
+                <span class="block font-mono font-bold text-sm text-navy truncate">${escapeHtml(e.model)}</span>
+                <span class="block text-xs text-slate-500 truncate">${escapeHtml(e.name)} · ${escapeHtml(e.cat)}</span>
+              </span>
+              <svg class="w-4 h-4 shrink-0 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+            </a>`
+            )
+            .join('') +
+          `<a href="${searchUrl(raw)}" class="block px-4 py-3 text-sm font-bold text-primary hover:bg-slate-50">${allText} &rarr;</a>`;
+      }
+      list!.classList.remove('hidden');
+      input!.setAttribute('aria-expanded', 'true');
+    }
+
+    function highlight() {
+      list!.querySelectorAll<HTMLElement>('[role="option"]').forEach((el, i) => {
+        el.classList.toggle('bg-primary-light', i === active);
+        if (i === active) el.scrollIntoView({ block: 'nearest' });
+      });
+      if (active >= 0) input!.setAttribute('aria-activedescendant', `model-opt-${active}`);
+      else input!.removeAttribute('aria-activedescendant');
+    }
+
+    // Report a search once the visitor pauses typing, so each keystroke isn't counted as a search.
+    let lastTracked = '';
+    let trackTimer: ReturnType<typeof setTimeout> | undefined;
+    function trackSearch(now = false) {
+      clearTimeout(trackTimer);
+      const fire = () => {
+        const raw = input!.value.trim();
+        if (raw.length < 2 || raw === lastTracked) return;
+        lastTracked = raw;
+        window.qjTrack?.('search', { query: raw.slice(0, 100), results: results.length });
+      };
+      if (now) fire();
+      else trackTimer = setTimeout(fire, 1200);
+    }
+
+    input.addEventListener('input', () => {
+      render();
+      trackSearch();
+    });
+    input.addEventListener('focus', () => input.value.trim() && render());
+    input.addEventListener('keydown', (ev) => {
+      if (list.classList.contains('hidden') || !results.length) return;
+      if (ev.key === 'ArrowDown') {
+        ev.preventDefault();
+        active = (active + 1) % results.length;
+        highlight();
+      } else if (ev.key === 'ArrowUp') {
+        ev.preventDefault();
+        active = active <= 0 ? results.length - 1 : active - 1;
+        highlight();
+      } else if (ev.key === 'Escape') {
+        close();
+      }
+    });
+
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const raw = input.value.trim();
+      trackSearch(true);
+      if (active >= 0 && results[active]) {
+        window.location.href = `${detailBase}${results[active].id}/`;
+        return;
+      }
+      const q = compact(raw);
+      const exact = q ? entries.filter((e) => compact(e.model) === q) : [];
+      window.location.href = exact.length === 1 ? `${detailBase}${exact[0].id}/` : searchUrl(raw);
+    });
+
+    root.querySelectorAll<HTMLButtonElement>('[data-model-search-example]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        input.value = btn.dataset.modelSearchExample || '';
+        input.focus();
+        render();
+      });
+    });
+
+    document.addEventListener('click', (ev) => {
+      if (!root.contains(ev.target as Node)) close();
+    });
+  });
+</script>

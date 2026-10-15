@@ -1,0 +1,244 @@
+---
+import Base from '../../../layouts/Base.astro';
+import MachineCard from '../../../components/MachineCard.astro';
+import ParamTable from '../../../components/ParamTable.astro';
+import type { Machine, Lang } from '../../../types';
+import { t, formatLocaleUrl } from '../../../i18n/ui';
+import { machines, getCategoryName, PLACEHOLDER_SVG } from '../../../utils';
+
+export function getStaticPaths() {
+  const langs: Lang[] = ['zh', 'en'];
+  return langs.flatMap((lang) =>
+    machines.map((machine) => ({
+      params: { lang, id: machine.id },
+      props: { machine, lang },
+    }))
+  );
+}
+
+interface Props {
+  machine: Machine;
+  lang: Lang;
+}
+
+const { machine, lang } = Astro.props;
+
+// Category grouping for prev/next and related models
+const categoryMachines = machines.filter((m) => m.category === machine.category);
+const currentIndex = categoryMachines.findIndex((m) => m.id === machine.id);
+const prevMachine = currentIndex > 0 ? categoryMachines[currentIndex - 1] : null;
+const nextMachine = currentIndex < categoryMachines.length - 1 ? categoryMachines[currentIndex + 1] : null;
+const relatedMachines = categoryMachines.filter((m) => m.id !== machine.id).slice(0, 4);
+
+const categoryName = getCategoryName(machine.category, lang);
+const pageTitle = `${machine.model} - ${machine.name[lang]}`;
+const pageDesc = `${machine.model} ${machine.name[lang]} · ${categoryName} · ${machine.params.slice(0, 3).map((p) => `${p[lang] || p.zh}: ${p[`value_${lang}`] || p.value_zh}`).join('; ')}`;
+---
+
+<Base lang={lang} title={pageTitle} description={pageDesc} ogImage={machine.image}>
+  <!-- Breadcrumb -->
+  <nav class="bg-surface border-b border-slate-200/80 py-3.5" aria-label="Breadcrumb">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ol class="flex items-center space-x-2 text-xs sm:text-sm text-slate-500 overflow-x-auto no-scrollbar">
+        <li>
+          <a href={formatLocaleUrl(lang, '/')} class="hover:text-primary transition-colors">
+            {t(lang, 'nav.home')}
+          </a>
+        </li>
+        <li class="text-slate-300">/</li>
+        <li>
+          <a href={formatLocaleUrl(lang, '/products/')} class="hover:text-primary transition-colors">
+            {t(lang, 'nav.products')}
+          </a>
+        </li>
+        <li class="text-slate-300">/</li>
+        <li>
+          <a
+            href={`${formatLocaleUrl(lang, '/products/')}?cat=${machine.category}`}
+            class="hover:text-primary transition-colors whitespace-nowrap"
+          >
+            {categoryName}
+          </a>
+        </li>
+        <li class="text-slate-300">/</li>
+        <li class="font-bold text-navy truncate" aria-current="page">
+          {machine.model}
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- Product Main Specs Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      
+      <!-- Left: Product Photo Showcase (5 cols on lg) -->
+      <div class="lg:col-span-5 space-y-4">
+        <div class="relative bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-md flex items-center justify-center aspect-4/3 sm:aspect-square overflow-hidden group">
+          <img
+            src={machine.image}
+            alt={`${machine.model} - ${machine.name[lang]}`}
+            class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+            width="600"
+            height="600"
+            onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+          />
+          <span class="absolute top-4 left-4 px-3 py-1 rounded-lg text-xs font-bold tracking-wider bg-primary text-white shadow-xs">
+            {machine.model}
+          </span>
+        </div>
+
+        <!-- Factory Support Badges -->
+        <div class="grid grid-cols-3 gap-2.5 text-center text-xs">
+          <div class="p-2.5 bg-slate-50 border border-slate-200/70 rounded-xl">
+            <span class="block font-bold text-navy">{lang === 'zh' ? '源头直销' : 'Factory Direct'}</span>
+            <span class="text-[11px] text-slate-500">{lang === 'zh' ? '一件批发价' : 'Wholesale'}</span>
+          </div>
+          <div class="p-2.5 bg-slate-50 border border-slate-200/70 rounded-xl">
+            <span class="block font-bold text-navy">{lang === 'zh' ? '免费试机' : 'Free Test'}</span>
+            <span class="text-[11px] text-slate-500">{lang === 'zh' ? '支持寄样' : 'Send Sample'}</span>
+          </div>
+          <div class="p-2.5 bg-slate-50 border border-slate-200/70 rounded-xl">
+            <span class="block font-bold text-navy">CE {lang === 'zh' ? '安全认证' : 'Certified'}</span>
+            <span class="text-[11px] text-slate-500">{lang === 'zh' ? '国家级质检' : 'Inspected'}</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Product Information & Params (7 cols on lg) -->
+      <div class="lg:col-span-7 space-y-6">
+        <div>
+          <!-- Category & Status -->
+          <div class="flex items-center gap-2 mb-2">
+            <a
+              href={`${formatLocaleUrl(lang, '/products/')}?cat=${machine.category}`}
+              class="inline-flex items-center px-2.5 py-1 rounded-md text-xs font-semibold bg-primary-light text-primary hover:bg-primary/20 transition-colors"
+            >
+              {categoryName}
+            </a>
+            <span class="inline-flex items-center px-2 py-0.5 rounded-md text-[11px] font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+              {lang === 'zh' ? '现货供应' : 'In Stock'}
+            </span>
+          </div>
+
+          <!-- Machine Name & Model -->
+          <h1 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight leading-tight">
+            {machine.name[lang]}
+          </h1>
+          <p class="text-sm font-mono font-bold text-primary mt-1">
+            {t(lang, 'detail.model')}: {machine.model}
+          </p>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="flex flex-wrap items-center gap-3 p-4 bg-surface rounded-2xl border border-slate-200/80">
+          <a
+            href={`${formatLocaleUrl(lang, '/contact/')}?model=${encodeURIComponent(machine.model)}`}
+            class="flex-1 min-w-[200px] inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-primary hover:bg-primary-hover shadow-md hover:shadow-lg transition-all focus:outline-hidden focus:ring-2 focus:ring-primary text-sm"
+          >
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+            <span>{t(lang, 'detail.inquireThis')}</span>
+          </a>
+
+          <button
+            type="button"
+            data-compare-btn
+            data-machine-id={machine.id}
+            data-msg-max={t(lang, 'compare.maxAlert')}
+            data-txt-add={t(lang, 'common.addToCompare')}
+            data-txt-added={t(lang, 'common.inCompare')}
+            class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-slate-700 bg-white border border-slate-200 hover:border-primary/40 hover:bg-slate-50 transition-all text-sm focus:outline-hidden focus:ring-2 focus:ring-primary shadow-xs"
+          >
+            <svg class="w-4 h-4 check-icon hidden text-primary" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+            </svg>
+            <span class="compare-btn-text">{t(lang, 'common.addToCompare')}</span>
+          </button>
+        </div>
+
+        <!-- Full Parameters Table -->
+        <div class="space-y-3 pt-2">
+          <h2 class="text-base sm:text-lg font-bold text-navy flex items-center gap-2">
+            <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            <span>{t(lang, 'detail.specsTitle')}</span>
+          </h2>
+          <ParamTable params={machine.params} lang={lang} />
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Prev / Next Navigation Strip within Category -->
+    <div class="mt-14 pt-8 border-t border-slate-200 flex items-center justify-between gap-4 text-xs sm:text-sm">
+      <div>
+        {prevMachine ? (
+          <a
+            href={formatLocaleUrl(lang, `/products/${prevMachine.id}/`)}
+            class="group inline-flex items-center gap-2 text-slate-600 hover:text-primary transition-colors"
+          >
+            <span class="p-1.5 rounded-lg bg-slate-100 group-hover:bg-primary group-hover:text-white transition-colors">
+              &larr;
+            </span>
+            <div class="text-left">
+              <div class="text-[11px] text-slate-400">{t(lang, 'detail.prev')}</div>
+              <div class="font-bold text-navy group-hover:text-primary">{prevMachine.model}</div>
+            </div>
+          </a>
+        ) : (
+          <span class="text-slate-300 flex items-center gap-2">
+            <span class="p-1.5 rounded-lg bg-slate-50">&larr;</span>
+            <span>{t(lang, 'detail.noMore')}</span>
+          </span>
+        )}
+      </div>
+
+      <a
+        href={`${formatLocaleUrl(lang, '/products/')}?cat=${machine.category}`}
+        class="text-xs font-bold text-primary hover:underline"
+      >
+        {t(lang, 'detail.backToProducts')}
+      </a>
+
+      <div>
+        {nextMachine ? (
+          <a
+            href={formatLocaleUrl(lang, `/products/${nextMachine.id}/`)}
+            class="group inline-flex items-center gap-2 text-slate-600 hover:text-primary transition-colors"
+          >
+            <div class="text-right">
+              <div class="text-[11px] text-slate-400">{t(lang, 'detail.next')}</div>
+              <div class="font-bold text-navy group-hover:text-primary">{nextMachine.model}</div>
+            </div>
+            <span class="p-1.5 rounded-lg bg-slate-100 group-hover:bg-primary group-hover:text-white transition-colors">
+              &rarr;
+            </span>
+          </a>
+        ) : (
+          <span class="text-slate-300 flex items-center gap-2">
+            <span>{t(lang, 'detail.noMore')}</span>
+            <span class="p-1.5 rounded-lg bg-slate-50">&rarr;</span>
+          </span>
+        )}
+      </div>
+    </div>
+
+    <!-- Related Machines in Category -->
+    {relatedMachines.length > 0 && (
+      <div class="mt-16 pt-12 border-t border-slate-200">
+        <h2 class="text-xl sm:text-2xl font-extrabold text-navy tracking-tight mb-6">
+          {t(lang, 'detail.relatedTitle')}
+        </h2>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+          {relatedMachines.map((rel) => (
+            <MachineCard machine={rel} lang={lang} />
+          ))}
+        </div>
+      </div>
+    )}
+  </section>
+</Base>

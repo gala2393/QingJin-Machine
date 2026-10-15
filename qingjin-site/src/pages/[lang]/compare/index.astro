@@ -1,0 +1,405 @@
+---
+import Base from '../../../layouts/Base.astro';
+import type { Lang } from '../../../types';
+import { t, formatLocaleUrl } from '../../../i18n/ui';
+import { machines, getCategoryName } from '../../../utils';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'zh' } }, { params: { lang: 'en' } }];
+}
+
+const { lang } = Astro.params as { lang: Lang };
+
+// Minimize embedded JSON payload to only comparison-critical fields in the active language
+const compareMachineList = machines.map((m) => ({
+  id: m.id,
+  model: m.model,
+  name: m.name[lang] || m.name.zh,
+  category: getCategoryName(m.category, lang),
+  image: m.image,
+  params: m.params.map((p) => ({
+    key: p.key,
+    label: p[lang] || p.zh,
+    val: p[`value_${lang}`] || p.value_zh,
+  })),
+}));
+---
+
+<Base
+  lang={lang}
+  title={t(lang, 'compare.title')}
+  description={t(lang, 'compare.subtitle')}
+>
+  <!-- Page Header -->
+  <div class="bg-surface border-b border-slate-200/80 pt-10 pb-8 sm:pt-14 sm:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-2">
+            {t(lang, 'compare.title')}
+          </h1>
+          <p class="text-slate-600 text-sm sm:text-base max-w-2xl">
+            {t(lang, 'compare.subtitle')}
+          </p>
+        </div>
+
+        <a
+          href={formatLocaleUrl(lang, '/products/')}
+          class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-primary hover:text-brand-blue"
+        >
+          <span>&larr; {t(lang, 'detail.backToProducts')}</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparison Workspace -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+    
+    <!-- Controls Toolbar (when items exist) -->
+    <div id="compare-toolbar" class="hidden flex flex-wrap items-center justify-between gap-4 pb-6 mb-6 border-b border-slate-200">
+      <div class="flex flex-wrap items-center gap-4">
+        <!-- Diff Only Toggle -->
+        <label class="inline-flex items-center gap-2 cursor-pointer text-xs sm:text-sm font-semibold text-slate-700 select-none">
+          <input
+            id="toggle-diff-only"
+            type="checkbox"
+            class="w-4 h-4 rounded-md text-primary focus:ring-primary border-slate-300"
+          />
+          <span>{t(lang, 'compare.showDiffOnly')}</span>
+        </label>
+
+        <!-- Count Indicator -->
+        <span id="compare-count-tag" class="text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-primary-light text-primary border border-primary/20">
+          0/4
+        </span>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <!-- Add Machine Select Dropdown -->
+        <div id="add-machine-dropdown-container" class="relative">
+          <select
+            id="compare-add-select"
+            class="text-xs font-medium bg-white border border-slate-200 rounded-xl px-3 py-2 text-slate-700 hover:border-slate-300 focus:outline-hidden focus:ring-2 focus:ring-primary cursor-pointer max-w-[200px] sm:max-w-[260px] truncate"
+          >
+            <option value="">+ {t(lang, 'compare.addMachine')}</option>
+          </select>
+        </div>
+
+        <!-- Clear All Button -->
+        <button
+          id="compare-clear-all"
+          type="button"
+          class="px-3 py-2 text-xs font-semibold text-red-600 hover:bg-red-50 border border-red-200 rounded-xl transition-colors focus:outline-hidden"
+        >
+          {t(lang, 'compare.clearAll')}
+        </button>
+      </div>
+    </div>
+
+    <!-- Comparison Table Container -->
+    <div id="compare-table-wrapper" class="hidden overflow-x-auto rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <table class="w-full text-left border-collapse sm:min-w-[640px]">
+        <thead id="compare-table-head" class="bg-surface border-b border-slate-200">
+          <!-- Rendered dynamically -->
+        </thead>
+        <tbody id="compare-table-body" class="divide-y divide-slate-100 text-sm">
+          <!-- Rendered dynamically -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Empty State -->
+    <div
+      id="compare-empty-state"
+      class="hidden py-16 text-center max-w-lg mx-auto bg-surface rounded-3xl p-8 sm:p-12 border border-slate-200"
+    >
+      <div class="w-16 h-16 bg-slate-200 text-slate-500 rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+        </svg>
+      </div>
+      <h2 class="text-lg sm:text-xl font-bold text-navy mb-2">
+        {t(lang, 'compare.emptyTitle')}
+      </h2>
+      <p class="text-xs sm:text-sm text-slate-500 mb-6 leading-relaxed">
+        {t(lang, 'compare.emptyDesc')}
+      </p>
+      <a
+        href={formatLocaleUrl(lang, '/products/')}
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-primary hover:bg-primary-hover shadow-md transition-all text-xs sm:text-sm"
+      >
+        <span>{t(lang, 'compare.goToProducts')}</span>
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+
+  </section>
+</Base>
+
+<!-- Embedded machine data for client-side comparison -->
+<script is:inline id="qj-all-compare-data" type="application/json" set:html={JSON.stringify(compareMachineList)} />
+
+<script>
+  function setupComparePage() {
+    const dataEl = document.getElementById('qj-all-compare-data');
+    if (!dataEl) return;
+
+    interface MachineData {
+      id: string;
+      model: string;
+      name: string;
+      category: string;
+      image: string;
+      params: { key: string; label: string; val: string }[];
+    }
+
+    const allMachines: MachineData[] = JSON.parse(dataEl.textContent || '[]');
+    const toolbar = document.getElementById('compare-toolbar');
+    const tableWrapper = document.getElementById('compare-table-wrapper');
+    const tableHead = document.getElementById('compare-table-head');
+    const tableBody = document.getElementById('compare-table-body');
+    const emptyState = document.getElementById('compare-empty-state');
+    const diffToggle = document.getElementById('toggle-diff-only') as HTMLInputElement | null;
+    const countTag = document.getElementById('compare-count-tag');
+    const addSelect = document.getElementById('compare-add-select') as HTMLSelectElement | null;
+    const addContainer = document.getElementById('add-machine-dropdown-container');
+    const clearBtn = document.getElementById('compare-clear-all');
+
+    const currentLang = window.location.pathname.startsWith('/en') ? 'en' : 'zh';
+
+    function getSelectedIds(): string[] {
+      try {
+        const raw = localStorage.getItem('qj-compare');
+        const list = raw ? JSON.parse(raw) : [];
+        return Array.isArray(list) ? list.slice(0, 4) : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function saveSelectedIds(ids: string[]) {
+      try {
+        localStorage.setItem('qj-compare', JSON.stringify(ids));
+        window.dispatchEvent(new CustomEvent('qj:compare-updated'));
+      } catch {
+        // localStorage unavailable
+      }
+    }
+
+    function renderComparison() {
+      const selectedIds = getSelectedIds();
+      const count = selectedIds.length;
+
+      if (count === 0) {
+        if (toolbar) toolbar.classList.add('hidden');
+        if (tableWrapper) tableWrapper.classList.add('hidden');
+        if (emptyState) emptyState.classList.remove('hidden');
+        return;
+      }
+
+      if (emptyState) emptyState.classList.add('hidden');
+      if (toolbar) toolbar.classList.remove('hidden');
+      if (tableWrapper) tableWrapper.classList.remove('hidden');
+
+      if (countTag) countTag.textContent = `${count}/4`;
+
+      // Populate add-machine dropdown
+      if (addSelect && addContainer) {
+        if (count >= 4) {
+          addContainer.classList.add('hidden');
+        } else {
+          addContainer.classList.remove('hidden');
+          addSelect.innerHTML = `<option value="">+ ${currentLang === 'zh' ? '添加机型到对比...' : 'Add machine to compare...'}</option>`;
+          allMachines.forEach((m) => {
+            if (!selectedIds.includes(m.id)) {
+              const opt = document.createElement('option');
+              opt.value = m.id;
+              opt.textContent = `${m.model} - ${m.name}`;
+              addSelect.appendChild(opt);
+            }
+          });
+        }
+      }
+
+      const activeMachines = selectedIds
+        .map((id) => allMachines.find((m) => m.id === id))
+        .filter((m): m is MachineData => m !== undefined);
+
+      // Render Header
+      if (tableHead) {
+        let headHtml = `<tr>
+          <th class="sticky left-0 z-10 bg-surface py-4 px-3 sm:px-5 text-xs uppercase font-bold text-slate-500 w-24 min-w-24 sm:w-56 align-bottom border-r border-slate-200">
+            ${currentLang === 'zh' ? '参数项目 \\ 机型' : 'Parameter / Model'}
+          </th>`;
+
+        activeMachines.forEach((m) => {
+          headHtml += `
+            <th class="py-4 px-3 sm:px-5 align-top min-w-[160px] sm:min-w-[200px] border-r border-slate-200 last:border-r-0">
+              <div class="flex flex-col space-y-3">
+                <div class="flex items-center justify-between gap-2">
+                  <span class="px-2 py-0.5 rounded-md text-[11px] font-bold bg-primary text-white">
+                    ${m.model}
+                  </span>
+                  <button
+                    type="button"
+                    data-remove-id="${m.id}"
+                    class="p-1 rounded-md text-slate-400 hover:text-red-600 hover:bg-red-50 transition-colors"
+                    title="${currentLang === 'zh' ? '移出对比' : 'Remove'}"
+                    aria-label="Remove ${m.model}"
+                  >
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </button>
+                </div>
+                
+                <a href="/${currentLang}/products/${m.id}/" class="block aspect-4/3 bg-slate-50 rounded-xl p-2 border border-slate-100 overflow-hidden group">
+                  <img
+                    src="${m.image}"
+                    alt="${m.model}"
+                    class="w-full h-full object-contain group-hover:scale-105 transition-transform"
+                    onerror="this.onerror=null;this.src='/images/brand/mark.png';this.classList.add('p-4','opacity-40');"
+                  />
+                </a>
+
+                <div>
+                  <a href="/${currentLang}/products/${m.id}/" class="font-bold text-sm text-navy hover:text-primary transition-colors line-clamp-1">
+                    ${m.name}
+                  </a>
+                  <span class="text-xs text-slate-400 block">${m.category}</span>
+                </div>
+
+                <div class="pt-1">
+                  <a
+                    href="/${currentLang}/contact/?model=${encodeURIComponent(m.model)}"
+                    class="inline-flex items-center justify-center w-full px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-primary hover:bg-primary-hover transition-colors shadow-xs"
+                  >
+                    ${currentLang === 'zh' ? '询盘此机型' : 'Inquire Model'}
+                  </a>
+                </div>
+              </div>
+            </th>`;
+        });
+
+        headHtml += '</tr>';
+        tableHead.innerHTML = headHtml;
+
+        // Attach remove buttons
+        tableHead.querySelectorAll<HTMLButtonElement>('[data-remove-id]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const idToRemove = btn.getAttribute('data-remove-id');
+            if (idToRemove) {
+              const updated = getSelectedIds().filter((id) => id !== idToRemove);
+              saveSelectedIds(updated);
+              renderComparison();
+            }
+          });
+        });
+      }
+
+      // Collect union of param keys in sequence
+      const paramMap = new Map<string, string>();
+      activeMachines.forEach((m) => {
+        m.params.forEach((p) => {
+          if (!paramMap.has(p.key)) {
+            paramMap.set(p.key, p.label);
+          }
+        });
+      });
+
+      const showDiffOnly = diffToggle ? diffToggle.checked : false;
+
+      // Render Rows
+      if (tableBody) {
+        let bodyHtml = '';
+
+        paramMap.forEach((label, key) => {
+          const values = activeMachines.map((m) => {
+            const found = m.params.find((p) => p.key === key);
+            return found ? found.val : '—';
+          });
+
+          // Check if values differ across machines
+          const firstVal = values[0];
+          const isDifferent = values.some((val) => val !== firstVal);
+
+          if (showDiffOnly && !isDifferent) {
+            return; // Skip identical rows if diff only
+          }
+
+          const rowBg = isDifferent
+            ? 'bg-amber-50/50 hover:bg-amber-50/80'
+            : 'bg-white hover:bg-slate-50/60';
+
+          bodyHtml += `<tr class="${rowBg} transition-colors">
+            <th scope="row" class="sticky left-0 z-10 ${isDifferent ? 'bg-amber-50' : 'bg-white'} min-w-24 py-3 px-3 sm:px-5 text-xs sm:text-sm font-semibold text-slate-700 sm:whitespace-nowrap align-top border-r border-slate-200">
+              <span class="flex items-center gap-1.5">
+                ${isDifferent ? '<span class="w-1.5 h-1.5 rounded-full bg-brand-orange shrink-0"></span>' : ''}
+                <span>${label}</span>
+              </span>
+            </th>`;
+
+          values.forEach((val) => {
+            const isMissing = val === '—';
+            bodyHtml += `
+              <td class="py-3 px-5 text-xs sm:text-sm ${
+                isMissing ? 'text-slate-300 font-mono' : 'text-navy font-medium'
+              } align-top border-r border-slate-200 last:border-r-0 leading-relaxed">
+                ${val}
+              </td>`;
+          });
+
+          bodyHtml += '</tr>';
+        });
+
+        tableBody.innerHTML = bodyHtml;
+      }
+    }
+
+    // Add select event
+    if (addSelect) {
+      addSelect.addEventListener('change', () => {
+        const selectedId = addSelect.value;
+        if (!selectedId) return;
+
+        const currentIds = getSelectedIds();
+        if (currentIds.length < 4 && !currentIds.includes(selectedId)) {
+          currentIds.push(selectedId);
+          saveSelectedIds(currentIds);
+          renderComparison();
+        }
+      });
+    }
+
+    // Clear all event
+    if (clearBtn) {
+      clearBtn.addEventListener('click', () => {
+        saveSelectedIds([]);
+        renderComparison();
+      });
+    }
+
+    // Toggle diff only
+    if (diffToggle) {
+      diffToggle.addEventListener('change', () => {
+        renderComparison();
+      });
+    }
+
+    const urlIds = (new URLSearchParams(window.location.search).get('ids') || '')
+      .split(',')
+      .map((s) => s.trim())
+      .filter((id, i, arr) => id && arr.indexOf(id) === i && allMachines.some((m) => m.id === id))
+      .slice(0, 4);
+    if (urlIds.length) saveSelectedIds(urlIds);
+
+    window.addEventListener('storage', renderComparison);
+    window.addEventListener('qj:compare-updated', renderComparison);
+    renderComparison();
+  }
+
+  setupComparePage();
+</script>
