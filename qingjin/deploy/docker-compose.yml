@@ -1,0 +1,95 @@
+# Production stack. From this directory:
+#   cp .env.example .env   (fill in secrets)
+#   docker compose up -d --build
+#   docker compose exec api ...   # first run: import, seed admin, first publish (see README)
+# Needs Docker Compose v2.17+ (build.additional_contexts).
+services:
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: qingjin
+      POSTGRES_USER: qingjin
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U qingjin -d qingjin"]
+      interval: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ../server
+      # The showcase site source is baked into the image; rebuild the image after changing its templates.
+      additional_contexts:
+        site: ../../qingjin-site
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      PORT: 3000
+      DATABASE_URL: postgresql://qingjin:${POSTGRES_PASSWORD}@db:5432/qingjin
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:?set JWT_ACCESS_SECRET in .env}
+      JWT_ACCESS_TTL: 15m
+      JWT_REFRESH_TTL_DAYS: 7
+      UPLOAD_DIR: /data/uploads
+      SITE_DIR: /site
+      PUBLISH_DIR: /data/publish
+      KEEP_RELEASES: ${KEEP_RELEASES:-10}
+      PREVIEW_PORT: 4400
+      PREVIEW_PUBLIC_URL: https://${PREVIEW_HOST:?set PREVIEW_HOST in .env}
+      # Hops in front of the API: nginx = 1, Cloudflare + nginx = 2.
+      TRUST_PROXY: ${TRUST_PROXY:-2}
+      # Must match the nginx location that proxies to the API.
+      TRACK_ENDPOINT: /api/track
+      STATS_TZ: Asia/Shanghai
+      TRACK_RETENTION_DAYS: ${TRACK_RETENTION_DAYS:-180}
+      BACKUP_DIR: /data/backups
+      BACKUP_AT: ${BACKUP_AT:-03:30}
+      BACKUP_KEEP: ${BACKUP_KEEP:-14}
+    volumes:
+      - uploads:/data/uploads
+      # releases/vN + the "current" symlink nginx serves; must be one filesystem for atomic switching.
+      - publish:/data/publish
+      - backups:/data/backups
+
+  backup:
+    image: postgres:16
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    entrypoint: ["bash", "/backup.sh"]
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      TZ: Asia/Shanghai
+      BACKUP_AT: ${BACKUP_AT:-03:30}
+      BACKUP_KEEP: ${BACKUP_KEEP:-14}
+    volumes:
+      - ./backup.sh:/backup.sh:ro
+      - uploads:/uploads:ro
+      # A named volume; copy it off the server too (see README).
+      - backups:/backups
+
+  nginx:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    depends_on: [api]
+    ports:
+      - "80:80"
+    environment:
+      PREVIEW_HOST: ${PREVIEW_HOST}
+    volumes:
+      # The official image runs envsubst on templates (only for defined env vars, so $host etc. are kept).
+      - ./nginx.conf:/etc/nginx/templates/default.conf.template:ro
+      - publish:/srv/publish:ro
+      - ../admin/dist:/srv/admin:ro
+      - uploads:/srv/uploads:ro
+
+volumes:
+  pgdata:
+  uploads:
+  publish:
+  backups:
