@@ -1,0 +1,33 @@
+{
+  "name": "qingjin-admin",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "typecheck": "vue-tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "2.3.2",
+    "axios": "1.20.0",
+    "echarts": "6.1.0",
+    "element-plus": "2.14.7",
+    "pinia": "4.1.0",
+    "vue": "3.5.44",
+    "vue-advanced-cropper": "2.8.9",
+    "vue-draggable-plus": "0.6.1",
+    "vue-echarts": "8.3.2",
+    "vue-router": "4.6.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.2",
+    "@types/sortablejs": "1.15.9",
+    "@vitejs/plugin-vue": "6.0.10",
+    "@vue/tsconfig": "0.9.1",
+    "typescript": "5.9.3",
+    "vite": "8.3.4",
+    "vue-tsc": "3.3.13"
+  }
+}
