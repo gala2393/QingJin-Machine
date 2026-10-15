@@ -1,0 +1,33 @@
+# Dependencies and generated output
+node_modules/
+dist/
+.astro/
+.vite/
+*.tsbuildinfo
+__pycache__/
+*.pyc
+*.log
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+
+# Runtime data (anchored to avoid excluding source modules)
+/qingjin/server/.devdb/
+/qingjin/server/uploads/
+/qingjin/server/publish/
+/qingjin/server/backups/
+/qingjin/server/backups-dev/
+/qingjin/server/src/generated/
+/qingjin-site/scripts/work/
+
+# Local source material and unused empty scratch files
+/画册33.pdf
+/12ce887ebbd9484f4d89e2ab68fe2933.jpg
+/CategoriesView.vue
+/MachinesView.vue
+/MediaView.vue
