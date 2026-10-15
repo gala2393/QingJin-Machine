@@ -1,0 +1,409 @@
+---
+import Base from '../../layouts/Base.astro';
+import MachineCard from '../../components/MachineCard.astro';
+import ModelSearch from '../../components/ModelSearch.astro';
+import type { Lang } from '../../types';
+import { t, formatLocaleUrl } from '../../i18n/ui';
+import {
+  categories,
+  catalogCounts,
+  siteInfo,
+  getFeaturedMachines,
+  getFirstMachineOfCategory,
+  PLACEHOLDER_SVG,
+} from '../../utils';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'zh' } }, { params: { lang: 'en' } }];
+}
+
+const { lang } = Astro.params as { lang: Lang };
+
+const featuredMachines = getFeaturedMachines();
+
+const stats = [
+  {
+    num: String(catalogCounts.models),
+    title: t(lang, 'home.statModels', catalogCounts),
+    desc: t(lang, 'home.statModelsSub'),
+  },
+  {
+    num: String(catalogCounts.series),
+    title: t(lang, 'home.statCats', catalogCounts),
+    desc: t(lang, 'home.statCatsSub'),
+  },
+  {
+    num: 'CE',
+    title: t(lang, 'home.statCerts'),
+    desc: t(lang, 'home.statCertsSub'),
+  },
+  {
+    num: '100%',
+    title: t(lang, 'home.statDirect'),
+    desc: t(lang, 'home.statDirectSub'),
+  },
+];
+
+const whyItems = [
+  {
+    icon: 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4',
+    title: t(lang, 'home.why1Title'),
+    desc: t(lang, 'home.why1Desc'),
+  },
+  {
+    icon: 'M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4',
+    title: t(lang, 'home.why2Title'),
+    desc: t(lang, 'home.why2Desc'),
+  },
+  {
+    icon: 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+    title: t(lang, 'home.why3Title'),
+    desc: t(lang, 'home.why3Desc'),
+  },
+  {
+    icon: 'M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z',
+    title: t(lang, 'home.why4Title'),
+    desc: t(lang, 'home.why4Desc'),
+  },
+];
+
+const factoryStrip = siteInfo.factoryPhotos.slice(0, 5).map((p) => ({ img: p.image, ...p.title }));
+const certStrip = siteInfo.certificates.slice(0, 5).map((c) => ({ img: c.image, title: c.title[lang] }));
+---
+
+<Base lang={lang} title={siteInfo.tagline[lang]}>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-b from-surface via-white to-surface pt-12 pb-16 lg:pt-20 lg:pb-24 border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Copy & CTA -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-light text-primary text-xs font-bold tracking-wide border border-primary/20">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span>{t(lang, 'home.heroBadge')}</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight leading-tight">
+            {siteInfo.name[lang]} · <span class="text-primary">{siteInfo.tagline[lang]}</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            {t(lang, 'home.heroDesc')}
+          </p>
+
+          <ModelSearch lang={lang} />
+
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
+            <a
+              href={formatLocaleUrl(lang, '/products/')}
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-white bg-primary hover:bg-primary-hover shadow-md hover:shadow-lg transition-all focus:outline-hidden focus:ring-2 focus:ring-primary"
+            >
+              <span>{t(lang, 'home.btnExplore', catalogCounts)}</span>
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </a>
+
+            <a
+              href={formatLocaleUrl(lang, '/contact/')}
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-slate-700 bg-white hover:bg-slate-50 border border-slate-300 shadow-xs hover:shadow-md transition-all focus:outline-hidden focus:ring-2 focus:ring-primary"
+            >
+              <span>{t(lang, 'home.btnContact')}</span>
+            </a>
+          </div>
+
+          <!-- Quick value points -->
+          <div class="pt-4 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-medium text-slate-500">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              {lang === 'zh' ? '一件批发价' : 'Wholesale Rates'}
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              {lang === 'zh' ? '支持寄样免费测试' : 'Free Sample Testing'}
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              {lang === 'zh' ? 'CE 欧盟安全认证' : 'CE Certified Quality'}
+            </span>
+          </div>
+        </div>
+
+        <!-- Right: Hero Wide Image Card -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-white rounded-3xl p-3 sm:p-4 shadow-xl border border-slate-200/80 group">
+            <div class="overflow-hidden rounded-2xl bg-slate-50 flex items-center justify-center">
+              <img
+                src="/images/hero/hero-machines.webp"
+                alt="青瑾机械包装设备全景 QING JIN Machinery Full Line"
+                class="w-full h-auto object-cover group-hover:scale-103 transition-transform duration-500"
+                width="690"
+                height="385"
+                onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+              />
+            </div>
+            <div class="mt-3 px-3 py-2 bg-slate-50 rounded-xl flex items-center justify-between text-xs text-slate-600">
+              <span class="font-bold text-navy">{siteInfo.name[lang]}</span>
+              <span class="text-primary font-semibold">{t(lang, 'home.statModels', catalogCounts)}</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Stats Band -->
+  <section class="py-12 bg-white border-b border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        {stats.map((s) => (
+          <div class="p-6 rounded-2xl bg-surface border border-slate-200/80 text-center hover:border-primary/40 transition-colors">
+            <div class="text-3xl sm:text-4xl font-black text-primary font-mono tracking-tight mb-1">
+              {s.num}
+            </div>
+            <div class="text-sm font-bold text-navy mb-1">{s.title}</div>
+            <div class="text-xs text-slate-500">{s.desc}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Grid Section -->
+  <section class="py-16 sm:py-20 bg-surface border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight mb-3">
+          {t(lang, 'home.catsTitle')}
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          {t(lang, 'home.catsSubtitle')}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
+        {categories.map((cat) => {
+          const firstMachine = getFirstMachineOfCategory(cat.id);
+          const imgSrc = firstMachine?.image || '/images/brand/mark.png';
+
+          return (
+            <a
+              href={`${formatLocaleUrl(lang, '/products/')}?cat=${cat.id}`}
+              class="group flex flex-col bg-white rounded-2xl border border-slate-200 shadow-xs hover:shadow-xl hover:border-brand-blue/40 transition-all duration-300 overflow-hidden"
+            >
+              <div class="relative w-full aspect-4/3 bg-slate-50 p-2 sm:p-4 flex items-center justify-center overflow-hidden border-b border-slate-100">
+                <img
+                  src={imgSrc}
+                  alt={cat.name[lang]}
+                  loading="lazy"
+                  decoding="async"
+                  class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                  onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+                />
+                <span class="hidden sm:inline absolute top-3 right-3 px-2 py-0.5 rounded-full text-[11px] font-bold bg-slate-100 text-slate-700 group-hover:bg-primary-light group-hover:text-primary transition-colors">
+                  {cat.count} {t(lang, 'common.models')}
+                </span>
+              </div>
+              <div class="p-3 sm:p-5 flex items-center justify-between gap-2">
+                <div class="min-w-0">
+                  <h3 class="text-sm sm:text-base font-bold text-navy group-hover:text-primary transition-colors leading-snug">
+                    {cat.name[lang]}
+                  </h3>
+                  <p class="text-xs text-slate-500 mt-0.5">
+                    {cat.count} {lang === 'zh' ? '款可选机型' : 'available models'}
+                  </p>
+                </div>
+                <div class="hidden sm:flex w-8 h-8 rounded-full bg-slate-100 group-hover:bg-primary group-hover:text-white items-center justify-center text-slate-500 transition-colors shrink-0">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Machines Section -->
+  <section class="py-16 sm:py-20 bg-white border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight mb-2">
+            {t(lang, 'home.featuredTitle')}
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base">
+            {t(lang, 'home.featuredSubtitle')}
+          </p>
+        </div>
+        <a
+          href={formatLocaleUrl(lang, '/products/')}
+          class="inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-brand-blue"
+        >
+          <span>{t(lang, 'home.btnExplore', catalogCounts)}</span>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
+        {featuredMachines.map((machine) => (
+          <MachineCard machine={machine} lang={lang} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-16 sm:py-20 bg-surface border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight mb-3">
+          {t(lang, 'home.whyTitle')}
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base">
+          {t(lang, 'home.whySubtitle')}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {whyItems.map((item) => (
+          <div class="bg-white p-7 rounded-2xl border border-slate-200 shadow-xs hover:shadow-lg transition-all flex flex-col">
+            <div class="w-12 h-12 rounded-xl bg-primary-light text-primary flex items-center justify-center mb-5 shrink-0">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d={item.icon} />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-2">{item.title}</h3>
+            <p class="text-sm text-slate-600 leading-relaxed flex-1">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Factory Strip -->
+  <section class="py-16 sm:py-20 bg-white border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight mb-2">
+            {t(lang, 'home.factoryTitle')}
+          </h2>
+          <p class="text-slate-600 text-sm">
+            {t(lang, 'home.factorySubtitle')}
+          </p>
+        </div>
+        <a
+          href={formatLocaleUrl(lang, '/about/')}
+          class="inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-brand-blue"
+        >
+          <span>{t(lang, 'common.learnMore')} &rarr;</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        {factoryStrip.map((item) => (
+          <div class="group relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 aspect-4/3 shadow-xs">
+            <img
+              src={item.img}
+              alt={item[lang]}
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent flex items-end p-3">
+              <span class="text-xs font-bold text-white tracking-wide drop-shadow-xs">
+                {item[lang]}
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Preview Strip -->
+  <section class="py-16 sm:py-20 bg-surface border-b border-slate-200/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight mb-2">
+            {t(lang, 'home.certTitle')}
+          </h2>
+          <p class="text-slate-600 text-sm">
+            {t(lang, 'home.certSubtitle')}
+          </p>
+        </div>
+        <a
+          href={formatLocaleUrl(lang, '/about/')}
+          class="inline-flex items-center gap-1.5 text-sm font-bold text-primary hover:text-brand-blue"
+        >
+          <span>{lang === 'zh' ? '查看全部证书' : 'View All Certs'} &rarr;</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        {certStrip.map((cert) => (
+          <a
+            href={formatLocaleUrl(lang, '/about/')}
+            class="group bg-white p-3 rounded-xl border border-slate-200 shadow-xs hover:shadow-md hover:border-primary transition-all flex flex-col items-center"
+          >
+            <div class="w-full aspect-3/4 bg-slate-50 rounded-lg overflow-hidden flex items-center justify-center p-2 mb-2">
+              <img
+                src={cert.img}
+                alt={cert.title}
+                loading="lazy"
+                decoding="async"
+                class="max-h-full max-w-full object-contain group-hover:scale-103 transition-transform"
+                onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+              />
+            </div>
+            <span class="text-xs font-semibold text-slate-700 text-center truncate w-full">
+              {cert.title}
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Inquiry CTA Banner Band -->
+  <section class="py-16 bg-navy text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#2f7cf6_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight">
+        {t(lang, 'home.ctaTitle')}
+      </h2>
+      <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+        {t(lang, 'home.ctaSubtitle')}
+      </p>
+      <div class="pt-2 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a
+          href={formatLocaleUrl(lang, '/contact/')}
+          class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-xl text-sm font-bold bg-brand-yellow hover:bg-yellow-400 text-navy shadow-lg transition-all focus:outline-hidden"
+        >
+          {lang === 'zh' ? '申请免费寄样测试 / 获取报价' : 'Request Free Sample Testing / Quote'}
+        </a>
+        <a
+          href={formatLocaleUrl(lang, '/products/')}
+          class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-xl text-sm font-bold bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 transition-all focus:outline-hidden"
+        >
+          {lang === 'zh' ? `查看 ${catalogCounts.models} 款完整机型` : `Explore All ${catalogCounts.models} Models`}
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

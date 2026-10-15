@@ -1,0 +1,309 @@
+---
+import Base from '../../../layouts/Base.astro';
+import MachineCard from '../../../components/MachineCard.astro';
+import type { Lang } from '../../../types';
+import { t } from '../../../i18n/ui';
+import { machines, categories } from '../../../utils';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'zh' } }, { params: { lang: 'en' } }];
+}
+
+const { lang } = Astro.params as { lang: Lang };
+const totalMachines = machines.length;
+---
+
+<Base
+  lang={lang}
+  title={`${t(lang, 'products.title')} (${totalMachines})`}
+  description={t(lang, 'products.subtitle', { models: totalMachines })}
+>
+  <!-- Page Header -->
+  <div class="bg-surface border-b border-slate-200/80 pt-10 pb-8 sm:pt-14 sm:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-2">
+          {t(lang, 'products.title')}
+        </h1>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          {t(lang, 'products.subtitle', { models: totalMachines })}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Filter Bar & Search Box -->
+  <div class="sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-xs transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 space-y-3">
+      
+      <!-- Top Row: Search Box & Result Counter -->
+      <div class="flex flex-col sm:flex-row gap-3 items-stretch sm:items-center justify-between">
+        <!-- Search Input -->
+        <div class="relative flex-1 max-w-xl">
+          <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+          <input
+            id="products-search"
+            type="search"
+            autocomplete="off"
+            placeholder={t(lang, 'products.searchPlaceholder')}
+            class="w-full pl-10 pr-9 py-2 text-sm bg-slate-50 border border-slate-200 rounded-xl text-navy placeholder:text-slate-400 focus:outline-hidden focus:ring-2 focus:ring-primary focus:bg-white transition-all"
+          />
+          <button
+            id="search-clear-btn"
+            type="button"
+            aria-label="Clear search"
+            class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600"
+          >
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Showing Result Counter -->
+        <div class="text-xs sm:text-sm font-semibold text-slate-600 flex items-center justify-between sm:justify-end gap-2 shrink-0">
+          <span>
+            {t(lang, 'products.showing')}{' '}
+            <span id="products-count" class="font-bold text-primary font-mono text-base">
+              {totalMachines}
+            </span>{' '}
+            {t(lang, 'products.units')}
+          </span>
+          <button
+            id="reset-filter-btn"
+            type="button"
+            class="text-xs text-brand-blue hover:underline hidden"
+          >
+            {t(lang, 'products.resetFilters')}
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Category Chips (horizontal scroll on mobile) -->
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1 text-xs">
+        <button
+          type="button"
+          data-cat-filter="all"
+          class="shrink-0 px-3.5 py-1.5 rounded-xl font-bold border transition-all flex items-center gap-1.5 bg-primary text-white border-primary shadow-xs"
+        >
+          <span>{t(lang, 'products.allCategories')}</span>
+          <span class="chip-count px-1.5 py-0.2 rounded-full font-mono text-[10px] bg-white/20 text-white">
+            {totalMachines}
+          </span>
+        </button>
+
+        {categories.map((cat) => (
+          <button
+            type="button"
+            data-cat-filter={cat.id}
+            class="shrink-0 px-3.5 py-1.5 rounded-xl font-bold border transition-all flex items-center gap-1.5 bg-white text-slate-700 border-slate-200 hover:border-slate-300 shadow-xs"
+          >
+            <span>{cat.name[lang]}</span>
+            <span class="chip-count px-1.5 py-0.2 rounded-full font-mono text-[10px] bg-slate-100 text-slate-600">
+              {cat.count}
+            </span>
+          </button>
+        ))}
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Products Main Content Area -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+    <!-- Machines Grid -->
+    <div
+      id="products-grid"
+      class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-6"
+    >
+      {machines.map((machine, idx) => (
+        <MachineCard machine={machine} lang={lang} priority={idx < 8} />
+      ))}
+    </div>
+
+    <!-- Empty State -->
+    <div
+      id="products-empty"
+      class="hidden py-16 text-center max-w-md mx-auto bg-surface rounded-3xl p-8 border border-slate-200"
+    >
+      <div class="w-14 h-14 bg-slate-200 text-slate-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
+        <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h3 class="text-base font-bold text-navy mb-1">{t(lang, 'products.noResults')}</h3>
+      <p class="text-xs text-slate-500 mb-5 leading-relaxed">
+        {t(lang, 'products.noResultsDesc')}
+      </p>
+      <button
+        type="button"
+        id="empty-reset-btn"
+        class="inline-flex items-center px-4 py-2 text-xs font-bold text-white bg-primary hover:bg-primary-hover rounded-xl shadow-xs transition-colors"
+      >
+        {t(lang, 'products.resetFilters')}
+      </button>
+    </div>
+  </section>
+</Base>
+
+<script>
+  function setupProductsFilter() {
+    const searchInput = document.getElementById('products-search') as HTMLInputElement | null;
+    const clearBtn = document.getElementById('search-clear-btn');
+    const resetBtn = document.getElementById('reset-filter-btn');
+    const emptyResetBtn = document.getElementById('empty-reset-btn');
+    const countDisplay = document.getElementById('products-count');
+    const emptyState = document.getElementById('products-empty');
+    const grid = document.getElementById('products-grid');
+    const catChips = document.querySelectorAll<HTMLButtonElement>('[data-cat-filter]');
+    const cards = document.querySelectorAll<HTMLElement>('[data-machine-card]');
+
+    let activeCat = 'all';
+    let searchQuery = '';
+
+    function applyFilter() {
+      let visibleCount = 0;
+      const qTokens = searchQuery.trim().toLowerCase().split(/\s+/).filter(Boolean);
+
+      cards.forEach((card) => {
+        const cat = card.getAttribute('data-category') || '';
+        const searchStr = card.getAttribute('data-search') || '';
+
+        const matchCat = activeCat === 'all' || cat === activeCat;
+        const matchSearch =
+          qTokens.length === 0 ||
+          qTokens.every((tok) => searchStr.includes(tok) || searchStr.includes(tok.replace(/[\-_·.]/g, '')));
+
+        const isVisible = matchCat && matchSearch;
+        if (isVisible) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (countDisplay) {
+        countDisplay.textContent = String(visibleCount);
+      }
+
+      if (emptyState && grid) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      }
+
+      // Update reset button visibility
+      const hasActiveFilters = activeCat !== 'all' || searchQuery.trim().length > 0;
+      if (resetBtn) {
+        resetBtn.classList.toggle('hidden', !hasActiveFilters);
+      }
+      if (clearBtn) {
+        clearBtn.classList.toggle('hidden', searchQuery.trim().length === 0);
+      }
+
+      // Update chip states
+      catChips.forEach((chip) => {
+        const chipCat = chip.getAttribute('data-cat-filter');
+        const isSelected = chipCat === activeCat;
+        const countSpan = chip.querySelector('.chip-count');
+
+        if (isSelected) {
+          chip.classList.add('bg-primary', 'text-white', 'border-primary');
+          chip.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
+          if (countSpan) {
+            countSpan.classList.add('bg-white/20', 'text-white');
+            countSpan.classList.remove('bg-slate-100', 'text-slate-600');
+          }
+        } else {
+          chip.classList.remove('bg-primary', 'text-white', 'border-primary');
+          chip.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
+          if (countSpan) {
+            countSpan.classList.remove('bg-white/20', 'text-white');
+            countSpan.classList.add('bg-slate-100', 'text-slate-600');
+          }
+        }
+      });
+
+      // Keep URL in sync via history.replaceState
+      const params = new URLSearchParams(window.location.search);
+      if (activeCat && activeCat !== 'all') {
+        params.set('cat', activeCat);
+      } else {
+        params.delete('cat');
+      }
+      if (searchQuery.trim()) {
+        params.set('q', searchQuery.trim());
+      } else {
+        params.delete('q');
+      }
+
+      const queryString = params.toString();
+      const newUrl = queryString
+        ? `${window.location.pathname}?${queryString}`
+        : window.location.pathname;
+      window.history.replaceState({}, '', newUrl);
+    }
+
+    // Category chips click
+    catChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        const cat = chip.getAttribute('data-cat-filter') || 'all';
+        activeCat = cat;
+        applyFilter();
+      });
+    });
+
+    // Search input
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        searchQuery = searchInput.value;
+        applyFilter();
+      });
+    }
+
+    // Clear search button
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        searchInput.focus();
+        applyFilter();
+      });
+    }
+
+    // Reset filters
+    function resetAll() {
+      activeCat = 'all';
+      searchQuery = '';
+      if (searchInput) searchInput.value = '';
+      applyFilter();
+    }
+
+    if (resetBtn) resetBtn.addEventListener('click', resetAll);
+    if (emptyResetBtn) emptyResetBtn.addEventListener('click', resetAll);
+
+    // Initial state from URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const initCat = urlParams.get('cat');
+    const initQ = urlParams.get('q');
+
+    if (initCat) {
+      activeCat = initCat;
+    }
+    if (initQ) {
+      searchQuery = initQ;
+      if (searchInput) searchInput.value = initQ;
+    }
+
+    applyFilter();
+  }
+
+  setupProductsFilter();
+</script>

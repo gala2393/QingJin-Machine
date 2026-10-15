@@ -1,0 +1,191 @@
+{
+  "name": {
+    "zh": "青瑾机械",
+    "en": "QING JIN MACHINERY"
+  },
+  "tagline": {
+    "zh": "包装机械设备制造商",
+    "en": "Packaging Machinery Equipment Manufacturer"
+  },
+  "factoryPitch": {
+    "zh": "工厂直销，一件也是批发价，支持寄样免费测试",
+    "en": "Factory direct sales, one piece is also wholesale price, supporting free testing by sending samples"
+  },
+  "certPitch": {
+    "zh": "多重权威认证和检测，值得信赖",
+    "en": "Multiple authoritative certifications and testing, trustworthy"
+  },
+  "address": {
+    "zh": "福建省泉州市安溪县亿海车行后面荣耀物流园区1栋1梯4楼",
+    "en": "4th Floor, Elevator 1, Building 1, Glory Logistics Park, Chengxiang Town, Anxi County, Quanzhou City, Fujian Province, China"
+  },
+  "contact": {
+    "phone": "+86 000-0000-0000",
+    "email": "sales@example.com",
+    "whatsapp": "+86 000 0000 0000",
+    "wechat": "qingjin-machinery"
+  },
+  "formEndpoint": "",
+  "aboutImage": "/images/site/factory-1.webp",
+  "wechatQr": "",
+  "factoryPhotos": [
+    {
+      "image": "/images/site/batch-production.webp",
+      "title": {
+        "zh": "批量生产",
+        "en": "Batch Production"
+      },
+      "desc": {
+        "zh": "模块化规模生产，保障供货周期与稳定品质",
+        "en": "Modular scale manufacturing for steady lead time and quality"
+      }
+    },
+    {
+      "image": "/images/site/accessories.webp",
+      "title": {
+        "zh": "优质配件",
+        "en": "High Quality Accessories"
+      },
+      "desc": {
+        "zh": "精选高精度传感器、电机与电控元器件",
+        "en": "Premium sensors, motors, and electrical components"
+      }
+    },
+    {
+      "image": "/images/site/bending.webp",
+      "title": {
+        "zh": "专业折弯",
+        "en": "Professional Bending"
+      },
+      "desc": {
+        "zh": "数控精密折弯，机身结构稳固耐用",
+        "en": "CNC precision bending for rugged machine frames"
+      }
+    },
+    {
+      "image": "/images/site/laser.webp",
+      "title": {
+        "zh": "板金激光",
+        "en": "Sheet Metal Laser"
+      },
+      "desc": {
+        "zh": "高精度激光切割，无毛刺、尺寸公差严密",
+        "en": "High-precision laser cutting with tight tolerances"
+      }
+    },
+    {
+      "image": "/images/site/factory-1.webp",
+      "title": {
+        "zh": "装配生产车间一角",
+        "en": "Assembly Workshop Overview"
+      },
+      "desc": {
+        "zh": "宽敞整洁的装配工位与流水作业线",
+        "en": "Spacious workshop with standardized assembly bays"
+      }
+    },
+    {
+      "image": "/images/site/factory-2.webp",
+      "title": {
+        "zh": "数控加工与调试区",
+        "en": "CNC & Tooling Zone"
+      },
+      "desc": {
+        "zh": "严控每个钣金件与机械传动部件的装配精度",
+        "en": "Strict quality control across machining and fitting"
+      }
+    },
+    {
+      "image": "/images/site/factory-3.webp",
+      "title": {
+        "zh": "标准化装配线",
+        "en": "Standardized Assembly Line"
+      },
+      "desc": {
+        "zh": "全系列分装机与立式包装机成套总装",
+        "en": "Full lineup of filling and vertical packaging machines"
+      }
+    },
+    {
+      "image": "/images/site/factory-4.webp",
+      "title": {
+        "zh": "现货成品备货区",
+        "en": "Ready Machine Inventory"
+      },
+      "desc": {
+        "zh": "多规格畅销机型现货备齐，发货迅速",
+        "en": "Ample stock of core models for quick dispatch"
+      }
+    },
+    {
+      "image": "/images/site/factory-5.webp",
+      "title": {
+        "zh": "出厂综合试车平台",
+        "en": "Final Testing & Calibration Platform"
+      },
+      "desc": {
+        "zh": "整机连续空载与带料试车，确保100%可靠出厂",
+        "en": "Continuous dry run and load test prior to packaging"
+      }
+    }
+  ],
+  "certificates": [
+    {
+      "image": "/images/site/cert-1.webp",
+      "title": {
+        "zh": "EU TEST CE 欧盟符合性证书 (机械安全指令)",
+        "en": "EU TEST CE Attestation of Conformity (Machinery Directive)"
+      },
+      "type": "CE Certificate"
+    },
+    {
+      "image": "/images/site/cert-2.webp",
+      "title": {
+        "zh": "EU TEST CE 欧盟符合性证书 (电磁兼容指令 EMC)",
+        "en": "EU TEST CE Attestation of Conformity (EMC Directive)"
+      },
+      "type": "CE Certificate"
+    },
+    {
+      "image": "/images/site/cert-3.webp",
+      "title": {
+        "zh": "EU TEST CE 欧盟符合性证书 (低电压电气安全 LVD)",
+        "en": "EU TEST CE Attestation of Conformity (LVD Directive)"
+      },
+      "type": "CE Certificate"
+    },
+    {
+      "image": "/images/site/cert-4.webp",
+      "title": {
+        "zh": "CE 机械及电气安全综合认证证书",
+        "en": "CE Certificate of Machinery & Electrical Safety"
+      },
+      "type": "CE Compliance"
+    },
+    {
+      "image": "/images/site/cert-5.webp",
+      "title": {
+        "zh": "国家权威质检机构 · 设备检测报告 (一)",
+        "en": "National Testing Authority Inspection Report (Part 1)"
+      },
+      "type": "Inspection Report"
+    },
+    {
+      "image": "/images/site/cert-6.webp",
+      "title": {
+        "zh": "国家权威质检机构 · 设备检测报告 (二)",
+        "en": "National Testing Authority Inspection Report (Part 2)"
+      },
+      "type": "Inspection Report"
+    },
+    {
+      "image": "/images/site/cert-7.webp",
+      "title": {
+        "zh": "国家权威质检机构 · 设备检测报告 (三)",
+        "en": "National Testing Authority Inspection Report (Part 3)"
+      },
+      "type": "Inspection Report"
+    }
+  ],
+  "trackEndpoint": ""
+}

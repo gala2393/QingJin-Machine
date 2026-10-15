@@ -1,0 +1,42 @@
+---
+import type { MachineParam, Lang } from '../types';
+import { t } from '../i18n/ui';
+
+interface Props {
+  params: MachineParam[];
+  lang: Lang;
+}
+
+const { params, lang } = Astro.props;
+---
+
+<div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white shadow-xs">
+  <table class="w-full text-left text-sm">
+    <thead class="bg-surface text-xs uppercase text-slate-500 font-semibold border-b border-slate-200">
+      <tr>
+        <th scope="col" class="py-3.5 px-5 w-1/3 sm:w-2/5">
+          {t(lang, 'detail.paramName')}
+        </th>
+        <th scope="col" class="py-3.5 px-5">
+          {t(lang, 'detail.paramValue')}
+        </th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-slate-100">
+      {params.map((item, idx) => {
+        const label = item[lang] || item.zh;
+        const value = item[`value_${lang}`] || item.value_zh;
+        return (
+          <tr class={idx % 2 === 0 ? 'bg-white' : 'bg-slate-50/50'}>
+            <th scope="row" class="py-3 px-5 font-medium text-slate-700 whitespace-nowrap align-top">
+              {label}
+            </th>
+            <td class="py-3 px-5 text-navy font-medium align-top leading-relaxed">
+              {value}
+            </td>
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</div>

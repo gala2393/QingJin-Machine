@@ -1,0 +1,30 @@
+---
+// Root redirect page to /zh/ or /en/
+---
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/zh/" />
+    <title>青瑾机械 | QING JIN MACHINERY</title>
+    <script is:inline>
+      (function () {
+        var userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+        var target = userLang.startsWith('zh') ? '/zh/' : '/en/';
+        window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body style="background:#f4f6fa;margin:0;display:flex;align-items:center;justify-content:center;height:100vh;font-family:sans-serif;color:#0f2754;">
+    <div style="text-align:center;padding:20px;">
+      <h1 style="font-size:1.25rem;margin-bottom:12px;">青瑾机械 · QING JIN MACHINERY</h1>
+      <p style="font-size:0.9rem;color:#64748b;margin-bottom:16px;">Redirecting / 正在跳转...</p>
+      <div style="display:flex;gap:12px;justify-content:center;">
+        <a href="/zh/" style="color:#1f4fae;font-weight:bold;text-decoration:none;">中文版 (ZH)</a>
+        <span>|</span>
+        <a href="/en/" style="color:#1f4fae;font-weight:bold;text-decoration:none;">English (EN)</a>
+      </div>
+    </div>
+  </body>
+</html>

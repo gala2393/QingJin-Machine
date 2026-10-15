@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1f4fae;
+  --color-primary-hover: #163d8b;
+  --color-primary-light: #eef4ff;
+  --color-brand-blue: #2f7cf6;
+  --color-brand-yellow: #f6c244;
+  --color-brand-orange: #f26b3a;
+  --color-navy: #0f2754;
+  --color-navy-light: #183a78;
+  --color-surface: #f4f6fa;
+  --color-surface-card: #ffffff;
+  --font-sans: "Inter", "Source Han Sans SC", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    color: var(--color-navy);
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar for horizontal chip bars */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

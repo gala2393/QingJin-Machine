@@ -1,0 +1,312 @@
+---
+import Base from '../../../layouts/Base.astro';
+import type { Lang } from '../../../types';
+import { t, formatLocaleUrl } from '../../../i18n/ui';
+import { siteInfo, machines, categories, catalogCounts, PLACEHOLDER_SVG } from '../../../utils';
+
+export function getStaticPaths() {
+  return [{ params: { lang: 'zh' } }, { params: { lang: 'en' } }];
+}
+
+const { lang } = Astro.params as { lang: Lang };
+
+const { factoryPhotos, certificates: certs, aboutImage } = siteInfo;
+const { models: machineCount, series: categoryCount } = catalogCounts;
+const activeCategories = categories.filter((c) => machines.some((m) => m.category === c.id));
+const seriesNamesZh = activeCategories.map((c) => c.name.zh).join('、');
+const seriesNamesEn = activeCategories.map((c) => c.name.en || c.name.zh).join(', ');
+---
+
+<Base
+  lang={lang}
+  title={t(lang, 'about.title')}
+  description={`${siteInfo.name[lang]} · ${siteInfo.tagline[lang]} · ${siteInfo.address[lang]}`}
+>
+  <!-- Page Header -->
+  <div class="bg-surface border-b border-slate-200/80 pt-10 pb-8 sm:pt-14 sm:pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-navy tracking-tight mb-2">
+          {t(lang, 'about.title')}
+        </h1>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          {t(lang, 'about.subtitle')}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company Introduction Narrative -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 border-b border-slate-200/70">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-7 space-y-5 text-slate-700 leading-relaxed text-sm sm:text-base">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-bold">
+          <span>{lang === 'zh' ? '源头实力工厂' : 'Source Manufacturer'}</span>
+        </div>
+
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight">
+          {t(lang, 'about.introTitle')}
+        </h2>
+
+        {lang === 'zh' ? (
+          <>
+            <p>
+              <strong>青瑾机械（QING JIN MACHINERY）</strong> 坐落于中国福建省泉州市安溪县荣耀物流园区，是一家集自主研发、制造、销售及全方位技术支持于一体的现代化包装机械设备制造商。
+            </p>
+            <p>
+              公司主营产品涵盖 <strong>{seriesNamesZh}</strong> 等 {categoryCount} 大核心系列、{machineCount} 款规格型号，广泛服务于食品调味、茶叶咖啡、中药粉体、日化洗护、五金零件等众多行业的自动化包装需求。
+            </p>
+            <p>
+              青瑾机械始终秉持 <strong>“工厂直销，一件也是批发价”</strong> 的惠民原则，剔除一切中间商环节，让利终端客户。我们深知每种物料在密度、流动性、防潮性上的差异，特推出 <strong>“支持寄样免费测试”</strong> 服务，由资深工程师在工厂实机录制试包视频，确认封口效果与包装精度无误后再行发货，真正做到买得放心、用得省心。
+            </p>
+            <p>
+              全系列产品严把质量关，已通过欧盟 CE 机械指令（Machinery Directive）及电磁兼容指令（EMC）权威认证，并持有国家质检机构的严苛检测报告，产品兼备高精度、高耐用性与操作便捷性，深受国内外客户好评。
+            </p>
+          </>
+        ) : (
+          <>
+            <p>
+              <strong>QING JIN MACHINERY</strong> is a specialized packaging machinery manufacturer located in Glory Logistics Park, Chengxiang Town, Anxi County, Quanzhou City, Fujian Province, China. We integrate R&D, sheet metal fabrication, precision assembly, and dedicated after-sales support.
+            </p>
+            <p>
+              Our comprehensive equipment line comprises <strong>{seriesNamesEn}</strong> across {categoryCount} core categories and {machineCount} standardized models.
+            </p>
+            <p>
+              We firmly adopt the <strong>“Factory Direct Sales with Wholesale Pricing”</strong> principle, eliminating middleman distributor markups. Recognizing the distinct properties of various raw materials, we offer <strong>Free Sample Testing</strong> before ordering: send us your samples, and our engineering team will record detailed video demonstrations of the machine packaging your actual materials.
+            </p>
+            <p>
+              Certified under the European Union CE Machinery Directive and EMC Electromagnetic Compatibility Directive, and validated by national quality inspection testing reports, Qing Jin machines deliver dependable performance, tight sealing precision, and lasting durability for clients globally.
+            </p>
+          </>
+        )}
+
+        <div class="pt-2 flex flex-wrap gap-4 text-xs font-semibold">
+          <div class="flex items-center gap-2 p-3 bg-slate-50 border border-slate-200 rounded-xl">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+            <span>{siteInfo.factoryPitch[lang]}</span>
+          </div>
+          <div class="flex items-center gap-2 p-3 bg-slate-50 border border-slate-200 rounded-xl">
+            <span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+            <span>{siteInfo.certPitch[lang]}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 space-y-4">
+        {aboutImage && (
+          <div class="bg-white rounded-3xl p-3 border border-slate-200 shadow-lg overflow-hidden">
+            <img
+              src={aboutImage}
+              alt={lang === 'zh' ? `${siteInfo.name.zh}车间实景` : `${siteInfo.name.en} Factory Workshop`}
+              class="rounded-2xl w-full h-auto object-cover"
+              width="600"
+              height="400"
+              onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+            />
+          </div>
+        )}
+        <div class="p-5 bg-surface rounded-2xl border border-slate-200 text-xs text-slate-600 space-y-2">
+          <p class="font-bold text-navy text-sm">{siteInfo.name[lang]}</p>
+          <p><span class="font-semibold">{t(lang, 'contact.factoryAddress')}:</span> {siteInfo.address[lang]}</p>
+          <p><span class="font-semibold">{lang === 'zh' ? '主营系列' : 'Main Lines'}:</span> 分装机 / 包装机 / 液体膏体灌装机 / 真空机 / 上料机 / 传送带</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Factory & Process Gallery (9 Images) -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 border-b border-slate-200/70">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight mb-2">
+        {t(lang, 'about.galleryTitle')}
+      </h2>
+      <p class="text-slate-600 text-sm sm:text-base">
+        {t(lang, 'about.gallerySubtitle')}
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {factoryPhotos.map((item) => (
+        <div class="group bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-xs hover:shadow-lg transition-all duration-300">
+          <div class="aspect-4/3 bg-slate-100 overflow-hidden relative">
+            <img
+              src={item.image}
+              alt={item.title[lang]}
+              loading="lazy"
+              decoding="async"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+            />
+          </div>
+          <div class="p-4 sm:p-5">
+            <h3 class="font-bold text-base text-navy group-hover:text-primary transition-colors">
+              {item.title[lang]}
+            </h3>
+            <p class="text-xs text-slate-500 mt-1">
+              {item.desc[lang]}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Certificates Gallery & Lightbox -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-navy tracking-tight mb-2">
+        {t(lang, 'about.certsTitle')}
+      </h2>
+      <p class="text-slate-600 text-sm sm:text-base">
+        {t(lang, 'about.certsSubtitle')}
+      </p>
+    </div>
+
+    <!-- Cert Cards (Click to open Lightbox) -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+      {certs.map((c, idx) => (
+        <button
+          type="button"
+          data-cert-lightbox-trigger
+          data-src={c.image}
+          data-title={c.title[lang]}
+          data-index={idx}
+          class="group text-left bg-white p-3 sm:p-4 rounded-2xl border border-slate-200 hover:border-primary shadow-xs hover:shadow-lg transition-all duration-200 cursor-zoom-in focus:outline-hidden focus:ring-2 focus:ring-primary"
+        >
+          <div class="w-full aspect-3/4 bg-slate-50 rounded-xl overflow-hidden p-2 flex items-center justify-center mb-3">
+            <img
+              src={c.image}
+              alt={c.title[lang]}
+              loading="lazy"
+              decoding="async"
+              class="max-h-full max-w-full object-contain group-hover:scale-103 transition-transform"
+              onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+            />
+          </div>
+          <div class="space-y-1">
+            <span class="inline-block px-2 py-0.5 rounded-md text-[10px] font-bold bg-primary-light text-primary uppercase">
+              {c.type}
+            </span>
+            <p class="text-xs font-bold text-navy line-clamp-2 group-hover:text-primary transition-colors">
+              {c.title[lang]}
+            </p>
+          </div>
+        </button>
+      ))}
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div
+      id="cert-lightbox"
+      class="hidden fixed inset-0 z-50 bg-navy/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 transition-opacity"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="lightbox-caption"
+    >
+      <div class="relative max-w-3xl w-full max-h-[92vh] flex flex-col items-center">
+        <!-- Close Button -->
+        <button
+          id="lightbox-close-btn"
+          type="button"
+          class="absolute -top-12 right-0 sm:right-2 p-2 rounded-full text-white/80 hover:text-white hover:bg-white/10 transition-colors focus:outline-hidden"
+          aria-label={t(lang, 'about.lightboxClose')}
+        >
+          <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+
+        <!-- Enlarged Image -->
+        <div class="bg-white rounded-2xl p-3 sm:p-4 shadow-2xl max-h-[78vh] flex items-center justify-center overflow-hidden">
+          <img
+            id="lightbox-img"
+            src=""
+            alt=""
+            class="max-h-[72vh] max-w-full object-contain rounded-lg"
+          />
+        </div>
+
+        <!-- Caption -->
+        <p
+          id="lightbox-caption"
+          class="mt-3 text-center text-sm font-semibold text-white/90 max-w-xl truncate px-2"
+        ></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-surface py-12 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 text-center space-y-4">
+      <h3 class="text-xl sm:text-2xl font-bold text-navy">
+        {lang === 'zh' ? '欢迎寄样测试与莅临工厂指导' : 'Welcome Sample Testing & Factory Visit'}
+      </h3>
+      <p class="text-xs sm:text-sm text-slate-600">
+        {siteInfo.address[lang]}
+      </p>
+      <div class="pt-2">
+        <a
+          href={formatLocaleUrl(lang, '/contact/')}
+          class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white bg-primary hover:bg-primary-hover shadow-md text-xs sm:text-sm"
+        >
+          <span>{t(lang, 'nav.contact')}</span>
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  function setupLightbox() {
+    const triggers = document.querySelectorAll<HTMLButtonElement>('[data-cert-lightbox-trigger]');
+    const lightbox = document.getElementById('cert-lightbox');
+    const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement | null;
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeBtn = document.getElementById('lightbox-close-btn');
+
+    if (!lightbox || !lightboxImg || !lightboxCaption) return;
+
+    function openModal(src: string, title: string) {
+      if (!lightboxImg || !lightboxCaption || !lightbox) return;
+      lightboxImg.src = src;
+      lightboxImg.alt = title;
+      lightboxCaption.textContent = title;
+      lightbox.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      if (!lightbox) return;
+      lightbox.classList.add('hidden');
+      document.body.style.overflow = '';
+      if (lightboxImg) lightboxImg.src = '';
+    }
+
+    triggers.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const src = btn.getAttribute('data-src') || '';
+        const title = btn.getAttribute('data-title') || '';
+        openModal(src, title);
+      });
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeModal();
+      }
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
+        closeModal();
+      }
+    });
+  }
+
+  setupLightbox();
+</script>
