@@ -6,6 +6,7 @@ import { BarChart, LineChart, PieChart } from 'echarts/charts'
 import { GridComponent, LegendComponent, TooltipComponent } from 'echarts/components'
 import VChart from 'vue-echarts'
 import { ArrowDown, ArrowUp, Refresh } from '@element-plus/icons-vue'
+import CountTo from '@/components/CountTo.vue'
 import RankList, { type RankItem } from '@/components/RankList.vue'
 import { statsApi } from '@/api'
 import { useAuthStore } from '@/stores/auth'
@@ -215,7 +216,7 @@ const zeroSearches = computed<RankItem[]>(
 const trendOption = computed(() => {
   const t = overview.value?.trend ?? []
   return {
-    color: ['#2563eb', '#10b981', '#f59e0b'],
+    color: ['#5d87ff', '#13deb9', '#ffae1f'],
     tooltip: {
       trigger: 'axis',
       backgroundColor: 'rgba(15, 23, 42, 0.9)',
@@ -262,8 +263,8 @@ const trendOption = computed(() => {
             x2: 0,
             y2: 1,
             colorStops: [
-              { offset: 0, color: 'rgba(37, 99, 235, 0.22)' },
-              { offset: 1, color: 'rgba(37, 99, 235, 0.01)' },
+              { offset: 0, color: 'rgba(93, 135, 255, 0.22)' },
+              { offset: 1, color: 'rgba(93, 135, 255, 0.01)' },
             ],
           },
         },
@@ -304,7 +305,7 @@ const trendOption = computed(() => {
 })
 
 const deviceOption = computed(() => ({
-  color: ['#2563eb', '#10b981', '#f59e0b', '#8b5cf6'],
+  color: ['#5d87ff', '#13deb9', '#ffae1f', '#8b5cf6'],
   tooltip: {
     trigger: 'item',
     formatter: '{b}：{c}（{d}%）',
@@ -366,8 +367,8 @@ const channelOption = computed(() => {
             x2: 1,
             y2: 0,
             colorStops: [
-              { offset: 0, color: '#60a5fa' },
-              { offset: 1, color: '#2563eb' },
+              { offset: 0, color: '#8eabff' },
+              { offset: 1, color: '#5d87ff' },
             ],
           },
         },
@@ -394,7 +395,7 @@ const channelOption = computed(() => {
       <el-col :xs="12" :md="6">
         <el-card shadow="never" class="stat">
           <div class="label">机型总数</div>
-          <div class="value">{{ summary?.machines.total ?? '--' }}</div>
+          <div class="value"><CountTo v-if="summary" :target="summary.machines.total" /><template v-else>--</template></div>
           <div v-if="summary" class="hint">
             已上架 {{ summary.machines.published }} · 草稿 {{ summary.machines.draft }} · 隐藏 {{ summary.machines.hidden }}
           </div>
@@ -403,7 +404,7 @@ const channelOption = computed(() => {
       <el-col :xs="12" :md="6">
         <el-card shadow="never" class="stat">
           <div class="label">分类数量</div>
-          <div class="value">{{ summary?.categories ?? '--' }}</div>
+          <div class="value"><CountTo v-if="summary" :target="summary.categories" /><template v-else>--</template></div>
           <div class="hint"><RouterLink to="/categories">管理分类</RouterLink></div>
         </el-card>
       </el-col>
@@ -422,7 +423,9 @@ const channelOption = computed(() => {
       <el-col :xs="12" :md="6">
         <el-card shadow="never" class="stat">
           <div class="label">今日</div>
-          <div class="value">{{ summary?.today.pv ?? '--' }}<small> 浏览</small></div>
+          <div class="value">
+            <CountTo v-if="summary" :target="summary.today.pv" /><template v-else>--</template><small> 浏览</small>
+          </div>
           <div v-if="summary" class="hint">访客 {{ summary.today.uv }} · 询盘 {{ summary.today.inquiries }}</div>
         </el-card>
       </el-col>
@@ -465,7 +468,7 @@ const channelOption = computed(() => {
         <div class="kpis">
           <el-card v-for="k in KPIS" :key="k.key" shadow="never" class="kpi">
             <div class="label">{{ k.label }}</div>
-            <div class="value">{{ overview.totals[k.key].toLocaleString() }}</div>
+            <div class="value"><CountTo :target="overview.totals[k.key]" /></div>
             <div class="hint">
               <template v-if="change(k.key) === null">—</template>
               <span v-else :class="change(k.key)! >= 0 ? 'up' : 'down'">

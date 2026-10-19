@@ -20,6 +20,13 @@ enum MachineStatus {
   HIDDEN
 }
 
+enum VideoStatus {
+  UPLOADING
+  PROCESSING
+  READY
+  FAILED
+}
+
 enum ReleaseStatus {
   PENDING
   BUILDING
@@ -109,10 +116,13 @@ model Machine {
   updatedAt     DateTime       @updatedAt
   params        MachineParam[]
   images        MachineImage[]
+  videoId       String?
+  video         Video?         @relation(fields: [videoId], references: [id], onDelete: SetNull)
 
   @@index([categoryId, sort])
   @@index([status])
   @@index([modelKey])
+  @@index([videoId])
 }
 
 model MachineParam {
@@ -155,6 +165,30 @@ model MachineImage {
 
   @@unique([machineId, mediaId])
   @@index([machineId, sort])
+}
+
+/// Product video: uploaded in chunks, then transcoded into an HD and an SD MP4 plus a poster frame.
+model Video {
+  id           String      @id @default(cuid())
+  originalName String?
+  mime         String?
+  sourceSize   Int
+  chunkSize    Int
+  status       VideoStatus @default(UPLOADING)
+  error        String?
+  hdPath       String?
+  sdPath       String?
+  posterPath   String?
+  width        Int?
+  height       Int?
+  duration     Float?
+  hdSize       Int?
+  sdSize       Int?
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  machines     Machine[]
+
+  @@index([status])
 }
 
 model SiteSetting {

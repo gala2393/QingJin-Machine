@@ -1,0 +1,36 @@
+# Apply after docker-compose.yml, always using project name qingjin.
+name: qingjin
+services:
+  db:
+    mem_limit: 256m
+    command: [postgres, -c, shared_buffers=32MB, -c, max_connections=30]
+  api:
+    build:
+      args:
+        DEBIAN_MIRROR: mirrors.cloud.tencent.com
+    mem_limit: 896m
+    environment:
+      NODE_OPTIONS: --max-old-space-size=512
+      SITE_URL: https://api.learnstudy.cloud
+      PREVIEW_PUBLIC_URL: https://admin.learnstudy.cloud
+      TRUST_PROXY: 2
+      KEEP_RELEASES: 3
+    image: local/qingjin-api:tencent
+  backup:
+    mem_limit: 128m
+  nginx:
+    mem_limit: 64m
+    ports: !reset []
+    volumes: !override
+      - ./nginx.tencent.conf:/etc/nginx/conf.d/default.conf:ro
+      - publish:/srv/publish:ro
+      - ../admin/dist:/srv/admin:ro
+      - uploads:/srv/uploads:ro
+    networks:
+      default:
+      ingress:
+        aliases: [qingjin-web]
+networks:
+  ingress:
+    external: true
+    name: learning-assistant_learning-net

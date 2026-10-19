@@ -3,7 +3,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://www.qingjin-machinery.com',
+  site: process.env.SITE_URL || 'https://www.qingjin-machinery.com',
   output: 'static',
   vite: {
     plugins: [tailwindcss()],

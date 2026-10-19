@@ -140,6 +140,7 @@ export class MachineInputDto {
   @IsOptional() @IsString() @MaxLength(500) seoDescZh?: string | null;
   @IsOptional() @IsString() @MaxLength(500) seoDescEn?: string | null;
   @IsOptional() @IsString() @MaxLength(5000) notes?: string | null;
+  @IsOptional() @IsString() @MaxLength(64) videoId?: string | null;
 
   @IsArray()
   @ArrayMaxSize(100)

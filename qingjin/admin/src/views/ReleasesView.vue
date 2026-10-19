@@ -366,11 +366,21 @@ async function openLog(r: Release) {
             <el-tag v-if="preview" :type="PREVIEW_TAG[preview.status]" size="small">
               {{ PREVIEW_LABELS[preview.status] }}
             </el-tag>
+            <el-tag v-if="preview?.status === 'ready' && preview.outdated" type="warning" size="small">
+              内容已修改，预览已过期
+            </el-tag>
             <span v-if="preview?.status === 'ready' && preview.builtAt" class="muted">
               生成于 {{ formatTime(preview.builtAt) }}
               <template v-if="startedByText(preview)">（{{ startedByText(preview) }}）</template>
             </span>
-            <el-button v-if="canEdit" :disabled="busy || acting" @click="buildPreview">生成预览</el-button>
+            <el-button
+              v-if="canEdit"
+              :type="preview?.outdated ? 'warning' : undefined"
+              :disabled="busy || acting"
+              @click="buildPreview"
+            >
+              {{ preview?.outdated ? '重新生成预览' : '生成预览' }}
+            </el-button>
             <el-button v-if="preview?.status === 'ready'" type="success" plain :icon="View" @click="openPreview">
               打开预览
             </el-button>

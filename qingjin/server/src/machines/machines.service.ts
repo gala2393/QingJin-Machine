@@ -5,6 +5,7 @@ import { compactModel, mediaUrl } from '../common/media-url';
 import { blankToNull } from '../common/patterns';
 import { Prisma } from '../generated/prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
+import { videoView } from '../videos/video-view';
 import { BatchAction, ListMachinesQuery, MachineInputDto } from './machines.dto';
 
 type Tx = Prisma.TransactionClient;
@@ -13,13 +14,14 @@ const DETAIL_INCLUDE = {
   category: { select: { id: true, slug: true, nameZh: true, nameEn: true } },
   params: { orderBy: { sort: 'asc' } },
   images: { orderBy: { sort: 'asc' }, include: { media: true } },
+  video: true,
 } satisfies Prisma.MachineInclude;
 
 type MachineWithDetail = Prisma.MachineGetPayload<{ include: typeof DETAIL_INCLUDE }>;
 
 const SCALAR_FIELDS = [
   'slug', 'model', 'categoryId', 'nameZh', 'nameEn', 'summaryZh', 'summaryEn', 'status', 'featured',
-  'seoTitleZh', 'seoTitleEn', 'seoDescZh', 'seoDescEn', 'notes',
+  'seoTitleZh', 'seoTitleEn', 'seoDescZh', 'seoDescEn', 'notes', 'videoId',
 ] as const;
 
 function toDetail(m: MachineWithDetail) {
@@ -41,6 +43,7 @@ function toDetail(m: MachineWithDetail) {
     seoDescZh: m.seoDescZh,
     seoDescEn: m.seoDescEn,
     notes: m.notes,
+    videoId: m.videoId,
     createdAt: m.createdAt,
     updatedAt: m.updatedAt,
     params: m.params.map((p) => ({ key: p.key, labelZh: p.labelZh, labelEn: p.labelEn, valueZh: p.valueZh, valueEn: p.valueEn })),
@@ -51,6 +54,7 @@ function toDetail(m: MachineWithDetail) {
       height: i.media.height,
       isCover: i.isCover,
     })),
+    video: m.video ? videoView(m.video) : null,
   };
 }
 
@@ -174,6 +178,12 @@ export class MachinesService {
       const found = await tx.media.count({ where: { id: { in: mediaIds } } });
       if (found !== mediaIds.length) throw new BadRequestException('部分图片不存在，可能已被删除');
     }
+    if (dto.videoId) {
+      const video = await tx.video.findUnique({ where: { id: dto.videoId }, select: { status: true } });
+      if (!video) throw new BadRequestException('视频不存在，可能已被删除');
+      if (video.status === 'UPLOADING') throw new BadRequestException('视频还没有上传完成');
+      if (video.status === 'FAILED') throw new BadRequestException('视频处理失败，请重新上传或移除');
+    }
     let coverIdx = dto.images.findIndex((i) => i.isCover);
     if (coverIdx < 0) coverIdx = 0;
 
@@ -193,6 +203,7 @@ export class MachinesService {
       seoDescZh: blankToNull(dto.seoDescZh),
       seoDescEn: blankToNull(dto.seoDescEn),
       notes: blankToNull(dto.notes),
+      videoId: dto.videoId || null,
     };
     const params = dto.params.map((p, i) => ({
       key: p.key,

@@ -94,15 +94,10 @@ function goPublish() {
 </script>
 
 <template>
-  <div class="side">
+  <div class="side" :class="{ collapsed: collapse }">
     <RouterLink to="/dashboard" class="brand" @click="emit('navigate')">
-      <div class="logo-box">
-        <img :src="logoUrl" alt="青瑾机械" />
-      </div>
-      <div v-show="!collapse" class="brand-info">
-        <span class="brand-title">青瑾机械</span>
-        <span class="brand-subtitle">后台管理</span>
-      </div>
+      <img :src="logoUrl" alt="青瑾机械" class="logo" />
+      <span v-show="!collapse" class="brand-title">青瑾机械后台</span>
     </RouterLink>
 
     <div class="menu-wrap">
@@ -111,9 +106,6 @@ function goPublish() {
         :collapse="collapse"
         :collapse-transition="false"
         router
-        background-color="transparent"
-        text-color="var(--qj-sidebar-text)"
-        active-text-color="var(--qj-sidebar-active)"
         class="menu"
         @select="emit('navigate')"
       >
@@ -176,132 +168,103 @@ function goPublish() {
   height: 100%;
   display: flex;
   flex-direction: column;
-  background: var(--qj-sidebar-bg);
-  border-right: 1px solid var(--qj-sidebar-border);
+  background: var(--default-box-color);
+  border-right: 1px solid var(--art-card-border);
+  user-select: none;
 }
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
   height: var(--qj-header-height);
-  padding: 0 16px;
-  color: #fff;
+  flex-shrink: 0;
+  padding-left: 22px;
+  overflow: hidden;
+  white-space: nowrap;
   text-decoration: none;
-  border-bottom: 1px solid var(--qj-sidebar-border);
-  transition: background 0.15s ease;
 }
 
-.brand:hover {
-  background: rgba(255, 255, 255, 0.03);
-}
-
-.logo-box {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  display: flex;
-  align-items: center;
+.side.collapsed .brand {
   justify-content: center;
+  padding-left: 0;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 
-.logo-box img {
-  width: 22px;
-  height: 22px;
-  object-fit: contain;
-}
-
-.brand-info {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .brand-title {
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  color: #ffffff;
-}
-
-.brand-subtitle {
-  font-size: 11px;
-  color: #64748b;
-  letter-spacing: 0.05em;
-  font-weight: 500;
+  margin-left: 10px;
+  font-size: 18px;
+  color: var(--art-gray-800);
 }
 
 .menu-wrap {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 10px 0;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+}
+
+.menu-wrap::-webkit-scrollbar {
+  width: 0;
 }
 
 .menu {
+  --el-menu-bg-color: transparent;
+  --el-menu-hover-bg-color: var(--art-gray-200);
+  --el-menu-text-color: #29343d;
+  --el-menu-active-color: var(--theme-color);
   border-right: none;
 }
 
 .menu :deep(.el-menu-item) {
   position: relative;
-  margin: 2px 10px;
+  width: calc(100% - 16px);
+  height: 42px;
+  line-height: 42px;
+  margin: 0 0 4px 8px;
   padding-right: 12px;
-  border-radius: 8px;
-  height: 40px;
-  line-height: 40px;
-  color: #94a3b8;
-  transition: background 0.2s ease, color 0.2s ease;
-  font-weight: 500;
-  font-size: 13.5px;
+  border-radius: 6px;
+  transition: background-color 0s;
 }
 
-.menu :deep(.el-menu-item::before) {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 9px;
-  bottom: 9px;
-  width: 3px;
-  border-radius: 0 3px 3px 0;
-  background: #f6c244;
-  opacity: 0;
-  transform: scaleY(0.4);
-  transition: opacity 0.2s ease, transform 0.2s ease;
+.menu:not(.el-menu--collapse) :deep(.el-menu-item) {
+  padding-left: 18px !important;
 }
 
-.menu :deep(.el-menu-item:hover) {
-  background: rgba(255, 255, 255, 0.05);
-  color: #e2e8f0;
+.menu :deep(.el-menu-item:not(.is-active):hover) {
+  background: var(--art-gray-200);
 }
 
 .menu :deep(.el-menu-item.is-active) {
-  background: rgba(255, 255, 255, 0.1) !important;
-  color: #ffffff !important;
-  font-weight: 600;
-}
-
-.menu :deep(.el-menu-item.is-active::before) {
-  opacity: 1;
-  transform: scaleY(1);
-}
-
-.menu :deep(.el-menu-item.is-active .menu-icon) {
-  color: #f6c244;
+  color: var(--theme-color);
+  background-color: var(--el-color-primary-light-9);
 }
 
 .menu-icon {
   position: relative;
-  font-size: 17px;
-  margin-right: 10px;
+  margin-right: 8px;
+  font-size: 20px;
+  color: #6b6b6b;
+}
+
+.menu :deep(.el-menu-item.is-active .menu-icon) {
+  color: var(--theme-color);
+}
+
+.menu.el-menu--collapse :deep(.el-menu-item .menu-icon) {
+  margin-right: 0;
 }
 
 .menu-label {
   flex: 1;
   min-width: 0;
+  font-size: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -310,68 +273,74 @@ function goPublish() {
   flex-shrink: 0;
   min-width: 20px;
   height: 18px;
-  padding: 0 6px;
+  padding: 0 5px;
   margin-left: 8px;
-  border-radius: 9px;
-  font-size: 11px;
-  font-weight: 700;
+  border-radius: 4px;
+  font-size: 10px;
   line-height: 18px;
   text-align: center;
+  color: #fff;
 }
 
 .menu-badge.warn {
-  background: #f6c244;
-  color: #3b2a00;
+  background: var(--el-color-warning);
 }
 
 .menu-badge.alert {
-  background: rgba(242, 107, 58, 0.18);
-  color: #ff9a6e;
-  border: 1px solid rgba(242, 107, 58, 0.45);
-  line-height: 16px;
+  background: #fd4e4e;
 }
 
 .icon-dot {
   position: absolute;
   top: -2px;
   right: -3px;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  border: 1.5px solid var(--qj-sidebar-bg);
+  animation: breathe 1.5s ease-in-out infinite;
 }
 
 .icon-dot.warn {
-  background: #f6c244;
+  background: var(--el-color-warning);
 }
 
 .icon-dot.alert {
-  background: #f26b3a;
+  background: #ff3860;
 }
 
-/* ---------- 底部：发布状态 + 访问官网 ---------- */
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+/* ---------- Footer: publish status + site link ---------- */
 .side-footer {
   display: flex;
   flex-direction: column;
   gap: 8px;
   padding: 12px;
-  border-top: 1px solid var(--qj-sidebar-border);
-  background: rgba(0, 0, 0, 0.15);
 }
 
 .publish-card {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 10px 12px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 12px;
+  border-radius: calc(var(--custom-radius) / 2 + 2px);
+  background: var(--art-gray-100);
+  border: 1px solid var(--art-card-border);
 }
 
 .publish-card.pending {
-  background: rgba(246, 194, 68, 0.1);
-  border-color: rgba(246, 194, 68, 0.35);
+  background: var(--el-color-warning-light-9);
+  border-color: var(--el-color-warning-light-7);
 }
 
 .publish-head {
@@ -382,7 +351,7 @@ function goPublish() {
 }
 
 .ok-icon {
-  color: #10b981;
+  color: var(--el-color-success);
   font-size: 14px;
 }
 
@@ -390,39 +359,36 @@ function goPublish() {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #f6c244;
-  box-shadow: 0 0 0 0 rgba(246, 194, 68, 0.7);
+  background: var(--el-color-warning);
   animation: pulse 2s infinite;
   flex-shrink: 0;
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(246, 194, 68, 0.7); }
-  70% { box-shadow: 0 0 0 6px rgba(246, 194, 68, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(246, 194, 68, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 174, 31, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(255, 174, 31, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 174, 31, 0);
+  }
 }
 
 .publish-title {
   flex: 1;
-  color: #e2e8f0;
-  font-weight: 600;
+  color: var(--art-gray-800);
+  font-weight: 500;
 }
 
 .version {
-  color: #64748b;
+  color: var(--art-gray-500);
   font-size: 11px;
-  font-weight: 500;
 }
 
 .publish-btn {
   width: 100%;
-  font-weight: 600;
-  --el-button-bg-color: #f6c244;
-  --el-button-border-color: #f6c244;
-  --el-button-text-color: #3b2a00;
-  --el-button-hover-bg-color: #f8cf63;
-  --el-button-hover-border-color: #f8cf63;
-  --el-button-hover-text-color: #3b2a00;
 }
 
 .site-link {
@@ -431,15 +397,15 @@ function goPublish() {
   justify-content: center;
   gap: 4px;
   padding: 7px 10px;
-  border-radius: 8px;
-  color: #94a3b8;
+  border-radius: 6px;
+  color: var(--art-gray-600);
   font-size: 12px;
   text-decoration: none;
   transition: background 0.2s ease, color 0.2s ease;
 }
 
 .site-link:hover {
-  background: rgba(255, 255, 255, 0.06);
-  color: #f8fafc;
+  background: var(--art-gray-200);
+  color: var(--theme-color);
 }
 </style>

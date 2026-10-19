@@ -99,7 +99,7 @@ async function submit() {
           <h1>让每一台好机器<br />都被客户看见</h1>
           <p>在这里维护机型与图片、修改站点信息，预览确认后一键发布到中英文官网。</p>
           <ul class="hero-points">
-            <li v-for="h in highlights" :key="h.title">
+            <li v-for="(h, i) in highlights" :key="h.title" :style="{ animationDelay: `${0.35 + i * 0.12}s` }">
               <b>{{ h.title }}</b>
               <span>{{ h.desc }}</span>
             </li>
@@ -111,6 +111,21 @@ async function submit() {
     </aside>
 
     <main class="panel">
+      <div class="geo" aria-hidden="true">
+        <i class="geo-el circle-outline fade-up"></i>
+        <i class="geo-el square-rotated fade-left-rotated"></i>
+        <i class="geo-el circle-small fade-up" style="animation-delay: 0.3s"></i>
+        <i class="geo-el square-bottom-right fade-right-rotated"></i>
+        <i class="geo-el bg-bubble scale-in" style="animation-delay: 0.5s"></i>
+        <i class="geo-el dot dot-top-left bounce-in"></i>
+        <i class="geo-el dot dot-center-right bounce-in" style="animation-delay: 0.15s"></i>
+        <div class="squares-group">
+          <i class="geo-el square square-a fade-left-a" style="animation-delay: 0.2s"></i>
+          <i class="geo-el square square-b fade-left-b" style="animation-delay: 0.4s"></i>
+          <i class="geo-el square square-c fade-left" style="animation-delay: 0.6s"></i>
+        </div>
+      </div>
+
       <div class="panel-top">
         <a v-if="contact?.siteUrl" :href="contact.siteUrl" target="_blank" rel="noopener noreferrer" class="site-pill">
           访问官网<el-icon><TopRight /></el-icon>
@@ -419,6 +434,318 @@ async function submit() {
 
 .mobile-brand {
   display: none;
+}
+
+/* ---------- Entrance animations (Art Design Pro login) ---------- */
+.hero-brand {
+  animation: fadeInDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.hero-copy {
+  animation: slideInLeft 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.hero-points li {
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.hero-foot {
+  animation: lineGrow 0.8s ease 0.8s both;
+}
+
+.panel > :not(.geo) {
+  position: relative;
+  z-index: 1;
+}
+
+.geo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.geo-el {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: forwards;
+}
+
+.fade-up {
+  animation-name: fadeInUp;
+}
+
+.fade-left {
+  animation-name: fadeInLeft;
+}
+
+.fade-left-rotated {
+  animation-name: fadeInLeftRotated;
+}
+
+.fade-right-rotated {
+  animation-name: fadeInRightRotated;
+}
+
+.fade-left-a {
+  animation-name: fadeInLeftA;
+}
+
+.fade-left-b {
+  animation-name: fadeInLeftB;
+}
+
+.scale-in {
+  animation-name: scaleIn;
+  animation-duration: 1.2s;
+}
+
+.bounce-in {
+  animation-name: bounceIn;
+  animation-duration: 0.6s;
+}
+
+.circle-outline {
+  top: 12%;
+  left: 12%;
+  width: 42px;
+  height: 42px;
+  border: 2px solid rgba(31, 79, 174, 0.18);
+  border-radius: 50%;
+}
+
+.square-rotated {
+  top: 52%;
+  left: 6%;
+  width: 60px;
+  height: 60px;
+  background: rgba(31, 79, 174, 0.07);
+}
+
+.circle-small {
+  bottom: 24%;
+  left: 18%;
+  width: 18px;
+  height: 18px;
+  background: rgba(31, 79, 174, 0.16);
+  border-radius: 50%;
+}
+
+.square-bottom-right {
+  right: 8%;
+  bottom: 9%;
+  width: 50px;
+  height: 50px;
+  background: rgba(246, 194, 68, 0.22);
+}
+
+.bg-bubble {
+  top: -120px;
+  right: -120px;
+  width: 360px;
+  height: 360px;
+  background: rgba(31, 79, 174, 0.06);
+  border-radius: 50%;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: rgba(31, 79, 174, 0.2);
+  border-radius: 50%;
+}
+
+.dot-top-left {
+  top: 120px;
+  left: 28%;
+}
+
+.dot-center-right {
+  top: 44%;
+  right: 7%;
+  background: rgba(246, 194, 68, 0.45);
+}
+
+.squares-group {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  width: 140px;
+  height: 140px;
+}
+
+.square {
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(64, 87, 167, 0.12);
+}
+
+.square-a {
+  top: 12px;
+  left: 30px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  background: rgba(31, 79, 174, 0.3);
+}
+
+.square-b {
+  top: 30px;
+  left: 48px;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  background: rgba(31, 79, 174, 0.15);
+}
+
+.square-c {
+  top: 66px;
+  left: 86px;
+  z-index: 3;
+  width: 32px;
+  height: 32px;
+  background: rgba(31, 79, 174, 0.45);
+}
+
+.squares-group::after {
+  position: absolute;
+  top: 86px;
+  left: 72px;
+  width: 80px;
+  height: 1px;
+  content: '';
+  background: linear-gradient(90deg, rgba(31, 79, 174, 0.4), transparent);
+  opacity: 0;
+  transform: rotate(50deg);
+  animation: lineGrow 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1.2s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeftRotated {
+  from {
+    opacity: 0;
+    transform: translateX(-30px) rotate(-25deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-25deg);
+  }
+}
+
+@keyframes fadeInRightRotated {
+  from {
+    opacity: 0;
+    transform: translateX(30px) rotate(45deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(45deg);
+  }
+}
+
+@keyframes fadeInLeftA {
+  from {
+    opacity: 0;
+    transform: translateX(-30px) rotate(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(-10deg);
+  }
+}
+
+@keyframes fadeInLeftB {
+  from {
+    opacity: 0;
+    transform: translateX(-30px) rotate(10deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotate(10deg);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes lineGrow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .welcome {

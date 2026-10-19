@@ -21,7 +21,7 @@ const {
   ogImage = '/images/hero/hero-machines.webp',
 } = Astro.props;
 
-const siteUrl = 'https://www.qingjin-machinery.com';
+const siteUrl = Astro.site?.toString() ?? 'https://www.qingjin-machinery.com';
 const pathname = Astro.url.pathname;
 const canonicalUrl = new URL(pathname, siteUrl).toString();
 

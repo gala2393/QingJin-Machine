@@ -10,6 +10,7 @@ import type {
   MachineInput,
   MachineListItem,
   MachineListQuery,
+  MachineVideo,
   MediaItem,
   MediaListQuery,
   MediaUploadOptions,
@@ -101,6 +102,23 @@ export const mediaApi = {
       })
       .then((r) => r.data)
   },
+}
+
+/** Chunked, resumable video upload; see the server's VideosController. */
+export const videoApi = {
+  create: (body: { fileName: string; size: number; mime?: string }) =>
+    http.post<MachineVideo>('/videos', body).then((r) => r.data),
+  get: (id: string, silent = false) => http.get<MachineVideo>(`/videos/${id}`, { silent }).then((r) => r.data),
+  uploadChunk: (id: string, index: number, chunk: Blob, signal: AbortSignal, onProgress?: (loaded: number) => void) =>
+    http.put<void>(`/videos/${id}/chunks/${index}`, chunk, {
+      headers: { 'Content-Type': 'application/octet-stream' },
+      timeout: 0,
+      silent: true,
+      signal,
+      onUploadProgress: (e: AxiosProgressEvent) => onProgress?.(e.loaded),
+    }),
+  complete: (id: string) => http.post<MachineVideo>(`/videos/${id}/complete`, undefined, { timeout: 120000 }).then((r) => r.data),
+  remove: (id: string, silent = false) => http.delete<void>(`/videos/${id}`, { silent }),
 }
 
 /** `silent` suppresses error toasts, used by background polling. */

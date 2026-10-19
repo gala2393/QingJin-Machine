@@ -101,6 +101,28 @@ export interface MachineImage {
   isCover: boolean
 }
 
+export type VideoStatus = 'UPLOADING' | 'PROCESSING' | 'READY' | 'FAILED'
+
+export interface MachineVideo {
+  id: string
+  originalName: string | null
+  status: VideoStatus
+  error: string | null
+  sourceSize: number
+  chunkSize: number
+  width: number | null
+  height: number | null
+  duration: number | null
+  hdUrl: string | null
+  sdUrl: string | null
+  posterUrl: string | null
+  hdSize: number | null
+  sdSize: number | null
+  createdAt: string
+  /** Chunk indexes already on the server; only while status is UPLOADING. */
+  received?: number[]
+}
+
 export interface MachineDetail {
   id: string
   slug: string
@@ -123,6 +145,8 @@ export interface MachineDetail {
   updatedAt: string
   params: MachineParam[]
   images: MachineImage[]
+  videoId: string | null
+  video: MachineVideo | null
 }
 
 export interface MachineInput {
@@ -142,6 +166,7 @@ export interface MachineInput {
   notes?: string
   params: MachineParam[]
   images: { mediaId: string; isCover: boolean }[]
+  videoId?: string | null
 }
 
 export type MachineBatchAction = 'publish' | 'hide' | 'draft' | 'feature' | 'unfeature' | 'delete'
@@ -248,6 +273,8 @@ export interface PreviewState {
   log: string | null
   /** Shape not pinned down by the contract; either a display name or a user object. */
   startedBy: string | Pick<User, 'id' | 'username' | 'displayName'> | null
+  /** Data changed after this preview was built; it must be regenerated to match the next publish. */
+  outdated?: boolean
 }
 
 export const RELEASE_STATUS_LABELS: Record<ReleaseStatus, string> = {

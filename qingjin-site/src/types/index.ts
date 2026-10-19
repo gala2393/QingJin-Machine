@@ -8,6 +8,18 @@ export interface MachineParam {
   value_en: string;
 }
 
+export interface MachineVideo {
+  id: string;
+  /** 1080p MP4 for desktop / fast connections. */
+  hd: string;
+  /** 720p MP4 for phones and slow connections; same as hd when the source is small. */
+  sd: string;
+  poster: string;
+  width: number;
+  height: number;
+  duration: number;
+}
+
 export interface Machine {
   id: string;
   model: string;
@@ -17,6 +29,9 @@ export interface Machine {
     en: string;
   };
   image: string;
+  /** Gallery in display order, cover first; absent in the original hand-maintained JSON. */
+  images?: string[];
+  video?: MachineVideo;
   /** Set on data published from the admin; absent in the original hand-maintained JSON. */
   featured?: boolean;
   params: MachineParam[];

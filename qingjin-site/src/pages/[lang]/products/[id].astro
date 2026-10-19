@@ -32,6 +32,10 @@ const relatedMachines = categoryMachines.filter((m) => m.id !== machine.id).slic
 
 const categoryName = getCategoryName(machine.category, lang);
 const pageTitle = `${machine.model} - ${machine.name[lang]}`;
+const gallery = machine.images?.length ? machine.images : [machine.image];
+const video = machine.video;
+// Portrait phone recordings are capped in height so they don't take over the page.
+const videoRatio = video ? video.width / video.height : 1;
 const pageDesc = `${machine.model} ${machine.name[lang]} · ${categoryName} · ${machine.params.slice(0, 3).map((p) => `${p[lang] || p.zh}: ${p[`value_${lang}`] || p.value_zh}`).join('; ')}`;
 ---
 
@@ -74,18 +78,106 @@ const pageDesc = `${machine.model} ${machine.name[lang]} · ${categoryName} · $
       
       <!-- Left: Product Photo Showcase (5 cols on lg) -->
       <div class="lg:col-span-5 space-y-4">
-        <div class="relative bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-md flex items-center justify-center aspect-4/3 sm:aspect-square overflow-hidden group">
-          <img
-            src={machine.image}
-            alt={`${machine.model} - ${machine.name[lang]}`}
-            class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-            width="600"
-            height="600"
-            onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
-          />
-          <span class="absolute top-4 left-4 px-3 py-1 rounded-lg text-xs font-bold tracking-wider bg-primary text-white shadow-xs">
-            {machine.model}
-          </span>
+        <div class="space-y-3" data-gallery data-images={JSON.stringify(gallery)}>
+          <div class="relative bg-white rounded-3xl border border-slate-200/90 shadow-md aspect-4/3 sm:aspect-square overflow-hidden">
+            <div
+              class="flex h-full overflow-x-auto snap-x snap-mandatory no-scrollbar overscroll-x-contain focus:outline-hidden"
+              data-gallery-track
+              tabindex={gallery.length > 1 ? 0 : undefined}
+            >
+              {gallery.map((src, i) => (
+                <div class="h-full w-full shrink-0 snap-center flex items-center justify-center p-6 sm:p-8">
+                  <img
+                    src={src}
+                    alt={gallery.length > 1 ? `${machine.model} - ${machine.name[lang]} (${i + 1}/${gallery.length})` : `${machine.model} - ${machine.name[lang]}`}
+                    class="max-h-full max-w-full object-contain select-none cursor-zoom-in"
+                    width="600"
+                    height="600"
+                    loading={i === 0 ? 'eager' : 'lazy'}
+                    fetchpriority={i === 0 ? 'high' : undefined}
+                    decoding="async"
+                    draggable="false"
+                    data-gallery-open={i}
+                    onerror={`this.onerror=null;this.src='${PLACEHOLDER_SVG}';`}
+                  />
+                </div>
+              ))}
+            </div>
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-lg text-xs font-bold tracking-wider bg-primary text-white shadow-xs">
+              {machine.model}
+            </span>
+            <button
+              type="button"
+              data-gallery-zoom
+              aria-label={t(lang, 'detail.zoomImage')}
+              title={t(lang, 'detail.zoomImage')}
+              class="absolute top-3 right-3 w-9 h-9 rounded-full bg-white/90 border border-slate-200 shadow-sm text-navy hover:bg-primary hover:text-white hover:border-primary transition-colors flex items-center justify-center focus:outline-hidden focus:ring-2 focus:ring-primary"
+            >
+              <svg class="w-4.5 h-4.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M11 8v6M8 11h6m5 0a8 8 0 11-16 0 8 8 0 0116 0z" /></svg>
+            </button>
+            {gallery.length > 1 && (
+              <>
+                <button
+                  type="button"
+                  data-gallery-prev
+                  aria-label={t(lang, 'detail.prevImage')}
+                  class="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 border border-slate-200 shadow-sm text-navy hover:bg-primary hover:text-white hover:border-primary transition-colors flex items-center justify-center focus:outline-hidden focus:ring-2 focus:ring-primary"
+                >
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button
+                  type="button"
+                  data-gallery-next
+                  aria-label={t(lang, 'detail.nextImage')}
+                  class="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-white/90 border border-slate-200 shadow-sm text-navy hover:bg-primary hover:text-white hover:border-primary transition-colors flex items-center justify-center focus:outline-hidden focus:ring-2 focus:ring-primary"
+                >
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </button>
+                <span data-gallery-counter class="absolute bottom-4 right-4 px-2.5 py-1 rounded-lg text-xs font-semibold bg-slate-900/70 text-white tabular-nums">
+                  1 / {gallery.length}
+                </span>
+              </>
+            )}
+          </div>
+          {gallery.length > 1 && (
+            <div class="flex gap-2 overflow-x-auto no-scrollbar pb-1" data-gallery-thumbs>
+              {gallery.map((src, i) => (
+                <button
+                  type="button"
+                  data-gallery-thumb={i}
+                  aria-label={t(lang, 'detail.viewImage', { n: i + 1 })}
+                  aria-current={i === 0 ? 'true' : 'false'}
+                  class="shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-xl border-2 border-slate-200 bg-white p-1 transition-colors hover:border-primary/60 aria-[current=true]:border-primary focus:outline-hidden focus:ring-2 focus:ring-primary"
+                >
+                  <img src={src} alt="" class="w-full h-full object-contain" width="80" height="80" loading="lazy" decoding="async" />
+                </button>
+              ))}
+            </div>
+          )}
+
+          <dialog
+            data-lightbox
+            aria-label={t(lang, 'detail.zoomImage')}
+            class="fixed inset-0 m-0 h-full max-h-none w-full max-w-none bg-transparent p-0 backdrop:bg-slate-950/90 open:flex items-center justify-center"
+          >
+            <div class="flex h-full w-full items-center justify-center p-4 sm:p-14" data-lightbox-stage>
+              <img data-lightbox-img alt={machine.model + ' - ' + machine.name[lang]} class="max-h-full max-w-full object-contain select-none rounded-xl bg-white" draggable="false" />
+            </div>
+            <button type="button" data-lightbox-close aria-label={t(lang, 'detail.closeImage')} class="absolute top-4 right-4 w-11 h-11 rounded-full bg-white/15 text-white hover:bg-white/30 transition-colors flex items-center justify-center focus:outline-hidden focus:ring-2 focus:ring-white">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            {gallery.length > 1 && (
+              <>
+                <button type="button" data-lightbox-prev aria-label={t(lang, 'detail.prevImage')} class="absolute left-3 sm:left-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/15 text-white hover:bg-white/30 transition-colors flex items-center justify-center focus:outline-hidden focus:ring-2 focus:ring-white">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>
+                </button>
+                <button type="button" data-lightbox-next aria-label={t(lang, 'detail.nextImage')} class="absolute right-3 sm:right-6 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/15 text-white hover:bg-white/30 transition-colors flex items-center justify-center focus:outline-hidden focus:ring-2 focus:ring-white">
+                  <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                </button>
+                <span data-lightbox-counter class="absolute bottom-5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-lg text-sm font-semibold bg-white/15 text-white tabular-nums"></span>
+              </>
+            )}
+          </dialog>
         </div>
 
         <!-- Factory Support Badges -->
@@ -169,6 +261,48 @@ const pageDesc = `${machine.model} ${machine.name[lang]} · ${categoryName} · $
           <ParamTable params={machine.params} lang={lang} />
         </div>
 
+        {video && (
+          <div class="space-y-3 pt-2" data-video>
+            <div class="flex flex-wrap items-center justify-between gap-3">
+              <h2 class="text-base sm:text-lg font-bold text-navy flex items-center gap-2">
+                <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+                <span>{t(lang, 'detail.videoTitle')}</span>
+              </h2>
+              {video.hd !== video.sd && (
+                <div class="flex items-center gap-1.5 text-xs" role="group" aria-label={t(lang, 'detail.videoQuality')}>
+                  <span class="text-slate-500 mr-1">{t(lang, 'detail.videoQuality')}</span>
+                  <button type="button" data-quality="hd" aria-pressed="false" class="px-2.5 py-1 rounded-lg border border-slate-200 text-slate-600 hover:border-primary/50 aria-pressed:bg-primary aria-pressed:text-white aria-pressed:border-primary transition-colors">
+                    {t(lang, 'detail.videoHd')} 1080P
+                  </button>
+                  <button type="button" data-quality="sd" aria-pressed="true" class="px-2.5 py-1 rounded-lg border border-slate-200 text-slate-600 hover:border-primary/50 aria-pressed:bg-primary aria-pressed:text-white aria-pressed:border-primary transition-colors">
+                    {t(lang, 'detail.videoSd')} 720P
+                  </button>
+                </div>
+              )}
+            </div>
+            <div class="flex justify-center">
+              <div class="w-full rounded-2xl border border-slate-200 shadow-xs overflow-hidden" style={`max-width: min(100%, ${Math.round(620 * videoRatio)}px, calc(78vh * ${videoRatio.toFixed(4)}))`}>
+                <video
+                  class="block w-full h-auto bg-black"
+                  style={`aspect-ratio: ${video.width} / ${video.height}`}
+                  src={video.sd}
+                  poster={video.poster}
+                  data-hd={video.hd}
+                  data-sd={video.sd}
+                  width={video.width}
+                  height={video.height}
+                  controls
+                  playsinline
+                  preload="none"
+                  controlslist="nodownload"
+                ></video>
+              </div>
+            </div>
+          </div>
+        )}
+
       </div>
 
     </div>
@@ -242,3 +376,155 @@ const pageDesc = `${machine.model} ${machine.name[lang]} · ${categoryName} · $
     )}
   </section>
 </Base>
+
+<script>
+  // Full-screen viewer. It lives inside the gallery, so hovering or focusing it also pauses the autoplay.
+  for (const root of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
+    const box = root.querySelector<HTMLDialogElement>('[data-lightbox]');
+    const track = root.querySelector<HTMLElement>('[data-gallery-track]');
+    const img = box?.querySelector<HTMLImageElement>('[data-lightbox-img]');
+    const images = JSON.parse(root.dataset.images || '[]') as string[];
+    if (!box || !track || !img || !images.length || typeof box.showModal !== 'function') continue;
+    const counter = box.querySelector('[data-lightbox-counter]');
+    let index = 0;
+
+    const show = (i: number) => {
+      index = (i + images.length) % images.length;
+      img.src = images[index];
+      if (counter) counter.textContent = index + 1 + ' / ' + images.length;
+    };
+    const open = (i: number) => {
+      show(i);
+      box.showModal();
+      document.documentElement.style.overflow = 'hidden';
+    };
+    box.addEventListener('close', () => {
+      document.documentElement.style.overflow = '';
+      track.scrollLeft = index * track.clientWidth;
+    });
+
+    track.addEventListener('click', (e) => {
+      const target = (e.target as HTMLElement).closest('[data-gallery-open]');
+      if (target) open(Number(target.getAttribute('data-gallery-open')) || 0);
+    });
+    root.querySelector('[data-gallery-zoom]')?.addEventListener('click', () => open(Math.round(track.scrollLeft / Math.max(1, track.clientWidth))));
+    box.querySelector('[data-lightbox-close]')?.addEventListener('click', () => box.close());
+    box.querySelector('[data-lightbox-prev]')?.addEventListener('click', () => show(index - 1));
+    box.querySelector('[data-lightbox-next]')?.addEventListener('click', () => show(index + 1));
+    box.addEventListener('click', (e) => {
+      const t = e.target as HTMLElement;
+      if (t === box || t.hasAttribute('data-lightbox-stage')) box.close();
+    });
+    box.addEventListener('keydown', (e) => {
+      if (images.length > 1 && (e.key === 'ArrowLeft' || e.key === 'ArrowRight')) {
+        e.preventDefault();
+        show(index + (e.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    let startX = 0;
+    box.addEventListener('touchstart', (e) => (startX = e.touches[0].clientX), { passive: true });
+    box.addEventListener('touchend', (e) => {
+      const dx = e.changedTouches[0].clientX - startX;
+      if (images.length > 1 && Math.abs(dx) > 50) show(index + (dx < 0 ? 1 : -1));
+    }, { passive: true });
+  }
+
+  for (const root of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
+    const track = root.querySelector<HTMLElement>('[data-gallery-track]');
+    const count = track?.children.length ?? 0;
+    if (!track || count < 2) continue;
+    const thumbs = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-gallery-thumb]'));
+    const strip = root.querySelector<HTMLElement>('[data-gallery-thumbs]');
+    const counter = root.querySelector('[data-gallery-counter]');
+    let current = 0;
+
+    const go = (i: number) => {
+      const n = (i + count) % count;
+      track.scrollTo({ left: n * track.clientWidth, behavior: 'smooth' });
+    };
+    const sync = () => {
+      const i = Math.min(count - 1, Math.max(0, Math.round(track.scrollLeft / Math.max(1, track.clientWidth))));
+      if (i === current) return;
+      current = i;
+      if (counter) counter.textContent = `${i + 1} / ${count}`;
+      thumbs.forEach((t, k) => t.setAttribute('aria-current', String(k === i)));
+      const thumb = thumbs[i];
+      if (strip && thumb) strip.scrollTo({ left: thumb.offsetLeft - (strip.clientWidth - thumb.offsetWidth) / 2, behavior: 'smooth' });
+    };
+
+    let frame = 0;
+    track.addEventListener('scroll', () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(sync);
+    }, { passive: true });
+    // Autoplay every 2 s; pauses while the visitor hovers, touches or focuses the gallery, and in background tabs.
+    let timer = 0;
+    let held = false;
+    const stop = () => window.clearInterval(timer);
+    const play = () => {
+      stop();
+      if (!held && !document.hidden) timer = window.setInterval(() => go(current + 1), 2000);
+    };
+    const hold = () => {
+      held = true;
+      stop();
+    };
+    const release = () => {
+      held = false;
+      play();
+    };
+    root.addEventListener('mouseenter', hold);
+    root.addEventListener('mouseleave', release);
+    root.addEventListener('focusin', hold);
+    root.addEventListener('focusout', release);
+    track.addEventListener('touchstart', hold, { passive: true });
+    track.addEventListener('touchend', release, { passive: true });
+    document.addEventListener('visibilitychange', play);
+    const nav = (i: number) => {
+      go(i);
+      play();
+    };
+
+    root.querySelector('[data-gallery-prev]')?.addEventListener('click', () => nav(current - 1));
+    root.querySelector('[data-gallery-next]')?.addEventListener('click', () => nav(current + 1));
+    thumbs.forEach((t, k) => t.addEventListener('click', () => nav(k)));
+    track.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+        e.preventDefault();
+        nav(current + (e.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    window.addEventListener('resize', () => {
+      track.scrollLeft = current * track.clientWidth;
+    });
+    play();
+  }
+
+  for (const box of document.querySelectorAll<HTMLElement>('[data-video]')) {
+    const video = box.querySelector('video');
+    if (!video) continue;
+    const { hd, sd } = video.dataset;
+    if (!hd || !sd) continue;
+    const buttons = Array.from(box.querySelectorAll<HTMLButtonElement>('[data-quality]'));
+    const conn = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } }).connection;
+    const slow = Boolean(conn?.saveData) || /(^|-)(2g|3g)$/.test(conn?.effectiveType ?? '');
+    const preferHd = !slow && window.matchMedia('(min-width: 1024px)').matches;
+
+    const select = (quality: 'hd' | 'sd') => {
+      const src = quality === 'hd' ? hd : sd;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.quality === quality)));
+      if (video.getAttribute('src') === src) return;
+      const time = video.currentTime;
+      const playing = !video.paused;
+      video.setAttribute('src', src);
+      if (time > 0 || playing) {
+        video.preload = 'auto';
+        video.addEventListener('loadedmetadata', () => (video.currentTime = time), { once: true });
+        if (playing) void video.play().catch(() => undefined);
+      }
+    };
+    // preload="none": switching the source here downloads nothing until the visitor presses play.
+    select(preferHd ? 'hd' : 'sd');
+    buttons.forEach((b) => b.addEventListener('click', () => select(b.dataset.quality === 'hd' ? 'hd' : 'sd')));
+  }
+</script>

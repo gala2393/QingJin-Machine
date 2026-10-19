@@ -8,7 +8,7 @@ export interface SiteSnapshot {
   machines: SiteMachine[];
   categories: SiteCategory[];
   site: unknown;
-  /** Cover image paths relative to UPLOAD_DIR. */
+  /** Machine image paths relative to UPLOAD_DIR (covers only in snapshots taken before galleries existed). */
   coverFiles: string[];
   /** Site-settings images relative to UPLOAD_DIR; absent in snapshots taken before site settings existed. */
   siteFiles?: string[];

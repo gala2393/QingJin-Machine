@@ -1,6 +1,6 @@
 import { BadRequestException, ConflictException, Injectable, Logger, NotFoundException, OnModuleInit } from '@nestjs/common';
 import { existsSync } from 'node:fs';
-import { mkdir, rename, rm } from 'node:fs/promises';
+import { mkdir, readFile, rename, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 import { AuditService } from '../audit/audit.service';
@@ -10,8 +10,11 @@ import { publishPaths } from './publish.config';
 import { BuildError, buildSite, pruneReleases, removeWorkDir, SiteSnapshot, switchLink } from './site-builder';
 import { buildSiteData, SiteMachine } from './site-export';
 import { buildPublishedSettings } from '../settings/site-settings';
+import { siteSourceKey } from './site-source';
 
 export type PreviewState = { status: 'idle' | 'building' | 'ready' | 'failed'; builtAt: Date | null; log: string | null; startedBy: string | null };
+/** outdated: data, templates or public assets changed since the ready preview was built. */
+export type PreviewView = PreviewState & { outdated: boolean };
 
 const RELEASE_LIST_SELECT = {
   id: true,
@@ -31,6 +34,8 @@ function machineChanges(a: SiteMachine, b: SiteMachine): string[] {
   if (!isDeepStrictEqual(a.name, b.name)) out.push('名称');
   if (a.category !== b.category) out.push('分类');
   if (a.image !== b.image) out.push('封面');
+  if (!isDeepStrictEqual(a.images ?? [a.image], b.images ?? [b.image])) out.push('图片');
+  if (!isDeepStrictEqual(a.video ?? null, b.video ?? null)) out.push('视频');
   if (Boolean(a.featured) !== Boolean(b.featured)) out.push('推荐');
   if (!isDeepStrictEqual(a.params, b.params)) out.push('参数');
   return out;
@@ -45,7 +50,11 @@ export class PublishService implements OnModuleInit {
   private starting = false;
   /** Settles when the most recently queued release build finishes (used by the CLI). */
   lastBuild: Promise<unknown> = Promise.resolve();
+  /** Settles after the most recently requested preview, including workspace cleanup. */
+  lastPreviewBuild: Promise<unknown> = Promise.resolve();
   private preview: PreviewState = { status: 'idle', builtAt: null, log: null, startedBy: null };
+  /** Snapshot and source fingerprint used for the ready preview. */
+  private previewKey: string | null = null;
 
   constructor(
     private readonly prisma: PrismaService,
@@ -204,24 +213,44 @@ export class PublishService implements OnModuleInit {
     }
   }
 
-  previewState(): PreviewState {
-    return this.preview;
+  async previewState(): Promise<PreviewView> {
+    if (this.preview.status !== 'ready') return { ...this.preview, outdated: false };
+    // Keep build metadata with the preview so restarts and command-line rebuilds retain its identity.
+    try {
+      const meta = JSON.parse(await readFile(join(this.paths.preview, '.build-state.json'), 'utf8')) as { key?: string; builtAt?: string };
+      this.previewKey = typeof meta.key === 'string' ? meta.key : null;
+      if (meta.builtAt && Number.isFinite(Date.parse(meta.builtAt))) this.preview.builtAt = new Date(meta.builtAt);
+    } catch (err) {
+      if ((err as NodeJS.ErrnoException).code !== 'ENOENT' && !(err instanceof SyntaxError)) throw err;
+      this.previewKey = null;
+    }
+    const key = await this.previewBuildKey(await this.snapshot());
+    return { ...this.preview, outdated: key !== this.previewKey };
+  }
+
+  private async previewBuildKey(snapshot: SiteSnapshot): Promise<string> {
+    return JSON.stringify({ snapshot, source: await siteSourceKey(this.paths.siteDir) });
   }
 
   /** Builds the current database state into the preview directory; the live site is untouched. */
   startPreview(username: string) {
     if (this.preview.status === 'building') throw new ConflictException('预览正在构建中');
     this.preview = { status: 'building', builtAt: null, log: null, startedBy: username };
-    void this.enqueue(async () => {
+    this.lastPreviewBuild = this.enqueue(async () => {
       const p = this.paths;
       const workDir = join(p.work, 'preview');
       const outDir = `${p.preview}.next`;
       try {
         // Preview visits must not count as site traffic.
-        const log = await buildSite(await this.snapshot(), p, workDir, outDir, { trackEndpoint: '' });
+        const snap = await this.snapshot();
+        const key = await this.previewBuildKey(snap);
+        const log = await buildSite(snap, p, workDir, outDir, { trackEndpoint: '' });
+        const builtAt = new Date();
+        await writeFile(join(outDir, '.build-state.json'), JSON.stringify({ key, builtAt: builtAt.toISOString() }));
         await rm(p.preview, { recursive: true, force: true });
         await rename(outDir, p.preview);
-        this.preview = { status: 'ready', builtAt: new Date(), log, startedBy: username };
+        this.previewKey = key;
+        this.preview = { status: 'ready', builtAt, log, startedBy: username };
       } catch (err) {
         const log = err instanceof BuildError ? err.log : String((err as Error).stack ?? err);
         this.preview = { status: 'failed', builtAt: new Date(), log, startedBy: username };

@@ -146,7 +146,7 @@ const max = computed(() => Math.max(1, ...props.items.map((i) => i.value)))
   display: block;
   height: 100%;
   border-radius: 3px;
-  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  background: linear-gradient(90deg, #8eabff, #5d87ff);
   transition: width 0.4s ease;
 }
 

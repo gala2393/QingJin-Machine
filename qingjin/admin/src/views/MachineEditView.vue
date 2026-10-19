@@ -2,11 +2,12 @@
 import { computed, onBeforeUnmount, onMounted, reactive, ref, watch } from 'vue'
 import { onBeforeRouteLeave, useRoute, useRouter } from 'vue-router'
 import { ElMessage, ElMessageBox, type FormInstance, type FormItemRule, type FormRules } from 'element-plus'
-import { Delete, Picture, Plus, Rank, Star, Upload } from '@element-plus/icons-vue'
+import { Crop, Delete, Picture, Plus, Rank, Star, Upload } from '@element-plus/icons-vue'
 import { VueDraggable } from 'vue-draggable-plus'
 import CropUpload from '@/components/CropUpload.vue'
 import MediaPicker from '@/components/MediaPicker.vue'
-import { categoryApi, machineApi } from '@/api'
+import MachineVideoField from '@/components/MachineVideoField.vue'
+import { categoryApi, machineApi, mediaApi } from '@/api'
 import { useCanEdit } from '@/composables/useCanEdit'
 import {
   MACHINE_STATUS_LABELS,
@@ -16,6 +17,7 @@ import {
   type MachineInput,
   type MachineParam,
   type MachineStatus,
+  type MachineVideo,
   type MediaItem,
   type ParamTemplate,
 } from '@/types/api'
@@ -61,6 +63,8 @@ const form = reactive({
 })
 const params = ref<ParamRow[]>([])
 const images = ref<MachineImage[]>([])
+const videoId = ref<string | null>(null)
+const video = ref<MachineVideo | null>(null)
 const extraPanels = ref<string[]>([])
 
 const pickerOpen = ref(false)
@@ -284,6 +288,52 @@ function removeImage(index: number) {
   ensureCover()
 }
 
+const IMAGE_TYPES = ['image/jpeg', 'image/png', 'image/webp']
+const MAX_IMAGE_BYTES = 15 * 1024 * 1024
+/** Matches the server's limit on images per machine. */
+const MAX_IMAGES = 30
+const batchInput = ref<HTMLInputElement>()
+const batchUploading = ref(false)
+const batchText = ref('')
+
+/** Uploads several photos in a row with the default processing (white square background), no cropping. */
+async function onBatchPick(e: Event) {
+  const input = e.target as HTMLInputElement
+  const files = Array.from(input.files ?? [])
+  input.value = ''
+  if (!files.length) return
+  const room = MAX_IMAGES - images.value.length
+  if (room <= 0) {
+    ElMessage.warning(`每台机型最多 ${MAX_IMAGES} 张图片`)
+    return
+  }
+  const valid = files.filter((f) => IMAGE_TYPES.includes(f.type) && f.size <= MAX_IMAGE_BYTES)
+  const queue = valid.slice(0, room)
+  let ok = 0
+  let failed = 0
+  batchUploading.value = true
+  try {
+    for (const [i, file] of queue.entries()) {
+      batchText.value = `${i + 1}/${queue.length}`
+      try {
+        addMedia([await mediaApi.upload(file, { square: true, usage: 'machine' })])
+        ok++
+      } catch {
+        failed++
+      }
+    }
+  } finally {
+    batchUploading.value = false
+    batchText.value = ''
+  }
+  const notes = [`成功上传 ${ok} 张`]
+  if (failed) notes.push(`${failed} 张失败`)
+  if (files.length > valid.length) notes.push(`${files.length - valid.length} 张格式不支持或超过 15 MB，已跳过`)
+  if (valid.length > queue.length) notes.push(`超出 ${MAX_IMAGES} 张上限，${valid.length - queue.length} 张未上传`)
+  if (ok === files.length) ElMessage.success(notes.join('，'))
+  else ElMessage.warning(notes.join('，'))
+}
+
 // ---------- load / save ----------
 
 function buildPayload(): MachineInput {
@@ -314,6 +364,7 @@ function buildPayload(): MachineInput {
       mediaId: img.mediaId,
       isCover: coverIndex === -1 ? i === 0 : i === coverIndex,
     })),
+    videoId: videoId.value,
   }
 }
 
@@ -341,6 +392,8 @@ function fill(m: MachineDetail | null) {
   })
   params.value = (m?.params ?? []).map(toRow)
   images.value = (m?.images ?? []).map((i) => ({ ...i }))
+  videoId.value = m?.videoId ?? null
+  video.value = m?.video ?? null
   slugTouched.value = !!m
   slugState.value = m ? 'ok' : 'idle'
   submitted.value = false
@@ -594,11 +647,15 @@ onBeforeUnmount(() => {
       <section class="page-card block">
         <h2 class="section-title">
           图片
-          <span class="meta">{{ images.length }} 张，可拖动调整展示顺序</span>
+          <span class="meta">{{ images.length }} 张，可拖动调整顺序；封面排第一，详情页按此顺序轮播</span>
         </h2>
         <div v-if="canEdit" class="page-toolbar">
           <el-button :icon="Picture" @click="pickerOpen = true">从媒体库选择</el-button>
-          <el-button :icon="Upload" @click="uploadOpen = true">上传图片</el-button>
+          <el-button type="primary" plain :icon="Upload" :loading="batchUploading" @click="batchInput?.click()">
+            {{ batchUploading ? `正在上传 ${batchText}` : '批量上传图片' }}
+          </el-button>
+          <el-button :icon="Crop" :disabled="batchUploading" @click="uploadOpen = true">裁剪上传</el-button>
+          <input ref="batchInput" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden @change="onBatchPick" />
         </div>
         <VueDraggable v-model="images" class="image-grid" :animation="150" :disabled="!canEdit">
           <div v-for="(img, index) in images" :key="img.mediaId" class="image-tile" :class="{ cover: img.isCover }">
@@ -612,6 +669,15 @@ onBeforeUnmount(() => {
           </div>
         </VueDraggable>
         <el-empty v-if="!images.length" :image-size="60" description="暂无图片" />
+      </section>
+
+      <!-- 视频 -->
+      <section class="page-card block">
+        <h2 class="section-title">
+          产品视频
+          <span class="meta">每台机型 1 个，显示在详情页参数表下方</span>
+        </h2>
+        <MachineVideoField v-model="videoId" :video="video" :can-edit="canEdit" @change="(v) => (video = v)" />
       </section>
 
       <!-- SEO / 备注 -->

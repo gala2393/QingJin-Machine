@@ -9,12 +9,14 @@ import App from './App.vue'
 import router from './router'
 import { configureHttp } from './api/http'
 import { useAuthStore } from './stores/auth'
+import { setupRipple } from './utils/ripple'
 
 const app = createApp(App)
 const pinia = createPinia()
 app.use(pinia)
 app.use(router)
 app.use(ElementPlus, { locale: zhCn })
+setupRipple(app)
 
 const auth = useAuthStore(pinia)
 configureHttp({

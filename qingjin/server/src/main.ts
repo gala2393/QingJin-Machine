@@ -10,6 +10,7 @@ import { PrismaExceptionFilter } from './common/prisma-exception.filter';
 import { JwtService } from '@nestjs/jwt';
 import { PublishService } from './publish/publish.service';
 import { startLiveSiteServer, startPreviewServer } from './publish/static-servers';
+import { VideosService } from './videos/videos.service';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
@@ -20,6 +21,8 @@ async function bootstrap() {
   app.use(requestContextMiddleware);
   // Analytics beacons arrive as text/plain (no CORS preflight); parse them before Nest's JSON parser.
   app.use('/api/track', express.text({ type: () => true, limit: '4kb' }));
+  // Video chunks (8 MB each) arrive as raw bytes.
+  app.use('/api/videos', express.raw({ type: 'application/octet-stream', limit: '9mb' }));
   app.setGlobalPrefix('api');
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, forbidNonWhitelisted: true, transform: true }));
   app.useGlobalFilters(new PrismaExceptionFilter());
@@ -41,6 +44,7 @@ async function bootstrap() {
 
   const publish = app.get(PublishService);
   await publish.recoverInterrupted();
+  await app.get(VideosService).startBackground();
   const paths = publish.paths;
   startPreviewServer(Number(process.env.PREVIEW_PORT ?? 4400), paths, app.get(JwtService));
   if (process.env.SERVE_SITE_PORT) startLiveSiteServer(Number(process.env.SERVE_SITE_PORT), paths);

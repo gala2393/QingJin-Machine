@@ -158,7 +158,7 @@ const faqs = [
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  background: linear-gradient(135deg, #5d87ff, #4a6ccc);
   color: #fff;
   font-weight: 700;
   display: flex;

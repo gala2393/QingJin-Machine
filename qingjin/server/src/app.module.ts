@@ -18,6 +18,7 @@ import { UsersModule } from './users/users.module';
 import { AuditLogsModule } from './audit/audit-logs.module';
 import { ExcelModule } from './excel/excel.module';
 import { BackupsModule } from './backups/backups.module';
+import { VideosModule } from './videos/videos.module';
 
 @Module({
   imports: [
@@ -42,6 +43,7 @@ import { BackupsModule } from './backups/backups.module';
     AuditLogsModule,
     ExcelModule,
     BackupsModule,
+    VideosModule,
   ],
   controllers: [HealthController],
   providers: [{ provide: APP_GUARD, useClass: ThrottlerGuard }],
