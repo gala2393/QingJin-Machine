@@ -1,0 +1,3683 @@
+[
+ {
+  "page": 119,
+  "model": "QX-LS100",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "缩小款立式膏体机",
+  "name_en": "Compact vertical paste packaging machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封 / 背封",
+    "value_en": "三边封 / 背封"
+   },
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-100ml",
+    "value_en": "3-100ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "12-20bags/min",
+    "value_en": "12-20bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-12cm",
+    "value_en": "3-12cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 450W",
+    "value_en": "220V / 450W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48x95x137cm",
+    "value_en": "48x95x137cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 60%-86% y 18%-70%;底部有4张成品袋展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+  "application_en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties.",
+  "notes": "缺失:整机重量(栏位空白)。封口方式的值只印中文(三边封 / 背封),英文值沿用中文。"
+ },
+ {
+  "page": 120,
+  "model": "QS-LS200ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "三边封立式膏体机200ML",
+  "name_en": "Vertical Three Side Seal Paste Packaging Machine 200ML",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-200ml",
+    "value_en": "3-200ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-16bags/min",
+    "value_en": "8-16bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/ 50L",
+    "value_en": "30L/ 50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 450W",
+    "value_en": "220V / 450W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57x127x145cm",
+    "value_en": "57x127x145cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 50%-92% y 22%-70%;底部有4张成品袋展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+  "application_en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties.",
+  "notes": "缺失:整机重量(栏位空白)。无封口方式行。"
+ },
+ {
+  "page": 121,
+  "model": "QB-LS200ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "背封立式膏体机200ML",
+  "name_en": "Vertical Back Seal Paste Packaging Machine 200ML",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-200ml",
+    "value_en": "3-200ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-16bags/min",
+    "value_en": "8-16bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Total Power",
+    "value_zh": "450W",
+    "value_en": "450W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57x127x145cm",
+    "value_en": "57x127x145cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 52%-93% y 21%-70%;底部有4张成品袋展示图",
+  "advantages_zh": "PLC触控屏幕易操作,气缸定量灌装、制袋、封口、切袋,可根据需求加配搅拌器、打码机、光标等功能",
+  "advantages_en": "The PLC control panel is easy to operate. It features cylinder-based quantitative filling, bag making, sealing, and bag cutting. Additional functions such as a mixer, coding machine, and cursor can be added as needed.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "画册参数表标签与数值错位:从料斗容量行起数值整体下移一行(料斗容量行印±1ml,精准度行印5-20cm,卷膜宽度行印3-16cm,袋长范围行印220V,电压功率行印450W,整机尺寸行印57x127x145cm),料斗容量值缺失。按数值类型归位录入:±1ml=精准度,5-20cm=卷膜宽度,3-16cm=袋长范围,220V=电压,450W=总功率(参照同系列 QS-LS200ML 为 220V / 450W)。缺失:料斗容量、整机重量。电压与功率在画册里分占两行,已拆成 voltage 与 power 两条。本页印产品优势、无适用产品。"
+ },
+ {
+  "page": 122,
+  "model": "QB-LS500ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "中型立式膏体机500ML",
+  "name_en": "Medium Vertical Paste Packaging Machine 500ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "50-500ml",
+    "value_en": "50-500ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-13bags/min",
+    "value_en": "8-13bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/50L",
+    "value_en": "30L/50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±3ml",
+    "value_en": "±3ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "20-34cm",
+    "value_en": "20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-22cm",
+    "value_en": "3-22cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 500W",
+    "value_en": "220V / 500W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57x127x160cm",
+    "value_en": "57x127x160cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 53%-88% y 18%-72%;底部为4个可选配置图(加搅拌器/加压桶/保温桶/按键款电脑板)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+  "application_en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties.",
+  "notes": "缺失:整机重量(栏位空白)。页底有可选配置:加搅拌器 Vertical mixer、加压桶 Pressurized lid、保温桶 Insulated hopper、按键款电脑板 Keypad control panel。"
+ },
+ {
+  "page": 123,
+  "model": "QB-LS1000ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "大型立式膏体机1000ML",
+  "name_en": "Large Vertical Paste Packaging Machine 1000ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "100-1000ml",
+    "value_en": "100-1000ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "7-10bags/min",
+    "value_en": "7-10bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/50L",
+    "value_en": "30L/50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5ml",
+    "value_en": "±5ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 600W",
+    "value_en": "220V / 600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "66x160x167cm",
+    "value_en": "66x160x167cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 52%-88% y 17%-72%;底部有4张成品袋展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+  "application_en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties.",
+  "notes": "缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 124,
+  "model": "QB-LS3000ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "600型立式膏体机3000ML",
+  "name_en": "Extra Large Vertical Paste Packaging Machine 3000ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "300-3000ml",
+    "value_en": "300-3000ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-8bags/min",
+    "value_en": "5-8bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/50L",
+    "value_en": "30L/50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±10ml",
+    "value_en": "±10ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-60cm",
+    "value_en": "40-60cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 800W",
+    "value_en": "220V / 800W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面上半部右侧机器照片,约占 x 56%-88% y 15%-52%",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "画册参数表数值错位:袋长范围行印 18-28cm,电压功率行印 3-40cm,整机尺寸行印 220V / 800W,整机重量行空白。按数值类型归位:3-40cm=袋长范围(与同系列 QB-LS5000ML 的 3-40cm 一致),220V / 800W=电压功率;18-28cm 为多余/位置不明的值(可能是袋长某一档),未录入。缺失:整机尺寸、整机重量。多型号表页,上半 QB-LS3000ML、下半 QB-LS5000ML。"
+ },
+ {
+  "page": 124,
+  "model": "QB-LS5000ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "700型立式膏体机5000ML",
+  "name_en": "Ultra Large Vertical Paste Packaging Machine 5000ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "500-5000ml",
+    "value_en": "500-5000ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "4-7bags/min",
+    "value_en": "4-7bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/50L",
+    "value_en": "30L/50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±10ml",
+    "value_en": "±10ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-72cm",
+    "value_en": "40-72cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 1000W",
+    "value_en": "220V / 1000W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "89x186x220cm",
+    "value_en": "89x186x220cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面下半部右侧机器照片,约占 x 56%-88% y 58%-95%",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏位空白)。多型号表页。"
+ },
+ {
+  "page": 125,
+  "model": "K-LS200ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "电控箱立式膏体机200ML",
+  "name_en": "Electric Control Box Vertical Paste Packaging Machine 200ml",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "背封/三边封",
+    "value_en": "背封/三边封"
+   },
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-200ml",
+    "value_en": "3-200ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "30-50bags/min",
+    "value_en": "30-50bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/ 50L",
+    "value_en": "30L/ 50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 1200W",
+    "value_en": "220V / 1200W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "64X138X157cm",
+    "value_en": "64X138X157cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requiremen",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 3%-42% y 20%-72%;底部4个可选配置图(加搅拌器/色带打码机/光标/按键款电脑版)",
+  "advantages_zh": "PLC触控屏幕易操作,气缸定量灌装、制袋、封口、切袋,可根据需求加配搅拌器、打码机、光标等功能",
+  "advantages_en": "PLC touch screen is easy to operate, piston quantitative filling, bag making, sealing and cutting. Can be configured with vertical mixer, ribbon coding machine, cursor and other functions as required.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏位空白)。画册英文标签 'Air requiremen' 为截断拼写。包装速度 30-50bags/min 照抄(明显高于同类机型,疑似笔误,未改)。"
+ },
+ {
+  "page": 126,
+  "model": "Q4-LS200ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "四边封立式膏体机200ML",
+  "name_en": "Four sided sealing vertical paste packaging machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-200ml",
+    "value_en": "3-200ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-16bags/min",
+    "value_en": "10-16bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/ 50L",
+    "value_en": "30L/ 50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 500W",
+    "value_en": "220V / 500W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57x127x155cm",
+    "value_en": "57x127x155cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 7%-42% y 24%-72%;底部4张成品袋展示图",
+  "advantages_zh": "四重封边,防漏能力更强,酱料、药膏、面膜泥、护发膏等膏体小样包装,不易夹料渗漏,长途物流挤压不易爆袋,大幅降低次品率。",
+  "advantages_en": "Quad-seal for enhanced leakproof performance. Perfect for paste sachets including sauces, ointments, mask mud and hair cream. Stop material trapping & leakage, resist bag breakage in long haul transport, cut reject rates significantly.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏位空白)。画册气动需知英文标签印作 'Air requiremen'(截断拼写),已按 Air requirement 记录。"
+ },
+ {
+  "page": 127,
+  "model": "QJL-LS200ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "夹拉款立式膏体机200ML",
+  "name_en": "Clamp Pull Vertical Paste Packaging Machine 200ml",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "背封/三边封",
+    "value_en": "背封/三边封"
+   },
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-100ml",
+    "value_en": "3-100ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "20-30bags/min",
+    "value_en": "20-30bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/ 50L",
+    "value_en": "30L/ 50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-15cm",
+    "value_en": "5-15cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 1200W",
+    "value_en": "220V / 1200W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "88x106x182cm",
+    "value_en": "88x106x182cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "172kg",
+    "value_en": "172kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [
+   128
+  ],
+  "images_hint": "左半页机器照片,约占 x 8%-48% y 22%-72%;底部3组成品袋展示图",
+  "advantages_zh": "夹持和拉伸装置是核心部件,使封口更服贴袋子更美观,可实现对膏体物料的均匀灌装,每一袋标准化。",
+  "advantages_en": "The clamping and stretching mechanism is a core component designed to ensure a neat, wrinkle-free seal and a visually appealing bag appearance. It enables uniform filling of viscous materials, ensuring standardization for every single bag.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "p128 为'定制案例 立式膏体包装机'案例页(葫芦口袋型、四边封连袋不切断、做加压盖辅助流动性差物料灌装/异型袋包装、PLC系统加配搅拌器),无参数表,归本机型。灌装范围 3-100ml 与型号名 200ML 不一致,照抄。"
+ },
+ {
+  "page": 129,
+  "model": "QX-WS100ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "缩小款卧式膏体机",
+  "name_en": "Compact horizontal paste packaging machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封/背封",
+    "value_en": "三边封/背封"
+   },
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-100ml",
+    "value_en": "3-100ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "12-20bags/min",
+    "value_en": "12-20bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L",
+    "value_en": "30L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-12cm",
+    "value_en": "3-12cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 570W",
+    "value_en": "220V / 570W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48x95x137cm",
+    "value_en": "48x95x137cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 50%-92% y 19%-71%;底部可选配置:色带打码机、光标、传送带",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "整机体积紧凑占地小,定量自动完成制袋、灌装、封口、切断,1名工人看管多台机器、收集成品即可,大幅替代人工分装,降低长期用工成本。",
+  "application_en": "Compact footprint. Automatically forms bags, fills, seals and cuts. A single worker can manage multiple units merely for finished product collection, greatly replacing manual packaging and lowering long-term labor expenses.",
+  "notes": "缺失:整机重量(栏位空白)。'适用产品'标题下印的文字实为产品优势性质内容,按画册位置录入 application。"
+ },
+ {
+  "page": 130,
+  "model": "QS-WS200ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "三边封卧式膏体机200ML",
+  "name_en": "Three Side Seal Horizontal Paste Packaging Machine 200ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "2-200ml",
+    "value_en": "2-200ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-16bags/min",
+    "value_en": "8-16bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "50L/ 80L",
+    "value_en": "50L/ 80L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 570W",
+    "value_en": "220V / 570W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57x127x145cm",
+    "value_en": "57x127x145cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 49%-92% y 21%-71%;底部4张成品袋展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "辣椒油、蒜蓉酱、火锅底料、豆瓣酱、果酱、辣椒酱、水、酱油、凝胶、番茄酱等酱料、膏体、液体一机多用",
+  "application_en": "Widely used in chili oil, garlic paste, hot pot base, broad bean paste, jam, chili sauce, water, soy sauce, gel, tomato paste and more.",
+  "notes": "缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 131,
+  "model": "QB-WS200ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "背封卧式膏体机200ML",
+  "name_en": "Back Seal Horizontal Paste Packaging Machine 200ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "2-200ml",
+    "value_en": "2-200ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-16bags/min",
+    "value_en": "8-16bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "50L/ 80L",
+    "value_en": "50L/ 80L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml",
+    "value_en": "±1ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 570W",
+    "value_en": "220V / 570W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57x127x145cm",
+    "value_en": "57x127x145cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 5%-50% y 22%-71%;底部成品展示图(辣椒酱/豆瓣酱/花生酱等)",
+  "advantages_zh": "PLC触控屏幕易操作,料斗带搅拌功能速度可调,气缸定量、防滴漏灌装、制袋、封口、切袋自动完成",
+  "advantages_en": "PLC touch screen is easy to operate, hopper with an adjustable-speed mixer, automatically completes piston filling (anti-drip), bag making, sealing and cutting.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 132,
+  "model": "QB-WS500ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "中型卧式膏体机500ML",
+  "name_en": "Medium Horizontal Paste Packaging Machine 500ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "50-500ml",
+    "value_en": "50-500ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-13bags/min",
+    "value_en": "8-13bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "50/80L",
+    "value_en": "50/80L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±3ml",
+    "value_en": "±3ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "20-34cm",
+    "value_en": "20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-22cm",
+    "value_en": "3-22cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 620W",
+    "value_en": "220V / 620W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57x127x160cm",
+    "value_en": "57x127x160cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 8%-52% y 22%-70%;底部可选配置:色带打码机、光标、按键款电脑版、传送带",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 133,
+  "model": "QB-WS1000ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "大型卧式膏体机1000ML",
+  "name_en": "Large Horizontal Paste Packaging Machine 1000ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "100-1000ml",
+    "value_en": "100-1000ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "7-10bags/min",
+    "value_en": "7-10bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "50L/80L",
+    "value_en": "50L/80L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5ml",
+    "value_en": "±5ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 720W",
+    "value_en": "220V / 720W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "66x160x167cm",
+    "value_en": "66x160x167cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 6%-50% y 22%-69%;底部4张成品袋展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 134,
+  "model": "QB-WS3000ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "600型卧式膏体机3000ML",
+  "name_en": "Extra Large Horizontal Paste Packaging Machine 3000ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "300-3000ml",
+    "value_en": "300-3000ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-8bags/min",
+    "value_en": "5-8bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/50L",
+    "value_en": "30L/50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±10ml",
+    "value_en": "±10ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-60cm",
+    "value_en": "40-60cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 920W",
+    "value_en": "220V / 920W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面上半部左侧机器照片,约占 x 12%-45% y 17%-50%",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机尺寸、整机重量(栏位空白)。多型号表页,上半 QB-WS3000ML、下半 QB-WS5000ML。"
+ },
+ {
+  "page": 134,
+  "model": "QB-WS5000ML",
+  "variant": "",
+  "category": "paste",
+  "name_zh": "700型卧式膏体机5000ML",
+  "name_en": "Ultra Large Horizontal Paste Packaging Machine 5000ml",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "500-5000ml",
+    "value_en": "500-5000ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "4-7bags/min",
+    "value_en": "4-7bags/min"
+   },
+   {
+    "key": "hopper_capacity",
+    "zh": "料斗容量",
+    "en": "Hopper capacity",
+    "value_zh": "30L/50L",
+    "value_en": "30L/50L"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±10ml",
+    "value_en": "±10ml"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-72cm",
+    "value_en": "40-72cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 1120W",
+    "value_en": "220V / 1120W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "89x186x220cm",
+    "value_en": "89x186x220cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面下半部左侧机器照片,约占 x 12%-45% y 62%-95%",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "画册参数表末尾数值错位:电压功率行印 1120W,整机尺寸行印 220V,整机重量行印 89x186x220cm。按数值类型归位:电压功率=220V / 1120W,整机尺寸=89x186x220cm。缺失:整机重量。"
+ },
+ {
+  "page": 136,
+  "model": "QG-3T100",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "三称颗粒给袋式包装机",
+  "name_en": "3-Head Granule Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-15bags/min",
+    "value_en": "8-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "8-22cm",
+    "value_en": "8-22cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "15-30cm",
+    "value_en": "15-30cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1145W",
+    "value_en": "220V/1145W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "120x100x187cm",
+    "value_en": "120x100x187cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requiremen",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [
+   135
+  ],
+  "images_hint": "页面上方左侧机器照片(较小款),约占 x 8%-43% y 28%-58%;右侧大图为较大款(QG-3T500/999 共用)",
+  "advantages_zh": "全程自动完成取袋、开袋、计量、充填、封口、成品输出,无需人工干预。兼容预制袋、自立袋、真空袋等多种袋型,可快速切换不同规格。封口方式多样,密封牢固,可定制抽真空、充气等功能,有效锁鲜、防潮、防氧化,延长保质期。配置可视安全防护门、避免操作事故;可联动喷码等设备,满足追溯与合规要求。",
+  "advantages_en": "The entire process, including bag picking, bag opening, metering, filling, sealing, and finished product output, is completed automatically without manual intervention. Compatible with various pre-made bag types such as stand-up pouches and vacuum bags, enabling quick switching between different specifications. Multiple sealing methods are available with firm sealing performance. Customizable functions like vacuum pumping and gas flushing are offered to effectively retain freshness, prevent moisture and oxidation, and extend shelf life. Equipped with visible safety protective doors to avoid operational accidents; can be linked with coding equipment to meet traceability and compliance requirements.",
+  "application_zh": "颗粒条形产品:五谷、坚果、茶叶、膨化零食、饲料、化肥、药材、红枣、瓜子、五金、饰品、咖啡豆、枸杞等;纯粉末产品:面粉、淀粉、玉米粉、豆粉、奶粉、咖啡粉、奶茶粉、益生菌粉、工业粉末、抹茶粉等;膏液产品:番茄酱、沙拉酱、果酱、凝胶、酱料、洗涤剂、水、花生酱、芝麻酱、蚝油等",
+  "application_en": "Granular & strip products: grains, nuts, tea, puffed snacks, pet food, chemical fertilizer, medicinal herbs, red dates, melon seeds, hardware, accessories, coffee beans, wolfberries, etc. Powder products: flour, starch, corn powder, soybean powder, milk powder, coffee powder, milk tea powder, probiotic powder, industrial powder, matcha powder, etc. Paste & liquid products: tomato paste, salad dressing, jam, gel, sauces, laundry detergent, water, peanut butter, sesame paste, oyster sauce, etc.",
+  "notes": "p135 为'按需定制 水平给袋式包装机 Pre-made Bag Packaging Machine'简介页(产品特性、主攻三大类产品、成品袋展示图),无参数表,归本机型;其 advantages/application 取自 p135。本页三个型号共用一张表,上方两张机器图:左图对应 QG-3T100,右图对应 QG-3T500/QG-3T999(依外形推测)。精准度英文列无单独英文,沿用中文'(因物料而异)'。 整机尺寸只印一个值 120x100x187cm(跨列),按图录入于 QG-3T100,QG-3T500/QG-3T999 无独立尺寸值,缺失:整机尺寸(未印)。气动需知跨三列共用一值。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 136,
+  "model": "QG-3T500",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "三称颗粒给袋式包装机",
+  "name_en": "3-Head Granule Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "5-500g",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-13bags/min",
+    "value_en": "6-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "20-30cm",
+    "value_en": "20-30cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "20-40cm",
+    "value_en": "20-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1850W",
+    "value_en": "220V/1850W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requiremen",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面上方右侧大机器照片,约占 x 48%-92% y 24%-80%(与 QG-3T999 共用)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机尺寸(未单独印)。与 QG-3T999 共用右侧机器图(依外形推测)。整机尺寸只印一个值 120x100x187cm(跨列),按图录入于 QG-3T100,QG-3T500/QG-3T999 无独立尺寸值,缺失:整机尺寸(未印)。气动需知跨三列共用一值。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 136,
+  "model": "QG-3T999",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "三称颗粒给袋式包装机",
+  "name_en": "3-Head Granule Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-11bags/min",
+    "value_en": "5-11bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "20-30cm",
+    "value_en": "20-30cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "20-40cm",
+    "value_en": "20-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1850W",
+    "value_en": "220V/1850W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requiremen",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面上方右侧大机器照片,约占 x 48%-92% y 24%-80%(与 QG-3T500 共用)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机尺寸(未单独印)。与 QG-3T500 共用右侧机器图(依外形推测)。整机尺寸只印一个值 120x100x187cm(跨列),按图录入于 QG-3T100,QG-3T500/QG-3T999 无独立尺寸值,缺失:整机尺寸(未印)。气动需知跨三列共用一值。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 137,
+  "model": "QG-LG100",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "螺杆粉末给袋式包装机",
+  "name_en": "Auger Filling Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-15bags/min",
+    "value_en": "8-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1g(因物料而异)",
+    "value_en": "±1g(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "8-22cm",
+    "value_en": "8-22cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "15-30cm",
+    "value_en": "15-30cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1600W",
+    "value_en": "220V/1600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "120x84x174cm",
+    "value_en": "120x84x174cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requiremen",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面右侧机器照片(带螺杆料斗),约占 x 43%-90% y 15%-62%;左侧另有吸盘局部特写图",
+  "advantages_zh": "螺杆计量装置通过螺杆的旋转,精准计量,通过吸盘从储袋库中精准抓取预制袋,水平运送开袋充填,高频封袋自动化完成",
+  "advantages_en": "The auger metering device ensures precise measurement through auger rotation. The system uses suction cups to accurately pick up pre-made bags from the bag magazine, transports them horizontally for opening and filling, and completes the process with heat sealing automatically.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 137,
+  "model": "QG-LG200",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "螺杆粉末给袋式包装机",
+  "name_en": "Auger Filling Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-200g",
+    "value_en": "3-200g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-13bags/min",
+    "value_en": "6-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1g(因物料而异)",
+    "value_en": "±1g(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "20-30cm",
+    "value_en": "20-30cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "20-40cm",
+    "value_en": "20-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1900W",
+    "value_en": "220V/1900W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requiremen",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面右侧机器照片(带螺杆料斗),约占 x 43%-90% y 15%-62%;左侧另有吸盘局部特写图",
+  "advantages_zh": "螺杆计量装置通过螺杆的旋转,精准计量,通过吸盘从储袋库中精准抓取预制袋,水平运送开袋充填,高频封袋自动化完成",
+  "advantages_en": "The auger metering device ensures precise measurement through auger rotation. The system uses suction cups to accurately pick up pre-made bags from the bag magazine, transports them horizontally for opening and filling, and completes the process with heat sealing automatically.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 137,
+  "model": "QG-LG500",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "螺杆粉末给袋式包装机",
+  "name_en": "Auger Filling Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "5-500g",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-11bags/min",
+    "value_en": "5-11bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±3g(因物料而异)",
+    "value_en": "±3g(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "20-30cm",
+    "value_en": "20-30cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "20-40cm",
+    "value_en": "20-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1900W",
+    "value_en": "220V/1900W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requiremen",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面右侧机器照片(带螺杆料斗),约占 x 43%-90% y 15%-62%;左侧另有吸盘局部特写图",
+  "advantages_zh": "螺杆计量装置通过螺杆的旋转,精准计量,通过吸盘从储袋库中精准抓取预制袋,水平运送开袋充填,高频封袋自动化完成",
+  "advantages_en": "The auger metering device ensures precise measurement through auger rotation. The system uses suction cups to accurately pick up pre-made bags from the bag magazine, transports them horizontally for opening and filling, and completes the process with heat sealing automatically.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 138,
+  "model": "QG-200ML",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "膏液给袋式包装机",
+  "name_en": "Paste & Liquid Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "3-200ml",
+    "value_en": "3-200ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-15bags/min",
+    "value_en": "8-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1ml(因物料而异)",
+    "value_en": "±1ml(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "8-22cm",
+    "value_en": "8-22cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "15-30cm",
+    "value_en": "15-30cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/970W",
+    "value_en": "220V/970W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "120x84x163cm",
+    "value_en": "120x84x163cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面右侧机器照片(带锥形料斗),约占 x 46%-94% y 20%-80%;左侧另有气缸局部特写图",
+  "advantages_zh": "膏体灌装通过气缸调节灌装量,智能控制系统,可实现取袋、开袋、灌装、封口、输出等全流程自动化操作,有效提高生产效率,降低人工成本",
+  "advantages_en": "Paste filling volume is adjusted via pneumatic cylinders, and the intelligent control system automates the entire process—from bag picking, opening, filling, and sealing to final output. This effectively boosts production efficiency and reduces labor costs.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 138,
+  "model": "QG-500ML",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "膏液给袋式包装机",
+  "name_en": "Paste & Liquid Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "5-500ml",
+    "value_en": "5-500ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-13bags/min",
+    "value_en": "6-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±3ml(因物料而异)",
+    "value_en": "±3ml(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "20-30cm",
+    "value_en": "20-30cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "20-40cm",
+    "value_en": "20-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1270W",
+    "value_en": "220V/1270W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面右侧机器照片(带锥形料斗),约占 x 46%-94% y 20%-80%;左侧另有气缸局部特写图",
+  "advantages_zh": "膏体灌装通过气缸调节灌装量,智能控制系统,可实现取袋、开袋、灌装、封口、输出等全流程自动化操作,有效提高生产效率,降低人工成本",
+  "advantages_en": "Paste filling volume is adjusted via pneumatic cylinders, and the intelligent control system automates the entire process—from bag picking, opening, filling, and sealing to final output. This effectively boosts production efficiency and reduces labor costs.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 138,
+  "model": "QG-1000ML",
+  "variant": "",
+  "category": "premade-bag",
+  "name_zh": "膏液给袋式包装机",
+  "name_en": "Paste & Liquid Pre-made Bag Packaging Machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "100-1000ml",
+    "value_en": "100-1000ml"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-11bags/min",
+    "value_en": "5-11bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5ml(因物料而异)",
+    "value_en": "±5ml(因物料而异)"
+   },
+   {
+    "key": "bag_width",
+    "zh": "袋口宽度",
+    "en": "Bag width",
+    "value_zh": "20-30cm",
+    "value_en": "20-30cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋子长度",
+    "en": "Bag length",
+    "value_zh": "20-40cm",
+    "value_en": "20-40cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/1270W",
+    "value_en": "220V/1270W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面右侧机器照片(带锥形料斗),约占 x 46%-94% y 20%-80%;左侧另有气缸局部特写图",
+  "advantages_zh": "膏体灌装通过气缸调节灌装量,智能控制系统,可实现取袋、开袋、灌装、封口、输出等全流程自动化操作,有效提高生产效率,降低人工成本",
+  "advantages_en": "Paste filling volume is adjusted via pneumatic cylinders, and the intelligent control system automates the entire process—from bag picking, opening, filling, and sealing to final output. This effectively boosts production efficiency and reduces labor costs.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+ },
+ {
+  "page": 140,
+  "model": "DZ-340",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "340型真空机",
+  "name_en": "DZ-340 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "32cmx2",
+    "value_en": "32cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "34x27x7cm",
+    "value_en": "34x27x7cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "580W",
+    "value_en": "580W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "2.0L",
+    "value_en": "2.0L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "39x48x44.5cm",
+    "value_en": "39x48x44.5cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "26.8kg",
+    "value_en": "26.8kg"
+   }
+  ],
+  "extra_pages": [
+   139
+  ],
+  "images_hint": "右半页机器照片(开盖),约占 x 56%-92% y 34%-72%;底部为真空成品展示图",
+  "advantages_zh": "台式设计体积小、放置桌面工作,移动搬运方便,适合小商铺、小型工厂及家庭厨房使用。机身不锈钢材质,搭配透明有机玻璃真空盖,易清洁又能直观观察包装过程,本款主要专攻各种干货产品。",
+  "advantages_en": "This tabletop model features a small footprint, making it ideal for placement on countertops. Its lightweight construction allows for easy movement and transportation, making it perfect for small shops, home kitchens, and small-scale factories. Constructed from stainless steel with a transparent acrylic vacuum lid, the machine is easy to clean while providing a clear view of the packaging process. This model is specialized in packaging various dry goods.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "p139 为'支持定制 商用真空机 Commercial Vacuum Machine'简介页(采用大功率真空泵、真空度可达-0.1MPa;可包装肉类/海鲜/干货/卤料/预制菜等;可调真空时间/封口时间/日期打印;不挑袋子:光面袋/阴阳袋/铝箔袋/纹路袋/手提袋/米砖袋;定制范围:加深真空仓/加高机身/304材质),无参数表,归本机型。该简介页的通用特性文字未录入本条 advantages。"
+ },
+ {
+  "page": 141,
+  "model": "DZ-390",
+  "variant": "平盖 980W",
+  "category": "vacuum",
+  "name_zh": "390型真空机(平盖 980W)",
+  "name_en": "DZ-390 Vacuum Machine (Flat Cover 980W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "36cmx2",
+    "value_en": "36cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "32x38x12cm",
+    "value_en": "32x38x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "980W",
+    "value_en": "980W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "2.0LX2",
+    "value_en": "2.0LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "45x49x68cm",
+    "value_en": "45x49x68cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "43kg",
+    "value_en": "43kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(平盖,开盖),约占 x 56%-94% y 22%-66%;左侧两张真空成品图",
+  "advantages_zh": "可视真空仓,能够直观地观察抽真空和封口过程状态。及时发现可能出现的问题,如袋子未放好、抽气不充分等。",
+  "advantages_en": "The transparent chamber allows for direct observation of the vacuuming and sealing process. This enables users to promptly identify potential issues, such as misaligned bags or insufficient vacuum levels.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+ },
+ {
+  "page": 141,
+  "model": "DZ-390",
+  "variant": "平盖 1500W",
+  "category": "vacuum",
+  "name_zh": "390型真空机(平盖 1500W)",
+  "name_en": "DZ-390 Vacuum Machine (Flat Cover 1500W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "36cmx2",
+    "value_en": "36cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "32x38x12cm",
+    "value_en": "32x38x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1500W",
+    "value_en": "1500W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "45x49x68cm",
+    "value_en": "45x49x68cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "44kg",
+    "value_en": "44kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(平盖,开盖),约占 x 56%-94% y 22%-66%;左侧两张真空成品图",
+  "advantages_zh": "可视真空仓,能够直观地观察抽真空和封口过程状态。及时发现可能出现的问题,如袋子未放好、抽气不充分等。",
+  "advantages_en": "The transparent chamber allows for direct observation of the vacuuming and sealing process. This enables users to promptly identify potential issues, such as misaligned bags or insufficient vacuum levels.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+ },
+ {
+  "page": 142,
+  "model": "DZ-390",
+  "variant": "凸盖 980W",
+  "category": "vacuum",
+  "name_zh": "390型真空机(凸盖 980W)",
+  "name_en": "DZ-390 Vacuum Machine (Convex Cover 980W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "36cmx2",
+    "value_en": "36cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "32x38x12cm",
+    "value_en": "32x38x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "980W",
+    "value_en": "980W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "2.0LX2",
+    "value_en": "2.0LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "45x49x72cm",
+    "value_en": "45x49x72cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "40.5kg",
+    "value_en": "40.5kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(凸盖,带脚轮),约占 x 12%-44% y 21%-65%;右侧两张真空成品图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空32cm长度以内产品,如:腊肉、烧鸡、烤鸭、排骨、海鲜、熟玉米等干湿产品,最大袋子可用35x40cm内,小袋一次多袋。",
+  "application_en": "This model can vacuum products up to 32cm in length, suitable for wet and dry items like cured meat, roast chicken, duck, ribs, seafood, and cooked corn. It accommodates bags up to 35x40cm, and multiple smaller bags can be sealed simultaneously.",
+  "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+ },
+ {
+  "page": 142,
+  "model": "DZ-390",
+  "variant": "凸盖 1500W",
+  "category": "vacuum",
+  "name_zh": "390型真空机(凸盖 1500W)",
+  "name_en": "DZ-390 Vacuum Machine (Convex Cover 1500W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "36cmx2",
+    "value_en": "36cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "32x38x12cm",
+    "value_en": "32x38x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1500W",
+    "value_en": "1500W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "45x49x72cm",
+    "value_en": "45x49x72cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "44.5kg",
+    "value_en": "44.5kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(凸盖,带脚轮),约占 x 12%-44% y 21%-65%;右侧两张真空成品图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空32cm长度以内产品,如:腊肉、烧鸡、烤鸭、排骨、海鲜、熟玉米等干湿产品,最大袋子可用35x40cm内,小袋一次多袋。",
+  "application_en": "This model can vacuum products up to 32cm in length, suitable for wet and dry items like cured meat, roast chicken, duck, ribs, seafood, and cooked corn. It accommodates bags up to 35x40cm, and multiple smaller bags can be sealed simultaneously.",
+  "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+ },
+ {
+  "page": 143,
+  "model": "DZ-400",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "400型真空机",
+  "name_en": "DZ-400 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "38cmx2",
+    "value_en": "38cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "35x40x12cm",
+    "value_en": "35x40x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "51x51x76cm",
+    "value_en": "51x51x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "46kg",
+    "value_en": "46kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 54%-90% y 20%-68%;左侧两张实拍抽真空图;底部真空成品展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "页面有'实拍真空视频-咨询查看 Real Vacuuming Video - Available Upon Request'说明。"
+ },
+ {
+  "page": 144,
+  "model": "DZ-420",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "420型真空机",
+  "name_en": "DZ-420 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "42cmx2",
+    "value_en": "42cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "40x44x12cm",
+    "value_en": "40x44x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "580W",
+    "value_en": "580W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "56x56x76cm",
+    "value_en": "56x56x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "59.4kg",
+    "value_en": "59.4kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 53%-96% y 19%-70%;底部真空成品展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空40cm长度以内产品,如:腊肉、烧鸡、烤鸭、排骨、海鲜、熟玉米等干湿产品,大米5kg手提袋一次1袋,最大袋子可用40x50cm内,小袋一次多袋。",
+  "application_en": "This model can vacuum products up to 40cm in length, suitable for wet and dry items like cured meat, roast chicken, duck, ribs, seafood, and cooked corn. It can vacuum one 5kg rice bag (with handles) at a time, or accommodate bags up to 40x50cm. Multiple smaller bags can be sealed simultaneously.",
+  "notes": "总功率印 580W 而同系列更小的 DZ-400 为 1800W,照抄(疑似笔误,未改)。"
+ },
+ {
+  "page": 145,
+  "model": "DZ-520",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "520型真空机",
+  "name_en": "DZ-520 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "52cmx2",
+    "value_en": "52cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "50x54x12cm",
+    "value_en": "50x54x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "66x66x76cm",
+    "value_en": "66x66x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "72.2kg",
+    "value_en": "72.2kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(开盖,带脚轮),约占 x 7%-45% y 20%-67%;右侧两张实拍抽真空图;底部真空成品展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "页面有'实拍真空视频-咨询查看'说明。"
+ },
+ {
+  "page": 146,
+  "model": "DZ-620",
+  "variant": "单泵 20L",
+  "category": "vacuum",
+  "name_zh": "620型真空机(单泵 20L)",
+  "name_en": "DZ-560 Vacuum Machine (单泵 20L)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "62cmx2",
+    "value_en": "62cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "60x64x12cm",
+    "value_en": "60x64x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "76x76x76cm",
+    "value_en": "76x76x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "87.8kg",
+    "value_en": "87.8kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 49%-96% y 20%-70%;左侧两张实拍抽真空图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空60cm长度以内产品,如:羊腿、腊肉、烤鹅、排骨、鱼、莲藕等干湿产品,大米10kg手提袋一次1袋,最大袋子可用60x70cm内,小袋一次多袋。",
+  "application_en": "This model can vacuum products up to 60cm in length, suitable for wet and dry items like lamb legs, cured meat, roast geese, ribs, fish, and lotus roots. It can vacuum one 10kg rice bag (with handles) at a time, or accommodate bags up to 60x70cm. Multiple smaller bags can be sealed simultaneously.",
+  "notes": "型号印刷不一致:中文标题印 DZ-620/620型真空机,英文副标题印 DZ-560 Vacuum Machine;按 DZ-620 录入,name_en 保留画册原印的 DZ-560。参数表有两列,两列仅真空泵与重量不同(20L 与 20LX2;87.8kg 与 103.8kg),拆成两条记录;画册两列未印列标题。页面有'实拍真空视频-咨询查看'说明。"
+ },
+ {
+  "page": 146,
+  "model": "DZ-620",
+  "variant": "双泵 20LX2",
+  "category": "vacuum",
+  "name_zh": "620型真空机(双泵 20LX2)",
+  "name_en": "DZ-560 Vacuum Machine (双泵 20LX2)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "62cmx2",
+    "value_en": "62cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "60x64x12cm",
+    "value_en": "60x64x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20LX2",
+    "value_en": "20LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "76x76x76cm",
+    "value_en": "76x76x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "103.8kg",
+    "value_en": "103.8kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 49%-96% y 20%-70%;左侧两张实拍抽真空图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空60cm长度以内产品,如:羊腿、腊肉、烤鹅、排骨、鱼、莲藕等干湿产品,大米10kg手提袋一次1袋,最大袋子可用60x70cm内,小袋一次多袋。",
+  "application_en": "This model can vacuum products up to 60cm in length, suitable for wet and dry items like lamb legs, cured meat, roast geese, ribs, fish, and lotus roots. It can vacuum one 10kg rice bag (with handles) at a time, or accommodate bags up to 60x70cm. Multiple smaller bags can be sealed simultaneously.",
+  "notes": "型号印刷不一致:中文标题印 DZ-620/620型真空机,英文副标题印 DZ-560 Vacuum Machine;按 DZ-620 录入,name_en 保留画册原印的 DZ-560。参数表有两列,两列仅真空泵与重量不同(20L 与 20LX2;87.8kg 与 103.8kg),拆成两条记录;画册两列未印列标题。页面有'实拍真空视频-咨询查看'说明。"
+ },
+ {
+  "page": 147,
+  "model": "DZ-720",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "720型真空机",
+  "name_en": "DZ-720 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "72cmx2",
+    "value_en": "72cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "60x74x12cm",
+    "value_en": "60x74x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2900W",
+    "value_en": "2900W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20LX2",
+    "value_en": "20LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "76x87x76cm",
+    "value_en": "76x87x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "110.8kg",
+    "value_en": "110.8kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮,5个铰链),约占 x 50%-92% y 22%-70%;底部真空成品展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "商用大型机,提高产量,生鲜、肉类、干货均可真空。小袋23x35cm一次真空6袋,大袋70x70cm一次1袋。",
+  "application_en": "This heavy-duty commercial machine significantly boosts productivity. It is suitable for vacuum sealing fresh produce, meat, and dry goods. It offers flexible capacity: vacuum seal 6 small bags (23x35cm) simultaneously or 1 large bag (70x70cm) per cycle.",
+  "notes": ""
+ },
+ {
+  "page": 148,
+  "model": "DZ-820",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "820型真空机",
+  "name_en": "DZ-820 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "82cmx2",
+    "value_en": "82cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "60x84x12cm",
+    "value_en": "60x84x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2900W",
+    "value_en": "2900W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20LX2",
+    "value_en": "20LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "76x87x76cm",
+    "value_en": "76x87x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "134kg",
+    "value_en": "134kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮,5个铰链),约占 x 51%-93% y 22%-70%;底部真空成品展示图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "干湿两用真空密封,广泛适用各行业,小袋20x35cm一次真空8袋,大袋80x70cm一次1袋",
+  "application_en": "Versatile across industries, this machine handles both wet and dry applications. It offers flexible capacity: vacuum seal 8 small bags (20x35cm) simultaneously or 1 large bag (80x70cm) per cycle.",
+  "notes": "整机尺寸印 76x87x76cm,与 DZ-720 相同,而真空室更大,照抄(疑似与 DZ-720 重复的笔误,未改)。"
+ },
+ {
+  "page": 149,
+  "model": "DZ-850",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "850型真空机",
+  "name_en": "DZ-850 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "52cmx2",
+    "value_en": "52cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "70x54x12cm",
+    "value_en": "70x54x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2900W",
+    "value_en": "2900W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "86x66x76cm",
+    "value_en": "86x66x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "109kg",
+    "value_en": "109kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 45%-94% y 25%-70%;底部真空成品展示图(3张)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空长度70cm内的产品 25x40cm一次真空4袋 大袋50x80cm一次1袋",
+  "application_en": "This model can vacuum products up to 70cm in length. Vacuum seal 4 bags of 25x40cm at once. Vacuum seal 1 bag of 50x80cm at once.",
+  "notes": "封口长度印 52cmx2 但真空室长边 70cm,照抄(明显偏小,疑似笔误,未改)。"
+ },
+ {
+  "page": 150,
+  "model": "DZ-950",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "950型真空机",
+  "name_en": "DZ-950 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "62cmx2",
+    "value_en": "62cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "80x64x12cm",
+    "value_en": "80x64x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2900W",
+    "value_en": "2900W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20LX2",
+    "value_en": "20LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "97x76x76cm",
+    "value_en": "97x76x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "126kg",
+    "value_en": "126kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 45%-95% y 25%-70%;底部真空成品展示图(3张)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空长度80cm内的产品 30x45cm一次真空4袋 大袋60x90cm一次1袋",
+  "application_en": "This model can vacuum products up to 80cm in length. Vacuum seal 4 bags of 30x45cm at once. Vacuum seal 1 bag of 60x90cm at once.",
+  "notes": ""
+ },
+ {
+  "page": 151,
+  "model": "DZ-1050",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "1050型四边封真空机",
+  "name_en": "DZ-1050 Four Side Seal Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "52cmx2 / 90cmx2",
+    "value_en": "52cmx2 / 90cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "90x54x12cm",
+    "value_en": "90x54x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2900W",
+    "value_en": "2900W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20LX2台",
+    "value_en": "20LX2台"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "86x66x76cm",
+    "value_en": "86x66x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "154kg",
+    "value_en": "154kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "下半页右侧机器照片(开盖,四边封口条,带脚轮),约占 x 38%-92% y 50%-92%;左侧三张真空成品图",
+  "advantages_zh": "单室4根封口条,一次可摆放多排小袋产品,批量真空包装,提速降本规模化生产。前后90cm长或左右52cm长封口条可设单独使用。",
+  "advantages_en": "This single-chamber model has 4 seal bars, can vacuum multiple rows of small bags at once. This significantly speeds up production and reduces costs, making it ideal for large-scale operations. The seal bars can be used independently: either the front/back bars (90cm) or the left/right bars (52cm).",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸印 86x66x76cm,与真空室 90x54x12cm 的长度不相称(整机宽度小于真空室长度),照抄(疑似笔误,未改)。"
+ },
+ {
+  "page": 152,
+  "model": "DZ-1300",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "1300型真空机",
+  "name_en": "DZ-1300 Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "52cmx2",
+    "value_en": "52cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "1cm",
+    "value_en": "1cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "120x54x12cm",
+    "value_en": "120x54x12cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2900W",
+    "value_en": "2900W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20LX2台",
+    "value_en": "20LX2台"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "135x66x76cm",
+    "value_en": "135x66x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "140kg",
+    "value_en": "140kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "下半页右侧机器照片(开盖,带脚轮),约占 x 36%-94% y 52%-88%;左侧三张真空成品图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "本款可真空120cm长度以内产品,如带鱼、火腿、全羊、等各类较长产品,大袋可用50x130cm,小袋25x65cm可一次真空4袋。",
+  "application_en": "This model can vacuum products up to 120cm in length, suitable for large items like belt fish, hams, and whole lambs. It accommodates bags up to 50x130cm, or vacuum seal 4 bags of 25x65cm at once.",
+  "notes": ""
+ },
+ {
+  "page": 153,
+  "model": "MZ-380",
+  "variant": "980W",
+  "category": "vacuum",
+  "name_zh": "380型米砖真空机(980W)",
+  "name_en": "MZ-380 Rice Brick Vacuum Machine (980W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "36cmx2",
+    "value_en": "36cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "0.8cm",
+    "value_en": "0.8cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "38x21x35cm",
+    "value_en": "38x21x35cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "980W",
+    "value_en": "980W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "2.0LX2",
+    "value_en": "2.0LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "43x42x68cm",
+    "value_en": "43x42x68cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "39kg",
+    "value_en": "39kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 53%-88% y 23%-68%;左侧米砖成品图",
+  "advantages_zh": "大米、杂粮等颗粒状物料包装成砖形,通过搭配模具抽真空包装后,具有保鲜、防潮、防变质等效果,且便于仓储运输。大米0.5kg-1kg一次真空6袋;大米2.5kg-5kg一次真空2袋",
+  "advantages_en": "Ideal for packaging granular materials such as rice and grains into brick shapes. When used with specialized molds, the vacuum packaging offers excellent freshness preservation, moisture resistance, and anti-deterioration properties, while also making storage and transportation more efficient. Rice Bags (0.5kg - 1kg): 6 bags at once; Rice Bags (2.5kg - 5kg): 2 bags at once",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(39kg 与 40.5kg)不同,拆成两条记录;画册两列未印列标题。"
+ },
+ {
+  "page": 153,
+  "model": "MZ-380",
+  "variant": "1800W",
+  "category": "vacuum",
+  "name_zh": "380型米砖真空机(1800W)",
+  "name_en": "MZ-380 Rice Brick Vacuum Machine (1800W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "36cmx2",
+    "value_en": "36cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "0.8cm",
+    "value_en": "0.8cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "38x21x35cm",
+    "value_en": "38x21x35cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "43x42x68cm",
+    "value_en": "43x42x68cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "40.5kg",
+    "value_en": "40.5kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 53%-88% y 23%-68%;左侧米砖成品图",
+  "advantages_zh": "大米、杂粮等颗粒状物料包装成砖形,通过搭配模具抽真空包装后,具有保鲜、防潮、防变质等效果,且便于仓储运输。大米0.5kg-1kg一次真空6袋;大米2.5kg-5kg一次真空2袋",
+  "advantages_en": "Ideal for packaging granular materials such as rice and grains into brick shapes. When used with specialized molds, the vacuum packaging offers excellent freshness preservation, moisture resistance, and anti-deterioration properties, while also making storage and transportation more efficient. Rice Bags (0.5kg - 1kg): 6 bags at once; Rice Bags (2.5kg - 5kg): 2 bags at once",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(39kg 与 40.5kg)不同,拆成两条记录;画册两列未印列标题。"
+ },
+ {
+  "page": 154,
+  "model": "DZ-680",
+  "variant": "980W",
+  "category": "vacuum",
+  "name_zh": "680型米砖真空机(980W)",
+  "name_en": "MZ-680 Rice Brick Vacuum Machine (980W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "66cmx2",
+    "value_en": "66cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "0.8cm",
+    "value_en": "0.8cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "68x21x35cm",
+    "value_en": "68x21x35cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "980W",
+    "value_en": "980W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "2.0LX2",
+    "value_en": "2.0LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "73x42x71cm",
+    "value_en": "73x42x71cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "66kg",
+    "value_en": "66kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 46%-91% y 24%-69%;左侧三张抽真空摆放图",
+  "advantages_zh": "大米0.5kg-1kg一次真空10袋;大米2.5kg一次真空6袋;大米5kg一次真空4袋;也可真空茶叶、坚果、肉类、生鲜等产品",
+  "advantages_en": "Rice Bags (0.5kg - 1kg): 10 bags at once; Rice Bags (2.5kg): 6 bags at once; Rice Bags (5kg): 4 bags at once. Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印刷不一致:标题印 DZ-680(中文标题 680型米砖真空机),英文副标题印 MZ-680 Rice Brick Vacuum Machine;按图中大标题印的 DZ-680 录入(page_index 为 MZ-680,系列同为 MZ 米砖机,建议复核后统一为 MZ-680)。本页文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(66kg 与 68.4kg)不同,拆成两条记录;画册两列未印列标题。"
+ },
+ {
+  "page": 154,
+  "model": "DZ-680",
+  "variant": "1800W",
+  "category": "vacuum",
+  "name_zh": "680型米砖真空机(1800W)",
+  "name_en": "MZ-680 Rice Brick Vacuum Machine (1800W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "66cmx2",
+    "value_en": "66cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "0.8cm",
+    "value_en": "0.8cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "68x21x35cm",
+    "value_en": "68x21x35cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "73x42x71cm",
+    "value_en": "73x42x71cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "68.4kg",
+    "value_en": "68.4kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(开盖,带脚轮),约占 x 46%-91% y 24%-69%;左侧三张抽真空摆放图",
+  "advantages_zh": "大米0.5kg-1kg一次真空10袋;大米2.5kg一次真空6袋;大米5kg一次真空4袋;也可真空茶叶、坚果、肉类、生鲜等产品",
+  "advantages_en": "Rice Bags (0.5kg - 1kg): 10 bags at once; Rice Bags (2.5kg): 6 bags at once; Rice Bags (5kg): 4 bags at once. Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印刷不一致:标题印 DZ-680(中文标题 680型米砖真空机),英文副标题印 MZ-680 Rice Brick Vacuum Machine;按图中大标题印的 DZ-680 录入(page_index 为 MZ-680,系列同为 MZ 米砖机,建议复核后统一为 MZ-680)。本页文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(66kg 与 68.4kg)不同,拆成两条记录;画册两列未印列标题。"
+ },
+ {
+  "page": 155,
+  "model": "MZ-880",
+  "variant": "",
+  "category": "vacuum",
+  "name_zh": "880型米砖真空机",
+  "name_en": "MZ-880 Rice Brick Vacuum Machine",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "82cmx2",
+    "value_en": "82cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "0.8cm",
+    "value_en": "0.8cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "84x21x35cm",
+    "value_en": "84x21x35cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "91x42x76cm",
+    "value_en": "91x42x76cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "76.4kg",
+    "value_en": "76.4kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页下方机器照片(开盖,带脚轮),约占 x 7%-58% y 48%-92%;右侧两张米砖成品图",
+  "advantages_zh": "大米0.5kg-1kg一次真空12袋;大米2.5kg一次真空8袋;大米5kg一次真空6袋;也可真空茶叶、坚果、肉类、生鲜等产品",
+  "advantages_en": "Rice Bags (0.5kg - 1kg): 12 bags at once; Rice Bags (2.5kg): 8 bags at once; Rice Bags (5kg): 6 bags at once. Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。"
+ },
+ {
+  "page": 156,
+  "model": "MZ-1100",
+  "variant": "1800W",
+  "category": "vacuum",
+  "name_zh": "1100型米砖真空机(1800W)",
+  "name_en": "MZ-1100 Rice Brick Vacuum Machine (1800W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "105cmx2",
+    "value_en": "105cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "0.8cm",
+    "value_en": "0.8cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "107x21x35cm",
+    "value_en": "107x21x35cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1800W",
+    "value_en": "1800W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20L",
+    "value_en": "20L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "114x42x71cm",
+    "value_en": "114x42x71cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "99.5kg",
+    "value_en": "99.5kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面中右部机器照片(开盖,带脚轮),约占 x 40%-94% y 26%-68%;左下米砖成品图",
+  "advantages_zh": "大米0.5kg-1kg一次真空16袋;大米2.5kg一次真空10袋;大米5kg一次真空8袋;也可真空茶叶、坚果、肉类、生鲜等产品",
+  "advantages_en": "Rice Bags (0.5kg - 1kg): 16 bags at once; Rice Bags (2.5kg): 10 bags at once; Rice Bags (5kg): 8 bags at once. Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(1800W/2900W),两列仅总功率、真空泵(20L 与 20LX2)、整机重量不同,拆成两条记录;画册未印列标题。"
+ },
+ {
+  "page": 156,
+  "model": "MZ-1100",
+  "variant": "2900W",
+  "category": "vacuum",
+  "name_zh": "1100型米砖真空机(2900W)",
+  "name_en": "MZ-1100 Rice Brick Vacuum Machine (2900W)",
+  "params": [
+   {
+    "key": "sealing_length",
+    "zh": "封口长度",
+    "en": "Sealing length",
+    "value_zh": "105cmx2",
+    "value_en": "105cmx2"
+   },
+   {
+    "key": "sealing_width",
+    "zh": "封口宽度",
+    "en": "Sealing width",
+    "value_zh": "0.8cm",
+    "value_en": "0.8cm"
+   },
+   {
+    "key": "vacuum_chamber",
+    "zh": "真空室",
+    "en": "Vacuum chamber",
+    "value_zh": "107x21x35cm",
+    "value_en": "107x21x35cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2900W",
+    "value_en": "2900W"
+   },
+   {
+    "key": "pump",
+    "zh": "真空泵",
+    "en": "Vacuum pump",
+    "value_zh": "20LX2",
+    "value_en": "20LX2"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "114x42x71cm",
+    "value_en": "114x42x71cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "117.4kg",
+    "value_en": "117.4kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面中右部机器照片(开盖,带脚轮),约占 x 40%-94% y 26%-68%;左下米砖成品图",
+  "advantages_zh": "大米0.5kg-1kg一次真空16袋;大米2.5kg一次真空10袋;大米5kg一次真空8袋;也可真空茶叶、坚果、肉类、生鲜等产品",
+  "advantages_en": "Rice Bags (0.5kg - 1kg): 16 bags at once; Rice Bags (2.5kg): 10 bags at once; Rice Bags (5kg): 8 bags at once. Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(1800W/2900W),两列仅总功率、真空泵(20L 与 20LX2)、整机重量不同,拆成两条记录;画册未印列标题。第二列整机重量画册印作 117.4g,明显单位笔误,已修正为 117.4kg。"
+ }
+]

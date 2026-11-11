@@ -45,7 +45,7 @@ export function getFeaturedMachines(): Machine[] {
   }
 
   // Legacy hand-maintained data: a balanced mix of 6 high-demand machines across categories.
-  const featuredIds = ['kl-y100', 'dsy-k100', 'ds-200ml', 'qs-ls200ml', 'dz-340', 'ts-170'];
+  const featuredIds = ['fm-y100', 'fb-3000', 'zlg-100', 'ds-y100', 'ds-300ml', 'dz-340'];
   const featured = featuredIds
     .map((id) => getMachineById(id))
     .filter((m): m is Machine => m !== undefined);

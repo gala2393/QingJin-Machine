@@ -1,0 +1,2730 @@
+[
+ {
+  "page": 2,
+  "model": "FM-Y100",
+  "category": "desktop",
+  "name_zh": "100克粉末分装机",
+  "name_en": "100g Desktop Powder Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "10-15Bags/Min",
+    "value_en": "10-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "65W",
+    "value_en": "65W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "21x21x17cm",
+    "value_en": "21x21x17cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "37x22.5x50cm",
+    "value_en": "37x22.5x50cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "8.5kg",
+    "value_en": "8.5kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(圆形不锈钢料斗),约占 x 10%-48% y 26%-60%;下方有 2 行 4 列粉末物料图",
+  "advantages_zh": "迷你机身省空间,智能自动称重,安全耐用靠谱,轻松实现大量铺货无压力。",
+  "advantages_en": "Mini body saves space, intelligent automatic weighing, safe, durable and reliable, easy to achieve large-scale distribution without pressure",
+  "application_zh": "面粉、淀粉、调料粉、辣椒面、五谷粉末、抹茶粉、咖啡粉、玉米粉、饮料粉、益生菌粉、工业粉末、等粉末专用,定量自动灌装",
+  "application_en": "Widely used in flour, starch, seasoning powder, chili powder, grain powder, matcha powder, coffee powder, probiotic powder, industrial powder, etc. It is specifically for powder and features automatic quantitative filling.",
+  "notes": ""
+ },
+ {
+  "page": 3,
+  "model": "FM-Y200",
+  "category": "desktop",
+  "name_zh": "200克粉末分装机",
+  "name_en": "200g Desktop Powder Flling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "2-200g",
+    "value_en": "2-200g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "10-15Bags/Min",
+    "value_en": "10-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "65W",
+    "value_en": "65W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "21x21x17cm",
+    "value_en": "21x21x17cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "37x22.5x56cm",
+    "value_en": "37x22.5x56cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "9.5kg",
+    "value_en": "9.5kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页参数表右侧机器照片(圆形不锈钢料斗),约占 x 53%-90% y 19%-55%;下方为 4 张非标定制小图",
+  "advantages_zh": "称重精度稳定,减少物料损耗 / 自动称重,辅助人工提升效率 / 可与立式包装机连接使用",
+  "advantages_en": "Ensures stable weighing precision to minimize material loss. / Automates the weighing process to boost operator efficiency. / Compatible with vertical packaging machines for integrated operation.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "英文副标题印为 'Flling'(笔误,原样照抄)。本页另有'支持非标定制':圆形出料口 Round discharge nozzle / 镀铁氟龙涂层 Teflon coating / 多头称重分装机 Multi head weighing / 定制304材质 Customized 304 material。"
+ },
+ {
+  "page": 4,
+  "model": "KL-F100",
+  "category": "desktop",
+  "name_zh": "100克颗粒分装机",
+  "name_en": "100g Desktop Particle Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "10-15Bags/Min",
+    "value_en": "10-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "65W",
+    "value_en": "65W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "22x22x21cm",
+    "value_en": "22x22x21cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "37x22.5x52cm",
+    "value_en": "37x22.5x52cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "9kg",
+    "value_en": "9kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(方形不锈钢料斗),约占 x 8%-46% y 20%-57%;下方有 2 行 4 列颗粒物料图",
+  "advantages_zh": "小型台式不占空间,定量自动称重、辅助人工提高工作效率,产量提升。",
+  "advantages_en": "Small desktop does not take up space, with quantitative automatic weighing and auxiliary manual work to improve work efficiency and increase output.",
+  "application_zh": "五谷、种子、芝麻、花生米、干燥剂、药品、瓜子、枸杞、饲料、化肥、花椒、辣椒面、咖啡豆、串珠、小配件、等各类小颗粒产品,定量自动称重",
+  "application_en": "Widely used in grains, seeds, sesame, peanuts, desiccants, medicines, nuts, goji berries, feed, fertilizers, pepper, chili powder, coffee beans, beads, small accessories, etc., and can perform automatic quantitative weighing.",
+  "notes": ""
+ },
+ {
+  "page": 5,
+  "model": "KL-F200",
+  "category": "desktop",
+  "name_zh": "200克颗粒分装机",
+  "name_en": "200g Desktop Particle Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "2-200g",
+    "value_en": "2-200g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "8-15Bags/Min",
+    "value_en": "8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "65W",
+    "value_en": "65W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "22x22x21cm",
+    "value_en": "22x22x21cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "37x22.5x58.5cm",
+    "value_en": "37x22.5x58.5cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "10kg",
+    "value_en": "10kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页参数表右侧机器照片,约占 x 57%-87% y 22%-50%;下方为可搭配设备(封口机/包装机/液体包装机)",
+  "advantages_zh": "移动便捷,机身轻便 / 运营成本可控,轻松上手 / 售后维护简单",
+  "advantages_en": "Convenient to move, lightweight body / Controllable operating costs, easy to get started / Easy after-sales maintenance",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "本页无适用产品栏,为'可搭配其它设备使用'(封口机、包装机、液体包装机)。"
+ },
+ {
+  "page": 6,
+  "model": "KL-F500",
+  "category": "desktop",
+  "name_zh": "500克颗粒粉末分装机",
+  "name_en": "500g Granule Powder Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "5-500g",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "7-12Bags/Min",
+    "value_en": "7-12Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g (因物料而异)",
+    "value_en": "±2g (因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "200W",
+    "value_en": "200W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "25x25x30cm",
+    "value_en": "25x25x30cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "47x32x82.5cm",
+    "value_en": "47x32x82.5cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "18kg",
+    "value_en": "18kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页参数表右侧机器照片,约占 x 58%-87% y 18%-48%;下方为可搭配设备(封口机/真空机/包装机)及成品袋图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "本页无产品优势/适用产品栏,为'可搭配其它设备使用'(封口机、真空机、包装机)。"
+ },
+ {
+  "page": 7,
+  "model": "KL-2T100",
+  "category": "desktop",
+  "name_zh": "100克双称分装机",
+  "name_en": "100g Double Head Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "12-20Bags/Min",
+    "value_en": "12-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "130W",
+    "value_en": "130W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "35.5x18x30cm",
+    "value_en": "35.5x18x30cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "41x44x75cm",
+    "value_en": "41x44x75cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "20kg",
+    "value_en": "20kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页参数表右侧机器照片(双料斗),约占 x 56%-86% y 17%-49%;下方'细节展示'为双称内部照片",
+  "advantages_zh": "小型灵活、双工位独立运行,可同时处理两件物料,或交替完成减少等待时间。广泛适用各种小颗粒、粉剂产品定量自动称重。",
+  "advantages_en": "Small and flexible, dual station independent operation, capable of handling two materials simultaneously or alternately reducing waiting time. Widely applicable for quantitative automatic weighing of various small particle and powder products.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无适用产品栏;有细节展示:料斗可拆卸,便于清洁内部称重盘;标配机均201材质,支持定制304不锈钢 (The hopper is detachable...; Standard equipment is made of 201 material and supports customized 304 stainless steel)。"
+ },
+ {
+  "page": 8,
+  "model": "",
+  "category": "desktop",
+  "name_zh": "24头拼豆分装机",
+  "name_en": "24-Head bean filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "6-12Bags/Min",
+    "value_en": "6-12Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage Power",
+    "value_zh": "220V / 1600W",
+    "value_en": "220V / 1600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "170*120*227cm",
+    "value_en": "170*120*227cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页大图:四料仓多头拼豆分装机整机(不锈钢框架),约占 x 44%-93% y 29%-80%;左侧另有拼豆盒、触摸屏、料仓实拍三张小图",
+  "advantages_zh": "可选定制2-32头机型,多头独立料仓+单独下料管道,一色一通道,一次完成多色定量;适合拼豆套盒大批量生产。自动统计灌装总数量,方便车间核算产量,省去人工点数。",
+  "advantages_en": "Customizable models with 2-32 heads available. Each head features an independent material hopper and separate discharging pipeline, one channel for one color, enabling multi-color dosing in a single run. Ideal for mass production of fuse bead sets. The system automatically counts total filling quantity to facilitate workshop output calculation and eliminate manual counting.",
+  "application_zh": "拼豆套盒",
+  "application_en": "Fuse bead sets",
+  "notes": "案例页'按需定制',无型号(model 留空)。英文副标题印 '24 -Head bean filling machine'。缺失:整机重量(Weight 栏空白)。本页无独立型号,归属建议:作为 desktop 分类下的定制案例独立一条,或附到 KL-2T100 之类多称机型。"
+ },
+ {
+  "page": 9,
+  "model": "DGN-100",
+  "category": "desktop",
+  "name_zh": "100克螺旋分装机",
+  "name_en": "100g Spiral Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "10-15Bags/Min",
+    "value_en": "10-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "85W",
+    "value_en": "85W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "19.5x18cm",
+    "value_en": "19.5x18cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "41x41x41cm",
+    "value_en": "41x41x41cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "16kg",
+    "value_en": "16kg"
+   }
+  ],
+  "extra_pages": [
+   10,
+   12
+  ],
+  "images_hint": "左半页机器照片(圆形料斗),约占 x 6%-50% y 40%-68%;其上方为螺旋内部实拍图",
+  "advantages_zh": "内部旋转送料,走料均匀,不挤压损坏物料,定量自动精准称重、感应灌装",
+  "advantages_en": "Internal rotating feeding, uniform feeding, no squeezing or damage to materials, quantitative automatic precise weighing, induction filling",
+  "application_zh": "条形状片状颗粒状专用:红茶、绿茶、铁观音、花茶、膨化零食、五谷杂粮、中药材、坚果干货、咖啡豆、五金螺丝、红枣、小虾米、蔬菜干等更多",
+  "application_en": "Widely used in strip, flake, and granular materials. Applicable to black tea, green tea, tie guan yin, scented tea, puffed snacks, grains, chinese herbs, dried nuts & fruits, coffee beans, hardware screws, red dates, dried shrimp, dried vegetables, etc",
+  "notes": "extra_pages: p10=部分定制案例(定制多头称重灌装机,可混合或轮流两种灌装方式 / Customized multi-head weighing filling machine, which can be used for mixed filling or sequential filling;四头称螺旋内部、八头称螺旋内部),p12=按需定制-计数盘分装机案例(适用产品:五金配件、螺丝、螺帽、垫片、电子配件、干燥剂、小公仔、饰品、纽扣、橡皮擦、糖果、珠子、等各类不规则产品 / Widely used in hardware accessories, screws, nuts, gaskets, electronic components, desiccants, small figurines, jewelry, buttons, erasers, candies, beads, etc.)。p10/p12 无参数表,按索引归到 DGN 系列(DGN-100 首款);p11 是 DGN-200/500 独立机型页,不属 extra。"
+ },
+ {
+  "page": 11,
+  "model": "DGN-200",
+  "category": "desktop",
+  "name_zh": "200克螺旋分装机",
+  "name_en": "200g Spiral Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "2-200g",
+    "value_en": "2-200g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "8-15Bags/Min",
+    "value_en": "8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精度",
+    "en": "Precision",
+    "value_zh": "±0.5g(因物料而异)",
+    "value_en": "±0.5g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "85W",
+    "value_en": "85W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "19.5x18cm",
+    "value_en": "19.5x18cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "41x41x53cm",
+    "value_en": "41x41x53cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "18kg",
+    "value_en": "18kg"
+   }
+  ],
+  "extra_pages": [
+   10,
+   12
+  ],
+  "images_hint": "上半页右侧机器照片,约占 x 57%-88% y 20%-45%",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "多型号页(上下两台)。精度栏印 '精 度 / Precision'。无优势/适用产品栏。"
+ },
+ {
+  "page": 11,
+  "model": "DGN-500",
+  "category": "desktop",
+  "name_zh": "500克螺旋分装机",
+  "name_en": "500G Spiral Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "5-500g",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "7-12Bags/Min",
+    "value_en": "7-12Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精度",
+    "en": "Precision",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "85W",
+    "value_en": "85W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "19.5x20cm",
+    "value_en": "19.5x20cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "49x44.5x71cm",
+    "value_en": "49x44.5x71cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "25kg",
+    "value_en": "25kg"
+   }
+  ],
+  "extra_pages": [
+   10,
+   12
+  ],
+  "images_hint": "下半页右侧机器照片,约占 x 53%-88% y 63%-91%",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "多型号页(上下两台)。精度栏印 '精 度 / Precision'。无优势/适用产品栏。"
+ },
+ {
+  "page": 14,
+  "model": "FB-S999",
+  "category": "large-filling",
+  "name_zh": "S999克分装机",
+  "name_en": "S999g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "8-15Bags/Min",
+    "value_en": "8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "200W",
+    "value_en": "200W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "32x32x43cm",
+    "value_en": "32x32x43cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "32x50x127.5cm",
+    "value_en": "32x50x127.5cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "22kg",
+    "value_en": "22kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(落地式带脚轮+脚踏开关),约占 x 58%-93% y 15%-65%;下方为 2 行 5 列物料图",
+  "advantages_zh": "自动化称重解决人工分装效率低、误差大、成本高的痛点,同时保障生产的稳定性,能满足工业级、商用级大定量分装需求。",
+  "advantages_en": "Automated weighing solves the pain points of low efficiency, large errors, and high costs in manual filling, while ensuring production stability, and can meet the needs of industrial and commercial large-scale quantitative filling.",
+  "application_zh": "五谷、种子、坚果、粉末、膨化零食、面粉、红枣、瓜子、宠物饲料、化肥、茶叶、茶末、糖果、桂圆、调味料、花生、八角、中药材、五金小配件、串珠、等各类颗粒、粉末、条形产品。",
+  "application_en": "4.Widely used in grains, seeds, nuts, powders, puffed foods, flour, red dates, nuts, pet feed, fertilizers, tea, tea powder, candies, dates, seasonings, peanuts, star anise, Chinese medicinal materials, small hardware accessories, beads, and various granular, powdered, and strip-shaped products.",
+  "notes": "英文适用产品开头印有多余的 '4.'(原样照抄)。"
+ },
+ {
+  "page": 15,
+  "model": "FB-999",
+  "category": "large-filling",
+  "name_zh": "999克分装机",
+  "name_en": "999g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "8-15Bags/Min",
+    "value_en": "8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "200W",
+    "value_en": "200W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "32x32x43cm",
+    "value_en": "32x32x43cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "37x57x135cm",
+    "value_en": "37x57x135cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "29kg",
+    "value_en": "29kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(落地式带脚轮),约占 x 12%-40% y 20%-70%;下方'支持非标定制'4 张小图",
+  "advantages_zh": "简易操作界面,参数记忆,减少操作失误。无需大面积操作间,居家、门店角落即可摆放,能耗低电费、维护费远低于大型设备,带万向轮设计,可根据生产/销售需求灵活调整摆放位置。",
+  "advantages_en": "Easy to operate interface, parameter memory, reducing operational errors. No need for a large operating room, it can be placed in the corners of homes and stores, with low energy consumption, electricity and maintenance costs far lower than large equipment. It is designed with universal wheels, and the placement position can be flexibly adjusted according to production/sales needs.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无适用产品栏。支持非标定制:加大储料斗 Increase the storage hopper / 机身加高 increase height / 圆形出料口 Round discharge nozzle / 定制304材质 Customized 304 material。"
+ },
+ {
+  "page": 16,
+  "model": "FB-3000",
+  "category": "large-filling",
+  "name_zh": "3000克分装机",
+  "name_en": "3000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-3000g",
+    "value_en": "10-3000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "8-15Bags/Min",
+    "value_en": "8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "200W",
+    "value_en": "200W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "32x32x43cm",
+    "value_en": "32x32x43cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "37x57x135cm",
+    "value_en": "37x57x135cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "29kg",
+    "value_en": "29kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(落地式带脚轮),约占 x 62%-90% y 20%-70%;左下为大米/坚果/粉末成品图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无优势/适用产品栏。支持非标定制:加配搅拌器 Add mixer / 镀铁氟龙涂层 Teflon coating / 料斗加配吸料机 Add feeding machine / 定制支架款 Customized support type。"
+ },
+ {
+  "page": 17,
+  "model": "FB-5000",
+  "category": "large-filling",
+  "name_zh": "5000克分装机",
+  "name_en": "5000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "20-5000g",
+    "value_en": "20-5000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "6-13Bags/Min",
+    "value_en": "6-13Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5g(因物料而异)",
+    "value_en": "±5g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "200W",
+    "value_en": "200W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "32x32x43cm",
+    "value_en": "32x32x43cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "37x57x145cm",
+    "value_en": "37x57x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "31kg",
+    "value_en": "31kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(落地式带脚轮),约占 x 13%-40% y 20%-70%;右下为粮食/粉末物料图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无优势/适用产品栏。支持非标定制:加大储料斗 / 机身加高 / 圆形出料口 / 定制304材质。"
+ },
+ {
+  "page": 18,
+  "model": "FB-9999",
+  "category": "large-filling",
+  "name_zh": "9999克分装机",
+  "name_en": "9999g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "50-9999g",
+    "value_en": "50-9999g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "5-10Bags/Min",
+    "value_en": "5-10Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±10g(因物料而异)",
+    "value_en": "±10g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "300W",
+    "value_en": "300W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "40x40x57cm",
+    "value_en": "40x40x57cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "40x59x165cm",
+    "value_en": "40x59x165cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "36kg",
+    "value_en": "36kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(落地式带脚轮),约占 x 62%-92% y 19%-70%;左下为咖啡/面粉/腰果/红枣成品图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无优势/适用产品栏。支持非标定制:加配搅拌器 / 镀铁氟龙涂层 / 料斗加配吸料机 / 定制支架款。"
+ },
+ {
+  "page": 19,
+  "model": "DL-15000",
+  "category": "large-filling",
+  "name_zh": "15000克分装机",
+  "name_en": "15000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "500-15000g",
+    "value_en": "500-15000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "4-10Bags/Min",
+    "value_en": "4-10Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±20g(因物料而异)",
+    "value_en": "±20g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "500W",
+    "value_en": "500W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "60x40x50cm",
+    "value_en": "60x40x50cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "60x67x163cm",
+    "value_en": "60x67x163cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "57kg",
+    "value_en": "57kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(高支架带脚轮),约占 x 58%-88% y 19%-65%;下方'可搭配其它设备使用'3 张图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无优势/适用产品栏。可搭配其它设备:斗式上料机 Bucket feeder machine / 吸料机 Material suction machine / 平行传送带 Parallel conveyor belt。"
+ },
+ {
+  "page": 20,
+  "model": "DL-25000",
+  "category": "large-filling",
+  "name_zh": "25000克分装机",
+  "name_en": "25000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "500-25000g",
+    "value_en": "500-25000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "2-8Bags/Min",
+    "value_en": "2-8Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±20g(因物料而异)",
+    "value_en": "±20g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "500W",
+    "value_en": "500W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "60x40x50cm",
+    "value_en": "60x40x50cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "60x67x183.5cm",
+    "value_en": "60x67x183.5cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "65kg",
+    "value_en": "65kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(高支架带脚轮),约占 x 61%-91% y 19%-70%;左下为大米/宠物粮/瓜子成品图",
+  "advantages_zh": "简易操作界面,参数记忆,减少操作失误,定量自动称重、灌装次数自动统计,辅助人工提高效率。无需大面积操作间,居家、门店角落即可摆放,能耗低电费、维护费远低于大型设备,带万向轮设计,可根据生产 需求灵活调整摆放位置。",
+  "advantages_en": "Simple operation interface, parameter memory, reducing operational errors, automatic quantitative weighing, automatic counting of filling times, assisting manual improvement of efficiency. No need for a large operating room, it can be placed in the corners of homes and stores, with low energy consumption, electricity and maintenance costs far lower than large equipment. It is designed with universal wheels, and the placement position can be flexibly adjusted according to production needs.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "中文优势原文 '生产 需求' 之间缺 '/'(原样照抄)。无适用产品栏。"
+ },
+ {
+  "page": 21,
+  "model": "FB-2T999",
+  "category": "large-filling",
+  "name_zh": "双头999克分装机",
+  "name_en": "2-Head 999g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "15-20Bags/Min",
+    "value_en": "15-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "400W",
+    "value_en": "400W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "52x36x42cm",
+    "value_en": "52x36x42cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "53x58x146cm",
+    "value_en": "53x58x146cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "42kg",
+    "value_en": "42kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(双料斗双控制面板),约占 x 54%-86% y 19%-66%;底部为物料大图",
+  "advantages_zh": "双称可放不同物料混合下料/轮流下料,分装速度比单称更快,智能定量自动称重,辅助人工提高工作效率。",
+  "advantages_en": "Double weighing can mix different materials for feeding/ alternate feeding, with a faster filling speed than single head, intelligent quantitative automatic weighing, and manual assistance to improve work efficiency.",
+  "application_zh": "五谷杂粮、坚果干货、膨化零食、调料粉、面粉、宠物饲料、化肥、茶叶、茶末、中药材、花生、红枣、瓜子糖果、五金螺丝、芝麻、蒜米、八角、工业粉末等各类颗粒、粉末、条形产品",
+  "application_en": "Widely used in grains, seeds, nuts, powders, puffed foods, flour, red dates, nuts, pet feed, fertilizers, tea, tea powder, candies, dates, seasonings, peanuts, star anise, Chinese medicinal materials, small hardware accessories, beads, and various granular, powdered, and strip-shaped products.",
+  "notes": "本页版式为'优势-参数-适用'(参数表在优势下方)。中文适用产品 '瓜子' 与 '糖果' 之间无顿号(原样)。中英文适用产品列表不完全对应(照抄)。"
+ },
+ {
+  "page": 22,
+  "model": "FB-2T3000",
+  "category": "large-filling",
+  "name_zh": "双头3000克分装机",
+  "name_en": "2-Head 3000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-3000g",
+    "value_en": "10-3000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "13-18Bags/Min",
+    "value_en": "13-18Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "400W",
+    "value_en": "400W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "52x36x42cm",
+    "value_en": "52x36x42cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "53x58x146cm",
+    "value_en": "53x58x146cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "42kg",
+    "value_en": "42kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(双料斗双控制面板),约占 x 56%-88% y 19%-66%;下方'细节展示'2 张图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "图中参数与 FB-2T999(p21)的料斗/整机尺寸/重量/功率相同,仅称重范围与速度不同,按图照录。细节展示:大容量料斗,双仓下料 Large capacity hopper, dual bin discharge / 双称工作:可设定不同重量/混合灌装 Dual scale work: can set weights mixed filling。无优势/适用产品栏。"
+ },
+ {
+  "page": 23,
+  "model": "FB-2T5000",
+  "category": "large-filling",
+  "name_zh": "双头5000克分装机",
+  "name_en": "2-Head 5000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "20-5000g",
+    "value_en": "20-5000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "10-15Bags/Min",
+    "value_en": "10-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5g(因物料而异)",
+    "value_en": "±5g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "400W",
+    "value_en": "400W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "52x36x42cm",
+    "value_en": "52x36x42cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "53x58x157cm",
+    "value_en": "53x58x157cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "46kg",
+    "value_en": "46kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(双料斗双控制面板),约占 x 57%-87% y 17%-65%;下方'可搭配其它设备使用'3 张图",
+  "advantages_zh": "两个工位轮换可避免单一工位过度忙碌,保持稳定效率,无需等单个工位完成全流程再启动,缩短时间",
+  "advantages_en": "2-head weighing machine with rotation mode avoids overloading a single head, maintains stable efficiency, and eliminates the need to wait for one head to complete the entire process before starting the next, thus reducing cycle time.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无适用产品栏。可搭配其它设备:斗式上料机 / 吸料机 / 平行传送带。"
+ },
+ {
+  "page": 24,
+  "model": "DL-2T9999",
+  "category": "large-filling",
+  "name_zh": "双头9999克分装机",
+  "name_en": "2-Head 9999g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "50-9999g",
+    "value_en": "50-9999g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "6-12Bags/Min",
+    "value_en": "6-12Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±20g(因物料而异)",
+    "value_en": "±20g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "68x48.5x56cm",
+    "value_en": "68x48.5x56cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "75x63x180cm",
+    "value_en": "75x63x180cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "58kg",
+    "value_en": "58kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(高支架带脚轮,双料斗),约占 x 56%-92% y 15%-67%;下方'定制案例'2 张实拍图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "定制案例(本页内):定制机身加高,人工站立工作 搭配上料机自动加料 自动称重灌装,平行输送 / Customized body height increase, manual standing work; Equipped with an automatic feeding machine for material addition; Automatic weighing and filling, parallel conveying。无优势/适用产品栏。"
+ },
+ {
+  "page": 25,
+  "model": "FB-3T999",
+  "category": "large-filling",
+  "name_zh": "三头999克分装机",
+  "name_en": "3-Head 999g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "20-25Bags/Min",
+    "value_en": "20-25Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "75x36x42cm",
+    "value_en": "75x36x42cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "76x59x150cm",
+    "value_en": "76x59x150cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "57kg",
+    "value_en": "57kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(三料斗三控制面板),约占 x 51%-88% y 20%-67%;底部为 4 张物料图",
+  "advantages_zh": "三个工位称重,轮流模式下料,灌装速度加快 避免单一工位瓶颈,一个工位称重时,另两个可同步准备或下料,减少空窗期。",
+  "advantages_en": "3-head weighing machine with alternating feeding mode boosts filling speed. While one head is weighing, the other two can prepare or feed simultaneously, reducing idle time.",
+  "application_zh": "五谷杂粮、坚果干货、膨化零食、调料粉、面粉、宠物饲料、化肥、茶叶、茶末、中药材、花生、红枣、瓜子糖果、五金螺丝、芝麻、蒜米、八角、工业粉末等各类颗粒、粉末、条形产品",
+  "application_en": "Widely used in grains, seeds, nuts, powders, puffed foods, flour, red dates, nuts, pet feed, fertilizers, tea, tea powder, candies, dates, seasonings, peanuts, star anise, Chinese medicinal materials, small hardware accessories, beads, and various granular, powdered, and strip-shaped products.",
+  "notes": "版式为'优势-参数-适用'。中文适用产品里 '瓜子' 与 '糖果' 跨行,中间无标点(原样)。中英文适用产品列表不完全对应(照抄)。"
+ },
+ {
+  "page": 26,
+  "model": "FB-3T3000",
+  "category": "large-filling",
+  "name_zh": "三头3000克分装机",
+  "name_en": "3-Head 9000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-3000g",
+    "value_en": "10-3000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "18-23Bags/Min",
+    "value_en": "18-23Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "75x36x42cm",
+    "value_en": "75x36x42cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "76x59x150cm",
+    "value_en": "76x59x150cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "57kg",
+    "value_en": "57kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(三料斗三控制面板),约占 x 54%-90% y 20%-67%;下方'细节展示'2 张图",
+  "advantages_zh": "颗粒粉末适配性强,多工位自动下料系统联动,衔接顺畅,轮换精准分装。",
+  "advantages_en": "The machine has strong adaptability to powder particles. The multi-position automatic feeding system works in coordination, with smooth connection and precise rotation for packaging.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "英文副标题印 '3-Head 9000g Filling Machine',与中文/型号 3000克 不符(疑笔误,原样照抄,建议站点英文名用 3000g)。参数表与 FB-3T999(p25)的料斗/整机尺寸/重量/功率相同,仅称重范围与速度不同。细节展示:三头称,大容量储料斗 Three head scale, large capacity storage hopper / 三头称重,轮流下料模式,快速灌装 Three head weighing, Alternate feeding mode, rapid filling。无适用产品栏。"
+ },
+ {
+  "page": 27,
+  "model": "FB-3T5000",
+  "category": "large-filling",
+  "name_zh": "三头5000克分装机",
+  "name_en": "3-Head 5000g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "20-5000g",
+    "value_en": "20-5000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "15-20Bags/Min",
+    "value_en": "15-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5g(因物料而异)",
+    "value_en": "±5g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "75x36x42cm",
+    "value_en": "75x36x42cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "76x59x160cm",
+    "value_en": "76x59x160cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "62kg",
+    "value_en": "62kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(三料斗三控制面板),约占 x 52%-89% y 18%-66%;下方'搭配使用'3 张图(平放真空机/吸料机/米砖真空机)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "本页无优势/适用产品栏,为'搭配使用 Use in combination':如物料是五谷杂粮,料斗可加配吸料机装置,完成自动高位加料,提升工作产量。如需真空包装,可搭配真空机使用,能抑制米虫滋生、延缓大米氧化变质,延长保质期。定型后体积紧凑,节省仓储空间,堆叠时不易倾倒。 / If the material is grains and miscellaneous grains, the hopper can be equipped with a suction machine device to complete automatic high-level feeding and increase work output. If vacuum packaging is required, it can be used in conjunction with a vacuum machine to suppress the growth of rice pests, delay the oxidation and deterioration of rice, and extend the shelf life. After shaping, the volume is compact, saving storage space and making it less prone to tipping when stacked."
+ },
+ {
+  "page": 28,
+  "model": "DL-3T9999",
+  "category": "large-filling",
+  "name_zh": "三头9999克分装机",
+  "name_en": "3-Head 9999g Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "50-9999g",
+    "value_en": "50-9999g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "分装速度",
+    "en": "Filling speed",
+    "value_zh": "10-18Bags/Min",
+    "value_en": "10-18Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±10g(因物料而异)",
+    "value_en": "±10g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1500W",
+    "value_en": "1500W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "99x48.5x52cm",
+    "value_en": "99x48.5x52cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "106x63x200cm",
+    "value_en": "106x63x200cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "86kg",
+    "value_en": "86kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(高支架带脚轮,三料斗),约占 x 54%-93% y 16%-68%;左侧 PLC 触摸屏图,下方'可搭配其它设备使用'3 张图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "单位笔误已修正:料斗尺寸图中印 '99x48.5x52m',按 cm 录入。支持定制:控制系统可改做PLC系统触控屏 / The control system can be modified to a PLC system with a touch screen。可搭配:斗式上料机 / 大米整形真空机 Rice bag shaping vacuum machine / 平行传送带。无优势/适用产品栏。"
+ },
+ {
+  "page": 29,
+  "model": "ZLG-100",
+  "category": "auger-filling",
+  "name_zh": "直螺杆灌装机(带称重)",
+  "name_en": "Auger Filling Machine (With Weighing)",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g / 50-500g / 100-1000g",
+    "value_en": "1-100g / 50-500g / 100-1000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "10-30Bags/Min / 10-20Bags/Min / 5-10Bags/Min",
+    "value_en": "10-30Bags/Min / 10-20Bags/Min / 5-10Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.5g / ±1g / ±2g (因物料而异)",
+    "value_en": "±0.5g / ±1g / ±2g (因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W / 750W / 1000W",
+    "value_en": "750W / 750W / 1000W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "16L / 16L / 30L",
+    "value_en": "16L / 16L / 30L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "68x43x113cm (1-100g / 50-500g 两档)",
+    "value_en": "68x43x113cm (1-100g / 50-500g 两档)"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "47.4kg (1-100g / 50-500g 两档)",
+    "value_en": "47.4kg (1-100g / 50-500g 两档)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(直螺杆+PLC触摸屏+称重台),约占 x 8%-45% y 22%-70%;右下为香料/抹茶粉物料图",
+  "advantages_zh": "PLC系统触控电脑版操作灵敏,螺杆式旋转下料,底部自带称重装置,接料后电脑版会显示灌装的克重。节省人工称重时间,辅助人工提高分装数量。",
+  "advantages_en": "The PLC touch screen enables sensitive operation. It features auger feeding, with a built-in weighing device at the bottom. After material receiving, the filled weight displays on the screen, saving manual weighing time and helping increase packaging quantity.",
+  "application_zh": "粉末、面粉、调料粉、咖啡粉、淀粉、豆浆粉、五谷粉末、果蔬粉、果汁粉、饮料粉、抹茶粉、工业粉等各类纯粉末",
+  "application_en": "Widely used in various types of pure powders such as powder, flour, seasoning powder, coffee powder, starch, soybean milk powder, grain powder, fruit and vegetable powder, juice powder, beverage powder, matcha powder, industrial powder, etc.",
+  "notes": "三档范围单型号:各参数的三个值用 ' / ' 依次对应 1-100g / 50-500g / 100-1000g。缺失:第三档(100-1000g)的整机尺寸、整机重量栏空白,故尺寸/重量仅含前两档(两档数值相同)。中文标签为 灌装范围/灌装速度/料斗容量(英文标签仍为 Weighing range / Filling speed / Hopper size)。"
+ },
+ {
+  "page": 30,
+  "model": "LG-500",
+  "category": "auger-filling",
+  "name_zh": "立式大型直螺杆灌装机",
+  "name_en": "Vertical Large Auger Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "50-500g / 100-1000g",
+    "value_en": "50-500g / 100-1000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "10-20Bags/Min / 5-10Bags/Min",
+    "value_en": "10-20Bags/Min / 5-10Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-5g (因物料而异)",
+    "value_en": "±1-5g (因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1200W",
+    "value_en": "1200W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "30L / 50L",
+    "value_en": "30L / 50L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "100x97x210cm",
+    "value_en": "100x97x210cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(立式直螺杆+触摸屏+落地支架),约占 x 57%-95% y 16%-70%;左下为绿豆粉/面粉/咖啡粉成品包装图",
+  "advantages_zh": "螺杆式灌装,操作直观高效,可站立工作,便于观察灌装工位、调节参数和添加物料,减少弯腰低头的疲劳感。",
+  "advantages_en": "Screw filling, with intuitive and efficient operation, can work standing up, making it easy to observe the filling station, adjust parameters, and add materials, reducing the fatigue of bending and bowing.",
+  "application_zh": "粉末、面粉、调料粉、咖啡粉、淀粉、豆浆粉、五谷粉末、果蔬粉、果汁粉、饮料粉、抹茶粉、工业粉等各类纯粉末",
+  "application_en": "Widely used in various types of pure powders such as powder, flour, seasoning powder, coffee powder, starch, soybean milk powder, grain powder, fruit and vegetable powder, juice powder, beverage powder, matcha powder, industrial powder, etc.",
+  "notes": "两档范围:各参数两个值用 ' / ' 依次对应 50-500g / 100-1000g。缺失:整机重量(两档均空白)。适用产品栏标题为 'Widely Applicable'。英文适用产品末行文字被图片遮挡一部分(beverage powder, matcha powder, industrial powder, etc.,按上页同文补全)。"
+ },
+ {
+  "page": 31,
+  "model": "ZT-L100",
+  "category": "auger-filling",
+  "name_zh": "立式直推灌装机",
+  "name_en": "Vertical direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "10-100g",
+    "value_en": "10-100g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "10-30Bags/Min",
+    "value_en": "10-30Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.5g(因物料而异)",
+    "value_en": "±0.5g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "15L",
+    "value_en": "15L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "50x67x148cm",
+    "value_en": "50x67x148cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(立式直推,带接料平台),约占 x 8%-42% y 17%-68%;右中为接料平台升降细节图(共用图)",
+  "advantages_zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+  "advantages_en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+ },
+ {
+  "page": 31,
+  "model": "ZT-L200",
+  "category": "auger-filling",
+  "name_zh": "立式直推灌装机",
+  "name_en": "Vertical direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "20-200g",
+    "value_en": "20-200g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "10-20Bags/Min",
+    "value_en": "10-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.5-2g",
+    "value_en": "±0.5-2g"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "15L",
+    "value_en": "15L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "50x67x148cm",
+    "value_en": "50x67x148cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(立式直推,带接料平台),约占 x 8%-42% y 17%-68%;右中为接料平台升降细节图(共用图)",
+  "advantages_zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+  "advantages_en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+ },
+ {
+  "page": 31,
+  "model": "ZT-L500",
+  "category": "auger-filling",
+  "name_zh": "立式直推灌装机",
+  "name_en": "Vertical direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "50-500g",
+    "value_en": "50-500g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "8-15Bags/Min",
+    "value_en": "8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-5g",
+    "value_en": "±1-5g"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "15L",
+    "value_en": "15L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "50x67x148cm",
+    "value_en": "50x67x148cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(立式直推,带接料平台),约占 x 8%-42% y 17%-68%;右中为接料平台升降细节图(共用图)",
+  "advantages_zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+  "advantages_en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+ },
+ {
+  "page": 31,
+  "model": "ZT-L1000",
+  "category": "auger-filling",
+  "name_zh": "立式直推灌装机",
+  "name_en": "Vertical direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "100-1000g",
+    "value_en": "100-1000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "5-10Bags/Min",
+    "value_en": "5-10Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-5g",
+    "value_en": "±1-5g"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "25L",
+    "value_en": "25L"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(立式直推,带接料平台),约占 x 8%-42% y 17%-68%;右中为接料平台升降细节图(共用图)",
+  "advantages_zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+  "advantages_en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。缺失:整机尺寸(ZT-L1000 栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+ },
+ {
+  "page": 32,
+  "model": "ZT-T100",
+  "category": "auger-filling",
+  "name_zh": "台式直推灌装机",
+  "name_en": "Desktop direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "10-100g",
+    "value_en": "10-100g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "10-30Bags/Min",
+    "value_en": "10-30Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.5g(因物料而异)",
+    "value_en": "±0.5g(因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "15L",
+    "value_en": "15L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "50x43x71cm",
+    "value_en": "50x43x71cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(台式直推,漏斗+水平推料管),约占 x 54%-96% y 24%-65%;左下为多色粉末物料图",
+  "advantages_zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+  "advantages_en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+ },
+ {
+  "page": 32,
+  "model": "ZT-T200",
+  "category": "auger-filling",
+  "name_zh": "台式直推灌装机",
+  "name_en": "Desktop direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "20-200g",
+    "value_en": "20-200g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "10-20Bags/Min",
+    "value_en": "10-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.5-2g",
+    "value_en": "±0.5-2g"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "15L",
+    "value_en": "15L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "50x43x71cm",
+    "value_en": "50x43x71cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(台式直推,漏斗+水平推料管),约占 x 54%-96% y 24%-65%;左下为多色粉末物料图",
+  "advantages_zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+  "advantages_en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+ },
+ {
+  "page": 32,
+  "model": "ZT-T500",
+  "category": "auger-filling",
+  "name_zh": "台式直推灌装机",
+  "name_en": "Desktop direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "50-500g",
+    "value_en": "50-500g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "8-15Bags/Min",
+    "value_en": "8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-5g",
+    "value_en": "±1-5g"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "15L",
+    "value_en": "15L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "50x43x71cm",
+    "value_en": "50x43x71cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(台式直推,漏斗+水平推料管),约占 x 54%-96% y 24%-65%;左下为多色粉末物料图",
+  "advantages_zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+  "advantages_en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+ },
+ {
+  "page": 32,
+  "model": "ZT-T1000",
+  "category": "auger-filling",
+  "name_zh": "台式直推灌装机",
+  "name_en": "Desktop direct push filling machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "100-1000g",
+    "value_en": "100-1000g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "5-10Bags/Min",
+    "value_en": "5-10Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-5g",
+    "value_en": "±1-5g"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "25L",
+    "value_en": "25L"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(台式直推,漏斗+水平推料管),约占 x 54%-96% y 24%-65%;左下为多色粉末物料图",
+  "advantages_zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+  "advantages_en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机重量(栏空白)。缺失:整机尺寸(ZT-T1000 栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+ },
+ {
+  "page": 33,
+  "model": "XLG-100",
+  "category": "auger-filling",
+  "name_zh": "斜螺杆灌装机",
+  "name_en": "Auger Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "3-30g / 10-100g / 20-500g",
+    "value_en": "3-30g / 10-100g / 20-500g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "10-30Bags/Min / 10-20Bags/Min / 8-15Bags/Min",
+    "value_en": "10-30Bags/Min / 10-20Bags/Min / 8-15Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.5g / ±0.5-2g / ±1-5g (因物料而异)",
+    "value_en": "±0.5g / ±0.5-2g / ±1-5g (因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "15L",
+    "value_en": "15L"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57.5X73X135cm",
+    "value_en": "57.5X73X135cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(斜螺杆锥形料斗+触摸屏+落地支架),约占 x 7%-45% y 19%-70%;右下为多色粉末物料图",
+  "advantages_zh": "适配粉末特性,控尘防堵,采用密闭螺杆转速结构,能减少粉末的飞扬污染,螺旋推送方式可适配不同流动性的粉末(从细腻到稍结块的物料)",
+  "advantages_en": "Adapt to powder characteristics, control dust and prevent blockage, adopt a closed screw speed structure, which can reduce powder flying pollution. The spiral pushing method can adapt to powders with different flowability (from fine to slightly clumped materials)",
+  "application_zh": "粉末、面粉、调料粉、咖啡粉、淀粉、豆浆粉、五谷粉末、果蔬粉、果汁粉、饮料粉、抹茶粉、工业粉等各类纯粉末",
+  "application_en": "5.Widely used in various types of pure powders such as powder, flour, seasoning powder, coffee powder, starch, soybean milk powder, grain powder, fruit and vegetable powder, juice powder, beverage powder, matcha powder, industrial powder, etc.",
+  "notes": "三档范围单型号:' / ' 依次对应 3-30g / 10-100g / 20-500g;功率、料斗、尺寸三档相同故只录一个值。缺失:整机重量(栏空白)。英文适用产品开头印有多余的 '5.'(原样照抄)。尺寸大小写原样 '57.5X73X135cm'。"
+ },
+ {
+  "page": 34,
+  "model": "LB-50",
+  "category": "auger-filling",
+  "name_zh": "量杯灌装机",
+  "name_en": "Measuring Cup Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "3-50g / 25-150g",
+    "value_en": "3-50g / 25-150g"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "20-40Bags/Min / 15-30Bags/Min",
+    "value_en": "20-40Bags/Min / 15-30Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2-3g / ±1-5g (因物料而异)",
+    "value_en": "±0.2-3g / ±1-5g (因物料而异)"
+   },
+   {
+    "key": "voltage",
+    "zh": "电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "450W",
+    "value_en": "450W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "40x60cm",
+    "value_en": "40x60cm"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "57.5X73X160cm",
+    "value_en": "57.5X73X160cm"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片(量杯转盘+锥形料斗+触摸屏+落地支架),约占 x 8%-45% y 19%-70%;右中为量杯盘内部实拍图",
+  "advantages_zh": "通过杯套调节重量,适合多规格,快速灌装 无需复杂参数调试,分装速度均匀、误差可控",
+  "advantages_en": "By adjusting the weight through cup sleeves, it is suitable for multiple specifications and can be quickly filled without complex parameter tuning. The packaging speed is uniform and the error is controllable",
+  "application_zh": "五谷杂粮、瓜子、枸杞、食用盐、白砂糖、松子、干燥剂 茶末、串珠、芝麻、胡椒粒、咖啡豆、饲料、种子等颗粒产品",
+  "application_en": "Widely used in grains and pulses, nuts, goji berries, edible salt, white sugar, pine nuts, desiccants, tea powder, beads, sesame seeds, pepper grains, coffee beans, feed, seeds and various granular products.",
+  "notes": "两档范围:' / ' 依次对应 3-50g / 25-150g;功率、料斗容量、尺寸两档相同故只录一个值。缺失:整机重量(栏空白)。料斗容量栏的值 '40x60cm' 是尺寸而非容量,原样照抄。"
+ },
+ {
+  "page": 35,
+  "model": "YT-100ML",
+  "category": "auger-filling",
+  "name_zh": "液体灌装机",
+  "name_en": "Liquid Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "3-30ml/5-50ml/10-100ml/20-200ml/30-300ml/50-500ml/100-1000ml/500-3000ml/1000-5000ml",
+    "value_en": "3-30ml/5-50ml/10-100ml/20-200ml/30-300ml/50-500ml/100-1000ml/500-3000ml/1000-5000ml"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "1-20Bags/Min",
+    "value_en": "1-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-10ml(因物料而异)",
+    "value_en": "±1-10ml(因物料而异)"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V -可改110V / 20W",
+    "value_en": "220V -可改110V / 20W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用/ 50L+ Air Compressor (not included)",
+    "value_en": "需搭配50L以上空压机使用/ 50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面中部横向机器照片(气缸式卧式液体灌装机+脚踏开关),约占 x 36%-93% y 33%-58%;左侧为酱油瓶/吸嘴袋/矿泉水瓶示意图",
+  "advantages_zh": "半自动模式无需复杂操作,人工辅助上瓶、气缸定量完成灌装,兼容瓶、罐、壶、袋等不同形状的容器,只需替换料嘴,控量精准,减少浪费。",
+  "advantages_en": "Semi-automatic mode requires no complex operation: manual assistance for bottle loading, cylinder quantitative filling. It's compatible with bottles, cans, pots, bags and other containers of different shapes—only the filling nozzle needs to be replaced. With precise volume control, it reduces waste.",
+  "application_zh": "纯净水、酱油、醋、牛奶、饮料、果汁、豆浆、食用油、调料水、汤汁、酒精、红油、药液、白酒、料酒等无杂质液体",
+  "application_en": "Widely used in Pure water, soy sauce, vinegar, milk, beverages, fruit juice, soybean milk, edible oil, seasoning water, soup broth, red oil, medicinal liquor, cooking wine, etc. - all liquid substances without impurities.",
+  "notes": "标题型号印为艺术字 'YT-100ML'(末尾 ML 被截一部分)。灌装范围为 9 个规格段(每个规格对应一款机头),在图中分两行印出,已合并。缺失:整机尺寸(栏空白)。电压与功率合并为一栏 '电压功率 Voltage power'。"
+ },
+ {
+  "page": 36,
+  "model": "LS-100ML",
+  "category": "auger-filling",
+  "name_zh": "立式膏液灌装机",
+  "name_en": "Vertical Paste & Liquid Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "3-30ml/5-50ml/10-100ml/20-200ml/30-300ml/50-500ml/100-1000ml/500-3000ml/1000-5000ml",
+    "value_en": "3-30ml/5-50ml/10-100ml/20-200ml/30-300ml/50-500ml/100-1000ml/500-3000ml/1000-5000ml"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "1-20Bags/Min",
+    "value_en": "1-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-10ml(因物料而异)",
+    "value_en": "±1-10ml(因物料而异)"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V -可改110V / 20W",
+    "value_en": "220V -可改110V / 20W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗尺寸",
+    "en": "Hopper size",
+    "value_zh": "30L/50L",
+    "value_en": "30L/50L"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用/ 50L+ Air Compressor (not included)",
+    "value_en": "需搭配50L以上空压机使用/ 50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面中部大图:锥形大料斗+气缸卧式灌装机+脚踏开关,约占 x 42%-95% y 22%-58%;左侧为洗衣液/蜂蜜/番茄酱/面霜等示意图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "洗衣液、酸奶、番茄酱、沙拉酱、胶水、酱汁、蜂蜜、液体、牛奶、水、沐浴露、洗发露、乳液、果酱等带流动性的膏体液体",
+  "application_en": "Widely used in Detergent, yogurt, ketchup, salad dressing, glue, sauce, honey, liquid, milk, water, body wash, shampoo, lotion, jam, etc. - these are all flowing paste-like liquids.",
+  "notes": "标题型号印为艺术字 'LS-100ML'。灌装范围为 9 个规格段,图中分两行印出,已合并。缺失:整机尺寸(栏空白)。本页无产品优势栏。"
+ },
+ {
+  "page": 37,
+  "model": "WS-100ML",
+  "category": "auger-filling",
+  "name_zh": "卧式酱料灌装机",
+  "name_en": "Horizontal Sauce Filling Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "灌装范围",
+    "en": "Weighing range",
+    "value_zh": "3-30ml/5-50ml/10-100ml/20-200ml/30-300ml/50-500ml/100-1000ml/500-3000ml/1000-5000ml",
+    "value_en": "3-30ml/5-50ml/10-100ml/20-200ml/30-300ml/50-500ml/100-1000ml/500-3000ml/1000-5000ml"
+   },
+   {
+    "key": "filling_speed",
+    "zh": "灌装速度",
+    "en": "Filling speed",
+    "value_zh": "1-20Bags/Min",
+    "value_en": "1-20Bags/Min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±1-10ml(因物料而异)",
+    "value_en": "±1-10ml(因物料而异)"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V -可改110V / 150W",
+    "value_en": "220V -可改110V / 150W"
+   },
+   {
+    "key": "hopper_size",
+    "zh": "料斗容量",
+    "en": "Hopper size",
+    "value_zh": "50L/80L",
+    "value_en": "50L/80L"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用/ 50L+ Air Compressor (not included)",
+    "value_en": "需搭配50L以上空压机使用/ 50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "页面右侧机器照片(卧式搅拌料斗+气缸灌装+电机),约占 x 35%-93% y 24%-55%;左中为搅拌桨内部图,下方一排 6 张酱料成品图",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "番茄酱、豆瓣酱、辣椒油、火锅底料 辣椒酱、肉泥、蒜蓉酱、沙拉酱、纯净水、酱油、番茄酱等各类酱料、膏体、液体适用性强",
+  "application_en": "Widely used in tomato sauce, bean paste, chili oil, hot pot base, chili sauce, minced meat, garlic paste, salad dressing, purified water, soy sauce and various sauces, pastes, liquids, with strong applicability.",
+  "notes": "标题型号印为艺术字 'WS-100ML'。灌装范围为 9 个规格段,图中分两行印出,已合并。缺失:整机尺寸(栏空白)。本页无产品优势栏。"
+ }
+]

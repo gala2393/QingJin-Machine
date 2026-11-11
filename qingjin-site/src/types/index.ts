@@ -36,9 +36,8 @@ export interface Machine {
   featured?: boolean;
   params: MachineParam[];
   source?: {
-    half: number;
-    slot: number;
     page: number;
+    extra_pages?: number[];
   };
   notes?: string;
 }

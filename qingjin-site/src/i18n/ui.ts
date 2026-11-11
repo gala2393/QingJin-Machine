@@ -65,7 +65,7 @@ export const ui = {
 
     'products.title': '产品中心',
     'products.subtitle': '精工制造 {models} 款智能分装机、立式包装机、液体膏体灌装机及自动化配套设备',
-    'products.searchPlaceholder': '搜索机型、名称或参数（如 KL-Y100、50克、液体、220V）...',
+    'products.searchPlaceholder': '搜索机型、名称或参数（如 KL-F100、50克、液体、220V）...',
     'products.allCategories': '全部分类',
     'products.showing': '共找到',
     'products.units': '款机型',
@@ -138,7 +138,7 @@ export const ui = {
     'notFound.viewProducts': '浏览全部产品',
 
     'footer.tagline': '包装机械设备制造商',
-    'footer.desc': '福建省泉州市安溪县包装机械制造商。主营智能分装机、智能包装机、液体膏体包装机、半自动灌装机、真空包装机、上料机与传送带。工厂直销，一件也是批发价，支持寄样免费测试。',
+    'footer.desc': '福建省泉州市安溪县包装机械制造商。主营台式与大定量分装机、螺杆灌装机、颗粒粉末包装机、液体膏体包装机、给袋式包装机、真空机、上料机与输送带。工厂直销，一件也是批发价，支持寄样免费测试。',
     'footer.quickLinks': '快速链接',
     'footer.categories': '产品分类',
     'footer.contactUs': '联系我们',
@@ -201,7 +201,7 @@ export const ui = {
 
     'products.title': 'Product Center',
     'products.subtitle': 'Full lineup of {models} intelligent filling, vertical packaging, liquid/paste dosing, and conveyor machines',
-    'products.searchPlaceholder': 'Search by model, name, or parameter (e.g. KL-Y100, 50g, liquid, 220V)...',
+    'products.searchPlaceholder': 'Search by model, name, or parameter (e.g. KL-F100, 50g, liquid, 220V)...',
     'products.allCategories': 'All Categories',
     'products.showing': 'Showing',
     'products.units': 'machines',

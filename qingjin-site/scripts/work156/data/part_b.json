@@ -1,0 +1,2927 @@
+[
+ {
+  "page": 39,
+  "model": "DS-Y100",
+  "category": "packaging",
+  "name_zh": "100克小型三边封包装机",
+  "name_en": "100g Small Three Side Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-15bags/min",
+    "value_en": "10-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48.5x50x145cm",
+    "value_en": "48.5x50x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "43.5kg",
+    "value_en": "43.5kg"
+   }
+  ],
+  "extra_pages": [
+   38
+  ],
+  "images_hint": "左半页机器照片,约占 x 12%-40% y 20%-72%;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "上手快,空间占用小,还能快速切换自动包装克数,可包装:五谷、粉末、调味料、茶末、坚果、药材、饲料、化肥、干燥剂、瓜子、五金螺丝、塑料、珠子、等小颗粒粉末产品。",
+  "advantages_en": "Quick to get started, takes up less space, and can quickly switch between automatic packaging grams, Packageable: small particle powder products such as grains, powders, seasonings, tea powder, nuts, medicinal herbs, feed, fertilizers, desiccants, melon seeds, hardware screws, plastics, beads, etc.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印 DS-Y100(Y 与 1 字形近,按 DS-Y100 录入)。中文值带小字注释:称重范围'(大米为单位)'、精准度'(因物料而异)',英文列无注释。p38 袋型图归此机型。 p38(自动包装袋型 按需定制 / Automatic Bag Type Customized As Needed)为袋型图页:12 种袋型照片(四边封枕袋、双联袋、三边封扁袋、各式条形袋/链条袋、背封立体袋、异形袋、带挂孔袋、手提孔袋等),无型号、无参数表,按任务要求归到 DS-Y100(通用于整个 packaging 分类)。"
+ },
+ {
+  "page": 40,
+  "model": "DB-Y100",
+  "category": "packaging",
+  "name_zh": "100克小型背封包装机",
+  "name_en": "100g Small Back Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-15bags/min",
+    "value_en": "10-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48.5x50x145cm",
+    "value_en": "48.5x50x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "43.5kg",
+    "value_en": "43.5kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 60%-88% y 17%-72%;左上为成品展示 3 张;底部蓝色带为可选配置",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无产品优势/适用产品文字。可选配置:色带打码机 Ribbon Printer、光标 Cursor、加大料斗 Enlarged Hopper、传送带 Conveyor belt。中文值带小字注释(大米为单位/因物料而异),英文列无。"
+ },
+ {
+  "page": 41,
+  "model": "DS-2T100",
+  "category": "packaging",
+  "name_zh": "2头100克小型包装机",
+  "name_en": "2-Heads 100g Small Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封/背封",
+    "value_en": "3-side seal/Back seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "12-18bags/min",
+    "value_en": "12-18bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "650W",
+    "value_en": "650W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48x76x153cm",
+    "value_en": "48x76x153cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "55kg",
+    "value_en": "55kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 52%-88% y 20%-72%;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "双秤联动工作,支持轮流投料模式,包装速度显著提升;支持两种物料混合包装,实用、便捷、高效。实现小颗粒及粉末状物料的自动称重、灌装、制袋、封口及切断。",
+  "advantages_en": "Dual scales work in turns for faster packaging. Supports mixing two materials. Simple, fast, and efficient. Automatically weighs, fills, seals, and cuts for small granules and powders.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "封口方式行英文列印的是三边封/背封的中文,'Sealing Type'后值只有中文'三边封/背封';value_en 为按中文翻译(3-side seal/Back seal),非画册原文。"
+ },
+ {
+  "page": 42,
+  "model": "DB-3T100",
+  "category": "packaging",
+  "name_zh": "3头100克小型包装机",
+  "name_en": "3-Heads 100g Small Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封/背封",
+    "value_en": "3-side seal/Back seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "15-20bags/min",
+    "value_en": "15-20bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "700W",
+    "value_en": "700W"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(带高支架三头料仓),约占 x 52%-93% y 20%-73%;底部蓝色带为成品展示 5 张",
+  "advantages_zh": "可灵活切换“单种物料多称并行”“多种物料混合配比”两种模式,每个工位称重独立校准、独立运行。",
+  "advantages_en": "Flexible switching between \"Multi-scale Parallel\" and \"Multi-material Mixing\" modes. Each station features independent calibration and stand-alone operation.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机尺寸(栏位空白)、整机重量(栏位空白)。封口方式 value_en 为按中文翻译,画册只印中文值。"
+ },
+ {
+  "page": 43,
+  "model": "DS-L100",
+  "category": "packaging",
+  "name_zh": "100克螺旋三边封包装机",
+  "name_en": "100g Spiral Three Side Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-15bags/min",
+    "value_en": "10-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "620W",
+    "value_en": "620W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48.5x50x145cm",
+    "value_en": "48.5x50x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "51kg",
+    "value_en": "51kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 12%-40% y 20%-72%;底部蓝色带为成品展示",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "各种茶叶、花茶、药材、红枣、坚果、薯片、零食五金螺丝、香蕉片、药片、蔬菜干、五谷、等颗粒状条形状、片状不规则物料",
+  "application_en": "Widely used in various irregular materials, such as tea leaves, flower tea, herbal medicine, red dates, nuts, potato chips, snacks, hardware screws, banana chips, tablets, dried vegetables, grains, and other granular, strip, or sliced products.",
+  "notes": "中文值带小字注释:称重范围'(大米为单位)'、精准度'(因物料而异)',英文列无注释。印刷型号为 DS-L100(L 字形近 1)。"
+ },
+ {
+  "page": 44,
+  "model": "DB-L100",
+  "category": "packaging",
+  "name_zh": "100克螺旋背封包装机",
+  "name_en": "100g Spiral Back Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-15bags/min",
+    "value_en": "10-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "620W",
+    "value_en": "620W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48.5x50x145cm",
+    "value_en": "48.5x50x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "51kg",
+    "value_en": "51kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 60%-88% y 17%-72%;左侧成品展示 3 张;底部蓝色带为可选配置(色带打码机/光标/定制多头称包装/传送带)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "无适用产品/优势文字。可选配置:色带打码机 Ribbon Printer、光标 Cursor、定制多头称包装 Customized multi head packaging、传送带 Conveyor belt。"
+ },
+ {
+  "page": 45,
+  "model": "DS-F200",
+  "category": "packaging",
+  "name_zh": "200克自动包装机",
+  "name_en": "200g Automatic Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封: 三边封/背封 / 背封: 三边封/背封",
+    "value_en": "三边封: 三边封/背封 / 背封: 三边封/背封"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "三边封: 2-200g(大米为单位) / 背封: 2-200g",
+    "value_en": "三边封: 2-200g / 背封: 2-200g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "三边封: 8-13bags/min / 背封: 8-13bags/min",
+    "value_en": "三边封: 8-13bags/min / 背封: 8-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "三边封: ±0.2g(因物料而异) / 背封: ±0.2g",
+    "value_en": "三边封: ±0.2g / 背封: ±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "三边封: 5-20cm / 背封: 20-30/20-34cm",
+    "value_en": "三边封: 5-20cm / 背封: 20-30/20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "三边封: 3-16cm / 背封: 3-22cm",
+    "value_en": "三边封: 3-16cm / 背封: 3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "三边封: 220V/50HZ / 背封: 220V/50HZ",
+    "value_en": "三边封: 220V/50HZ / 背封: 220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "三边封: 600W / 背封: 600W",
+    "value_en": "三边封: 600W / 背封: 600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "三边封: 48.5x50x145cm / 背封: 56x75x155cm",
+    "value_en": "三边封: 48.5x50x145cm / 背封: 56x75x155cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "三边封: 54kg / 背封: 60kg",
+    "value_en": "三边封: 54kg / 背封: 60kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 50%-90% y 20%-72%;底部蓝色带为成品展示",
+  "advantages_zh": "称重精度可达 ±0.2g,灌装均匀,封口平整美观。有效解决人工包装带来的重量偏差及封口不牢等问题,在提升包装品质的同时,确保生产的高效与稳定。",
+  "advantages_en": "The weighing accuracy reaches ±0.2g with consistent filling and smooth bag sealing, effectively solving weight deviations and weak seals common in manual packaging. This improves overall packaging quality while achieving efficient and stable production.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "参数表有两列但未印列标题;两列的封口方式行都印'三边封/背封'。按任务要求合并为一条,值写成'三边封: x / 背封: y',其中第一列按其数值规格(膜宽 5-20cm、袋长 3-16cm、尺寸 48.5x50x145cm、54kg)视为三边封,第二列(膜宽 20-30/20-34cm、袋长 3-22cm、56x75x155cm、60kg)视为背封;该列归属为按数值推断,画册未明示。封口方式行两列均为'三边封/背封'原样。"
+ },
+ {
+  "page": 46,
+  "model": "DB-500",
+  "category": "packaging",
+  "name_zh": "500克中型背封包装机",
+  "name_en": "500g Medium Back Seal Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封: 三边封 / 背封: 背封",
+    "value_en": "3-side seal: 3-side seal / Back Seal: Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "三边封: 5-500g(大米为单位) / 背封: 5-500g",
+    "value_en": "3-side seal: 5-500g / Back Seal: 5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "三边封: 7-12bags/min / 背封: 7-12bags/min",
+    "value_en": "3-side seal: 7-12bags/min / Back Seal: 7-12bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "三边封: ±2g(因物料而异) / 背封: ±2g",
+    "value_en": "3-side seal: ±2g / Back Seal: ±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "三边封: 20-30cm / 背封: 20-34cm",
+    "value_en": "3-side seal: 20-30cm / Back Seal: 20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "三边封: 3-22cm / 背封: 3-22cm",
+    "value_en": "3-side seal: 3-22cm / Back Seal: 3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "三边封: 220V/50HZ / 背封: 220V/50HZ",
+    "value_en": "3-side seal: 220V/50HZ / Back Seal: 220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "三边封: 750W / 背封: 750W",
+    "value_en": "3-side seal: 750W / Back Seal: 750W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "三边封: 56x75x165cm / 背封: 56x75x165cm",
+    "value_en": "3-side seal: 56x75x165cm / Back Seal: 56x75x165cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "背封: 67kg",
+    "value_en": "Back Seal: 67kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 50%-92% y 17%-72%;左上两张成品袋照片;底部蓝色带为可选配置(色带打码机/光标/上料机/传送带)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "参数表两列,列标题为'三边封/3-side seal'与'背封/Back Seal',已按列标题标注。整机重量行三边封列为空白,仅背封列印 67kg。型号 DB-500 与 p48 重复(见 p48 条目);两者 id 会冲突,需区分。可选配置:色带打码机、光标、上料机 Feeding machine、传送带。"
+ },
+ {
+  "page": 47,
+  "model": "DS-L200",
+  "category": "packaging",
+  "name_zh": "200克中型螺旋包装机",
+  "name_en": "200g Spiral Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封: 三边封 / 背封: 背封",
+    "value_en": "3-side seal: 3-side seal / Back Seal: Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "三边封: 2-200g(大米为单位) / 背封: 2-200g",
+    "value_en": "3-side seal: 2-200g / Back Seal: 2-200g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "三边封: 8-12bags/min / 背封: 8-12bags/min",
+    "value_en": "3-side seal: 8-12bags/min / Back Seal: 8-12bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "三边封: ±0.2g(因物料而异) / 背封: ±0.2g",
+    "value_en": "3-side seal: ±0.2g / Back Seal: ±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "三边封: 20-30cm / 背封: 20-34cm",
+    "value_en": "3-side seal: 20-30cm / Back Seal: 20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "三边封: 3-22cm / 背封: 3-22cm",
+    "value_en": "3-side seal: 3-22cm / Back Seal: 3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "三边封: 220V/50HZ / 背封: 220V/50HZ",
+    "value_en": "3-side seal: 220V/50HZ / Back Seal: 220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "三边封: 770W / 背封: 770W",
+    "value_en": "3-side seal: 770W / Back Seal: 770W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "三边封: 56x75x155cm / 背封: 56x75x155cm",
+    "value_en": "3-side seal: 56x75x155cm / Back Seal: 56x75x155cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "三边封: 60kg / 背封: 60kg",
+    "value_en": "3-side seal: 60kg / Back Seal: 60kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 50%-90% y 19%-70%;底部蓝色带为成品展示",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "各种茶叶、花茶、药材、红枣、坚果、薯片、零食五金螺丝、香蕉片、药片、蔬菜干、五谷、等颗粒状条形状、片状不规则物料",
+  "application_en": "Widely used in various irregular materials, such as tea leaves, flower tea, herbal medicine, red dates, nuts, potato chips, snacks, hardware screws, banana chips, tablets, dried vegetables, grains, and other granular, strip, or sliced products.",
+  "notes": "参数表两列,列标题'三边封/3-side seal'与'背封/Back Seal',合并为一条机型。图中型号印 DS-L200。"
+ },
+ {
+  "page": 48,
+  "model": "DB-500",
+  "category": "packaging",
+  "name_zh": "500克中型螺旋包装机",
+  "name_en": "500g Medium Spiral Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封: 三边封 / 背封: 背封",
+    "value_en": "3-side seal: 3-side seal / Back Seal: Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "三边封: 5-500g(大米为单位) / 背封: 5-500g",
+    "value_en": "3-side seal: 5-500g / Back Seal: 5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "三边封: 7-10bags/min / 背封: 7-10bags/min",
+    "value_en": "3-side seal: 7-10bags/min / Back Seal: 7-10bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "三边封: ±2g(因物料而异) / 背封: ±2g",
+    "value_en": "3-side seal: ±2g / Back Seal: ±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "三边封: 20-30cm / 背封: 20-34cm",
+    "value_en": "3-side seal: 20-30cm / Back Seal: 20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "三边封: 3-22cm / 背封: 3-22cm",
+    "value_en": "3-side seal: 3-22cm / Back Seal: 3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "三边封: 220V/50HZ / 背封: 220V/50HZ",
+    "value_en": "3-side seal: 220V/50HZ / Back Seal: 220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "三边封: 770W / 背封: 770W",
+    "value_en": "3-side seal: 770W / Back Seal: 770W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "三边封: 56x75x155cm / 背封: 56x75x155cm",
+    "value_en": "3-side seal: 56x75x155cm / Back Seal: 56x75x155cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "三边封: 67kg / 背封: 67kg",
+    "value_en": "3-side seal: 67kg / Back Seal: 67kg"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 52%-92% y 20%-72%;左上三张成品袋照片(胶囊/茶叶/饼干);底部蓝色带为可选配置",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "图中型号印 DB-500,与 p46 型号相同,但名称不同:p46 为'500克中型背封包装机/500g Medium Back Seal Packaging Machine'(速度 7-12bags/min,功率 750W,尺寸 56x75x165cm,重量 67kg),p48 为'500克中型螺旋包装机/500g Medium Spiral Packaging Machine'(速度 7-10bags/min,功率 770W,尺寸 56x75x155cm,重量 67kg)。model 字段均照抄 DB-500,id 会冲突,建议 id 用 db-500 / db-500-spiral 等区分;p48 型号疑似应为 DB-L500(对应 DS-L200 的螺旋系列),但图中印 DB-500,未改。可选配置:色带打码机、光标、加充氮气接口 Add nitrogan gas flushing(原文拼写 nitrogan)、传送带。"
+ },
+ {
+  "page": 49,
+  "model": "DB-G999",
+  "category": "packaging",
+  "name_zh": "999克大型包装机",
+  "name_en": "999g Large Back Seal Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "背封",
+    "value_en": "Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g(大米为单位)",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-10bags/min",
+    "value_en": "6-10bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V/50HZ",
+    "value_en": "220V/50HZ"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "66x84x200cm",
+    "value_en": "66x84x200cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "79kg",
+    "value_en": "79kg"
+   }
+  ],
+  "extra_pages": [
+   50
+  ],
+  "images_hint": "右半页机器照片,约占 x 55%-85% y 15%-70%;左下三张成品袋照片(面粉/蔬菜脆片/红枣);底部蓝色带为适用产品+组合使用(上料机/传送带)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "适用于五谷、坚果、膨化零食、薯片、面粉、香料、红枣、瓜子、橄榄、果干、冲剂、茶叶、花茶、药材、糖果、小饰品,螺丝、宠物食品、化肥、种子等颗粒粉末的定量灌装,下料,封口和切袋。",
+  "application_en": "Widely used in the quantitative filling, discharging, sealing, and cutting of grains, nuts, puffed snacks, potato chips, flour, spices, red dates, melon seeds, olives, dried fruits, granules, tea, flower tea, medicinal herbs, candies, small accessories, screws, pet food, fertilizers, seeds, and other granular or powder materials.",
+  "notes": "p50 为案例页'部分案例 电动款多头包装机 / Custom Solution: Electric Multi-head Packaging Machine',含 4头螺旋称重包装机(花茶)、八头螺旋称重包装机(杂粮)、6头直振称重包装机(混合粉末)、2头螺旋称重包装机(配件);页内无型号、无参数表。因紧邻 p49 且为电动款定制说明页,归到 DB-G999,为判断性归属,画册未明示。组合使用:上料机 Feeding machine、传送带 Conveyor belt。"
+ },
+ {
+  "page": 51,
+  "model": "QS-Y100",
+  "category": "packaging",
+  "name_zh": "100克气动小型三边封包装机",
+  "name_en": "100g Pneumatic Three Side Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-17bags/min",
+    "value_en": "10-17bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "550W",
+    "value_en": "550W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48.5x59x145cm",
+    "value_en": "48.5x59x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "41kg",
+    "value_en": "41kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 10%-38% y 20%-72%;右侧为产品特性文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,广泛适用:小颗粒粉末产品。气动运行平稳,精准高效自动称重包装。",
+  "advantages_en": "PLC system touch screen, intuitive parameter adjustment, quick to use and flexible operation, widely applicable to small particle powder products. Pneumatic operation is smooth, precise and efficient automatic weighing and packaging.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印 QS-Y100(Y 字形近 1)。名称里'100克'印为 I00 样式字体。中文值带小字注释(大米为单位/因物料而异),英文列无。"
+ },
+ {
+  "page": 52,
+  "model": "QB-Y100",
+  "category": "packaging",
+  "name_zh": "100克气动小型背封包装机",
+  "name_en": "100g Pneumatic Back Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-17bags/min",
+    "value_en": "10-17bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "550W",
+    "value_en": "550W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48.5x63x145cm",
+    "value_en": "48.5x63x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "41kg",
+    "value_en": "41kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 62%-92% y 17%-72%;左上三张成品袋照片;底部蓝色带为可选配置",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "可选配置:色带打码机 Ribbon coding machine、光标 Cursor、加大料斗 Replace the storage hopper、传送带 Conveyor belt。"
+ },
+ {
+  "page": 53,
+  "model": "QS-2T100",
+  "category": "packaging",
+  "name_zh": "双头100克气动小型包装机",
+  "name_en": "2- Heads 100g Pneumatic Small Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封3-side seal/背封Back Seal",
+    "value_en": "3-side seal/Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "12-18bags/min",
+    "value_en": "12-18bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48x76x155m",
+    "value_en": "48x76x155cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "53kg",
+    "value_en": "53kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(带双秤料仓),约占 x 55%-90% y 18%-70%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "双工位称重,智能PLC控制,包装稳定高效;广泛适用于各种颗粒粉末产品,一机多用。",
+  "advantages_en": "Dual-station weighing and intelligent PLC control ensure stable and efficient packaging; widely applicable to various granular and powder products, offering multi-purpose versatility.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸画册印 48x76x155m(单位 m 为明显笔误),已改为 cm,value_zh 保留原印 48x76x155m、value_en 为修正后的 48x76x155cm。封口方式单元格中英文混排,value_zh 照抄混排原文。"
+ },
+ {
+  "page": 54,
+  "model": "QY-2T100",
+  "category": "packaging",
+  "name_zh": "双头100克气动包装机+冲刀",
+  "name_en": "3- Heads 100g Pneumatic Packaging Machine& Corner Rounder",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-15bags/min",
+    "value_en": "10-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-12cm",
+    "value_en": "5-12cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "550W",
+    "value_en": "550W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "58x70x177cm",
+    "value_en": "58x70x177cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "65kg",
+    "value_en": "65kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(带双秤料仓+冲刀),约占 x 62%-92% y 17%-72%;底部蓝色带为成品展示 4 张(条形袋)",
+  "advantages_zh": "定制款袋型,双工位轮流称重灌装或混合,高精度包装各种粉剂产品,固定模具只支持一个膜宽规格。",
+  "advantages_en": "Customized bag type, dual station rotating weighing and filling or mixing, high-precision packaging of various powder products, fixed mold only supports one film width specification.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "中英文名称不一致:中文印'双头'(2头),英文副标题印'3- Heads'(应为笔误,机身为双秤),name_en 照抄英文原文'3- Heads ...'。无封口方式行。"
+ },
+ {
+  "page": 55,
+  "model": "QS-3T100",
+  "category": "packaging",
+  "name_zh": "三头100克气动小型包装机",
+  "name_en": "3- Heads 100g Pneumatic Small Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封 / 背封",
+    "value_en": "3-side seal / Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "15-23bags/min",
+    "value_en": "15-23bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "665W",
+    "value_en": "665W"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [
+   56
+  ],
+  "images_hint": "右半页机器照片(带高支架三头料仓),约占 x 55%-92% y 28%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "单种产品多称轮流灌装,包装速度更快;多种产品定量混合灌装,包装省心便捷;根据需求推荐定制多头称。",
+  "advantages_en": "Multiple weighing and rotating filling of a single product, faster packaging speed. Quantitative mixing and filling of multiple products, convenient and worry free packaging. Recommend customized multi head scales based on demand.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "缺失:整机尺寸(栏位空白)、整机重量(栏位空白)。封口方式值为'三边封 / 背封'(英文列未印,value_en 为按中文翻译)。p56(按需定制:颗粒粉末包装机+抽液体功能)案例页图中无型号、无参数表,归到最近的 QS 气动款 QS-3T100,为判断性归属,画册未明示;p56 英文标题 Granule & Powder Packaging Machine with Liquid Injection Function,优势:一台设备完成混合、计量、灌装、封口一体化,减少人力成本,提升包装效率,适合规模化生产,确保每包物料中粉液(颗粒液)比例精准,避免人工混合的配比误差,保证产品统一化(英文: A single machine integrates mixing, dosing, filling, and sealing to reduce labor costs and enhance packaging efficiency. Ideal for large-scale production, it ensures a precise powder-liquid (or granule-liquid) ratio in every pack, eliminating manual mixing errors and guaranteeing product uniformity.);按需推荐:根据需求推荐称重分装机款式,及包装机型号组合使用。"
+ },
+ {
+  "page": 57,
+  "model": "Q4-G100",
+  "category": "packaging",
+  "name_zh": "100克四边封包装机",
+  "name_en": "100g Four Side Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-13bags/min",
+    "value_en": "8-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "56x67x158cm",
+    "value_en": "56x67x158cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片,约占 x 8%-38% y 20%-72%;右侧为产品优势文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "四面封口包装,智能按键款电脑版,操作简单易上手;广泛包装各种小颗粒粉末产品,一机多用。",
+  "advantages_en": "Four sided sealed packaging, intelligent button computer version, easy to operate and handle, widely packaged with various small particle powder products, one machine for multiple uses",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印 Q4-G100(字体 G 形近 6/0,按 Q4-G100 录入;名称为100克,与 100 相符)。缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 58,
+  "model": "Q4-2T100",
+  "category": "packaging",
+  "name_zh": "双头100克四边封包装机+甩刀",
+  "name_en": "2- Heads 100g Four Side Seal Packaging Machine with Rotary Cutter",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "1-100g(大米为单位)",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "12-16bags/min",
+    "value_en": "12-16bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20",
+    "value_en": "5-20"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "56x89x183cm",
+    "value_en": "56x89x183cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(带双秤料仓),约占 x 55%-90% y 18%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "定制款袋型,双工位轮流称重灌装或混合,高精度包装各种小颗粒及粉剂产品,四面封口平切美观。",
+  "advantages_en": "Customized bag type, dual station rotating weighing and filling or mixing, high-precision packaging of various small particles and powder products, four sided sealing and flat cutting for beautiful appearance.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "卷膜宽度印 5-20 未带单位 cm(照抄,单位缺失)。缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 59,
+  "model": "QS-NWD100",
+  "category": "packaging",
+  "name_zh": "内外袋包装机",
+  "name_en": "Inner And Outer Bag Packaging Machine",
+  "params": [
+   {
+    "key": "filling_range",
+    "zh": "灌装范围",
+    "en": "Filling range",
+    "value_zh": "1-100g",
+    "value_en": "1-100g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-13bags/min",
+    "value_en": "5-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "inner_film_width",
+    "zh": "内膜宽度",
+    "en": "Inner film width",
+    "value_zh": "5-16cm",
+    "value_en": "5-16cm"
+   },
+   {
+    "key": "outer_film_width",
+    "zh": "外膜宽度",
+    "en": "Outer film width",
+    "value_zh": "5-22cm",
+    "value_en": "5-22cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V / 1000W",
+    "value_en": "220V / 1000W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "98×61x216cm",
+    "value_en": "98×61x216cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页大幅机器照片(双层卷膜立式),约占 x 5%-43% y 20%-92%;右上为内外袋成品照片(约 x 51%-83% y 20%-43%);右侧为产品优势+参数表",
+  "advantages_zh": "双重防护:内袋阻隔保鲜,外袋防损防污,尤其适合易吸潮、易氧化、怕污染的物料(如粉末、茶叶、药品),延长保质期。",
+  "advantages_en": "Double protection: Inner bag for freshness; Outer bag for anti-damage/anti-fouling, perfect for moisture-absorbent, oxidation-prone items (powder, tea, medicine), effectively extends product shelf life.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印 QS-NWD100(字体 1 形近 I)。本机参数为'灌装范围'(非称重范围)和'电压功率'合并一行(220V / 1000W),已按画册原样用 filling_range / voltage_power 两个 key。缺失:整机重量(栏位空白)。无成品展示条。"
+ },
+ {
+  "page": 60,
+  "model": "QS-F200",
+  "category": "packaging",
+  "name_zh": "200克气动小型包装机",
+  "name_en": "200g Small Pneumatic Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封3-side seal/背封Back Seal",
+    "value_en": "3-side seal/Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "2-200g(大米为单位)",
+    "value_en": "2-200g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-15bags/min",
+    "value_en": "8-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "5-20cm",
+    "value_en": "5-20cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-16cm",
+    "value_en": "3-16cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "48x59x145m",
+    "value_en": "48x59x145cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "42kg",
+    "value_en": "42kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 57%-90% y 18%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "PLC系统触控屏,参数调节直观,操作简单上手快,运行灵活;气动机运行平稳,自动称重包装精准高效。",
+  "advantages_en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "整机尺寸画册印 48x59x145m(单位 m 为明显笔误),已修正为 cm:value_zh 保留原印 48x59x145m,value_en 为修正后 48x59x145cm。英文副标题为 '200g Small Pneumatic Packaging Machine'(中文为气动小型)。"
+ },
+ {
+  "page": 61,
+  "model": "QB-G200",
+  "category": "packaging",
+  "name_zh": "200克气动中型包装机",
+  "name_en": "200g Medium Pneumatic Packaging Machine",
+  "params": [
+   {
+    "key": "sealing_style",
+    "zh": "封口方式",
+    "en": "Sealing Type",
+    "value_zh": "三边封3-side seal/背封Back Seal",
+    "value_en": "3-side seal/Back Seal"
+   },
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "2-200g(大米为单位)",
+    "value_en": "2-200g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-15bags/min",
+    "value_en": "8-15bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±0.2g(因物料而异)",
+    "value_en": "±0.2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "20-30cm/34cm",
+    "value_en": "20-30cm/34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-22cm",
+    "value_en": "3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "56x78x150cm",
+    "value_en": "56x78x150cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "54kg",
+    "value_en": "54kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 55%-90% y 18%-70%;左侧产品优势文字+参数表;底部蓝色带为可选配置(色带打码机/光标/加搅拌器/传送带)",
+  "advantages_zh": "效率突出:气动驱动响应快,适配颗粒、粉末、标准化包装需求;稳定性强:气压传动结构简单、磨损小,故障发生率低。",
+  "advantages_en": "Outstanding efficiency: Pneumatic drive with fast response, suitable for particle, powder, and standardized packaging needs. Strong stability: The pneumatic transmission structure is simple, with minimal wear and low failure rate.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "卷膜宽度印 20-30cm/34cm(照抄)。精准度中文标签印为'精 度'(中间有空位,疑似排版省略'准'字),zh 标签按标准写'精准度'。可选配置:色带打码机 Ribbon Printer、光标 Cursor、加搅拌器 Blender、传送带 Conveyor belt。"
+ },
+ {
+  "page": 62,
+  "model": "QS-G500",
+  "category": "packaging",
+  "name_zh": "500克气动中型三边封包装机",
+  "name_en": "500g Medium Pneumatic Three Side Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "5-500g(大米为单位)",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "7-12bags/min",
+    "value_en": "7-12bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "20-30cm",
+    "value_en": "20-30cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-22cm",
+    "value_en": "3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "56x75x165cm",
+    "value_en": "56x75x165cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "67kg",
+    "value_en": "67kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 53%-88% y 18%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,气动机运行平稳,精准高效自动称重包装。",
+  "advantages_en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": ""
+ },
+ {
+  "page": 63,
+  "model": "QB-G500",
+  "category": "packaging",
+  "name_zh": "500克气动中型背封包装机",
+  "name_en": "500g Medium Pneumatic Back Seal Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "5-500g(大米为单位)",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "7-12bags/min",
+    "value_en": "7-12bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "20-34cm",
+    "value_en": "20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-22cm",
+    "value_en": "3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "56x75x165cm",
+    "value_en": "56x75x165cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "67kg",
+    "value_en": "67kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 55%-90% y 17%-70%;左侧产品优势文字+参数表;底部蓝色带为支持定制(加真空功能/加充氮气/加封口挂孔/加排气孔)",
+  "advantages_zh": "自动完成称重、灌装、制袋、封口、切袋,可根据需求配置打码机光标等功能。",
+  "advantages_en": "Automatic weighing, filling, bag making, sealing and bag cutting. Optional date printer, photoelectric mark (cursor) and other functions available upon request.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "英文副标题含 Pneumatic(中文名亦为气动中型背封),name_en 按图。底部为'支持定制 Customization available':加真空功能 Add vacuum function、加充氮气 Add nitrogen gas、加封口挂孔 Add hanging holes、加排气孔 Add exhaust holes。"
+ },
+ {
+  "page": 64,
+  "model": "QBC-2T500",
+  "category": "packaging",
+  "name_zh": "500克气动中型插角袋包装机",
+  "name_en": "500g Medium Pneumatic Gusset Bag Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "5-500g(大米为单位)",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-16bags/min",
+    "value_en": "10-16bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Precision",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "20-34cm",
+    "value_en": "20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-22cm",
+    "value_en": "3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "650W",
+    "value_en": "650W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "66x84x167cm",
+    "value_en": "66x84x167cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(双秤料仓+插角成型),约占 x 52%-90% y 18%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张(插角袋)",
+  "advantages_zh": "封口时,两侧插角向中心推动,使成袋外观更美观、立体。设备可自动完成称重、灌装、制袋、封口及切袋工序,并可根据需求选配打码机、光标等功能。",
+  "advantages_en": "During sealing, the two corners are pushed towards the center, forming a neat and aesthetically pleasing gusset bag. The system automatically completes weighing, filling, bag making, sealing, and bag cutting. Optional configurations include a date printer, cursor tracking, and other functions as required.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "精准度标签:中文印'精 度'(中间空位),英文印 Precision(非 Accuracy),en 标签照抄 Precision。缺失:整机重量(栏位空白)。"
+ },
+ {
+  "page": 65,
+  "model": "QB-F500",
+  "category": "packaging",
+  "name_zh": "500克气动中型包装机+打挂孔",
+  "name_en": "500g Medium Pneumatic Packaging Machine & Hanging Hole",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "5-500g(大米为单位)",
+    "value_en": "5-500g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "7-12bags/min",
+    "value_en": "7-12bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "20-34cm",
+    "value_en": "20-34cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-22cm",
+    "value_en": "3-22cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "600W",
+    "value_en": "600W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "56x75x165cm",
+    "value_en": "56x75x165cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "67kg",
+    "value_en": "67kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "To be used with an aircompressor"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片,约占 x 53%-90% y 17%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张(带挂孔袋)",
+  "advantages_zh": "自动化完成称重与包装,采用标准化封口并带飞机孔设计,方便商品悬挂陈列。",
+  "advantages_en": "Automated weighing and packaging with standardized sealing and airplane holes, allowing convenient hanging display of products.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "气动需知英文值印 'To be used with an aircompressor'(与其他页 '50L+ Air Compressor (not included)' 不同),照抄。"
+ },
+ {
+  "page": 66,
+  "model": "QB-G999",
+  "category": "packaging",
+  "name_zh": "999克气动大型包装机",
+  "name_en": "999g Large Pneumatic Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g(大米为单位)",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-10bags/min",
+    "value_en": "6-10bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "700W",
+    "value_en": "700W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "66x98x200cm",
+    "value_en": "66x98x200cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "86kg",
+    "value_en": "86kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(大料斗),约占 x 53%-88% y 15%-70%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张",
+  "advantages_zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,气动机运行平稳,精准高效自动称重包装。",
+  "advantages_en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": ""
+ },
+ {
+  "page": 67,
+  "model": "QB-D999",
+  "category": "packaging",
+  "name_zh": "999克气动大型包装机+氮气接口",
+  "name_en": "999g Large Pneumatic Packaging Machine + Nitrogen interface",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g(大米为单位)",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-10bags/min",
+    "value_en": "6-10bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "700W",
+    "value_en": "700W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "66x98x200cm",
+    "value_en": "66x98x200cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "86kg",
+    "value_en": "86kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页机器照片+左下'选配氮气机'(N2 白色机柜),机器约 x 25%-50% y 18%-70%,氮气机约 x 0%-26% y 42%-70%;右上产品优势文字+参数表;底部蓝色带为成品展示 3 张(葵花籽/爆米花/膨化零食)",
+  "advantages_zh": "氮气包装,锁住酥脆口感避免变软对零食产品关键的优势,运输减少碰撞受损,保护零食形态,减少破碎。",
+  "advantages_en": "Nitrogen packaging locks in crispy texture and prevents food from turning soft, serving as a crucial advantage for snack products. It lessens collision damage during transportation, preserves snack shape and reduces breakage.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "图中另有'选配氮气机'(N2 机柜),为选配件。"
+ },
+ {
+  "page": 68,
+  "model": "QB2T-G999",
+  "category": "packaging",
+  "name_zh": "按需定制多头999克气动大型包装机",
+  "name_en": "Multi-Heads 999g Pneumaic Large Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g(大米为单位)",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "10-13bags/min",
+    "value_en": "10-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/900W",
+    "value_en": "220V/900W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "86x96x206cm",
+    "value_en": "86x96x206cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左侧机器(双秤料仓,控制面板 2 块),约 x 8%-45% y 18%-65%;下方为两列参数表(型号/称重范围/包装速度/精准度/卷膜宽度/袋长范围/电压功率/整机尺寸/气动需知)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "多型号表页,两台机型共用一张表:QB2T-G999 取左列、QB3T-G999 取右列;仅包装速度不同(10-13 vs 13-18bags/min),其余相同。气动需知为跨两列合并单元格。英文副标题原文拼写 'Pneumaic'(应为 Pneumatic),照抄。名称'按需定制'为页标题的一部分。缺失:整机重量(无此行)、总功率单列(合并为'电压功率')。"
+ },
+ {
+  "page": 68,
+  "model": "QB3T-G999",
+  "category": "packaging",
+  "name_zh": "按需定制多头999克气动大型包装机",
+  "name_en": "Multi-Heads 999g Pneumaic Large Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g(大米为单位)",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "13-18bags/min",
+    "value_en": "13-18bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage_power",
+    "zh": "电压功率",
+    "en": "Voltage power",
+    "value_zh": "220V/900W",
+    "value_en": "220V/900W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "86x96x206cm",
+    "value_en": "86x96x206cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右侧机器(三秤料仓,控制面板 3 块),约 x 52%-88% y 18%-65%;下方为两列参数表(型号/称重范围/包装速度/精准度/卷膜宽度/袋长范围/电压功率/整机尺寸/气动需知)",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "多型号表页,两台机型共用一张表:QB2T-G999 取左列、QB3T-G999 取右列;仅包装速度不同(10-13 vs 13-18bags/min),其余相同。气动需知为跨两列合并单元格。英文副标题原文拼写 'Pneumaic'(应为 Pneumatic),照抄。名称'按需定制'为页标题的一部分。缺失:整机重量(无此行)、总功率单列(合并为'电压功率')。"
+ },
+ {
+  "page": 69,
+  "model": "QB-Z999",
+  "category": "packaging",
+  "name_zh": "999克电控箱大型包装机+真空装置",
+  "name_en": "999g Large Packaging Machine with Electric Control Box & Vacuum Device",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-999g(大米为单位)",
+    "value_en": "10-999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-10bags/min",
+    "value_en": "5-10bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "30-44cm",
+    "value_en": "30-44cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-27cm",
+    "value_en": "3-27cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "2300W",
+    "value_en": "2300W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "84x130x215cm",
+    "value_en": "84x130x215cm"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "左半页大幅机器照片(带电控箱和真空泵),约占 x 8%-48% y 34%-93%;右上两张真空包装成品照片(花生/腰果,约 x 53%-93% y 38%-55%);右下为参数表",
+  "advantages_zh": "",
+  "advantages_en": "",
+  "application_zh": "五谷杂粮、红枣、莲子、瓜子、坚果、果干、干货、小鱼干等自动称重真空包装,有效延长保质期并保持食材原品质,真空包装后体积会缩小方便储存与携带,提升实用性。",
+  "application_en": "Widely usd in automatic weighing and vacuum packaging of grains, red dates, lotus seeds, melon seeds, nuts, dried fruits, dry goods, and dried fish effectively extends shelf life while preserving the original quality of the ingredients. Vacuum packaging also reduces volume, making storage and transportation easier and more practical.",
+  "notes": "缺失:整机重量(栏位留空,未印数值)。英文适用产品原文拼写 'usd'(应为 used),按原样保留。无产品优势栏,仅有适用产品栏。"
+ },
+ {
+  "page": 70,
+  "model": "QB-G3000",
+  "category": "packaging",
+  "name_zh": "3000克气动600型包装机",
+  "name_en": "3000g Pneumatic 600 Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-3000g(大米为单位)",
+    "value_en": "10-3000g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-9bags/min",
+    "value_en": "6-9bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-60cm",
+    "value_en": "40-60cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "750W",
+    "value_en": "750W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "90x108x228cm",
+    "value_en": "90x108x228cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "190kg",
+    "value_en": "190kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(无料斗显示,顶部灰色方块),约占 x 55%-95% y 18%-70%;左侧产品优势文字+参数表;底部蓝色带为可选配置(色带打码机/光标/上料机/传送带)",
+  "advantages_zh": "自动完成称重、灌装、制袋、封口、切袋,可根据需求配置打码机光标等功能。",
+  "advantages_en": "Automatic weighing, filling, bag making, sealing, bag cutting. Can be configured with date printer, cursor and other functions as required.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印 QB-G3000(末尾 0 字形偏圆,按 3000 录入)。"
+ },
+ {
+  "page": 71,
+  "model": "QB-G5000",
+  "category": "packaging",
+  "name_zh": "5000克气动700型包装机",
+  "name_en": "5000 gram pneumatic 700 type packaging machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "20-5000g(大米为单位)",
+    "value_en": "20-5000g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "5-8bags/min",
+    "value_en": "5-8bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5g(因物料而异)",
+    "value_en": "±5g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-72cm",
+    "value_en": "40-72cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "800W",
+    "value_en": "800W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "100x108x238cm",
+    "value_en": "100x108x238cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "216kg",
+    "value_en": "216kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(无料斗显示,顶部灰色方块),约占 x 55%-95% y 18%-70%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张(绿豆/爆米花/蒜瓣/辣椒粉)",
+  "advantages_zh": "PLC系统触摸屏,参数调整直观快速,操作灵活,气动马达运转平稳,实现高精度、高效率的自动称重与包装。",
+  "advantages_en": "PLC system with touch screen, intuitive parameter adjustment, quick to use and flexible operation, smooth operation of pneumatic motor, precise and efficient automatic weighing and packaging.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "型号印 QB-G5000(末尾 0 字形偏圆,按 5000 录入)。"
+ },
+ {
+  "page": 72,
+  "model": "QB2T-G3000",
+  "category": "packaging",
+  "name_zh": "双头3000克气动600型包装机",
+  "name_en": "2-Head 3000g Pneumatic 600 Packaging Machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "10-3000g(大米为单位)",
+    "value_en": "10-3000g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "9-13bags/min",
+    "value_en": "9-13bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±2g(因物料而异)",
+    "value_en": "±2g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-60cm",
+    "value_en": "40-60cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1200W",
+    "value_en": "1200W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "100x116x230cm",
+    "value_en": "100x116x230cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "210kg",
+    "value_en": "210kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(双秤料仓),约占 x 55%-92% y 18%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张(薯片虾片/红枣/面粉/爆米花)",
+  "advantages_zh": "通过两个工位交替作业,可快速精准完成称重与包装,提升生产效率,且适用产品丰富:粮食谷物、干货坚果、宠物食品、粉末状、化肥农药、医药类、五金电子类等范围广",
+  "advantages_en": "By alternating between two workstations, weighing and packaging can be quickly and accurately completed, improving production efficiency. It is suitable for a wide range of products, including grains, dry nuts, pet food, powders, fertilizers and pesticides, pharmaceuticals, hardware and electronics, etc",
+  "application_zh": "",
+  "application_en": "",
+  "notes": ""
+ },
+ {
+  "page": 73,
+  "model": "QB2T-G5000",
+  "category": "packaging",
+  "name_zh": "双头5000克气动700型包装机",
+  "name_en": "2-Heads 5000g pneumatic 700 packaging machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "20-5000g(大米为单位)",
+    "value_en": "20-5000g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "8-12bags/min",
+    "value_en": "8-12bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±5g(因物料而异)",
+    "value_en": "±5g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-72cm",
+    "value_en": "40-72cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1300W",
+    "value_en": "1300W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "100x116x240cm",
+    "value_en": "100x116x240cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "230kg",
+    "value_en": "230kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(双秤料仓),约占 x 52%-92% y 22%-72%;左侧产品优势文字+参数表;底部蓝色带为可选配置(粉末上料机/Z型上料机/上料机/传送带)",
+  "advantages_zh": "自动完成称重、灌装、制袋、封口、切袋,可根据需求配置打码机光标等功能。",
+  "advantages_en": "Automatic weighing, filling, bag making, sealing, bag cutting. Can be configured with date printer, cursor and other functions as required.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": "可选配置:粉末上料机 Screw Feeding Machine、Z型上料机 Z-type feeding machine、上料机 Feeding Machine、传送带 Conveyor belt。"
+ },
+ {
+  "page": 74,
+  "model": "QB2T-G9999",
+  "category": "packaging",
+  "name_zh": "双头9999克气动700型包装机",
+  "name_en": "2-Heads 9999g pneumatic 700 packaging machine",
+  "params": [
+   {
+    "key": "weighing_range",
+    "zh": "称重范围",
+    "en": "Weighing range",
+    "value_zh": "50-9999g(大米为单位)",
+    "value_en": "50-9999g"
+   },
+   {
+    "key": "packaging_speed",
+    "zh": "包装速度",
+    "en": "Speed",
+    "value_zh": "6-8bags/min",
+    "value_en": "6-8bags/min"
+   },
+   {
+    "key": "accuracy",
+    "zh": "精准度",
+    "en": "Accuracy",
+    "value_zh": "±20g(因物料而异)",
+    "value_en": "±20g"
+   },
+   {
+    "key": "film_width",
+    "zh": "卷膜宽度",
+    "en": "Film width",
+    "value_zh": "40-72cm",
+    "value_en": "40-72cm"
+   },
+   {
+    "key": "bag_length",
+    "zh": "袋长范围",
+    "en": "Bag length",
+    "value_zh": "3-40cm",
+    "value_en": "3-40cm"
+   },
+   {
+    "key": "voltage",
+    "zh": "额定电压",
+    "en": "Voltage",
+    "value_zh": "220V",
+    "value_en": "220V"
+   },
+   {
+    "key": "power",
+    "zh": "总功率",
+    "en": "Power",
+    "value_zh": "1500W",
+    "value_en": "1500W"
+   },
+   {
+    "key": "dimensions",
+    "zh": "整机尺寸",
+    "en": "Size/L*W*H",
+    "value_zh": "100x116x275cm",
+    "value_en": "100x116x275cm"
+   },
+   {
+    "key": "weight",
+    "zh": "整机重量",
+    "en": "Weight",
+    "value_zh": "260kg",
+    "value_en": "260kg"
+   },
+   {
+    "key": "air_requirement",
+    "zh": "气动需知",
+    "en": "Air Requirement",
+    "value_zh": "需搭配50L以上空压机使用",
+    "value_en": "50L+ Air Compressor (not included)"
+   }
+  ],
+  "extra_pages": [],
+  "images_hint": "右半页机器照片(大型双秤料仓),约占 x 55%-90% y 18%-72%;左侧产品优势文字+参数表;底部蓝色带为成品展示 4 张(葵花籽/大米/茶叶/花生)",
+  "advantages_zh": "兼容物料范围广:颗粒、粉末、条状物料均可适配、五谷粮食、饲料、茶叶、药材、化肥、调料粉末、坚果零食、塑胶粒子、粉体原料、五金配件等",
+  "advantages_en": "Wide compatibility with various materials: suitable for granular, powdery and strip-shaped materials, including grains, animal feed, tea, medicinal herbs, fertilizers, seasoning powder, nut snacks, plastic pellets, powder raw materials, hardware accessories, etc.",
+  "application_zh": "",
+  "application_en": "",
+  "notes": ""
+ }
+]

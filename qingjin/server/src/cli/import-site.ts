@@ -2,6 +2,8 @@
  * One-off (re-runnable) import of the existing Astro site's data into the database.
  *   npm run import:site            import, then verify the round trip
  *   npm run import:site -- --check only verify the database against the site JSON
+ *   --machines-only                leave the site settings (factory photos, certificates, contacts) alone
+ *   --replace                      also delete machines, categories and videos the site JSON no longer lists
  * Re-running overwrites machine fields and params for every slug present in machines.json.
  */
 import { createHash } from 'node:crypto';
@@ -18,13 +20,61 @@ type SiteMachine = Omit<ExportedMachine, 'featured'> & { source?: unknown; notes
 import { createPrisma } from './db';
 
 // Mirrors the hard-coded list in qingjin-site/src/utils/index.ts (getFeaturedMachines).
-const FEATURED = ['kl-y100', 'dsy-k100', 'ds-200ml', 'qs-ls200ml', 'dz-340', 'ts-170'];
+const FEATURED = ['fm-y100', 'fb-3000', 'zlg-100', 'ds-y100', 'ds-300ml', 'dz-340'];
 
 const siteDir = resolve(process.env.SITE_DIR ?? '../../qingjin-site');
 const uploadDir = resolve(process.env.UPLOAD_DIR ?? './uploads');
 const readJson = <T>(rel: string): T => JSON.parse(readFileSync(join(siteDir, rel), 'utf8')) as T;
 
 const prisma = createPrisma();
+
+/** Public paths of a machine's pictures, cover first. */
+const gallery = (m: SiteMachine): string[] => (m.images?.length ? m.images : m.image ? [m.image] : []);
+
+/** Site JSON keeps extra pictures in a subfolder; the database and the published site use one flat folder. */
+const flatName = (publicPath: string) => basename(publicPath);
+
+async function importMachineImage(machineId: string, publicPath: string): Promise<string> {
+  const src = join(siteDir, 'public', publicPath);
+  if (!existsSync(src)) throw new Error(`${machineId}: image not found ${src}`);
+  const buf = readFileSync(src);
+  const sha256 = createHash('sha256').update(buf).digest('hex');
+  const same = await prisma.media.findUnique({ where: { sha256 } });
+  if (same) return same.id;
+  const rel = `machines/${flatName(publicPath)}`;
+  copyFileSync(src, join(uploadDir, rel));
+  const meta = await sharp(buf).metadata();
+  const data = {
+    originalName: flatName(publicPath),
+    mime: `image/${meta.format}`,
+    width: meta.width ?? 0,
+    height: meta.height ?? 0,
+    size: buf.length,
+    sha256,
+  };
+  // A new picture can reuse an old file name (a replaced catalogue does); the row and file then take the new bytes.
+  const media = await prisma.media.upsert({ where: { path: rel }, create: { path: rel, ...data }, update: data });
+  return media.id;
+}
+
+/**
+ * --replace: drop machines, categories and templates that the site JSON no longer has.
+ * Only database rows go. Picture and video files stay on disk so older releases can still be rolled back.
+ */
+async function removeStale(machines: SiteMachine[], categories: SiteCategory[]) {
+  const keepMachines = machines.map((m) => m.id);
+  const stale = await prisma.machine.findMany({ where: { slug: { notIn: keepMachines } }, select: { id: true, slug: true, videoId: true } });
+  const videoIds = [...new Set(stale.map((s) => s.videoId).filter((v): v is string => !!v))];
+  const removed = await prisma.machine.deleteMany({ where: { id: { in: stale.map((s) => s.id) } } });
+  console.log(`removed machines: ${removed.count}`);
+  if (videoIds.length) {
+    // Machines are gone, so nothing references these videos any more.
+    const gone = await prisma.video.deleteMany({ where: { id: { in: videoIds }, machines: { none: {} } } });
+    console.log(`removed video records: ${gone.count}`);
+  }
+  const cats = await prisma.category.deleteMany({ where: { slug: { notIn: categories.map((c) => c.id) }, machines: { none: {} } } });
+  console.log(`removed categories: ${cats.count}`);
+}
 
 async function importAll(machines: SiteMachine[], categories: SiteCategory[], site: unknown) {
   const catIds = new Map<string, string>();
@@ -61,29 +111,11 @@ async function importAll(machines: SiteMachine[], categories: SiteCategory[], si
       source: (m.source ?? undefined) as object | undefined,
     };
 
-    let mediaId: string | null = null;
-    if (m.image) {
-      const src = join(siteDir, 'public', m.image);
-      if (!existsSync(src)) throw new Error(`${m.id}: image not found ${src}`);
-      const rel = `machines/${m.image.split('/').pop()}`;
-      copyFileSync(src, join(uploadDir, rel));
-      const buf = readFileSync(src);
-      const meta = await sharp(buf).metadata();
-      const media = await prisma.media.upsert({
-        where: { path: rel },
-        create: {
-          path: rel,
-          originalName: rel.split('/').pop(),
-          mime: `image/${meta.format}`,
-          width: meta.width ?? 0,
-          height: meta.height ?? 0,
-          size: buf.length,
-          sha256: createHash('sha256').update(buf).digest('hex'),
-        },
-        update: {},
-      });
-      mediaId = media.id;
-    }
+    // Cover first, then the gallery. Gallery pictures can be shared by several machines, so a
+    // Media row is looked up by content hash before a new one is created.
+    const mediaIds: string[] = [];
+    for (const publicPath of gallery(m)) mediaIds.push(await importMachineImage(m.id, publicPath));
+    const mediaId = mediaIds[0] ?? null;
 
     await prisma.$transaction(async (tx) => {
       const row = await tx.machine.upsert({ where: { slug: m.id }, create: { slug: m.id, ...fields }, update: fields });
@@ -100,17 +132,22 @@ async function importAll(machines: SiteMachine[], categories: SiteCategory[], si
         })),
       });
       if (mediaId) {
-        await tx.machineImage.updateMany({ where: { machineId: row.id }, data: { isCover: false } });
-        await tx.machineImage.upsert({
-          where: { machineId_mediaId: { machineId: row.id, mediaId } },
-          create: { machineId: row.id, mediaId, isCover: true, sort: 0 },
-          update: { isCover: true },
-        });
+        // Re-running replaces the gallery, so pictures dropped from the site JSON disappear here too.
+        await tx.machineImage.deleteMany({ where: { machineId: row.id, mediaId: { notIn: mediaIds } } });
+        for (const [i, id] of mediaIds.entries()) {
+          await tx.machineImage.upsert({
+            where: { machineId_mediaId: { machineId: row.id, mediaId: id } },
+            create: { machineId: row.id, mediaId: id, isCover: i === 0, sort: i * 10 },
+            update: { isCover: i === 0, sort: i * 10 },
+          });
+        }
       }
     });
     imported++;
   }
   console.log(`machines: ${imported}`);
+
+  if (process.argv.includes('--replace')) await removeStale(machines, categories);
 
   // Param templates: every key used in a category, in first-seen order, labelled by its first occurrence.
   let templateCount = 0;
@@ -118,6 +155,9 @@ async function importAll(machines: SiteMachine[], categories: SiteCategory[], si
     const seen = new Map<string, { zh: string; en: string }>();
     for (const m of machines.filter((x) => x.category === slug)) {
       for (const p of m.params) if (!seen.has(p.key)) seen.set(p.key, { zh: p.zh, en: p.en });
+    }
+    if (process.argv.includes('--replace')) {
+      await prisma.paramTemplate.deleteMany({ where: { categoryId, key: { notIn: [...seen.keys()] } } });
     }
     let i = 0;
     for (const [key, label] of seen) {
@@ -132,7 +172,7 @@ async function importAll(machines: SiteMachine[], categories: SiteCategory[], si
   }
   console.log(`param templates: ${templateCount}`);
 
-  await importSiteSettings(site as SiteJson);
+  if (!process.argv.includes('--machines-only')) await importSiteSettings(site as SiteJson);
 }
 
 /** The site's own site.json: images are public paths, and trackEndpoint is set per build, not stored. */
@@ -216,7 +256,16 @@ async function verify(machines: SiteMachine[], categories: SiteCategory[]): Prom
     // The export adds `featured` and leaves out internal fields; compare the rest exactly.
     const { featured, ...rest } = e;
     const { notes: _n, source: _s, ...original } = m;
-    if (!isDeepStrictEqual(rest, original)) fail(`${m.id} content differs`);
+    // Pictures are stored flat and identical files are stored once, so a path in the export can be
+    // another machine's file name. Compare pictures by content, everything else exactly.
+    const { image: dbImage, images: dbImages, ...dbRest } = rest;
+    const { image: _i, images: _is, ...siteRest } = original;
+    if (!isDeepStrictEqual(dbRest, siteRest)) fail(`${m.id} content differs`);
+    const shaOfSite = (p: string) => createHash('sha256').update(readFileSync(join(siteDir, 'public', p))).digest('hex');
+    const shaOfDb = (p: string) => createHash('sha256').update(readFileSync(join(uploadDir, p.replace(/^\/images\//, '')))).digest('hex');
+    const wantShas = [...new Set(gallery(m).map(shaOfSite))];
+    const gotShas = (dbImages ?? [dbImage]).map(shaOfDb);
+    if (!isDeepStrictEqual(gotShas, wantShas) || shaOfDb(dbImage) !== wantShas[0]) fail(`${m.id} pictures differ`);
     if (featured !== FEATURED.includes(m.id)) fail(`${m.id} featured flag differs`);
   }
   const notesInDb = await prisma.machine.count({ where: { notes: { not: null } } });
@@ -225,10 +274,17 @@ async function verify(machines: SiteMachine[], categories: SiteCategory[]): Prom
   if (!isDeepStrictEqual(exported.categories, categories)) fail('categories differ');
 
   for (const m of machines) {
-    if (!m.image) continue;
-    const a = readFileSync(join(siteDir, 'public', m.image));
-    const b = readFileSync(join(uploadDir, 'machines', m.image.split('/').pop()!));
-    if (!a.equals(b)) fail(`${m.id} image bytes differ`);
+    for (const p of gallery(m)) {
+      const a = readFileSync(join(siteDir, 'public', p));
+      // Shared pictures are stored once under the first name that imported them, so find them by content.
+      const sha = createHash('sha256').update(a).digest('hex');
+      const media = await prisma.media.findUnique({ where: { sha256: sha } });
+      if (!media) {
+        fail(`${m.id} image ${p} not in db`);
+        continue;
+      }
+      if (!readFileSync(join(uploadDir, media.path)).equals(a)) fail(`${m.id} image bytes differ (${p})`);
+    }
   }
 
   console.log(ok ? `verify: OK (${machines.length} machines, ${categories.length} categories, images identical)` : 'verify: FAILED');
@@ -246,7 +302,7 @@ async function main() {
     else await importAll(machines, categories, site);
   }
   const okMachines = siteOnly ? true : await verify(machines, categories);
-  const okSite = await verifySite(site);
+  const okSite = process.argv.includes('--machines-only') ? true : await verifySite(site);
   process.exitCode = okMachines && okSite ? 0 : 1;
 }
 

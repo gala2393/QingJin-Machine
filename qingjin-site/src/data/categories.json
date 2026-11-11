@@ -1,19 +1,43 @@
 [
   {
-    "id": "filling",
+    "id": "desktop",
     "name": {
-      "zh": "智能分装机",
-      "en": "Intelligent Filling Machines"
+      "zh": "台式分装机",
+      "en": "Desktop Filling Machines"
     },
-    "count": 25
+    "count": 10
+  },
+  {
+    "id": "large-filling",
+    "name": {
+      "zh": "大定量分装机",
+      "en": "Large Quantity Filling Machines"
+    },
+    "count": 15
+  },
+  {
+    "id": "auger-filling",
+    "name": {
+      "zh": "螺杆与灌装分装机",
+      "en": "Auger & Cup Filling Machines"
+    },
+    "count": 15
   },
   {
     "id": "packaging",
     "name": {
-      "zh": "智能包装机",
-      "en": "Intelligent Packaging Machines"
+      "zh": "颗粒粉末包装机",
+      "en": "Granule & Powder Packaging Machines"
     },
-    "count": 30
+    "count": 60
+  },
+  {
+    "id": "feeder-conveyor",
+    "name": {
+      "zh": "上料机与输送带",
+      "en": "Feeders & Conveyors"
+    },
+    "count": 16
   },
   {
     "id": "liquid",
@@ -21,7 +45,7 @@
       "zh": "液体包装机",
       "en": "Liquid Packaging Machines"
     },
-    "count": 14
+    "count": 13
   },
   {
     "id": "paste",
@@ -29,38 +53,22 @@
       "zh": "膏体包装机",
       "en": "Paste Packaging Machines"
     },
-    "count": 12
+    "count": 17
   },
   {
-    "id": "semi-auto",
+    "id": "premade-bag",
     "name": {
-      "zh": "半自动灌装机",
-      "en": "Semi-Automatic Filling Machines"
+      "zh": "给袋式包装机",
+      "en": "Pre-made Bag Packaging Machines"
     },
-    "count": 2
+    "count": 9
   },
   {
     "id": "vacuum",
     "name": {
-      "zh": "真空包装机",
-      "en": "Vacuum Packaging Machines"
+      "zh": "真空机",
+      "en": "Vacuum Machines"
     },
-    "count": 14
-  },
-  {
-    "id": "feeder",
-    "name": {
-      "zh": "智能上料机",
-      "en": "Intelligent Feeders"
-    },
-    "count": 4
-  },
-  {
-    "id": "conveyor",
-    "name": {
-      "zh": "传送带",
-      "en": "Conveyor Belts"
-    },
-    "count": 6
+    "count": 23
   }
 ]

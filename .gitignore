@@ -31,3 +31,22 @@ __pycache__/
 /CategoriesView.vue
 /MachinesView.vue
 /MediaView.vue
+
+# Catalogue 156 scratch (page renders and previews; rebuild from the PDF)
+/qingjin-site/scripts/work156/pages/
+/qingjin-site/scripts/work156/halves/
+/qingjin-site/scripts/work156/halves_view/
+/qingjin-site/scripts/work156/old_pages/
+/qingjin-site/scripts/work156/thumbs/
+/qingjin-site/scripts/work156/tmp/
+/qingjin-site/scripts/work156/crops_debug/
+/qingjin-site/scripts/work156/crop_preview/
+/qingjin-site/scripts/work156/*.jpg
+/qingjin-site/scripts/work156/*.sql
+/qingjin-site/scripts/work156/*.sh
+
+# Source material and deployment notes with server details
+/*.pdf
+/*.mp4
+/微信图片_*.jpg
+/腾讯云部署流程.md
