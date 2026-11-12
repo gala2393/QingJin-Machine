@@ -190,6 +190,99 @@ def build_sections(it):
     return sections
 
 
+GALLERY_TITLES = {
+    "showcase": {"zh": "成品展示", "en": "Finished Product Display"},
+    "options": {"zh": "可选配置", "en": "Optional Configurations"},
+    "pair": {"zh": "可搭配其它设备使用", "en": "Can Be Used With Other Equipment"},
+    "custom": {"zh": "支持非标定制", "en": "Non-standard Customization Supported"},
+    "case": {"zh": "定制案例", "en": "Custom Solutions"},
+    "detail": {"zh": "细节展示", "en": "Detail Display"},
+}
+
+
+def _caps(*pairs):
+    return [{"zh": z, "en": e} for z, e in pairs]
+
+
+NO_CAP = {"zh": "", "en": ""}
+
+# Picture groups cut by scripts/crop_sections_156.py: (page, group) -> section. Captions are only the text
+# printed on the brochure page; tiles with no printed caption keep empty ones. The tile count must match
+# scripts/work156/section_specs.json.
+SECTION_GROUPS = {
+    (3, "a"): ("custom", _caps(("圆形出料口", "Round discharge nozzle"), ("镀铁氟龙涂层", "Teflon coating"), ("多头称重分装机", "Multi head weighing"), ("定制304材质", "Customized 304 material"))),
+    (5, "a"): ("pair", _caps(("封口机", "Sealing machine"), ("包装机", "Packaging machine"), ("液体包装机", "Liquid packaging machine"))),
+    (6, "a"): ("pair", _caps(("封口机", "Sealing machine"), ("真空机", "Vacuum machine"), ("包装机", "Packaging machine"))),
+    (7, "a"): ("detail", _caps(("料斗可拆卸,便于清洁内部称重盘;标配机均201材质,支持定制304不锈钢", "The hopper is detachable for cleaning the weighing pan inside; standard machines are 201 material, customized 304 stainless steel supported"))),
+    (8, "a"): ("case", [NO_CAP] * 3),
+    (10, "a"): ("case", [NO_CAP] * 3),
+    (12, "a"): ("case", [NO_CAP] * 2),
+    (15, "a"): ("custom", _caps(("加大储料斗", "Increase the storage hopper"), ("机身加高", "increase height"), ("圆形出料口", "Round discharge nozzle"), ("定制304材质", "Customized 304 material"))),
+    (16, "a"): ("custom", _caps(("加配搅拌器", "Add mixer"), ("镀铁氟龙涂层", "Teflon coating"), ("料斗加配吸料机", "Add feeding machine"), ("定制支架款", "Customized support type"))),
+    (17, "a"): ("custom", _caps(("加大储料斗", "Increase the storage hopper"), ("机身加高", "increase height"), ("圆形出料口", "Round discharge nozzle"), ("定制304材质", "Customized 304 material"))),
+    (18, "a"): ("custom", _caps(("加配搅拌器", "Add mixer"), ("镀铁氟龙涂层", "Teflon coating"), ("料斗加配吸料机", "Add feeding machine"), ("定制支架款", "Customized support type"))),
+    (19, "a"): ("pair", _caps(("斗式上料机", "Bucket feeder machine"), ("吸料机", "Material suction machine"), ("平行传送带", "Parallel conveyor belt"))),
+    (22, "a"): ("detail", _caps(("大容量料斗,双仓下料", "Large capacity hopper, dual bin discharge"), ("双称工作:可设定不同重量/混合灌装", "Dual scale work: can set weights mixed filling"))),
+    (23, "a"): ("pair", _caps(("斗式上料机", "Bucket feeder machine"), ("吸料机", "Material suction machine"), ("平行传送带", "Parallel conveyor belt"))),
+    (24, "a"): ("case", [NO_CAP, NO_CAP]),
+    (26, "a"): ("detail", _caps(("三头称,大容量储料斗", "Three head scale, large capacity storage hopper"), ("三头称重,轮流下料模式,快速灌装", "Three head weighing, Alternate feeding mode, rapid filling"))),
+    (27, "a"): ("pair", _caps(("平放真空机", "Lying vacuum machine"), ("吸料机", "Material suction machine"), ("米砖真空机", "Rice brick vacuum machine"))),
+    (28, "a"): ("pair", _caps(("斗式上料机", "Bucket feeder machine"), ("大米整形真空机", "Rice bag shaping vacuum machine"), ("平行传送带", "Parallel conveyor belt"))),
+    (28, "b"): ("custom", [{"zh": "控制系统可改做PLC系统触控屏", "en": "The control system can be modified to a PLC system with a touch screen"}]),
+    (39, "a"): ("showcase", [NO_CAP] * 4),
+    (41, "a"): ("showcase", [NO_CAP] * 4),
+    (42, "a"): ("showcase", [NO_CAP] * 5),
+    (43, "a"): ("showcase", [NO_CAP] * 4),
+    (44, "a"): ("options", _caps(("色带打码机", "Ribbon Printer"), ("光标", "Cursor"), ("定制多头称包装", "Customized multi head packaging"), ("传送带", "Conveyor belt"))),
+    (45, "a"): ("showcase", [NO_CAP] * 4),
+}
+# Extra descriptions printed next to a group.
+GROUP_DESC = {
+    (24, "a"): {"zh": "定制机身加高,人工站立工作;搭配上料机自动加料;自动称重灌装,平行输送", "en": "Customized body height increase, manual standing work; equipped with an automatic feeding machine for material addition; automatic weighing and filling, parallel conveying"},
+}
+# Pages that share another page's picture groups (the brochure prints one group for several models).
+GROUP_PAGE_ALIASES = {10: 9, 12: 9}
+# Groups whose page prints its own heading instead of the standard one.
+GROUP_TITLES = {
+    (10, "a"): {"zh": "部分定制案例", "en": "Partial Custom Solutions"},
+    (12, "a"): {"zh": "按需定制", "en": "Customized As Needed"},
+}
+GROUP_DESC[(10, "a")] = {
+    "zh": "定制多头称重灌装机,可混合或轮流两种灌装方式;四头称螺旋内部、八头称螺旋内部",
+    "en": "Customized multi-head weighing filling machine, which can be used for mixed filling or sequential filling; inside of the four-head and eight-head weighing spirals",
+}
+GROUP_DESC[(12, "a")] = {
+    "zh": "计数盘分装机案例。适用产品:五金配件、螺丝、螺帽、垫片、电子配件、干燥剂、小公仔、饰品、纽扣、橡皮擦、糖果、珠子、等各类不规则产品",
+    "en": "Counting-plate filling machine case. Widely used in hardware accessories, screws, nuts, gaskets, electronic components, desiccants, small figurines, jewelry, buttons, erasers, candies, beads, etc.",
+}
+
+
+def _check_group_specs():
+    specs = json.loads((Path(__file__).resolve().parent / "work156" / "section_specs.json").read_text(encoding="utf-8"))
+    tiles = {(g["page"], g["group"]): len(g["tiles"]) for g in specs}
+    for key, (_, caps) in SECTION_GROUPS.items():
+        if tiles.get(key) != len(caps):
+            raise SystemExit(f"picture group {key}: {tiles.get(key)} cropped tiles but {len(caps)} captions")
+    missing = set(tiles) - set(SECTION_GROUPS)
+    if missing:
+        raise SystemExit(f"cropped picture groups without data: {sorted(missing)}")
+
+
+def build_gallery_sections(page):
+    sections = []
+    for (pg, grp), (kind, caps) in SECTION_GROUPS.items():
+        if GROUP_PAGE_ALIASES.get(pg, pg) != page:
+            continue
+        items = []
+        for i, cap in enumerate(caps, 1):
+            items.append({"zh": cap["zh"], "en": cap["en"], "image": f"/images/machines/sec-p{pg:03d}-{grp}-{i}.webp"})
+        sec = {"kind": "gallery", "title": GROUP_TITLES.get((pg, grp), GALLERY_TITLES[kind]), "items": items}
+        if (pg, grp) in GROUP_DESC:
+            sec["desc"] = GROUP_DESC[(pg, grp)]
+        sections.append(sec)
+    return sections
+
+
 def variant_slug(v):
     table = {"平盖": "flat", "凸盖": "convex", "单泵": "single-pump", "双泵": "double-pump"}
     for zh, en in table.items():
@@ -198,6 +291,7 @@ def variant_slug(v):
 
 
 def main():
+    _check_group_specs()
     raw = []
     for path in sorted(SRC.glob("part_*.json")):
         raw.extend(json.loads(path.read_text(encoding="utf-8")))
@@ -251,7 +345,7 @@ def main():
             machine["images"] = [machine["image"]] + [f"/images/machines/extra/p{n:03d}.webp" for n in extras]
         if it.get("notes"):
             machine["notes"] = it["notes"]
-        sections = build_sections(it)
+        sections = build_sections(it) + build_gallery_sections(it["page"])
         if sections:
             machine["sections"] = sections
         machines.append(machine)

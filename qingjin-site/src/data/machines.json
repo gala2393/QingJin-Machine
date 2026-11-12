@@ -192,6 +192,35 @@
             "en": "Compatible with vertical packaging machines for integrated operation."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "支持非标定制",
+          "en": "Non-standard Customization Supported"
+        },
+        "items": [
+          {
+            "zh": "圆形出料口",
+            "en": "Round discharge nozzle",
+            "image": "/images/machines/sec-p003-a-1.webp"
+          },
+          {
+            "zh": "镀铁氟龙涂层",
+            "en": "Teflon coating",
+            "image": "/images/machines/sec-p003-a-2.webp"
+          },
+          {
+            "zh": "多头称重分装机",
+            "en": "Multi head weighing",
+            "image": "/images/machines/sec-p003-a-3.webp"
+          },
+          {
+            "zh": "定制304材质",
+            "en": "Customized 304 material",
+            "image": "/images/machines/sec-p003-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -388,6 +417,30 @@
             "en": "Easy after-sales maintenance"
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可搭配其它设备使用",
+          "en": "Can Be Used With Other Equipment"
+        },
+        "items": [
+          {
+            "zh": "封口机",
+            "en": "Sealing machine",
+            "image": "/images/machines/sec-p005-a-1.webp"
+          },
+          {
+            "zh": "包装机",
+            "en": "Packaging machine",
+            "image": "/images/machines/sec-p005-a-2.webp"
+          },
+          {
+            "zh": "液体包装机",
+            "en": "Liquid packaging machine",
+            "image": "/images/machines/sec-p005-a-3.webp"
+          }
+        ]
       }
     ]
   },
@@ -462,7 +515,33 @@
       "page": 6,
       "extra_pages": []
     },
-    "notes": "本页无产品优势/适用产品栏,为'可搭配其它设备使用'(封口机、真空机、包装机)。"
+    "notes": "本页无产品优势/适用产品栏,为'可搭配其它设备使用'(封口机、真空机、包装机)。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可搭配其它设备使用",
+          "en": "Can Be Used With Other Equipment"
+        },
+        "items": [
+          {
+            "zh": "封口机",
+            "en": "Sealing machine",
+            "image": "/images/machines/sec-p006-a-1.webp"
+          },
+          {
+            "zh": "真空机",
+            "en": "Vacuum machine",
+            "image": "/images/machines/sec-p006-a-2.webp"
+          },
+          {
+            "zh": "包装机",
+            "en": "Packaging machine",
+            "image": "/images/machines/sec-p006-a-3.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kl-2t100",
@@ -549,6 +628,20 @@
             "en": "Small and flexible, dual station independent operation, capable of handling two materials simultaneously or alternately reducing waiting time. Widely applicable for quantitative automatic weighing of various small particle and powder products."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "细节展示",
+          "en": "Detail Display"
+        },
+        "items": [
+          {
+            "zh": "料斗可拆卸,便于清洁内部称重盘;标配机均201材质,支持定制304不锈钢",
+            "en": "The hopper is detachable for cleaning the weighing pan inside; standard machines are 201 material, customized 304 stainless steel supported",
+            "image": "/images/machines/sec-p007-a-1.webp"
+          }
+        ]
       }
     ]
   },
@@ -627,6 +720,30 @@
           {
             "zh": "拼豆套盒",
             "en": "Fuse bead sets"
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "定制案例",
+          "en": "Custom Solutions"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p008-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p008-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p008-a-3.webp"
           }
         ]
       }
@@ -738,6 +855,57 @@
             "en": "Widely used in strip, flake, and granular materials. Applicable to black tea, green tea, tie guan yin, scented tea, puffed snacks, grains, chinese herbs, dried nuts & fruits, coffee beans, hardware screws, red dates, dried shrimp, dried vegetables, etc"
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "部分定制案例",
+          "en": "Partial Custom Solutions"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p010-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p010-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p010-a-3.webp"
+          }
+        ],
+        "desc": {
+          "zh": "定制多头称重灌装机,可混合或轮流两种灌装方式;四头称螺旋内部、八头称螺旋内部",
+          "en": "Customized multi-head weighing filling machine, which can be used for mixed filling or sequential filling; inside of the four-head and eight-head weighing spirals"
+        }
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "按需定制",
+          "en": "Customized As Needed"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p012-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p012-a-2.webp"
+          }
+        ],
+        "desc": {
+          "zh": "计数盘分装机案例。适用产品:五金配件、螺丝、螺帽、垫片、电子配件、干燥剂、小公仔、饰品、纽扣、橡皮擦、糖果、珠子、等各类不规则产品",
+          "en": "Counting-plate filling machine case. Widely used in hardware accessories, screws, nuts, gaskets, electronic components, desiccants, small figurines, jewelry, buttons, erasers, candies, beads, etc."
+        }
       }
     ]
   },
@@ -1089,6 +1257,35 @@
             "en": "Easy to operate interface, parameter memory, reducing operational errors. No need for a large operating room, it can be placed in the corners of homes and stores, with low energy consumption, electricity and maintenance costs far lower than large equipment. It is designed with universal wheels, and the placement position can be flexibly adjusted according to production/sales needs."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "支持非标定制",
+          "en": "Non-standard Customization Supported"
+        },
+        "items": [
+          {
+            "zh": "加大储料斗",
+            "en": "Increase the storage hopper",
+            "image": "/images/machines/sec-p015-a-1.webp"
+          },
+          {
+            "zh": "机身加高",
+            "en": "increase height",
+            "image": "/images/machines/sec-p015-a-2.webp"
+          },
+          {
+            "zh": "圆形出料口",
+            "en": "Round discharge nozzle",
+            "image": "/images/machines/sec-p015-a-3.webp"
+          },
+          {
+            "zh": "定制304材质",
+            "en": "Customized 304 material",
+            "image": "/images/machines/sec-p015-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -1163,7 +1360,38 @@
       "page": 16,
       "extra_pages": []
     },
-    "notes": "无优势/适用产品栏。支持非标定制:加配搅拌器 Add mixer / 镀铁氟龙涂层 Teflon coating / 料斗加配吸料机 Add feeding machine / 定制支架款 Customized support type。"
+    "notes": "无优势/适用产品栏。支持非标定制:加配搅拌器 Add mixer / 镀铁氟龙涂层 Teflon coating / 料斗加配吸料机 Add feeding machine / 定制支架款 Customized support type。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "支持非标定制",
+          "en": "Non-standard Customization Supported"
+        },
+        "items": [
+          {
+            "zh": "加配搅拌器",
+            "en": "Add mixer",
+            "image": "/images/machines/sec-p016-a-1.webp"
+          },
+          {
+            "zh": "镀铁氟龙涂层",
+            "en": "Teflon coating",
+            "image": "/images/machines/sec-p016-a-2.webp"
+          },
+          {
+            "zh": "料斗加配吸料机",
+            "en": "Add feeding machine",
+            "image": "/images/machines/sec-p016-a-3.webp"
+          },
+          {
+            "zh": "定制支架款",
+            "en": "Customized support type",
+            "image": "/images/machines/sec-p016-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-5000",
@@ -1236,7 +1464,38 @@
       "page": 17,
       "extra_pages": []
     },
-    "notes": "无优势/适用产品栏。支持非标定制:加大储料斗 / 机身加高 / 圆形出料口 / 定制304材质。"
+    "notes": "无优势/适用产品栏。支持非标定制:加大储料斗 / 机身加高 / 圆形出料口 / 定制304材质。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "支持非标定制",
+          "en": "Non-standard Customization Supported"
+        },
+        "items": [
+          {
+            "zh": "加大储料斗",
+            "en": "Increase the storage hopper",
+            "image": "/images/machines/sec-p017-a-1.webp"
+          },
+          {
+            "zh": "机身加高",
+            "en": "increase height",
+            "image": "/images/machines/sec-p017-a-2.webp"
+          },
+          {
+            "zh": "圆形出料口",
+            "en": "Round discharge nozzle",
+            "image": "/images/machines/sec-p017-a-3.webp"
+          },
+          {
+            "zh": "定制304材质",
+            "en": "Customized 304 material",
+            "image": "/images/machines/sec-p017-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-9999",
@@ -1309,7 +1568,38 @@
       "page": 18,
       "extra_pages": []
     },
-    "notes": "无优势/适用产品栏。支持非标定制:加配搅拌器 / 镀铁氟龙涂层 / 料斗加配吸料机 / 定制支架款。"
+    "notes": "无优势/适用产品栏。支持非标定制:加配搅拌器 / 镀铁氟龙涂层 / 料斗加配吸料机 / 定制支架款。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "支持非标定制",
+          "en": "Non-standard Customization Supported"
+        },
+        "items": [
+          {
+            "zh": "加配搅拌器",
+            "en": "Add mixer",
+            "image": "/images/machines/sec-p018-a-1.webp"
+          },
+          {
+            "zh": "镀铁氟龙涂层",
+            "en": "Teflon coating",
+            "image": "/images/machines/sec-p018-a-2.webp"
+          },
+          {
+            "zh": "料斗加配吸料机",
+            "en": "Add feeding machine",
+            "image": "/images/machines/sec-p018-a-3.webp"
+          },
+          {
+            "zh": "定制支架款",
+            "en": "Customized support type",
+            "image": "/images/machines/sec-p018-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dl-15000",
@@ -1382,7 +1672,33 @@
       "page": 19,
       "extra_pages": []
     },
-    "notes": "无优势/适用产品栏。可搭配其它设备:斗式上料机 Bucket feeder machine / 吸料机 Material suction machine / 平行传送带 Parallel conveyor belt。"
+    "notes": "无优势/适用产品栏。可搭配其它设备:斗式上料机 Bucket feeder machine / 吸料机 Material suction machine / 平行传送带 Parallel conveyor belt。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可搭配其它设备使用",
+          "en": "Can Be Used With Other Equipment"
+        },
+        "items": [
+          {
+            "zh": "斗式上料机",
+            "en": "Bucket feeder machine",
+            "image": "/images/machines/sec-p019-a-1.webp"
+          },
+          {
+            "zh": "吸料机",
+            "en": "Material suction machine",
+            "image": "/images/machines/sec-p019-a-2.webp"
+          },
+          {
+            "zh": "平行传送带",
+            "en": "Parallel conveyor belt",
+            "image": "/images/machines/sec-p019-a-3.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dl-25000",
@@ -1644,7 +1960,28 @@
       "page": 22,
       "extra_pages": []
     },
-    "notes": "图中参数与 FB-2T999(p21)的料斗/整机尺寸/重量/功率相同,仅称重范围与速度不同,按图照录。细节展示:大容量料斗,双仓下料 Large capacity hopper, dual bin discharge / 双称工作:可设定不同重量/混合灌装 Dual scale work: can set weights mixed filling。无优势/适用产品栏。"
+    "notes": "图中参数与 FB-2T999(p21)的料斗/整机尺寸/重量/功率相同,仅称重范围与速度不同,按图照录。细节展示:大容量料斗,双仓下料 Large capacity hopper, dual bin discharge / 双称工作:可设定不同重量/混合灌装 Dual scale work: can set weights mixed filling。无优势/适用产品栏。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "细节展示",
+          "en": "Detail Display"
+        },
+        "items": [
+          {
+            "zh": "大容量料斗,双仓下料",
+            "en": "Large capacity hopper, dual bin discharge",
+            "image": "/images/machines/sec-p022-a-1.webp"
+          },
+          {
+            "zh": "双称工作:可设定不同重量/混合灌装",
+            "en": "Dual scale work: can set weights mixed filling",
+            "image": "/images/machines/sec-p022-a-2.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-2t5000",
@@ -1731,6 +2068,30 @@
             "en": "2-head weighing machine with rotation mode avoids overloading a single head, maintains stable efficiency, and eliminates the need to wait for one head to complete the entire process before starting the next, thus reducing cycle time."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可搭配其它设备使用",
+          "en": "Can Be Used With Other Equipment"
+        },
+        "items": [
+          {
+            "zh": "斗式上料机",
+            "en": "Bucket feeder machine",
+            "image": "/images/machines/sec-p023-a-1.webp"
+          },
+          {
+            "zh": "吸料机",
+            "en": "Material suction machine",
+            "image": "/images/machines/sec-p023-a-2.webp"
+          },
+          {
+            "zh": "平行传送带",
+            "en": "Parallel conveyor belt",
+            "image": "/images/machines/sec-p023-a-3.webp"
+          }
+        ]
       }
     ]
   },
@@ -1805,7 +2166,32 @@
       "page": 24,
       "extra_pages": []
     },
-    "notes": "定制案例(本页内):定制机身加高,人工站立工作 搭配上料机自动加料 自动称重灌装,平行输送 / Customized body height increase, manual standing work; Equipped with an automatic feeding machine for material addition; Automatic weighing and filling, parallel conveying。无优势/适用产品栏。"
+    "notes": "定制案例(本页内):定制机身加高,人工站立工作 搭配上料机自动加料 自动称重灌装,平行输送 / Customized body height increase, manual standing work; Equipped with an automatic feeding machine for material addition; Automatic weighing and filling, parallel conveying。无优势/适用产品栏。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "定制案例",
+          "en": "Custom Solutions"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p024-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p024-a-2.webp"
+          }
+        ],
+        "desc": {
+          "zh": "定制机身加高,人工站立工作;搭配上料机自动加料;自动称重灌装,平行输送",
+          "en": "Customized body height increase, manual standing work; equipped with an automatic feeding machine for material addition; automatic weighing and filling, parallel conveying"
+        }
+      }
+    ]
   },
   {
     "id": "fb-3t999",
@@ -1993,6 +2379,25 @@
             "en": "The machine has strong adaptability to powder particles. The multi-position automatic feeding system works in coordination, with smooth connection and precise rotation for packaging."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "细节展示",
+          "en": "Detail Display"
+        },
+        "items": [
+          {
+            "zh": "三头称,大容量储料斗",
+            "en": "Three head scale, large capacity storage hopper",
+            "image": "/images/machines/sec-p026-a-1.webp"
+          },
+          {
+            "zh": "三头称重,轮流下料模式,快速灌装",
+            "en": "Three head weighing, Alternate feeding mode, rapid filling",
+            "image": "/images/machines/sec-p026-a-2.webp"
+          }
+        ]
       }
     ]
   },
@@ -2067,7 +2472,33 @@
       "page": 27,
       "extra_pages": []
     },
-    "notes": "本页无优势/适用产品栏,为'搭配使用 Use in combination':如物料是五谷杂粮,料斗可加配吸料机装置,完成自动高位加料,提升工作产量。如需真空包装,可搭配真空机使用,能抑制米虫滋生、延缓大米氧化变质,延长保质期。定型后体积紧凑,节省仓储空间,堆叠时不易倾倒。 / If the material is grains and miscellaneous grains, the hopper can be equipped with a suction machine device to complete automatic high-level feeding and increase work output. If vacuum packaging is required, it can be used in conjunction with a vacuum machine to suppress the growth of rice pests, delay the oxidation and deterioration of rice, and extend the shelf life. After shaping, the volume is compact, saving storage space and making it less prone to tipping when stacked."
+    "notes": "本页无优势/适用产品栏,为'搭配使用 Use in combination':如物料是五谷杂粮,料斗可加配吸料机装置,完成自动高位加料,提升工作产量。如需真空包装,可搭配真空机使用,能抑制米虫滋生、延缓大米氧化变质,延长保质期。定型后体积紧凑,节省仓储空间,堆叠时不易倾倒。 / If the material is grains and miscellaneous grains, the hopper can be equipped with a suction machine device to complete automatic high-level feeding and increase work output. If vacuum packaging is required, it can be used in conjunction with a vacuum machine to suppress the growth of rice pests, delay the oxidation and deterioration of rice, and extend the shelf life. After shaping, the volume is compact, saving storage space and making it less prone to tipping when stacked.",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可搭配其它设备使用",
+          "en": "Can Be Used With Other Equipment"
+        },
+        "items": [
+          {
+            "zh": "平放真空机",
+            "en": "Lying vacuum machine",
+            "image": "/images/machines/sec-p027-a-1.webp"
+          },
+          {
+            "zh": "吸料机",
+            "en": "Material suction machine",
+            "image": "/images/machines/sec-p027-a-2.webp"
+          },
+          {
+            "zh": "米砖真空机",
+            "en": "Rice brick vacuum machine",
+            "image": "/images/machines/sec-p027-a-3.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dl-3t9999",
@@ -2140,7 +2571,47 @@
       "page": 28,
       "extra_pages": []
     },
-    "notes": "单位笔误已修正:料斗尺寸图中印 '99x48.5x52m',按 cm 录入。支持定制:控制系统可改做PLC系统触控屏 / The control system can be modified to a PLC system with a touch screen。可搭配:斗式上料机 / 大米整形真空机 Rice bag shaping vacuum machine / 平行传送带。无优势/适用产品栏。"
+    "notes": "单位笔误已修正:料斗尺寸图中印 '99x48.5x52m',按 cm 录入。支持定制:控制系统可改做PLC系统触控屏 / The control system can be modified to a PLC system with a touch screen。可搭配:斗式上料机 / 大米整形真空机 Rice bag shaping vacuum machine / 平行传送带。无优势/适用产品栏。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可搭配其它设备使用",
+          "en": "Can Be Used With Other Equipment"
+        },
+        "items": [
+          {
+            "zh": "斗式上料机",
+            "en": "Bucket feeder machine",
+            "image": "/images/machines/sec-p028-a-1.webp"
+          },
+          {
+            "zh": "大米整形真空机",
+            "en": "Rice bag shaping vacuum machine",
+            "image": "/images/machines/sec-p028-a-2.webp"
+          },
+          {
+            "zh": "平行传送带",
+            "en": "Parallel conveyor belt",
+            "image": "/images/machines/sec-p028-a-3.webp"
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "支持非标定制",
+          "en": "Non-standard Customization Supported"
+        },
+        "items": [
+          {
+            "zh": "控制系统可改做PLC系统触控屏",
+            "en": "The control system can be modified to a PLC system with a touch screen",
+            "image": "/images/machines/sec-p028-b-1.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zlg-100",
@@ -3485,6 +3956,35 @@
             "en": "Quick to get started, takes up less space, and can quickly switch between automatic packaging grams, Packageable: small particle powder products such as grains, powders, seasonings, tea powder, nuts, medicinal herbs, feed, fertilizers, desiccants, melon seeds, hardware screws, plastics, beads, etc."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p039-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p039-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p039-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p039-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -3667,6 +4167,35 @@
             "en": "Dual scales work in turns for faster packaging. Supports mixing two materials. Simple, fast, and efficient. Automatically weighs, fills, seals, and cuts for small granules and powders."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p041-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p041-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p041-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p041-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -3753,6 +4282,40 @@
           {
             "zh": "可灵活切换“单种物料多称并行”“多种物料混合配比”两种模式,每个工位称重独立校准、独立运行。",
             "en": "Flexible switching between \"Multi-scale Parallel\" and \"Multi-material Mixing\" modes. Each station features independent calibration and stand-alone operation."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p042-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p042-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p042-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p042-a-4.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p042-a-5.webp"
           }
         ]
       }
@@ -3850,6 +4413,35 @@
             "en": "Widely used in various irregular materials, such as tea leaves, flower tea, herbal medicine, red dates, nuts, potato chips, snacks, hardware screws, banana chips, tablets, dried vegetables, grains, and other granular, strip, or sliced products."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p043-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p043-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p043-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p043-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -3931,7 +4523,38 @@
       "page": 44,
       "extra_pages": []
     },
-    "notes": "无适用产品/优势文字。可选配置:色带打码机 Ribbon Printer、光标 Cursor、定制多头称包装 Customized multi head packaging、传送带 Conveyor belt。"
+    "notes": "无适用产品/优势文字。可选配置:色带打码机 Ribbon Printer、光标 Cursor、定制多头称包装 Customized multi head packaging、传送带 Conveyor belt。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon Printer",
+            "image": "/images/machines/sec-p044-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p044-a-2.webp"
+          },
+          {
+            "zh": "定制多头称包装",
+            "en": "Customized multi head packaging",
+            "image": "/images/machines/sec-p044-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p044-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ds-f200",
@@ -4030,6 +4653,35 @@
           {
             "zh": "称重精度可达 ±0.2g,灌装均匀,封口平整美观。有效解决人工包装带来的重量偏差及封口不牢等问题,在提升包装品质的同时,确保生产的高效与稳定。",
             "en": "The weighing accuracy reaches ±0.2g with consistent filling and smooth bag sealing, effectively solving weight deviations and weak seals common in manual packaging. This improves overall packaging quality while achieving efficient and stable production."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p045-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p045-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p045-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p045-a-4.webp"
           }
         ]
       }
