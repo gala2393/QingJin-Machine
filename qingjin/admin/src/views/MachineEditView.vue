@@ -7,6 +7,7 @@ import { VueDraggable } from 'vue-draggable-plus'
 import CropUpload from '@/components/CropUpload.vue'
 import MediaPicker from '@/components/MediaPicker.vue'
 import MachineVideoField from '@/components/MachineVideoField.vue'
+import MachineSectionsField, { type SectionRow } from '@/components/MachineSectionsField.vue'
 import { categoryApi, machineApi, mediaApi } from '@/api'
 import { useCanEdit } from '@/composables/useCanEdit'
 import {
@@ -16,6 +17,7 @@ import {
   type MachineImage,
   type MachineInput,
   type MachineParam,
+  type MachineSection,
   type MachineStatus,
   type MachineVideo,
   type MediaItem,
@@ -63,6 +65,7 @@ const form = reactive({
 })
 const params = ref<ParamRow[]>([])
 const images = ref<MachineImage[]>([])
+const sections = ref<SectionRow[]>([])
 const videoId = ref<string | null>(null)
 const video = ref<MachineVideo | null>(null)
 const extraPanels = ref<string[]>([])
@@ -72,6 +75,20 @@ const uploadOpen = ref(false)
 
 let uidSeq = 0
 const toRow = (p: MachineParam): ParamRow => ({ ...p, uid: ++uidSeq })
+const toSectionRows = (list: MachineSection[] = []): SectionRow[] =>
+  list.map((s) => ({
+    ...s,
+    descZh: s.descZh ?? '',
+    descEn: s.descEn ?? '',
+    uid: ++uidSeq,
+    items: s.items.map((it) => ({ ...it, uid: ++uidSeq })),
+  }))
+const missingSectionEn = computed(
+  () =>
+    sections.value.filter(
+      (s) => !s.titleEn.trim() || (s.kind === 'TEXT' && s.items.some((i) => i.textZh.trim() && !i.textEn.trim())),
+    ).length,
+)
 
 // ---------- slug ----------
 
@@ -364,6 +381,18 @@ function buildPayload(): MachineInput {
       mediaId: img.mediaId,
       isCover: coverIndex === -1 ? i === 0 : i === coverIndex,
     })),
+    sections: sections.value.map((s) => ({
+      kind: s.kind,
+      titleZh: s.titleZh.trim(),
+      titleEn: s.titleEn.trim(),
+      descZh: s.kind === 'GALLERY' ? (s.descZh ?? '').trim() : '',
+      descEn: s.kind === 'GALLERY' ? (s.descEn ?? '').trim() : '',
+      items: s.items.map((it) => ({
+        textZh: it.textZh,
+        textEn: it.textEn,
+        ...(s.kind === 'GALLERY' ? { mediaId: it.mediaId ?? null } : {}),
+      })),
+    })),
     videoId: videoId.value,
   }
 }
@@ -392,6 +421,7 @@ function fill(m: MachineDetail | null) {
   })
   params.value = (m?.params ?? []).map(toRow)
   images.value = (m?.images ?? []).map((i) => ({ ...i }))
+  sections.value = toSectionRows(m?.sections)
   videoId.value = m?.videoId ?? null
   video.value = m?.video ?? null
   slugTouched.value = !!m
@@ -669,6 +699,16 @@ onBeforeUnmount(() => {
           </div>
         </VueDraggable>
         <el-empty v-if="!images.length" :image-size="60" description="暂无图片" />
+      </section>
+
+      <!-- 内容板块 -->
+      <section class="page-card block">
+        <h2 class="section-title">
+          内容板块
+          <span class="meta">{{ sections.length }} 个，如产品优势、产品特性、成品展示、定制案例，显示在详情页参数表下方</span>
+          <span v-if="missingSectionEn" class="meta text-danger">{{ missingSectionEn }} 个板块缺少英文</span>
+        </h2>
+        <MachineSectionsField v-model="sections" :can-edit="canEdit" />
       </section>
 
       <!-- 视频 -->

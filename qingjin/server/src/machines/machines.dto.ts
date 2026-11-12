@@ -102,6 +102,38 @@ export class ImageRefDto {
   isCover: boolean;
 }
 
+export class SectionItemDto {
+  /** TEXT: the line. GALLERY: the picture caption, which may be empty. */
+  @IsString() @MaxLength(1000) textZh: string;
+  @IsString() @MaxLength(1000) textEn: string;
+
+  /** Required for GALLERY sections, ignored for TEXT. */
+  @IsOptional() @IsString() @MaxLength(64) mediaId?: string | null;
+}
+
+export class SectionDto {
+  @IsIn(['TEXT', 'GALLERY'])
+  kind: 'TEXT' | 'GALLERY';
+
+  @IsString()
+  @MinLength(1, { message: '板块中文标题不能为空' })
+  @MaxLength(100)
+  titleZh: string;
+
+  @IsString()
+  @MaxLength(100)
+  titleEn: string;
+
+  @IsOptional() @IsString() @MaxLength(2000) descZh?: string | null;
+  @IsOptional() @IsString() @MaxLength(2000) descEn?: string | null;
+
+  @IsArray()
+  @ArrayMaxSize(30)
+  @ValidateNested({ each: true })
+  @Type(() => SectionItemDto)
+  items: SectionItemDto[];
+}
+
 export class MachineInputDto {
   @IsString()
   @MaxLength(64)
@@ -153,6 +185,14 @@ export class MachineInputDto {
   @ValidateNested({ each: true })
   @Type(() => ImageRefDto)
   images: ImageRefDto[];
+
+  /** Optional so older clients that do not know about sections keep working; omitted means "leave as is". */
+  @IsOptional()
+  @IsArray()
+  @ArrayMaxSize(12)
+  @ValidateNested({ each: true })
+  @Type(() => SectionDto)
+  sections?: SectionDto[];
 }
 
 export const BATCH_ACTIONS = ['publish', 'hide', 'draft', 'feature', 'unfeature', 'delete'] as const;

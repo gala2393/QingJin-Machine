@@ -14,7 +14,11 @@ import { CropBox, processImage } from './image-processing';
 type MediaUsage = { machineId?: string; slug?: string; model?: string; nameZh?: string; site?: string };
 import { ListMediaQuery, UploadMediaDto } from './media.dto';
 
-const view = (m: Media & { _count?: { machineImages: number } }) => ({
+/** Both machine galleries and content sections count as "in use". */
+const USAGE_COUNT = { select: { machineImages: true, sectionItems: true } } as const;
+type WithCount = Media & { _count?: { machineImages: number; sectionItems: number } };
+
+const view = (m: WithCount) => ({
   id: m.id,
   url: mediaUrl(m.path),
   originalName: m.originalName,
@@ -23,7 +27,7 @@ const view = (m: Media & { _count?: { machineImages: number } }) => ({
   size: m.size,
   usage: m.usage,
   createdAt: m.createdAt,
-  usageCount: m._count?.machineImages ?? 0,
+  usageCount: (m._count?.machineImages ?? 0) + (m._count?.sectionItems ?? 0),
 });
 
 function parseCrop(raw?: string): CropBox | undefined {
@@ -54,7 +58,10 @@ export class MediaService {
   async list(q: ListMediaQuery) {
     const where: Prisma.MediaWhereInput = {};
     if (q.q?.trim()) where.originalName = { contains: q.q.trim(), mode: 'insensitive' };
-    if (q.unused) where.machineImages = { none: {} };
+    if (q.unused) {
+      where.machineImages = { none: {} };
+      where.sectionItems = { none: {} };
+    }
     if (q.usage) where.usage = q.usage;
     const [total, rows] = await this.prisma.$transaction([
       this.prisma.media.count({ where }),
@@ -63,7 +70,7 @@ export class MediaService {
         orderBy: [{ createdAt: 'desc' }, { id: 'desc' }],
         skip: (q.page - 1) * q.pageSize,
         take: q.pageSize,
-        include: { _count: { select: { machineImages: true } } },
+        include: { _count: USAGE_COUNT },
       }),
     ]);
     return { total, items: rows.map(view) };
@@ -77,7 +84,7 @@ export class MediaService {
     });
 
     const sha256 = createHash('sha256').update(data).digest('hex');
-    const existing = await this.prisma.media.findUnique({ where: { sha256 }, include: { _count: { select: { machineImages: true } } } });
+    const existing = await this.prisma.media.findUnique({ where: { sha256 }, include: { _count: USAGE_COUNT } });
     if (existing) return view(existing);
 
     const rel = `media/${sha256.slice(0, 20)}.webp`;
@@ -105,7 +112,7 @@ export class MediaService {
     } catch (err) {
       // Concurrent upload of the same image: the other request won, reuse its row (same file path).
       if (err instanceof Prisma.PrismaClientKnownRequestError && err.code === 'P2002') {
-        const winner = await this.prisma.media.findUnique({ where: { sha256 }, include: { _count: { select: { machineImages: true } } } });
+        const winner = await this.prisma.media.findUnique({ where: { sha256 }, include: { _count: USAGE_COUNT } });
         if (winner) return view(winner);
       }
       throw err;
@@ -120,9 +127,18 @@ export class MediaService {
       include: { machine: { select: { id: true, slug: true, model: true, nameZh: true } } },
       orderBy: { machine: { model: 'asc' } },
     });
+    const sectionRows = await this.prisma.machineSectionItem.findMany({
+      where: { mediaId: id },
+      include: { section: { include: { machine: { select: { id: true, slug: true, model: true, nameZh: true } } } } },
+    });
     const { settings } = await loadStored(this.prisma);
+    // A machine can show the same picture in its gallery and in a section; list it once.
+    const machines = new Map<string, MediaUsage>();
+    for (const m of [...rows.map((r) => r.machine), ...sectionRows.map((r) => r.section.machine)]) {
+      machines.set(m.id, { machineId: m.id, slug: m.slug, model: m.model, nameZh: m.nameZh });
+    }
     return [
-      ...rows.map((r): MediaUsage => ({ machineId: r.machine.id, slug: r.machine.slug, model: r.machine.model, nameZh: r.machine.nameZh })),
+      ...[...machines.values()].sort((a, b) => (a.model ?? '').localeCompare(b.model ?? '')),
       ...siteUsagesOf(settings, id).map((site): MediaUsage => ({ site })),
     ];
   }

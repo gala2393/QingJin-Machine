@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import MachineCard from '../../../components/MachineCard.astro';
 import ParamTable from '../../../components/ParamTable.astro';
+import ProductSections from '../../../components/ProductSections.astro';
 import type { Machine, Lang } from '../../../types';
 import { t, formatLocaleUrl } from '../../../i18n/ui';
 import { machines, getCategoryName, PLACEHOLDER_SVG } from '../../../utils';
@@ -306,6 +307,8 @@ const pageDesc = `${machine.model} ${machine.name[lang]} · ${categoryName} · $
       </div>
 
     </div>
+
+    {machine.sections?.length ? <ProductSections sections={machine.sections} lang={lang} model={machine.model} /> : null}
 
     <!-- Prev / Next Navigation Strip within Category -->
     <div class="mt-14 pt-8 border-t border-slate-200 flex items-center justify-between gap-4 text-xs sm:text-sm">

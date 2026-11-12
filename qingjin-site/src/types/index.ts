@@ -20,6 +20,17 @@ export interface MachineVideo {
   duration: number;
 }
 
+/**
+ * An extra block on the product page. `text` items are bullet lines; `gallery` items are pictures
+ * whose zh/en may be empty captions. Mirrors the admin's SiteSection export.
+ */
+export interface MachineSection {
+  kind: 'text' | 'gallery';
+  title: { zh: string; en: string };
+  desc?: { zh: string; en: string };
+  items: { zh: string; en: string; image?: string }[];
+}
+
 export interface Machine {
   id: string;
   model: string;
@@ -34,6 +45,7 @@ export interface Machine {
   video?: MachineVideo;
   /** Set on data published from the admin; absent in the original hand-maintained JSON. */
   featured?: boolean;
+  sections?: MachineSection[];
   params: MachineParam[];
   source?: {
     page: number;

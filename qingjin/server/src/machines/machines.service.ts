@@ -14,6 +14,10 @@ const DETAIL_INCLUDE = {
   category: { select: { id: true, slug: true, nameZh: true, nameEn: true } },
   params: { orderBy: { sort: 'asc' } },
   images: { orderBy: { sort: 'asc' }, include: { media: true } },
+  sections: {
+    orderBy: { sort: 'asc' },
+    include: { items: { orderBy: { sort: 'asc' }, include: { media: true } } },
+  },
   video: true,
 } satisfies Prisma.MachineInclude;
 
@@ -54,6 +58,21 @@ function toDetail(m: MachineWithDetail) {
       height: i.media.height,
       isCover: i.isCover,
     })),
+    sections: m.sections.map((s) => ({
+      kind: s.kind,
+      titleZh: s.titleZh,
+      titleEn: s.titleEn,
+      descZh: s.descZh,
+      descEn: s.descEn,
+      items: s.items.map((it) => ({
+        textZh: it.textZh,
+        textEn: it.textEn,
+        mediaId: it.mediaId,
+        url: it.media ? mediaUrl(it.media.path) : null,
+        width: it.media?.width ?? null,
+        height: it.media?.height ?? null,
+      })),
+    })),
     video: m.video ? videoView(m.video) : null,
   };
 }
@@ -65,6 +84,10 @@ const snapshot = (d: MachineDetail) => ({
   scalars: Object.fromEntries(SCALAR_FIELDS.map((f) => [f, d[f]])) as Record<(typeof SCALAR_FIELDS)[number], unknown>,
   params: d.params,
   images: d.images.map((i) => ({ mediaId: i.mediaId, isCover: i.isCover })),
+  sections: d.sections.map((s) => ({
+    ...s,
+    items: s.items.map(({ textZh, textEn, mediaId }) => ({ textZh, textEn, mediaId })),
+  })),
 });
 
 @Injectable()
@@ -184,6 +207,7 @@ export class MachinesService {
       if (video.status === 'UPLOADING') throw new BadRequestException('视频还没有上传完成');
       if (video.status === 'FAILED') throw new BadRequestException('视频处理失败，请重新上传或移除');
     }
+    const sections = dto.sections ? await this.prepareSections(dto.sections, tx) : undefined;
     let coverIdx = dto.images.findIndex((i) => i.isCover);
     if (coverIdx < 0) coverIdx = 0;
 
@@ -214,7 +238,39 @@ export class MachinesService {
       sort: (i + 1) * 10,
     }));
     const images = dto.images.map((img, i) => ({ mediaId: img.mediaId, isCover: i === coverIdx, sort: i * 10 }));
-    return { fields, params, images };
+    return { fields, params, images, sections };
+  }
+
+  /** Drops blank lines, requires an existing picture for every gallery item, and numbers everything. */
+  private async prepareSections(input: NonNullable<MachineInputDto['sections']>, tx: Tx) {
+    const sections = input.map((s, si) => {
+      const items = s.items
+        .map((it) => ({
+          textZh: it.textZh.trim(),
+          textEn: it.textEn.trim(),
+          mediaId: s.kind === 'GALLERY' ? it.mediaId || null : null,
+        }))
+        .filter((it) => (s.kind === 'GALLERY' ? !!it.mediaId : !!(it.textZh || it.textEn)));
+      if (s.kind === 'GALLERY' && s.items.some((it) => !it.mediaId)) {
+        throw new BadRequestException(`板块「${s.titleZh}」中有图片条目没有选择图片`);
+      }
+      if (!items.length) throw new BadRequestException(`板块「${s.titleZh}」还没有内容，请添加内容或删除该板块`);
+      return {
+        kind: s.kind,
+        titleZh: s.titleZh.trim(),
+        titleEn: s.titleEn.trim(),
+        descZh: blankToNull(s.descZh),
+        descEn: blankToNull(s.descEn),
+        sort: (si + 1) * 10,
+        items: items.map((it, i) => ({ ...it, sort: (i + 1) * 10 })),
+      };
+    });
+    const ids = [...new Set(sections.flatMap((s) => s.items.map((it) => it.mediaId).filter((id): id is string => !!id)))];
+    if (ids.length) {
+      const found = await tx.media.count({ where: { id: { in: ids } } });
+      if (found !== ids.length) throw new BadRequestException('板块中的部分图片不存在，可能已被删除');
+    }
+    return sections;
   }
 
   private async nextSort(tx: Tx, categoryId: string) {
@@ -227,6 +283,14 @@ export class MachinesService {
     await tx.machineImage.deleteMany({ where: { machineId } });
     if (p.params.length) await tx.machineParam.createMany({ data: p.params.map((x) => ({ ...x, machineId })) });
     if (p.images.length) await tx.machineImage.createMany({ data: p.images.map((x) => ({ ...x, machineId })) });
+    // undefined = the caller did not send sections (older client, import): keep what is stored.
+    if (p.sections) {
+      await tx.machineSection.deleteMany({ where: { machineId } });
+      for (const s of p.sections) {
+        const { items, ...head } = s;
+        await tx.machineSection.create({ data: { ...head, machineId, items: { create: items } } });
+      }
+    }
   }
 
   async create(dto: MachineInputDto, userId: string) {
@@ -258,6 +322,9 @@ export class MachinesService {
     if (params) diff.params = params;
     const images = diffKeyed(b.images, a.images, (x) => x.mediaId);
     if (images) diff.images = images;
+    if (JSON.stringify(b.sections) !== JSON.stringify(a.sections)) {
+      diff.sections = { before: b.sections.map((s) => s.titleZh), after: a.sections.map((s) => s.titleZh) };
+    }
     if (Object.keys(diff).length) {
       await this.audit.log({ userId, action: 'update', entity: 'machine', entityId: id, diff: { model: after.model, ...diff } as object });
     }
@@ -284,6 +351,10 @@ export class MachinesService {
         status: 'DRAFT',
         featured: false,
         images: src.images.map((i) => ({ mediaId: i.mediaId, isCover: i.isCover })),
+        sections: src.sections.map((s) => ({
+          ...s,
+          items: s.items.map(({ textZh, textEn, mediaId }) => ({ textZh, textEn, mediaId })),
+        })),
       };
       const p = await this.prepare(dto, tx);
       const m = await tx.machine.create({ data: { ...p.fields, sort: await this.nextSort(tx, p.fields.categoryId) } });

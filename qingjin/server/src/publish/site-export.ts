@@ -12,6 +12,14 @@ export interface SiteMachineVideo {
   duration: number;
 }
 
+/** One block on the machine page. TEXT items are lines; GALLERY items are pictures with optional captions. */
+export interface SiteSection {
+  kind: 'text' | 'gallery';
+  title: { zh: string; en: string };
+  desc?: { zh: string; en: string };
+  items: { zh: string; en: string; image?: string }[];
+}
+
 export interface SiteMachine {
   id: string;
   model: string;
@@ -23,6 +31,8 @@ export interface SiteMachine {
   images?: string[];
   video?: SiteMachineVideo;
   featured?: boolean;
+  /** Absent when the machine has no extra blocks. */
+  sections?: SiteSection[];
   params: { key: string; zh: string; en: string; value_zh: string; value_en: string }[];
 }
 
@@ -50,6 +60,10 @@ export async function buildSiteData(prisma: PrismaClient) {
       category: { select: { slug: true } },
       params: { orderBy: { sort: 'asc' } },
       images: { orderBy: { sort: 'asc' }, include: { media: { select: { path: true } } } },
+      sections: {
+        orderBy: { sort: 'asc' },
+        include: { items: { orderBy: { sort: 'asc' }, include: { media: { select: { path: true } } } } },
+      },
       video: true,
     },
   });
@@ -78,6 +92,24 @@ export async function buildSiteData(prisma: PrismaClient) {
         value_en: p.valueEn,
       })),
     };
+    if (m.sections.length) {
+      out.sections = m.sections.map((s): SiteSection => {
+        const section: SiteSection = {
+          kind: s.kind === 'GALLERY' ? 'gallery' : 'text',
+          title: { zh: s.titleZh, en: s.titleEn },
+          items: s.items.map((it) => {
+            const item: SiteSection['items'][number] = { zh: it.textZh, en: it.textEn };
+            if (it.media) {
+              imageFiles.add(it.media.path);
+              item.image = `${SITE_IMAGE_DIR}/${basename(it.media.path)}`;
+            }
+            return item;
+          }),
+        };
+        if (s.descZh || s.descEn) section.desc = { zh: s.descZh ?? '', en: s.descEn ?? '' };
+        return section;
+      });
+    }
     if (v?.status === 'READY' && v.hdPath && v.sdPath && v.posterPath && v.width && v.height) {
       out.video = {
         id: v.id,

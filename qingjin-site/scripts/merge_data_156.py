@@ -128,6 +128,68 @@ def apply_tiers(machine, model):
             machine["params"].append({"key": key, "zh": label_zh, "en": label_en, "value_zh": zh, "value_en": en})
 
 
+# Heading wording differs per page; checked against every page image of 画册156.pdf.
+FEATURE_PAGES = {51, 79, 83, 93, 101, 102, 103, 115, 116, 117, 137, 138, 140, 141, 151, 153}
+# These pages print a "Vacuum capacity" block (bags per cycle) instead of advantages.
+VACUUM_CAPACITY_PAGES = {154, 155, 156}
+# Only these two pages print three separate icon bullets; everywhere else the text is one paragraph.
+SPLIT_ADVANTAGE_PAGES = {3, 5}
+
+TITLES = {
+    "advantages": ({"zh": "产品优势", "en": "Product Advantages"}),
+    "features": ({"zh": "产品特性", "en": "Product Features"}),
+    "application": ({"zh": "适用产品", "en": "Applications"}),
+    "capacity": ({"zh": "真空数量", "en": "Vacuum Capacity"}),
+}
+
+
+def _split(text, sep):
+    return [p.strip() for p in text.split(sep) if p.strip()]
+
+
+def build_sections(it):
+    """Text blocks transcribed from the brochure page: advantages/features, vacuum capacity, applications."""
+    page = it["page"]
+    zh, en = (it.get("advantages_zh") or "").strip(), (it.get("advantages_en") or "").strip()
+    sections = []
+    if zh or en:
+        if page in VACUUM_CAPACITY_PAGES:
+            items = _split(zh, ";")
+            en_items = [s.strip() for s in re.split(r"(?<=at once);|\.\s+(?=Also)", en) if s.strip()]
+            en_items = [s.rstrip(".") for s in en_items]
+            if len(items) != len(en_items):
+                raise SystemExit(f"vacuum capacity lines differ on page {page}: {len(items)} vs {len(en_items)}")
+            sections.append({"kind": "text", "title": TITLES["capacity"], "items": [{"zh": a, "en": b} for a, b in zip(items, en_items)]})
+        else:
+            capacity = None
+            if page == 153:
+                # The two "bags at once" lines are the vacuum capacity; the paragraph before them is the feature text.
+                zh_main, zh_cap = zh.split("大米0.5kg", 1)
+                en_main, en_cap = en.split("Rice Bags", 1)
+                caps_zh = _split("大米0.5kg" + zh_cap, ";")
+                caps_en = _split("Rice Bags" + en_cap, ";")
+                if len(caps_zh) != len(caps_en):
+                    raise SystemExit("page 153 capacity lines differ")
+                zh, en = zh_main.strip(), en_main.strip()
+                capacity = {"kind": "text", "title": TITLES["capacity"], "items": [{"zh": a, "en": b} for a, b in zip(caps_zh, caps_en)]}
+            lines = []
+            if page in SPLIT_ADVANTAGE_PAGES:
+                zs, es = _split(zh, " / "), _split(en, " / ")
+                if len(zs) != len(es):
+                    raise SystemExit(f"advantage bullets differ on page {page}")
+                lines = [{"zh": a, "en": b} for a, b in zip(zs, es)]
+            else:
+                lines = [{"zh": zh, "en": en}]
+            key = "features" if page in FEATURE_PAGES else "advantages"
+            sections.append({"kind": "text", "title": TITLES[key], "items": lines})
+            if capacity:
+                sections.append(capacity)
+    app_zh, app_en = (it.get("application_zh") or "").strip(), (it.get("application_en") or "").strip()
+    if app_zh or app_en:
+        sections.append({"kind": "text", "title": TITLES["application"], "items": [{"zh": app_zh, "en": app_en}]})
+    return sections
+
+
 def variant_slug(v):
     table = {"平盖": "flat", "凸盖": "convex", "单泵": "single-pump", "双泵": "double-pump"}
     for zh, en in table.items():
@@ -189,6 +251,9 @@ def main():
             machine["images"] = [machine["image"]] + [f"/images/machines/extra/p{n:03d}.webp" for n in extras]
         if it.get("notes"):
             machine["notes"] = it["notes"]
+        sections = build_sections(it)
+        if sections:
+            machine["sections"] = sections
         machines.append(machine)
 
     order = {slug: i for i, (slug, _, _) in enumerate(CATEGORIES)}

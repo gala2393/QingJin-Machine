@@ -69,7 +69,35 @@
     "source": {
       "page": 2,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "迷你机身省空间,智能自动称重,安全耐用靠谱,轻松实现大量铺货无压力。",
+            "en": "Mini body saves space, intelligent automatic weighing, safe, durable and reliable, easy to achieve large-scale distribution without pressure"
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "面粉、淀粉、调料粉、辣椒面、五谷粉末、抹茶粉、咖啡粉、玉米粉、饮料粉、益生菌粉、工业粉末、等粉末专用,定量自动灌装",
+            "en": "Widely used in flour, starch, seasoning powder, chili powder, grain powder, matcha powder, coffee powder, probiotic powder, industrial powder, etc. It is specifically for powder and features automatic quantitative filling."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fm-y200",
@@ -142,7 +170,30 @@
       "page": 3,
       "extra_pages": []
     },
-    "notes": "英文副标题印为 'Flling'(笔误,原样照抄)。本页另有'支持非标定制':圆形出料口 Round discharge nozzle / 镀铁氟龙涂层 Teflon coating / 多头称重分装机 Multi head weighing / 定制304材质 Customized 304 material。"
+    "notes": "英文副标题印为 'Flling'(笔误,原样照抄)。本页另有'支持非标定制':圆形出料口 Round discharge nozzle / 镀铁氟龙涂层 Teflon coating / 多头称重分装机 Multi head weighing / 定制304材质 Customized 304 material。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "称重精度稳定,减少物料损耗",
+            "en": "Ensures stable weighing precision to minimize material loss."
+          },
+          {
+            "zh": "自动称重,辅助人工提升效率",
+            "en": "Automates the weighing process to boost operator efficiency."
+          },
+          {
+            "zh": "可与立式包装机连接使用",
+            "en": "Compatible with vertical packaging machines for integrated operation."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kl-f100",
@@ -214,7 +265,35 @@
     "source": {
       "page": 4,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "小型台式不占空间,定量自动称重、辅助人工提高工作效率,产量提升。",
+            "en": "Small desktop does not take up space, with quantitative automatic weighing and auxiliary manual work to improve work efficiency and increase output."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷、种子、芝麻、花生米、干燥剂、药品、瓜子、枸杞、饲料、化肥、花椒、辣椒面、咖啡豆、串珠、小配件、等各类小颗粒产品,定量自动称重",
+            "en": "Widely used in grains, seeds, sesame, peanuts, desiccants, medicines, nuts, goji berries, feed, fertilizers, pepper, chili powder, coffee beans, beads, small accessories, etc., and can perform automatic quantitative weighing."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kl-f200",
@@ -287,7 +366,30 @@
       "page": 5,
       "extra_pages": []
     },
-    "notes": "本页无适用产品栏,为'可搭配其它设备使用'(封口机、包装机、液体包装机)。"
+    "notes": "本页无适用产品栏,为'可搭配其它设备使用'(封口机、包装机、液体包装机)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "移动便捷,机身轻便",
+            "en": "Convenient to move, lightweight body"
+          },
+          {
+            "zh": "运营成本可控,轻松上手",
+            "en": "Controllable operating costs, easy to get started"
+          },
+          {
+            "zh": "售后维护简单",
+            "en": "Easy after-sales maintenance"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kl-f500",
@@ -433,7 +535,22 @@
       "page": 7,
       "extra_pages": []
     },
-    "notes": "无适用产品栏;有细节展示:料斗可拆卸,便于清洁内部称重盘;标配机均201材质,支持定制304不锈钢 (The hopper is detachable...; Standard equipment is made of 201 material and supports customized 304 stainless steel)。"
+    "notes": "无适用产品栏;有细节展示:料斗可拆卸,便于清洁内部称重盘;标配机均201材质,支持定制304不锈钢 (The hopper is detachable...; Standard equipment is made of 201 material and supports customized 304 stainless steel)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "小型灵活、双工位独立运行,可同时处理两件物料,或交替完成减少等待时间。广泛适用各种小颗粒、粉剂产品定量自动称重。",
+            "en": "Small and flexible, dual station independent operation, capable of handling two materials simultaneously or alternately reducing waiting time. Widely applicable for quantitative automatic weighing of various small particle and powder products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "bean-24head",
@@ -485,7 +602,35 @@
       "page": 8,
       "extra_pages": []
     },
-    "notes": "案例页'按需定制',无型号(model 留空)。英文副标题印 '24 -Head bean filling machine'。缺失:整机重量(Weight 栏空白)。本页无独立型号,归属建议:作为 desktop 分类下的定制案例独立一条,或附到 KL-2T100 之类多称机型。"
+    "notes": "案例页'按需定制',无型号(model 留空)。英文副标题印 '24 -Head bean filling machine'。缺失:整机重量(Weight 栏空白)。本页无独立型号,归属建议:作为 desktop 分类下的定制案例独立一条,或附到 KL-2T100 之类多称机型。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "可选定制2-32头机型,多头独立料仓+单独下料管道,一色一通道,一次完成多色定量;适合拼豆套盒大批量生产。自动统计灌装总数量,方便车间核算产量,省去人工点数。",
+            "en": "Customizable models with 2-32 heads available. Each head features an independent material hopper and separate discharging pipeline, one channel for one color, enabling multi-color dosing in a single run. Ideal for mass production of fuse bead sets. The system automatically counts total filling quantity to facilitate workshop output calculation and eliminate manual counting."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "拼豆套盒",
+            "en": "Fuse bead sets"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dgn-100",
@@ -566,7 +711,35 @@
       "/images/machines/extra/p010.webp",
       "/images/machines/extra/p012.webp"
     ],
-    "notes": "extra_pages: p10=部分定制案例(定制多头称重灌装机,可混合或轮流两种灌装方式 / Customized multi-head weighing filling machine, which can be used for mixed filling or sequential filling;四头称螺旋内部、八头称螺旋内部),p12=按需定制-计数盘分装机案例(适用产品:五金配件、螺丝、螺帽、垫片、电子配件、干燥剂、小公仔、饰品、纽扣、橡皮擦、糖果、珠子、等各类不规则产品 / Widely used in hardware accessories, screws, nuts, gaskets, electronic components, desiccants, small figurines, jewelry, buttons, erasers, candies, beads, etc.)。p10/p12 无参数表,按索引归到 DGN 系列(DGN-100 首款);p11 是 DGN-200/500 独立机型页,不属 extra。"
+    "notes": "extra_pages: p10=部分定制案例(定制多头称重灌装机,可混合或轮流两种灌装方式 / Customized multi-head weighing filling machine, which can be used for mixed filling or sequential filling;四头称螺旋内部、八头称螺旋内部),p12=按需定制-计数盘分装机案例(适用产品:五金配件、螺丝、螺帽、垫片、电子配件、干燥剂、小公仔、饰品、纽扣、橡皮擦、糖果、珠子、等各类不规则产品 / Widely used in hardware accessories, screws, nuts, gaskets, electronic components, desiccants, small figurines, jewelry, buttons, erasers, candies, beads, etc.)。p10/p12 无参数表,按索引归到 DGN 系列(DGN-100 首款);p11 是 DGN-200/500 独立机型页,不属 extra。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "内部旋转送料,走料均匀,不挤压损坏物料,定量自动精准称重、感应灌装",
+            "en": "Internal rotating feeding, uniform feeding, no squeezing or damage to materials, quantitative automatic precise weighing, induction filling"
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "条形状片状颗粒状专用:红茶、绿茶、铁观音、花茶、膨化零食、五谷杂粮、中药材、坚果干货、咖啡豆、五金螺丝、红枣、小虾米、蔬菜干等更多",
+            "en": "Widely used in strip, flake, and granular materials. Applicable to black tea, green tea, tie guan yin, scented tea, puffed snacks, grains, chinese herbs, dried nuts & fruits, coffee beans, hardware screws, red dates, dried shrimp, dried vegetables, etc"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dgn-200",
@@ -801,7 +974,35 @@
       "page": 14,
       "extra_pages": []
     },
-    "notes": "英文适用产品开头印有多余的 '4.'(原样照抄)。"
+    "notes": "英文适用产品开头印有多余的 '4.'(原样照抄)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "自动化称重解决人工分装效率低、误差大、成本高的痛点,同时保障生产的稳定性,能满足工业级、商用级大定量分装需求。",
+            "en": "Automated weighing solves the pain points of low efficiency, large errors, and high costs in manual filling, while ensuring production stability, and can meet the needs of industrial and commercial large-scale quantitative filling."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷、种子、坚果、粉末、膨化零食、面粉、红枣、瓜子、宠物饲料、化肥、茶叶、茶末、糖果、桂圆、调味料、花生、八角、中药材、五金小配件、串珠、等各类颗粒、粉末、条形产品。",
+            "en": "4.Widely used in grains, seeds, nuts, powders, puffed foods, flour, red dates, nuts, pet feed, fertilizers, tea, tea powder, candies, dates, seasonings, peanuts, star anise, Chinese medicinal materials, small hardware accessories, beads, and various granular, powdered, and strip-shaped products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-999",
@@ -874,7 +1075,22 @@
       "page": 15,
       "extra_pages": []
     },
-    "notes": "无适用产品栏。支持非标定制:加大储料斗 Increase the storage hopper / 机身加高 increase height / 圆形出料口 Round discharge nozzle / 定制304材质 Customized 304 material。"
+    "notes": "无适用产品栏。支持非标定制:加大储料斗 Increase the storage hopper / 机身加高 increase height / 圆形出料口 Round discharge nozzle / 定制304材质 Customized 304 material。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "简易操作界面,参数记忆,减少操作失误。无需大面积操作间,居家、门店角落即可摆放,能耗低电费、维护费远低于大型设备,带万向轮设计,可根据生产/销售需求灵活调整摆放位置。",
+            "en": "Easy to operate interface, parameter memory, reducing operational errors. No need for a large operating room, it can be placed in the corners of homes and stores, with low energy consumption, electricity and maintenance costs far lower than large equipment. It is designed with universal wheels, and the placement position can be flexibly adjusted according to production/sales needs."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-3000",
@@ -1239,7 +1455,22 @@
       "page": 20,
       "extra_pages": []
     },
-    "notes": "中文优势原文 '生产 需求' 之间缺 '/'(原样照抄)。无适用产品栏。"
+    "notes": "中文优势原文 '生产 需求' 之间缺 '/'(原样照抄)。无适用产品栏。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "简易操作界面,参数记忆,减少操作失误,定量自动称重、灌装次数自动统计,辅助人工提高效率。无需大面积操作间,居家、门店角落即可摆放,能耗低电费、维护费远低于大型设备,带万向轮设计,可根据生产 需求灵活调整摆放位置。",
+            "en": "Simple operation interface, parameter memory, reducing operational errors, automatic quantitative weighing, automatic counting of filling times, assisting manual improvement of efficiency. No need for a large operating room, it can be placed in the corners of homes and stores, with low energy consumption, electricity and maintenance costs far lower than large equipment. It is designed with universal wheels, and the placement position can be flexibly adjusted according to production needs."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-2t999",
@@ -1312,7 +1543,35 @@
       "page": 21,
       "extra_pages": []
     },
-    "notes": "本页版式为'优势-参数-适用'(参数表在优势下方)。中文适用产品 '瓜子' 与 '糖果' 之间无顿号(原样)。中英文适用产品列表不完全对应(照抄)。"
+    "notes": "本页版式为'优势-参数-适用'(参数表在优势下方)。中文适用产品 '瓜子' 与 '糖果' 之间无顿号(原样)。中英文适用产品列表不完全对应(照抄)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "双称可放不同物料混合下料/轮流下料,分装速度比单称更快,智能定量自动称重,辅助人工提高工作效率。",
+            "en": "Double weighing can mix different materials for feeding/ alternate feeding, with a faster filling speed than single head, intelligent quantitative automatic weighing, and manual assistance to improve work efficiency."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷杂粮、坚果干货、膨化零食、调料粉、面粉、宠物饲料、化肥、茶叶、茶末、中药材、花生、红枣、瓜子糖果、五金螺丝、芝麻、蒜米、八角、工业粉末等各类颗粒、粉末、条形产品",
+            "en": "Widely used in grains, seeds, nuts, powders, puffed foods, flour, red dates, nuts, pet feed, fertilizers, tea, tea powder, candies, dates, seasonings, peanuts, star anise, Chinese medicinal materials, small hardware accessories, beads, and various granular, powdered, and strip-shaped products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-2t3000",
@@ -1458,7 +1717,22 @@
       "page": 23,
       "extra_pages": []
     },
-    "notes": "无适用产品栏。可搭配其它设备:斗式上料机 / 吸料机 / 平行传送带。"
+    "notes": "无适用产品栏。可搭配其它设备:斗式上料机 / 吸料机 / 平行传送带。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "两个工位轮换可避免单一工位过度忙碌,保持稳定效率,无需等单个工位完成全流程再启动,缩短时间",
+            "en": "2-head weighing machine with rotation mode avoids overloading a single head, maintains stable efficiency, and eliminates the need to wait for one head to complete the entire process before starting the next, thus reducing cycle time."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dl-2t9999",
@@ -1604,7 +1878,35 @@
       "page": 25,
       "extra_pages": []
     },
-    "notes": "版式为'优势-参数-适用'。中文适用产品里 '瓜子' 与 '糖果' 跨行,中间无标点(原样)。中英文适用产品列表不完全对应(照抄)。"
+    "notes": "版式为'优势-参数-适用'。中文适用产品里 '瓜子' 与 '糖果' 跨行,中间无标点(原样)。中英文适用产品列表不完全对应(照抄)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "三个工位称重,轮流模式下料,灌装速度加快 避免单一工位瓶颈,一个工位称重时,另两个可同步准备或下料,减少空窗期。",
+            "en": "3-head weighing machine with alternating feeding mode boosts filling speed. While one head is weighing, the other two can prepare or feed simultaneously, reducing idle time."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷杂粮、坚果干货、膨化零食、调料粉、面粉、宠物饲料、化肥、茶叶、茶末、中药材、花生、红枣、瓜子糖果、五金螺丝、芝麻、蒜米、八角、工业粉末等各类颗粒、粉末、条形产品",
+            "en": "Widely used in grains, seeds, nuts, powders, puffed foods, flour, red dates, nuts, pet feed, fertilizers, tea, tea powder, candies, dates, seasonings, peanuts, star anise, Chinese medicinal materials, small hardware accessories, beads, and various granular, powdered, and strip-shaped products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-3t3000",
@@ -1677,7 +1979,22 @@
       "page": 26,
       "extra_pages": []
     },
-    "notes": "英文副标题印 '3-Head 9000g Filling Machine',与中文/型号 3000克 不符(疑笔误,原样照抄,建议站点英文名用 3000g)。参数表与 FB-3T999(p25)的料斗/整机尺寸/重量/功率相同,仅称重范围与速度不同。细节展示:三头称,大容量储料斗 Three head scale, large capacity storage hopper / 三头称重,轮流下料模式,快速灌装 Three head weighing, Alternate feeding mode, rapid filling。无适用产品栏。"
+    "notes": "英文副标题印 '3-Head 9000g Filling Machine',与中文/型号 3000克 不符(疑笔误,原样照抄,建议站点英文名用 3000g)。参数表与 FB-3T999(p25)的料斗/整机尺寸/重量/功率相同,仅称重范围与速度不同。细节展示:三头称,大容量储料斗 Three head scale, large capacity storage hopper / 三头称重,轮流下料模式,快速灌装 Three head weighing, Alternate feeding mode, rapid filling。无适用产品栏。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "颗粒粉末适配性强,多工位自动下料系统联动,衔接顺畅,轮换精准分装。",
+            "en": "The machine has strong adaptability to powder particles. The multi-position automatic feeding system works in coordination, with smooth connection and precise rotation for packaging."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "fb-3t5000",
@@ -1896,7 +2213,35 @@
       "page": 29,
       "extra_pages": []
     },
-    "notes": "三档范围单型号:各参数的三个值用 ' / ' 依次对应 1-100g / 50-500g / 100-1000g。缺失:第三档(100-1000g)的整机尺寸、整机重量栏空白,故尺寸/重量仅含前两档(两档数值相同)。中文标签为 灌装范围/灌装速度/料斗容量(英文标签仍为 Weighing range / Filling speed / Hopper size)。"
+    "notes": "三档范围单型号:各参数的三个值用 ' / ' 依次对应 1-100g / 50-500g / 100-1000g。缺失:第三档(100-1000g)的整机尺寸、整机重量栏空白,故尺寸/重量仅含前两档(两档数值相同)。中文标签为 灌装范围/灌装速度/料斗容量(英文标签仍为 Weighing range / Filling speed / Hopper size)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC系统触控电脑版操作灵敏,螺杆式旋转下料,底部自带称重装置,接料后电脑版会显示灌装的克重。节省人工称重时间,辅助人工提高分装数量。",
+            "en": "The PLC touch screen enables sensitive operation. It features auger feeding, with a built-in weighing device at the bottom. After material receiving, the filled weight displays on the screen, saving manual weighing time and helping increase packaging quantity."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "粉末、面粉、调料粉、咖啡粉、淀粉、豆浆粉、五谷粉末、果蔬粉、果汁粉、饮料粉、抹茶粉、工业粉等各类纯粉末",
+            "en": "Widely used in various types of pure powders such as powder, flour, seasoning powder, coffee powder, starch, soybean milk powder, grain powder, fruit and vegetable powder, juice powder, beverage powder, matcha powder, industrial powder, etc."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "lg-500",
@@ -1962,7 +2307,35 @@
       "page": 30,
       "extra_pages": []
     },
-    "notes": "两档范围:各参数两个值用 ' / ' 依次对应 50-500g / 100-1000g。缺失:整机重量(两档均空白)。适用产品栏标题为 'Widely Applicable'。英文适用产品末行文字被图片遮挡一部分(beverage powder, matcha powder, industrial powder, etc.,按上页同文补全)。"
+    "notes": "两档范围:各参数两个值用 ' / ' 依次对应 50-500g / 100-1000g。缺失:整机重量(两档均空白)。适用产品栏标题为 'Widely Applicable'。英文适用产品末行文字被图片遮挡一部分(beverage powder, matcha powder, industrial powder, etc.,按上页同文补全)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "螺杆式灌装,操作直观高效,可站立工作,便于观察灌装工位、调节参数和添加物料,减少弯腰低头的疲劳感。",
+            "en": "Screw filling, with intuitive and efficient operation, can work standing up, making it easy to observe the filling station, adjust parameters, and add materials, reducing the fatigue of bending and bowing."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "粉末、面粉、调料粉、咖啡粉、淀粉、豆浆粉、五谷粉末、果蔬粉、果汁粉、饮料粉、抹茶粉、工业粉等各类纯粉末",
+            "en": "Widely used in various types of pure powders such as powder, flour, seasoning powder, coffee powder, starch, soybean milk powder, grain powder, fruit and vegetable powder, juice powder, beverage powder, matcha powder, industrial powder, etc."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-l100",
@@ -2028,7 +2401,22 @@
       "page": 31,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+            "en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-l1000",
@@ -2087,7 +2475,22 @@
       "page": 31,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。缺失:整机尺寸(ZT-L1000 栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+    "notes": "缺失:整机重量(栏空白)。缺失:整机尺寸(ZT-L1000 栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+            "en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-l200",
@@ -2153,7 +2556,22 @@
       "page": 31,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+            "en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-l500",
@@ -2219,7 +2637,22 @@
       "page": 31,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。"
+    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-L100/L200/L500/L1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-LIOO'(即 ZT-L100)。接料平台可上下克调节(图注英文末尾被截断为 '...adjusted up and dow')。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推螺杆出料,落料垂直直达容器,喷粉、扬尘更少 物料直线落入包装袋 / 瓶子,不横向溅射; 粉末大幅减少飘粉,降低原料损耗、改善车间粉尘环境。",
+            "en": "Directly push the screw to discharge the material, and the material is dropped vertically to the container, resulting in less powder spraying and dust. The material falls straight into the packaging bag/bottle without horizontal splashing; The powder significantly reduces floating powder, reduces raw material loss, and improves the dust environment in the workshop."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-t100",
@@ -2285,7 +2718,22 @@
       "page": 32,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+            "en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-t1000",
@@ -2344,7 +2792,22 @@
       "page": 32,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。缺失:整机尺寸(ZT-T1000 栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+    "notes": "缺失:整机重量(栏空白)。缺失:整机尺寸(ZT-T1000 栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+            "en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-t200",
@@ -2410,7 +2873,22 @@
       "page": 32,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+            "en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "zt-t500",
@@ -2476,7 +2954,22 @@
       "page": 32,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。"
+    "notes": "缺失:整机重量(栏空白)。多型号表页(ZT-T100/T200/T500/T1000 四列),各取自己一列。页首标题型号印为艺术字 'ZT-TIOO'(即 ZT-T100)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "直推受力均匀,螺杆结构主打下料顺畅、抑扬尘、精度稳定、PLC 触摸屏操控,参数一键保存,多种克重规格快速调取,新手易上手。 适合粉末、易分层粉剂(调味粉、中药粉、孢子粉、奶粉、代餐粉、化工粉体等)",
+            "en": "The direct pushing force is evenly distributed, and the screw structure features smooth feeding, dust suppression, stable accuracy, PLC touch screen control, one click parameter saving, and quick retrieval of various weight specifications, making it easy for beginners to get started. Suitable for powders, easily layered powders (seasoning powder, traditional Chinese medicine powder, spore powder, milk powder, meal replacement powder, chemical powder, etc.)"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xlg-100",
@@ -2542,7 +3035,35 @@
       "page": 33,
       "extra_pages": []
     },
-    "notes": "三档范围单型号:' / ' 依次对应 3-30g / 10-100g / 20-500g;功率、料斗、尺寸三档相同故只录一个值。缺失:整机重量(栏空白)。英文适用产品开头印有多余的 '5.'(原样照抄)。尺寸大小写原样 '57.5X73X135cm'。"
+    "notes": "三档范围单型号:' / ' 依次对应 3-30g / 10-100g / 20-500g;功率、料斗、尺寸三档相同故只录一个值。缺失:整机重量(栏空白)。英文适用产品开头印有多余的 '5.'(原样照抄)。尺寸大小写原样 '57.5X73X135cm'。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "适配粉末特性,控尘防堵,采用密闭螺杆转速结构,能减少粉末的飞扬污染,螺旋推送方式可适配不同流动性的粉末(从细腻到稍结块的物料)",
+            "en": "Adapt to powder characteristics, control dust and prevent blockage, adopt a closed screw speed structure, which can reduce powder flying pollution. The spiral pushing method can adapt to powders with different flowability (from fine to slightly clumped materials)"
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "粉末、面粉、调料粉、咖啡粉、淀粉、豆浆粉、五谷粉末、果蔬粉、果汁粉、饮料粉、抹茶粉、工业粉等各类纯粉末",
+            "en": "5.Widely used in various types of pure powders such as powder, flour, seasoning powder, coffee powder, starch, soybean milk powder, grain powder, fruit and vegetable powder, juice powder, beverage powder, matcha powder, industrial powder, etc."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "lb-50",
@@ -2608,7 +3129,35 @@
       "page": 34,
       "extra_pages": []
     },
-    "notes": "两档范围:' / ' 依次对应 3-50g / 25-150g;功率、料斗容量、尺寸两档相同故只录一个值。缺失:整机重量(栏空白)。料斗容量栏的值 '40x60cm' 是尺寸而非容量,原样照抄。"
+    "notes": "两档范围:' / ' 依次对应 3-50g / 25-150g;功率、料斗容量、尺寸两档相同故只录一个值。缺失:整机重量(栏空白)。料斗容量栏的值 '40x60cm' 是尺寸而非容量,原样照抄。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "通过杯套调节重量,适合多规格,快速灌装 无需复杂参数调试,分装速度均匀、误差可控",
+            "en": "By adjusting the weight through cup sleeves, it is suitable for multiple specifications and can be quickly filled without complex parameter tuning. The packaging speed is uniform and the error is controllable"
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷杂粮、瓜子、枸杞、食用盐、白砂糖、松子、干燥剂 茶末、串珠、芝麻、胡椒粒、咖啡豆、饲料、种子等颗粒产品",
+            "en": "Widely used in grains and pulses, nuts, goji berries, edible salt, white sugar, pine nuts, desiccants, tea powder, beads, sesame seeds, pepper grains, coffee beans, feed, seeds and various granular products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "yt-100ml",
@@ -2660,7 +3209,35 @@
       "page": 35,
       "extra_pages": []
     },
-    "notes": "标题型号印为艺术字 'YT-100ML'(末尾 ML 被截一部分)。灌装范围为 9 个规格段(每个规格对应一款机头),在图中分两行印出,已合并。缺失:整机尺寸(栏空白)。电压与功率合并为一栏 '电压功率 Voltage power'。"
+    "notes": "标题型号印为艺术字 'YT-100ML'(末尾 ML 被截一部分)。灌装范围为 9 个规格段(每个规格对应一款机头),在图中分两行印出,已合并。缺失:整机尺寸(栏空白)。电压与功率合并为一栏 '电压功率 Voltage power'。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "半自动模式无需复杂操作,人工辅助上瓶、气缸定量完成灌装,兼容瓶、罐、壶、袋等不同形状的容器,只需替换料嘴,控量精准,减少浪费。",
+            "en": "Semi-automatic mode requires no complex operation: manual assistance for bottle loading, cylinder quantitative filling. It's compatible with bottles, cans, pots, bags and other containers of different shapes—only the filling nozzle needs to be replaced. With precise volume control, it reduces waste."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "纯净水、酱油、醋、牛奶、饮料、果汁、豆浆、食用油、调料水、汤汁、酒精、红油、药液、白酒、料酒等无杂质液体",
+            "en": "Widely used in Pure water, soy sauce, vinegar, milk, beverages, fruit juice, soybean milk, edible oil, seasoning water, soup broth, red oil, medicinal liquor, cooking wine, etc. - all liquid substances without impurities."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ls-100ml",
@@ -2719,7 +3296,22 @@
       "page": 36,
       "extra_pages": []
     },
-    "notes": "标题型号印为艺术字 'LS-100ML'。灌装范围为 9 个规格段,图中分两行印出,已合并。缺失:整机尺寸(栏空白)。本页无产品优势栏。"
+    "notes": "标题型号印为艺术字 'LS-100ML'。灌装范围为 9 个规格段,图中分两行印出,已合并。缺失:整机尺寸(栏空白)。本页无产品优势栏。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "洗衣液、酸奶、番茄酱、沙拉酱、胶水、酱汁、蜂蜜、液体、牛奶、水、沐浴露、洗发露、乳液、果酱等带流动性的膏体液体",
+            "en": "Widely used in Detergent, yogurt, ketchup, salad dressing, glue, sauce, honey, liquid, milk, water, body wash, shampoo, lotion, jam, etc. - these are all flowing paste-like liquids."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ws-100ml",
@@ -2778,7 +3370,22 @@
       "page": 37,
       "extra_pages": []
     },
-    "notes": "标题型号印为艺术字 'WS-100ML'。灌装范围为 9 个规格段,图中分两行印出,已合并。缺失:整机尺寸(栏空白)。本页无产品优势栏。"
+    "notes": "标题型号印为艺术字 'WS-100ML'。灌装范围为 9 个规格段,图中分两行印出,已合并。缺失:整机尺寸(栏空白)。本页无产品优势栏。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "番茄酱、豆瓣酱、辣椒油、火锅底料 辣椒酱、肉泥、蒜蓉酱、沙拉酱、纯净水、酱油、番茄酱等各类酱料、膏体、液体适用性强",
+            "en": "Widely used in tomato sauce, bean paste, chili oil, hot pot base, chili sauce, minced meat, garlic paste, salad dressing, purified water, soy sauce and various sauces, pastes, liquids, with strong applicability."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ds-y100",
@@ -2864,7 +3471,22 @@
       "/images/machines/ds-y100.webp",
       "/images/machines/extra/p038.webp"
     ],
-    "notes": "型号印 DS-Y100(Y 与 1 字形近,按 DS-Y100 录入)。中文值带小字注释:称重范围'(大米为单位)'、精准度'(因物料而异)',英文列无注释。p38 袋型图归此机型。 p38(自动包装袋型 按需定制 / Automatic Bag Type Customized As Needed)为袋型图页:12 种袋型照片(四边封枕袋、双联袋、三边封扁袋、各式条形袋/链条袋、背封立体袋、异形袋、带挂孔袋、手提孔袋等),无型号、无参数表,按任务要求归到 DS-Y100(通用于整个 packaging 分类)。"
+    "notes": "型号印 DS-Y100(Y 与 1 字形近,按 DS-Y100 录入)。中文值带小字注释:称重范围'(大米为单位)'、精准度'(因物料而异)',英文列无注释。p38 袋型图归此机型。 p38(自动包装袋型 按需定制 / Automatic Bag Type Customized As Needed)为袋型图页:12 种袋型照片(四边封枕袋、双联袋、三边封扁袋、各式条形袋/链条袋、背封立体袋、异形袋、带挂孔袋、手提孔袋等),无型号、无参数表,按任务要求归到 DS-Y100(通用于整个 packaging 分类)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "上手快,空间占用小,还能快速切换自动包装克数,可包装:五谷、粉末、调味料、茶末、坚果、药材、饲料、化肥、干燥剂、瓜子、五金螺丝、塑料、珠子、等小颗粒粉末产品。",
+            "en": "Quick to get started, takes up less space, and can quickly switch between automatic packaging grams, Packageable: small particle powder products such as grains, powders, seasonings, tea powder, nuts, medicinal herbs, feed, fertilizers, desiccants, melon seeds, hardware screws, plastics, beads, etc."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-y100",
@@ -3031,7 +3653,22 @@
       "page": 41,
       "extra_pages": []
     },
-    "notes": "封口方式行英文列印的是三边封/背封的中文,'Sealing Type'后值只有中文'三边封/背封';value_en 为按中文翻译(3-side seal/Back seal),非画册原文。"
+    "notes": "封口方式行英文列印的是三边封/背封的中文,'Sealing Type'后值只有中文'三边封/背封';value_en 为按中文翻译(3-side seal/Back seal),非画册原文。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "双秤联动工作,支持轮流投料模式,包装速度显著提升;支持两种物料混合包装,实用、便捷、高效。实现小颗粒及粉末状物料的自动称重、灌装、制袋、封口及切断。",
+            "en": "Dual scales work in turns for faster packaging. Supports mixing two materials. Simple, fast, and efficient. Automatically weighs, fills, seals, and cuts for small granules and powders."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-3t100",
@@ -3104,7 +3741,22 @@
       "page": 42,
       "extra_pages": []
     },
-    "notes": "缺失:整机尺寸(栏位空白)、整机重量(栏位空白)。封口方式 value_en 为按中文翻译,画册只印中文值。"
+    "notes": "缺失:整机尺寸(栏位空白)、整机重量(栏位空白)。封口方式 value_en 为按中文翻译,画册只印中文值。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "可灵活切换“单种物料多称并行”“多种物料混合配比”两种模式,每个工位称重独立校准、独立运行。",
+            "en": "Flexible switching between \"Multi-scale Parallel\" and \"Multi-material Mixing\" modes. Each station features independent calibration and stand-alone operation."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ds-l100",
@@ -3184,7 +3836,22 @@
       "page": 43,
       "extra_pages": []
     },
-    "notes": "中文值带小字注释:称重范围'(大米为单位)'、精准度'(因物料而异)',英文列无注释。印刷型号为 DS-L100(L 字形近 1)。"
+    "notes": "中文值带小字注释:称重范围'(大米为单位)'、精准度'(因物料而异)',英文列无注释。印刷型号为 DS-L100(L 字形近 1)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "各种茶叶、花茶、药材、红枣、坚果、薯片、零食五金螺丝、香蕉片、药片、蔬菜干、五谷、等颗粒状条形状、片状不规则物料",
+            "en": "Widely used in various irregular materials, such as tea leaves, flower tea, herbal medicine, red dates, nuts, potato chips, snacks, hardware screws, banana chips, tablets, dried vegetables, grains, and other granular, strip, or sliced products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-l100",
@@ -3351,7 +4018,22 @@
       "page": 45,
       "extra_pages": []
     },
-    "notes": "参数表有两列但未印列标题;两列的封口方式行都印'三边封/背封'。按任务要求合并为一条,值写成'三边封: x / 背封: y',其中第一列按其数值规格(膜宽 5-20cm、袋长 3-16cm、尺寸 48.5x50x145cm、54kg)视为三边封,第二列(膜宽 20-30/20-34cm、袋长 3-22cm、56x75x155cm、60kg)视为背封;该列归属为按数值推断,画册未明示。封口方式行两列均为'三边封/背封'原样。"
+    "notes": "参数表有两列但未印列标题;两列的封口方式行都印'三边封/背封'。按任务要求合并为一条,值写成'三边封: x / 背封: y',其中第一列按其数值规格(膜宽 5-20cm、袋长 3-16cm、尺寸 48.5x50x145cm、54kg)视为三边封,第二列(膜宽 20-30/20-34cm、袋长 3-22cm、56x75x155cm、60kg)视为背封;该列归属为按数值推断,画册未明示。封口方式行两列均为'三边封/背封'原样。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "称重精度可达 ±0.2g,灌装均匀,封口平整美观。有效解决人工包装带来的重量偏差及封口不牢等问题,在提升包装品质的同时,确保生产的高效与稳定。",
+            "en": "The weighing accuracy reaches ±0.2g with consistent filling and smooth bag sealing, effectively solving weight deviations and weak seals common in manual packaging. This improves overall packaging quality while achieving efficient and stable production."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-500-p46",
@@ -3525,7 +4207,22 @@
       "page": 47,
       "extra_pages": []
     },
-    "notes": "参数表两列,列标题'三边封/3-side seal'与'背封/Back Seal',合并为一条机型。图中型号印 DS-L200。"
+    "notes": "参数表两列,列标题'三边封/3-side seal'与'背封/Back Seal',合并为一条机型。图中型号印 DS-L200。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "各种茶叶、花茶、药材、红枣、坚果、薯片、零食五金螺丝、香蕉片、药片、蔬菜干、五谷、等颗粒状条形状、片状不规则物料",
+            "en": "Widely used in various irregular materials, such as tea leaves, flower tea, herbal medicine, red dates, nuts, potato chips, snacks, hardware screws, banana chips, tablets, dried vegetables, grains, and other granular, strip, or sliced products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-500-p48",
@@ -3705,7 +4402,22 @@
       "/images/machines/db-g999.webp",
       "/images/machines/extra/p050.webp"
     ],
-    "notes": "p50 为案例页'部分案例 电动款多头包装机 / Custom Solution: Electric Multi-head Packaging Machine',含 4头螺旋称重包装机(花茶)、八头螺旋称重包装机(杂粮)、6头直振称重包装机(混合粉末)、2头螺旋称重包装机(配件);页内无型号、无参数表。因紧邻 p49 且为电动款定制说明页,归到 DB-G999,为判断性归属,画册未明示。组合使用:上料机 Feeding machine、传送带 Conveyor belt。"
+    "notes": "p50 为案例页'部分案例 电动款多头包装机 / Custom Solution: Electric Multi-head Packaging Machine',含 4头螺旋称重包装机(花茶)、八头螺旋称重包装机(杂粮)、6头直振称重包装机(混合粉末)、2头螺旋称重包装机(配件);页内无型号、无参数表。因紧邻 p49 且为电动款定制说明页,归到 DB-G999,为判断性归属,画册未明示。组合使用:上料机 Feeding machine、传送带 Conveyor belt。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "适用于五谷、坚果、膨化零食、薯片、面粉、香料、红枣、瓜子、橄榄、果干、冲剂、茶叶、花茶、药材、糖果、小饰品,螺丝、宠物食品、化肥、种子等颗粒粉末的定量灌装,下料,封口和切袋。",
+            "en": "Widely used in the quantitative filling, discharging, sealing, and cutting of grains, nuts, puffed snacks, potato chips, flour, spices, red dates, melon seeds, olives, dried fruits, granules, tea, flower tea, medicinal herbs, candies, small accessories, screws, pet food, fertilizers, seeds, and other granular or powder materials."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-y100",
@@ -3792,7 +4504,22 @@
       "page": 51,
       "extra_pages": []
     },
-    "notes": "型号印 QS-Y100(Y 字形近 1)。名称里'100克'印为 I00 样式字体。中文值带小字注释(大米为单位/因物料而异),英文列无。"
+    "notes": "型号印 QS-Y100(Y 字形近 1)。名称里'100克'印为 I00 样式字体。中文值带小字注释(大米为单位/因物料而异),英文列无。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,广泛适用:小颗粒粉末产品。气动运行平稳,精准高效自动称重包装。",
+            "en": "PLC system touch screen, intuitive parameter adjustment, quick to use and flexible operation, widely applicable to small particle powder products. Pneumatic operation is smooth, precise and efficient automatic weighing and packaging."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-y100",
@@ -3973,7 +4700,22 @@
       "page": 53,
       "extra_pages": []
     },
-    "notes": "整机尺寸画册印 48x76x155m(单位 m 为明显笔误),已改为 cm,value_zh 保留原印 48x76x155m、value_en 为修正后的 48x76x155cm。封口方式单元格中英文混排,value_zh 照抄混排原文。"
+    "notes": "整机尺寸画册印 48x76x155m(单位 m 为明显笔误),已改为 cm,value_zh 保留原印 48x76x155m、value_en 为修正后的 48x76x155cm。封口方式单元格中英文混排,value_zh 照抄混排原文。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "双工位称重,智能PLC控制,包装稳定高效;广泛适用于各种颗粒粉末产品,一机多用。",
+            "en": "Dual-station weighing and intelligent PLC control ensure stable and efficient packaging; widely applicable to various granular and powder products, offering multi-purpose versatility."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qy-2t100",
@@ -4060,7 +4802,22 @@
       "page": 54,
       "extra_pages": []
     },
-    "notes": "中英文名称不一致:中文印'双头'(2头),英文副标题印'3- Heads'(应为笔误,机身为双秤),name_en 照抄英文原文'3- Heads ...'。无封口方式行。"
+    "notes": "中英文名称不一致:中文印'双头'(2头),英文副标题印'3- Heads'(应为笔误,机身为双秤),name_en 照抄英文原文'3- Heads ...'。无封口方式行。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "定制款袋型,双工位轮流称重灌装或混合,高精度包装各种粉剂产品,固定模具只支持一个膜宽规格。",
+            "en": "Customized bag type, dual station rotating weighing and filling or mixing, high-precision packaging of various powder products, fixed mold only supports one film width specification."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-3t100",
@@ -4146,7 +4903,22 @@
       "/images/machines/qs-3t100.webp",
       "/images/machines/extra/p056.webp"
     ],
-    "notes": "缺失:整机尺寸(栏位空白)、整机重量(栏位空白)。封口方式值为'三边封 / 背封'(英文列未印,value_en 为按中文翻译)。p56(按需定制:颗粒粉末包装机+抽液体功能)案例页图中无型号、无参数表,归到最近的 QS 气动款 QS-3T100,为判断性归属,画册未明示;p56 英文标题 Granule & Powder Packaging Machine with Liquid Injection Function,优势:一台设备完成混合、计量、灌装、封口一体化,减少人力成本,提升包装效率,适合规模化生产,确保每包物料中粉液(颗粒液)比例精准,避免人工混合的配比误差,保证产品统一化(英文: A single machine integrates mixing, dosing, filling, and sealing to reduce labor costs and enhance packaging efficiency. Ideal for large-scale production, it ensures a precise powder-liquid (or granule-liquid) ratio in every pack, eliminating manual mixing errors and guaranteeing product uniformity.);按需推荐:根据需求推荐称重分装机款式,及包装机型号组合使用。"
+    "notes": "缺失:整机尺寸(栏位空白)、整机重量(栏位空白)。封口方式值为'三边封 / 背封'(英文列未印,value_en 为按中文翻译)。p56(按需定制:颗粒粉末包装机+抽液体功能)案例页图中无型号、无参数表,归到最近的 QS 气动款 QS-3T100,为判断性归属,画册未明示;p56 英文标题 Granule & Powder Packaging Machine with Liquid Injection Function,优势:一台设备完成混合、计量、灌装、封口一体化,减少人力成本,提升包装效率,适合规模化生产,确保每包物料中粉液(颗粒液)比例精准,避免人工混合的配比误差,保证产品统一化(英文: A single machine integrates mixing, dosing, filling, and sealing to reduce labor costs and enhance packaging efficiency. Ideal for large-scale production, it ensures a precise powder-liquid (or granule-liquid) ratio in every pack, eliminating manual mixing errors and guaranteeing product uniformity.);按需推荐:根据需求推荐称重分装机款式,及包装机型号组合使用。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "单种产品多称轮流灌装,包装速度更快;多种产品定量混合灌装,包装省心便捷;根据需求推荐定制多头称。",
+            "en": "Multiple weighing and rotating filling of a single product, faster packaging speed. Quantitative mixing and filling of multiple products, convenient and worry free packaging. Recommend customized multi head scales based on demand."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "q4-g100",
@@ -4226,7 +4998,22 @@
       "page": 57,
       "extra_pages": []
     },
-    "notes": "型号印 Q4-G100(字体 G 形近 6/0,按 Q4-G100 录入;名称为100克,与 100 相符)。缺失:整机重量(栏位空白)。"
+    "notes": "型号印 Q4-G100(字体 G 形近 6/0,按 Q4-G100 录入;名称为100克,与 100 相符)。缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "四面封口包装,智能按键款电脑版,操作简单易上手;广泛包装各种小颗粒粉末产品,一机多用。",
+            "en": "Four sided sealed packaging, intelligent button computer version, easy to operate and handle, widely packaged with various small particle powder products, one machine for multiple uses"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "q4-2t100",
@@ -4306,7 +5093,22 @@
       "page": 58,
       "extra_pages": []
     },
-    "notes": "卷膜宽度印 5-20 未带单位 cm(照抄,单位缺失)。缺失:整机重量(栏位空白)。"
+    "notes": "卷膜宽度印 5-20 未带单位 cm(照抄,单位缺失)。缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "定制款袋型,双工位轮流称重灌装或混合,高精度包装各种小颗粒及粉剂产品,四面封口平切美观。",
+            "en": "Customized bag type, dual station rotating weighing and filling or mixing, high-precision packaging of various small particles and powder products, four sided sealing and flat cutting for beautiful appearance."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-nwd100",
@@ -4386,7 +5188,22 @@
       "page": 59,
       "extra_pages": []
     },
-    "notes": "型号印 QS-NWD100(字体 1 形近 I)。本机参数为'灌装范围'(非称重范围)和'电压功率'合并一行(220V / 1000W),已按画册原样用 filling_range / voltage_power 两个 key。缺失:整机重量(栏位空白)。无成品展示条。"
+    "notes": "型号印 QS-NWD100(字体 1 形近 I)。本机参数为'灌装范围'(非称重范围)和'电压功率'合并一行(220V / 1000W),已按画册原样用 filling_range / voltage_power 两个 key。缺失:整机重量(栏位空白)。无成品展示条。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "双重防护:内袋阻隔保鲜,外袋防损防污,尤其适合易吸潮、易氧化、怕污染的物料(如粉末、茶叶、药品),延长保质期。",
+            "en": "Double protection: Inner bag for freshness; Outer bag for anti-damage/anti-fouling, perfect for moisture-absorbent, oxidation-prone items (powder, tea, medicine), effectively extends product shelf life."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-f200",
@@ -4480,7 +5297,22 @@
       "page": 60,
       "extra_pages": []
     },
-    "notes": "整机尺寸画册印 48x59x145m(单位 m 为明显笔误),已修正为 cm:value_zh 保留原印 48x59x145m,value_en 为修正后 48x59x145cm。英文副标题为 '200g Small Pneumatic Packaging Machine'(中文为气动小型)。"
+    "notes": "整机尺寸画册印 48x59x145m(单位 m 为明显笔误),已修正为 cm:value_zh 保留原印 48x59x145m,value_en 为修正后 48x59x145cm。英文副标题为 '200g Small Pneumatic Packaging Machine'(中文为气动小型)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC系统触控屏,参数调节直观,操作简单上手快,运行灵活;气动机运行平稳,自动称重包装精准高效。",
+            "en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-g200",
@@ -4574,7 +5406,22 @@
       "page": 61,
       "extra_pages": []
     },
-    "notes": "卷膜宽度印 20-30cm/34cm(照抄)。精准度中文标签印为'精 度'(中间有空位,疑似排版省略'准'字),zh 标签按标准写'精准度'。可选配置:色带打码机 Ribbon Printer、光标 Cursor、加搅拌器 Blender、传送带 Conveyor belt。"
+    "notes": "卷膜宽度印 20-30cm/34cm(照抄)。精准度中文标签印为'精 度'(中间有空位,疑似排版省略'准'字),zh 标签按标准写'精准度'。可选配置:色带打码机 Ribbon Printer、光标 Cursor、加搅拌器 Blender、传送带 Conveyor belt。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "效率突出:气动驱动响应快,适配颗粒、粉末、标准化包装需求;稳定性强:气压传动结构简单、磨损小,故障发生率低。",
+            "en": "Outstanding efficiency: Pneumatic drive with fast response, suitable for particle, powder, and standardized packaging needs. Strong stability: The pneumatic transmission structure is simple, with minimal wear and low failure rate."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-g500",
@@ -4660,7 +5507,22 @@
     "source": {
       "page": 62,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,气动机运行平稳,精准高效自动称重包装。",
+            "en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-g500",
@@ -4747,7 +5609,22 @@
       "page": 63,
       "extra_pages": []
     },
-    "notes": "英文副标题含 Pneumatic(中文名亦为气动中型背封),name_en 按图。底部为'支持定制 Customization available':加真空功能 Add vacuum function、加充氮气 Add nitrogen gas、加封口挂孔 Add hanging holes、加排气孔 Add exhaust holes。"
+    "notes": "英文副标题含 Pneumatic(中文名亦为气动中型背封),name_en 按图。底部为'支持定制 Customization available':加真空功能 Add vacuum function、加充氮气 Add nitrogen gas、加封口挂孔 Add hanging holes、加排气孔 Add exhaust holes。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "自动完成称重、灌装、制袋、封口、切袋,可根据需求配置打码机光标等功能。",
+            "en": "Automatic weighing, filling, bag making, sealing and bag cutting. Optional date printer, photoelectric mark (cursor) and other functions available upon request."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qbc-2t500",
@@ -4827,7 +5704,22 @@
       "page": 64,
       "extra_pages": []
     },
-    "notes": "精准度标签:中文印'精 度'(中间空位),英文印 Precision(非 Accuracy),en 标签照抄 Precision。缺失:整机重量(栏位空白)。"
+    "notes": "精准度标签:中文印'精 度'(中间空位),英文印 Precision(非 Accuracy),en 标签照抄 Precision。缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "封口时,两侧插角向中心推动,使成袋外观更美观、立体。设备可自动完成称重、灌装、制袋、封口及切袋工序,并可根据需求选配打码机、光标等功能。",
+            "en": "During sealing, the two corners are pushed towards the center, forming a neat and aesthetically pleasing gusset bag. The system automatically completes weighing, filling, bag making, sealing, and bag cutting. Optional configurations include a date printer, cursor tracking, and other functions as required."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-f500",
@@ -4914,7 +5806,22 @@
       "page": 65,
       "extra_pages": []
     },
-    "notes": "气动需知英文值印 'To be used with an aircompressor'(与其他页 '50L+ Air Compressor (not included)' 不同),照抄。"
+    "notes": "气动需知英文值印 'To be used with an aircompressor'(与其他页 '50L+ Air Compressor (not included)' 不同),照抄。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "自动化完成称重与包装,采用标准化封口并带飞机孔设计,方便商品悬挂陈列。",
+            "en": "Automated weighing and packaging with standardized sealing and airplane holes, allowing convenient hanging display of products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-g999",
@@ -5000,7 +5907,22 @@
     "source": {
       "page": 66,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,气动机运行平稳,精准高效自动称重包装。",
+            "en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-d999",
@@ -5087,7 +6009,22 @@
       "page": 67,
       "extra_pages": []
     },
-    "notes": "图中另有'选配氮气机'(N2 机柜),为选配件。"
+    "notes": "图中另有'选配氮气机'(N2 机柜),为选配件。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "氮气包装,锁住酥脆口感避免变软对零食产品关键的优势,运输减少碰撞受损,保护零食形态,减少破碎。",
+            "en": "Nitrogen packaging locks in crispy texture and prevents food from turning soft, serving as a crucial advantage for snack products. It lessens collision damage during transportation, preserves snack shape and reduces breakage."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb2t-g999",
@@ -5313,7 +6250,22 @@
       "page": 69,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位留空,未印数值)。英文适用产品原文拼写 'usd'(应为 used),按原样保留。无产品优势栏,仅有适用产品栏。"
+    "notes": "缺失:整机重量(栏位留空,未印数值)。英文适用产品原文拼写 'usd'(应为 used),按原样保留。无产品优势栏,仅有适用产品栏。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷杂粮、红枣、莲子、瓜子、坚果、果干、干货、小鱼干等自动称重真空包装,有效延长保质期并保持食材原品质,真空包装后体积会缩小方便储存与携带,提升实用性。",
+            "en": "Widely usd in automatic weighing and vacuum packaging of grains, red dates, lotus seeds, melon seeds, nuts, dried fruits, dry goods, and dried fish effectively extends shelf life while preserving the original quality of the ingredients. Vacuum packaging also reduces volume, making storage and transportation easier and more practical."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-g3000",
@@ -5400,7 +6352,22 @@
       "page": 70,
       "extra_pages": []
     },
-    "notes": "型号印 QB-G3000(末尾 0 字形偏圆,按 3000 录入)。"
+    "notes": "型号印 QB-G3000(末尾 0 字形偏圆,按 3000 录入)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "自动完成称重、灌装、制袋、封口、切袋,可根据需求配置打码机光标等功能。",
+            "en": "Automatic weighing, filling, bag making, sealing, bag cutting. Can be configured with date printer, cursor and other functions as required."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-g5000",
@@ -5487,7 +6454,22 @@
       "page": 71,
       "extra_pages": []
     },
-    "notes": "型号印 QB-G5000(末尾 0 字形偏圆,按 5000 录入)。"
+    "notes": "型号印 QB-G5000(末尾 0 字形偏圆,按 5000 录入)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC系统触摸屏,参数调整直观快速,操作灵活,气动马达运转平稳,实现高精度、高效率的自动称重与包装。",
+            "en": "PLC system with touch screen, intuitive parameter adjustment, quick to use and flexible operation, smooth operation of pneumatic motor, precise and efficient automatic weighing and packaging."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb2t-g3000",
@@ -5573,7 +6555,22 @@
     "source": {
       "page": 72,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "通过两个工位交替作业,可快速精准完成称重与包装,提升生产效率,且适用产品丰富:粮食谷物、干货坚果、宠物食品、粉末状、化肥农药、医药类、五金电子类等范围广",
+            "en": "By alternating between two workstations, weighing and packaging can be quickly and accurately completed, improving production efficiency. It is suitable for a wide range of products, including grains, dry nuts, pet food, powders, fertilizers and pesticides, pharmaceuticals, hardware and electronics, etc"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb2t-g5000",
@@ -5660,7 +6657,22 @@
       "page": 73,
       "extra_pages": []
     },
-    "notes": "可选配置:粉末上料机 Screw Feeding Machine、Z型上料机 Z-type feeding machine、上料机 Feeding Machine、传送带 Conveyor belt。"
+    "notes": "可选配置:粉末上料机 Screw Feeding Machine、Z型上料机 Z-type feeding machine、上料机 Feeding Machine、传送带 Conveyor belt。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "自动完成称重、灌装、制袋、封口、切袋,可根据需求配置打码机光标等功能。",
+            "en": "Automatic weighing, filling, bag making, sealing, bag cutting. Can be configured with date printer, cursor and other functions as required."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb2t-g9999",
@@ -5746,7 +6758,22 @@
     "source": {
       "page": 74,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "兼容物料范围广:颗粒、粉末、条状物料均可适配、五谷粮食、饲料、茶叶、药材、化肥、调料粉末、坚果零食、塑胶粒子、粉体原料、五金配件等",
+            "en": "Wide compatibility with various materials: suitable for granular, powdery and strip-shaped materials, including grains, animal feed, tea, medicinal herbs, fertilizers, seasoning powder, nut snacks, plastic pellets, powder raw materials, hardware accessories, etc."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-lb100",
@@ -5826,7 +6853,35 @@
       "page": 75,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。英文名副标题原印 'Pnuematic'(拼写错误,照抄)。灌装范围中文值印为'1-100g(大米为单位)',英文列只有1-100g。"
+    "notes": "缺失:整机重量(栏位空白)。英文名副标题原印 'Pnuematic'(拼写错误,照抄)。灌装范围中文值印为'1-100g(大米为单位)',英文列只有1-100g。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC控制系统触控屏幕、独立控温模式、旋转杯套灌装高速度包装,杯环调节灌装量,可根据需求配置打码机、光标、等功能。",
+            "en": "PLC control system with touch screen, independent temperature control mode, rotary cup sleeve for high-speed filling and packaging. The cup ring allows adjustment of filling volume. Optional configurations include a date printer,cursor tracking, and other functions as required."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷杂粮、瓜子、咖啡豆、茶末、冲剂、饲料、化肥、种子、小串珠、零食、干燥剂、枸杞、花生、洗衣粉、松子、等各种小颗粒产品",
+            "en": "Widely used in grains, melon seeds, coffee beans, tea powder, instant powders, feed, fertilizers, seeds, beads, snacks, desiccants, goji berries, peanuts, laundry detergent, pine nuts, and other small granular products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-lb100",
@@ -6000,7 +7055,35 @@
       "page": 77,
       "extra_pages": []
     },
-    "notes": "参数表有两列但只印一个型号 DB-LB100;params 取第1列。第2列:三边封/背封;灌装范围 10-200g;包装速度 35-55bags/min;精准度 ±1-3g;料斗容量 50L;卷膜宽度 20-32cm;袋长范围 3-22cm;电压功率 2.2KW;整机尺寸 76x97x200cm;整机重量 238kg。无气动需知行(电动机型)。"
+    "notes": "参数表有两列但只印一个型号 DB-LB100;params 取第1列。第2列:三边封/背封;灌装范围 10-200g;包装速度 35-55bags/min;精准度 ±1-3g;料斗容量 50L;卷膜宽度 20-32cm;袋长范围 3-22cm;电压功率 2.2KW;整机尺寸 76x97x200cm;整机重量 238kg。无气动需知行(电动机型)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC控制系统触控屏幕、独立控温模式、旋转杯套灌装高速度包装,杯环调节灌装量,可根据需求配置打码机、光标、等功能。",
+            "en": "PLC control system with touch screen, independent temperature control mode, rotary cup sleeve for high-speed filling and packaging. The cup ring allows adjustment of filling volume. Optional configurations include a date printer,cursor tracking, and other functions as required."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五谷杂粮、瓜子、咖啡豆、茶末、冲剂、饲料、化肥、种子、小串珠、零食、干燥剂、枸杞、花生、洗衣粉、松子、等各种小颗粒产品",
+            "en": "Widely used in grains, melon seeds, coffee beans, tea powder, instant powders, feed, fertilizers, seeds, beads, snacks, desiccants, goji berries, peanuts, laundry detergent, pine nuts, and other small granular products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-k100",
@@ -6073,7 +7156,22 @@
       "page": 78,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。型号印为 DB-K100(字形 'K100')。无气动需知行。"
+    "notes": "缺失:整机重量(栏位空白)。型号印为 DB-K100(字形 'K100')。无气动需知行。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "三边封平切口包装袋型,配有成品输送带自动分拣量杯式快速灌装高达120包/分钟,自带警示器工作状态一目了然",
+            "en": "Three sided sealed flat cut packaging bag type, equipped with automatic sorting of finished product conveyor belt, measuring cup type fast filling up to 120 bags/minute, with built-in warning device for clear working status"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-xlg50",
@@ -6167,7 +7265,35 @@
       "page": 79,
       "extra_pages": []
     },
-    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 封口方式只印中文'三边封/背封',无英文列。页面章节标题为'产品特性 Product Advantages'。"
+    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 封口方式只印中文'三边封/背封',无英文列。页面章节标题为'产品特性 Product Advantages'。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "PLC 触摸屏控制,采用螺杆式自动计量、制袋、灌装、封口、等全流程自动化,日常清洁方便:拆洗料斗、螺杆,避免物料残留结块。",
+            "en": "PLC touch screen control with screw-type weighing and filling, bag making, sealing, and full-process automation. Designed for easy daily cleaning, the hopper and screw can be disassembled and washed to prevent material residue and clumping."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "面粉、淀粉、调料粉、工业粉、奶茶粉、咖啡粉、玉米粉、饮料粉、益生菌粉、等各类纯粉末",
+            "en": "Widely use in flour, starch, seasoning powders, industrial powders, milk tea powder, coffee powder, corn powder, beverage powder, probiotics powder, and other types of pure powders."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-xlg200",
@@ -6341,7 +7467,35 @@
       "page": 81,
       "extra_pages": []
     },
-    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 缺失:整机重量(栏位空白)。封口方式单格内中英混印。"
+    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 缺失:整机重量(栏位空白)。封口方式单格内中英混印。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC触摸屏控制,采用螺杆式自动计量、制袋、灌装、封口等全流程自动化。日常清洁:拆洗料斗、螺杆,避免物料残留结块。",
+            "en": "PLC touch screen control, adopts auger automatic metering, bag making, filling and sealing.Daily cleaning: disassemble and wash the hopper and screw to avoid material residue and clumping."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "面粉、淀粉、调料粉、工业粉、奶茶粉、咖啡粉、玉米粉、饮料粉、益生菌粉、等各类纯粉末",
+            "en": "Flour, starch, seasoning powder, industrial powder, milk tea powder, coffee powder, corn powder, beverage powder, probiotics powder, and other pure powders"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qy-jl50",
@@ -6421,7 +7575,22 @@
       "page": 82,
       "extra_pages": []
     },
-    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 缺失:整机重量(栏位空白)。"
+    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "螺杆计量,精准灌装;夹拉封口,冲切一体。固定一个膜宽不可替换,搭配PLC系统,实现稳定高效的粉末包装。",
+            "en": "Auger metering ensures precise filling; clamping and sealing, along with punching and cutting, are integrated. A fixed, non-replaceable film width, combined with a PLC system, enables stable and efficient powder packaging."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-zt50",
@@ -6508,7 +7677,35 @@
       "page": 83,
       "extra_pages": []
     },
-    "notes": "参数表有三列,但页面只印一个型号 QS-ZT50;params 取第1列(5-50g)。第2列(疑似另一规格,型号未印):封口方式 背封 Back Seal;灌装范围 20-200g;速度 20-35bags/min;精准度 ±2g(因物料而异);卷膜宽度 20-34cm;袋长范围 3-22cm;电压功率 220V/1300W;整机尺寸 71x117x158cm;整机重量 105kg。第3列:背封 Back Seal;50-500g;10-20bags/min;±3g(因物料而异);30-44cm;3-27cm;220V/1800W;尺寸、重量空白。三列共用同一气动需知。"
+    "notes": "参数表有三列,但页面只印一个型号 QS-ZT50;params 取第1列(5-50g)。第2列(疑似另一规格,型号未印):封口方式 背封 Back Seal;灌装范围 20-200g;速度 20-35bags/min;精准度 ±2g(因物料而异);卷膜宽度 20-34cm;袋长范围 3-22cm;电压功率 220V/1300W;整机尺寸 71x117x158cm;整机重量 105kg。第3列:背封 Back Seal;50-500g;10-20bags/min;±3g(因物料而异);30-44cm;3-27cm;220V/1800W;尺寸、重量空白。三列共用同一气动需知。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "PLC触摸屏可调整包装重量、速度、袋长等参数,螺杆计量,实现定量包装",
+            "en": "The PLC touchscreen allows adjustment of parameters such as packaging weight, speed, and bag length, while auger metering enables quantitative packaging"
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "面粉、淀粉、调料粉、工业粉、奶茶粉、咖啡粉、玉米粉、饮料粉、益生菌粉等各类纯粉末",
+            "en": "Widely used in flour, starch, seasoning powder, industrial powder, milk tea powder, coffee powder, corn flour, beverage powder, probiotic powder, and other pure powders"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-zlg50",
@@ -6688,7 +7885,22 @@
       "/images/machines/qb-z500.webp",
       "/images/machines/extra/p086.webp"
     ],
-    "notes": "参数表有三列但只印一个型号 QB-Z500;params 取第1列(1-100g)。第2列:背封/Back Seal;50-500g;15-30bags/min;±2g(因物料而异);15L;20-34cm;3-22cm;220V/1600W;整机尺寸 81x127x210cm;整机重量 203kg。第3列:背封/Back Seal;100-1000g;10-20bags/min;±3g(因物料而异);30L;30-44cm;3-27cm;220V/1800W;整机尺寸 90x127x210cm;重量空白。缺失:第1列整机尺寸、整机重量(空白)。p86 案例页归本机型。 p86 内容:'按需推荐 翻斗包装机 Automatic Chain Bucket Packaging Machine'(无型号无参数表):产品特性——需人工投放产品,行业通用性强,自动运输,精准灌装与感应封袋。翻斗格子大小可根据产品大小定制,适配包装机款式按需推荐;适用产品——干货、核桃、坚果、五金配件、电子元件、玩具、饰品、面条、豆泡、零食、卤蛋、果冻等各类不规则形状产品;含'定制案例 Custom Solutions'三张翻斗特写图。"
+    "notes": "参数表有三列但只印一个型号 QB-Z500;params 取第1列(1-100g)。第2列:背封/Back Seal;50-500g;15-30bags/min;±2g(因物料而异);15L;20-34cm;3-22cm;220V/1600W;整机尺寸 81x127x210cm;整机重量 203kg。第3列:背封/Back Seal;100-1000g;10-20bags/min;±3g(因物料而异);30L;30-44cm;3-27cm;220V/1800W;整机尺寸 90x127x210cm;重量空白。缺失:第1列整机尺寸、整机重量(空白)。p86 案例页归本机型。 p86 内容:'按需推荐 翻斗包装机 Automatic Chain Bucket Packaging Machine'(无型号无参数表):产品特性——需人工投放产品,行业通用性强,自动运输,精准灌装与感应封袋。翻斗格子大小可根据产品大小定制,适配包装机款式按需推荐;适用产品——干货、核桃、坚果、五金配件、电子元件、玩具、饰品、面条、豆泡、零食、卤蛋、果冻等各类不规则形状产品;含'定制案例 Custom Solutions'三张翻斗特写图。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "专为纯粉末设计,采用直杆式螺杆灌装系统,转速精准,有效控制粉尘逸散,PLC触控操作简单,实现高效精准包装,提升整体生产效率",
+            "en": "Designed specifically for pure powders, this system use the auger filling system with precise rotation speed to effectively control dust dispersion. The PLC touch control offers simple operation, enabling efficient and accurate packaging and improving overall production efficiency."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-js99",
@@ -6754,7 +7966,35 @@
       "page": 87,
       "extra_pages": []
     },
-    "notes": "封口方式只印中文。无精准度/重量/气动行。页脚声明:计数包装均为定制,以实际需求推荐的机型为准(All counting packaging is customized, and the recommended model will be based on actual needs.)。"
+    "notes": "封口方式只印中文。无精准度/重量/气动行。页脚声明:计数包装均为定制,以实际需求推荐的机型为准(All counting packaging is customized, and the recommended model will be based on actual needs.)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "预设数量,即可全自动完成精准红外计数与灌装。杜绝多装、少装,保障出货准确与品牌信誉。",
+            "en": "With a preset quantity, it can automatically complete precise infrared counting and filling. This eliminates overfilling and underfilling, ensuring accurate delivery and protecting brand reputation."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "胶囊、药片、糖果、坚果、螺丝、颗粒状化工产品等颗粒状固体物料。",
+            "en": "Widely used in capsules, tablets, candies, nuts, screws, granular chemical products, and other granular solid materials"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db2t-js99",
@@ -6820,7 +8060,35 @@
       "page": 88,
       "extra_pages": []
     },
-    "notes": "封口方式只印中文。页脚声明:计数包装均为定制,以实际需求推荐的机型为准。页码印在右上角(页眉为 www.qzmah.com)。"
+    "notes": "封口方式只印中文。页脚声明:计数包装均为定制,以实际需求推荐的机型为准。页码印在右上角(页眉为 www.qzmah.com)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "双工位计数盘,可两种产品混合计数包装,单种产品轮流计数包装,速度更快",
+            "en": "Dual station counting disc, capable of mixed counting and packaging of two types of products, with a single product taking turns counting and packaging, resulting in faster speed"
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "胶囊、药片、糖果、坚果、螺丝、颗粒状化工产品等颗粒状固体物料。",
+            "en": "Widely used in capsules, tablets, candies, nuts, screws, granular chemical products, and other granular solid materials"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-js99",
@@ -6893,7 +8161,22 @@
       "page": 89,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。无产品优势文字。气动需知英文标签印为'Pneumatic machine'。封口方式只印中文。页脚声明:计数包装均为定制,以实际需求推荐的机型为准。"
+    "notes": "缺失:整机重量(栏位空白)。无产品优势文字。气动需知英文标签印为'Pneumatic machine'。封口方式只印中文。页脚声明:计数包装均为定制,以实际需求推荐的机型为准。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五金、螺丝、螺帽、垫片、木屑、电子配件、玩具、饰品、干燥剂袋、棒棒糖、珠子、小青柑等颗粒状固体物料。",
+            "en": "Widely used in hardware, screws, nuts, washers, wood chips, electronic components, toys, jewelry, desiccant bags, lollipops, beads, small green oranges, and other granular solid materials."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb2t-js99",
@@ -7038,7 +8321,22 @@
       "/images/machines/db4t-js99.webp",
       "/images/machines/extra/p092.webp"
     ],
-    "notes": "适用产品栏中文与英文均把'四个计数工位…计数精准'特性与适用产品合并在同一段。无产品优势单独栏。封口方式只印中文。页脚声明:计数包装均为定制,以实际需求推荐的机型为准。p92 案例页归本机型。 p92 内容:'定制案例 Custom Solutions / 计数盘包装机 Counting Packaging Machine',两例:(1)四头螺丝计数盘搭配中型气动包装机,加配打码机及传送带,自动完成数粒灌装、印日期、制袋、运输一体化完成;(2)定制全自动真空包装机,配计数盘灌装干燥剂,确保每袋瓜子包装中都有一包干燥剂。"
+    "notes": "适用产品栏中文与英文均把'四个计数工位…计数精准'特性与适用产品合并在同一段。无产品优势单独栏。封口方式只印中文。页脚声明:计数包装均为定制,以实际需求推荐的机型为准。p92 案例页归本机型。 p92 内容:'定制案例 Custom Solutions / 计数盘包装机 Counting Packaging Machine',两例:(1)四头螺丝计数盘搭配中型气动包装机,加配打码机及传送带,自动完成数粒灌装、印日期、制袋、运输一体化完成;(2)定制全自动真空包装机,配计数盘灌装干燥剂,确保每袋瓜子包装中都有一包干燥剂。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "四个计数工位,可四种产品混合包装,计数精准。五金、螺丝、螺帽、垫片、木屑、电子配件、玩具、饰品、干燥剂袋、棒棒糖、珠子、小青柑等颗粒状固体物料。",
+            "en": "Four counting stations, capable of mixing and packaging four types of products, with precise counting. Widely used in hardware, screws, nuts, washers, wood chips, electronic components, toys, jewelry, desiccant bags, lollipops, beads, small green oranges, and other granular solid materials."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-st20",
@@ -7104,7 +8402,35 @@
       "page": 93,
       "extra_pages": []
     },
-    "notes": "本页栏目标题为'产品特性 Product Features'(用作产品优势)。可选配置:物料平台 Material platform、圆筒翻领 Cylindrical lapel、平行输送带 Parallel conveyor belt、红外感应/脚踏板 Infrared sensing/foot pedal。"
+    "notes": "本页栏目标题为'产品特性 Product Features'(用作产品优势)。可选配置:物料平台 Material platform、圆筒翻领 Cylindrical lapel、平行输送带 Parallel conveyor belt、红外感应/脚踏板 Infrared sensing/foot pedal。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "半自动包装机,需人工投放物料,电动或气动款可选",
+            "en": "Semi-automatic packaging machine, requires manual material feeding, electric or pneumatic models available."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "五金配件、电子元件、干货零食、玩具、塑料配件、食品等不规则产品",
+            "en": "Application: Widely used in hardware accessories, electronic components, dried goods and snacks, toys, plastic parts, food, and other irregularly shaped products."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-st34",
@@ -7170,7 +8496,22 @@
       "page": 94,
       "extra_pages": []
     },
-    "notes": "页面大标题印 DB-ST44,参数表三列(DS-ST30 / DB-ST34 / DB-ST44)已拆为三条,本条取型号 DB-ST34 所在列。三条共用同一标题、产品优势与主图。封口方式只印中文。"
+    "notes": "页面大标题印 DB-ST44,参数表三列(DS-ST30 / DB-ST34 / DB-ST44)已拆为三条,本条取型号 DB-ST34 所在列。三条共用同一标题、产品优势与主图。封口方式只印中文。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "一键投料,全程自动。只需人工将物料投入制袋器中,制袋、封口等流程流程由机器自动完成。即便是新手也能立即上岗,显著节省了人员培训成本与时间。",
+            "en": "Simply feed the materials into the machine manually; the machine automatically completes the bag making and sealing processes. Even beginners can start working immediately, significantly saving on personnel training costs and time."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-st44",
@@ -7236,7 +8577,22 @@
       "page": 94,
       "extra_pages": []
     },
-    "notes": "页面大标题印 DB-ST44,参数表三列(DS-ST30 / DB-ST34 / DB-ST44)已拆为三条,本条取型号 DB-ST44 所在列。三条共用同一标题、产品优势与主图。封口方式只印中文。"
+    "notes": "页面大标题印 DB-ST44,参数表三列(DS-ST30 / DB-ST34 / DB-ST44)已拆为三条,本条取型号 DB-ST44 所在列。三条共用同一标题、产品优势与主图。封口方式只印中文。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "一键投料,全程自动。只需人工将物料投入制袋器中,制袋、封口等流程流程由机器自动完成。即便是新手也能立即上岗,显著节省了人员培训成本与时间。",
+            "en": "Simply feed the materials into the machine manually; the machine automatically completes the bag making and sealing processes. Even beginners can start working immediately, significantly saving on personnel training costs and time."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ds-st30",
@@ -7302,7 +8658,22 @@
       "page": 94,
       "extra_pages": []
     },
-    "notes": "页面大标题印 DB-ST44,参数表三列(DS-ST30 / DB-ST34 / DB-ST44)已拆为三条,本条取型号 DS-ST30 所在列。三条共用同一标题、产品优势与主图。封口方式只印中文。"
+    "notes": "页面大标题印 DB-ST44,参数表三列(DS-ST30 / DB-ST34 / DB-ST44)已拆为三条,本条取型号 DS-ST30 所在列。三条共用同一标题、产品优势与主图。封口方式只印中文。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "一键投料,全程自动。只需人工将物料投入制袋器中,制袋、封口等流程流程由机器自动完成。即便是新手也能立即上岗,显著节省了人员培训成本与时间。",
+            "en": "Simply feed the materials into the machine manually; the machine automatically completes the bag making and sealing processes. Even beginners can start working immediately, significantly saving on personnel training costs and time."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-st20",
@@ -7375,7 +8746,22 @@
       "page": 95,
       "extra_pages": []
     },
-    "notes": "封口方式只印中文。"
+    "notes": "封口方式只印中文。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "气动机更稳定高效,辅助人工提高产量,机身紧凑设计占用空间小,无需大面积场地摆放,还方便移动调整摆放位置。",
+            "en": "Pneumatic motors are more stable and efficient, assisting manual labor to increase production. The compact design of the body takes up less space, eliminating the need for large areas of space for placement and making it easy to move and adjust the placement position."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-st34",
@@ -7659,7 +9045,22 @@
       "/images/machines/kb-st20.webp",
       "/images/machines/extra/p098.webp"
     ],
-    "notes": "缺失:整机重量(栏位空白)。电压功率行仅印'220V'(无功率数值)。封口方式只印中文。p98 案例页归本机型。 p98 内容:'定制案例 Custom Solutions / 人工手投包装机 Manual Packaging Machine',两例:(1)包装机搭配平行输送带使用,手投产品自动运输灌装封袋,适用任意产品(Packaging machine paired with parallel conveyor belt for use; Feed the products into the machine manually, automatic transportation, filling and sealing bag, suitable for any product);(2)中型气动包装机做圆筒翻领,方便人工手投不规则产品,自动感应封袋(Medium sized pneumatic packaging machine for making cylindrical lapels; Convenient manual delivery of irregular products and automatic sensor sealing bags)。"
+    "notes": "缺失:整机重量(栏位空白)。电压功率行仅印'220V'(无功率数值)。封口方式只印中文。p98 案例页归本机型。 p98 内容:'定制案例 Custom Solutions / 人工手投包装机 Manual Packaging Machine',两例:(1)包装机搭配平行输送带使用,手投产品自动运输灌装封袋,适用任意产品(Packaging machine paired with parallel conveyor belt for use; Feed the products into the machine manually, automatic transportation, filling and sealing bag, suitable for any product);(2)中型气动包装机做圆筒翻领,方便人工手投不规则产品,自动感应封袋(Medium sized pneumatic packaging machine for making cylindrical lapels; Convenient manual delivery of irregular products and automatic sensor sealing bags)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "人工放料,机器自动完成制袋、封口、切膜、主打人机协同,适合异形件、多品类、中小批量生产。简单培训即可上岗,无需专业设备技术员;上手快,老人也会使用。",
+            "en": "Manual feeding; automatic bag forming, sealing and film cutting. Human-machine collaborative packaging.Ideal for special-shaped parts, diversified products and small & medium batch production. Easy operation with brief training, no specialist technician required. Simple to master, suitable for senior operators."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ts-170",
@@ -7718,7 +9119,22 @@
       "page": 99,
       "extra_pages": []
     },
-    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-170 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。"
+    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-170 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "解决高位加料难题,实现低位取料、高位翻转投料,颗粒料/常规物料通用,避免了人工高位作业的安全隐患。可搭配包装机、分装机等设备组合使用。",
+            "en": "Solves high-level feeding challenges by enabling low-level pickup and automatic high-level dumping. Suitable for granules and common materials, it eliminates the safety risks of manual elevated work and integrates seamlessly with packaging and filling machines"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ts-200",
@@ -7777,7 +9193,22 @@
       "page": 99,
       "extra_pages": []
     },
-    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-200 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。"
+    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-200 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "解决高位加料难题,实现低位取料、高位翻转投料,颗粒料/常规物料通用,避免了人工高位作业的安全隐患。可搭配包装机、分装机等设备组合使用。",
+            "en": "Solves high-level feeding challenges by enabling low-level pickup and automatic high-level dumping. Suitable for granules and common materials, it eliminates the safety risks of manual elevated work and integrates seamlessly with packaging and filling machines"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ts-240",
@@ -7836,7 +9267,22 @@
       "page": 99,
       "extra_pages": []
     },
-    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-240 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。"
+    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-240 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "解决高位加料难题,实现低位取料、高位翻转投料,颗粒料/常规物料通用,避免了人工高位作业的安全隐患。可搭配包装机、分装机等设备组合使用。",
+            "en": "Solves high-level feeding challenges by enabling low-level pickup and automatic high-level dumping. Suitable for granules and common materials, it eliminates the safety risks of manual elevated work and integrates seamlessly with packaging and filling machines"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ts-280",
@@ -7895,7 +9341,22 @@
       "page": 99,
       "extra_pages": []
     },
-    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-280 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。"
+    "notes": "页面大标题印 TS-170,参数表四列(TS-170/200/240/280)已拆为四条,本条取 TS-280 所在列;四条共用同一标题与产品优势。大斗尺寸印为 84x84cm。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "解决高位加料难题,实现低位取料、高位翻转投料,颗粒料/常规物料通用,避免了人工高位作业的安全隐患。可搭配包装机、分装机等设备组合使用。",
+            "en": "Solves high-level feeding challenges by enabling low-level pickup and automatic high-level dumping. Suitable for granules and common materials, it eliminates the safety risks of manual elevated work and integrates seamlessly with packaging and filling machines"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ts-z220",
@@ -7947,7 +9408,22 @@
       "page": 100,
       "extra_pages": []
     },
-    "notes": "页面大标题印 TS-Z220,参数表三列(TS-Z220/Z260/Z320)已拆为三条,本条取 TS-Z220 所在列;三条共用同一标题与产品优势。"
+    "notes": "页面大标题印 TS-Z220,参数表三列(TS-Z220/Z260/Z320)已拆为三条,本条取 TS-Z220 所在列;三条共用同一标题与产品优势。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "确保物料在进料、输送、卸料全过程中几乎无破损,显著降低产品损耗。集水平输送和垂直提升为一体,结构紧凑,节省空间,提升能力强,可搭配包装机、分装机等设备组合使用",
+            "en": "Ensures virtually no damage to materials throughout the entire feeding, conveying, and unloading process, significantly reducing product loss. Integrating horizontal conveying and vertical lifting, it features a compact structure, saves space, and boasts a strong lifting capacity. It can be seamlessly integrated with packaging and filling machines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ts-z260",
@@ -7999,7 +9475,22 @@
       "page": 100,
       "extra_pages": []
     },
-    "notes": "页面大标题印 TS-Z220,参数表三列(TS-Z220/Z260/Z320)已拆为三条,本条取 TS-Z260 所在列;三条共用同一标题与产品优势。"
+    "notes": "页面大标题印 TS-Z220,参数表三列(TS-Z220/Z260/Z320)已拆为三条,本条取 TS-Z260 所在列;三条共用同一标题与产品优势。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "确保物料在进料、输送、卸料全过程中几乎无破损,显著降低产品损耗。集水平输送和垂直提升为一体,结构紧凑,节省空间,提升能力强,可搭配包装机、分装机等设备组合使用",
+            "en": "Ensures virtually no damage to materials throughout the entire feeding, conveying, and unloading process, significantly reducing product loss. Integrating horizontal conveying and vertical lifting, it features a compact structure, saves space, and boasts a strong lifting capacity. It can be seamlessly integrated with packaging and filling machines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ts-z320",
@@ -8051,7 +9542,22 @@
       "page": 100,
       "extra_pages": []
     },
-    "notes": "页面大标题印 TS-Z220,参数表三列(TS-Z220/Z260/Z320)已拆为三条,本条取 TS-Z320 所在列;三条共用同一标题与产品优势。"
+    "notes": "页面大标题印 TS-Z220,参数表三列(TS-Z220/Z260/Z320)已拆为三条,本条取 TS-Z320 所在列;三条共用同一标题与产品优势。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "确保物料在进料、输送、卸料全过程中几乎无破损,显著降低产品损耗。集水平输送和垂直提升为一体,结构紧凑,节省空间,提升能力强,可搭配包装机、分装机等设备组合使用",
+            "en": "Ensures virtually no damage to materials throughout the entire feeding, conveying, and unloading process, significantly reducing product loss. Integrating horizontal conveying and vertical lifting, it features a compact structure, saves space, and boasts a strong lifting capacity. It can be seamlessly integrated with packaging and filling machines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "bxg-100",
@@ -8103,7 +9609,22 @@
       "page": 101,
       "extra_pages": []
     },
-    "notes": "页面大标题印 BXG-100,参数表三列(BXG-100/150/200)已拆为三条,本条取 BXG-100 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。"
+    "notes": "页面大标题印 BXG-100,参数表三列(BXG-100/150/200)已拆为三条,本条取 BXG-100 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,运输成品袋速度可自主调节,有效杜绝因出袋堵塞导致的人工频繁捡料问题。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines. The speed of transporting finished bags can be adjusted, to solve the problem of finished products blocking the packaging machine and saving labor and frequent picking of materials. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "bxg-150",
@@ -8148,7 +9669,22 @@
       "page": 101,
       "extra_pages": []
     },
-    "notes": "页面大标题印 BXG-100,参数表三列(BXG-100/150/200)已拆为三条,本条取 BXG-150 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。 缺失:整机尺寸(BXG-150 列空白)。"
+    "notes": "页面大标题印 BXG-100,参数表三列(BXG-100/150/200)已拆为三条,本条取 BXG-150 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。 缺失:整机尺寸(BXG-150 列空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,运输成品袋速度可自主调节,有效杜绝因出袋堵塞导致的人工频繁捡料问题。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines. The speed of transporting finished bags can be adjusted, to solve the problem of finished products blocking the packaging machine and saving labor and frequent picking of materials. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "bxg-200",
@@ -8200,7 +9736,22 @@
       "page": 101,
       "extra_pages": []
     },
-    "notes": "页面大标题印 BXG-100,参数表三列(BXG-100/150/200)已拆为三条,本条取 BXG-200 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。"
+    "notes": "页面大标题印 BXG-100,参数表三列(BXG-100/150/200)已拆为三条,本条取 BXG-200 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,运输成品袋速度可自主调节,有效杜绝因出袋堵塞导致的人工频繁捡料问题。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines. The speed of transporting finished bags can be adjusted, to solve the problem of finished products blocking the packaging machine and saving labor and frequent picking of materials. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xc-100",
@@ -8252,7 +9803,22 @@
       "page": 102,
       "extra_pages": []
     },
-    "notes": "页面大标题印 XC-100,参数表三列(XC-100/150/200)已拆为三条,本条取 XC-100 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。"
+    "notes": "页面大标题印 XC-100,参数表三列(XC-100/150/200)已拆为三条,本条取 XC-100 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,运输成品袋速度可自主调节,有效杜绝因出袋堵塞导致的人工频繁捡料问题。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines. The speed of transporting finished bags can be adjusted, to solve the problem of finished products blocking the packaging machine and saving labor and frequent picking of materials. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xc-150",
@@ -8297,7 +9863,22 @@
       "page": 102,
       "extra_pages": []
     },
-    "notes": "页面大标题印 XC-100,参数表三列(XC-100/150/200)已拆为三条,本条取 XC-150 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。 缺失:整机尺寸(XC-150 列空白)。"
+    "notes": "页面大标题印 XC-100,参数表三列(XC-100/150/200)已拆为三条,本条取 XC-150 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。 缺失:整机尺寸(XC-150 列空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,运输成品袋速度可自主调节,有效杜绝因出袋堵塞导致的人工频繁捡料问题。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines. The speed of transporting finished bags can be adjusted, to solve the problem of finished products blocking the packaging machine and saving labor and frequent picking of materials. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "xc-200",
@@ -8342,7 +9923,22 @@
       "page": 102,
       "extra_pages": []
     },
-    "notes": "页面大标题印 XC-100,参数表三列(XC-100/150/200)已拆为三条,本条取 XC-200 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。 缺失:整机尺寸(XC-200 列空白)。"
+    "notes": "页面大标题印 XC-100,参数表三列(XC-100/150/200)已拆为三条,本条取 XC-200 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。 缺失:整机尺寸(XC-200 列空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,运输成品袋速度可自主调节,有效杜绝因出袋堵塞导致的人工频繁捡料问题。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines. The speed of transporting finished bags can be adjusted, to solve the problem of finished products blocking the packaging machine and saving labor and frequent picking of materials. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "pt-100",
@@ -8387,7 +9983,22 @@
       "page": 103,
       "extra_pages": []
     },
-    "notes": "页面大标题印 PT-100,参数表三列(PT-100/150/200)已拆为三条,本条取 PT-100 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。离地高度三列合并为一格(按搭配机型定制)。缺失:整机尺寸(三列均空白)。"
+    "notes": "页面大标题印 PT-100,参数表三列(PT-100/150/200)已拆为三条,本条取 PT-100 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。离地高度三列合并为一格(按搭配机型定制)。缺失:整机尺寸(三列均空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,人工投放物料,自动输送灌装到包装机自动封袋。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines, manually feeding materials and automatically conveying and filling them to the packaging machine for automatic bag sealing. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "pt-150",
@@ -8432,7 +10043,22 @@
       "page": 103,
       "extra_pages": []
     },
-    "notes": "页面大标题印 PT-100,参数表三列(PT-100/150/200)已拆为三条,本条取 PT-150 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。离地高度三列合并为一格(按搭配机型定制)。缺失:整机尺寸(三列均空白)。"
+    "notes": "页面大标题印 PT-100,参数表三列(PT-100/150/200)已拆为三条,本条取 PT-150 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。离地高度三列合并为一格(按搭配机型定制)。缺失:整机尺寸(三列均空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,人工投放物料,自动输送灌装到包装机自动封袋。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines, manually feeding materials and automatically conveying and filling them to the packaging machine for automatic bag sealing. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "pt-200",
@@ -8477,7 +10103,22 @@
       "page": 103,
       "extra_pages": []
     },
-    "notes": "页面大标题印 PT-100,参数表三列(PT-100/150/200)已拆为三条,本条取 PT-200 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。离地高度三列合并为一格(按搭配机型定制)。缺失:整机尺寸(三列均空白)。"
+    "notes": "页面大标题印 PT-100,参数表三列(PT-100/150/200)已拆为三条,本条取 PT-200 所在列;三条共用同一标题与产品特性。栏目标题为'产品特性 Product Features'(用作产品优势)。离地高度三列合并为一格(按搭配机型定制)。缺失:整机尺寸(三列均空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "主要与各类立式包装机搭配使用,人工投放物料,自动输送灌装到包装机自动封袋。输送尺寸与款式全面支持非标定制,灵活适配产线。",
+            "en": "Mainly used in conjunction with various vertical packaging machines, manually feeding materials and automatically conveying and filling them to the packaging machine for automatic bag sealing. Conveyor sizes and styles fully support non-standard customization, flexibly adapting to production lines."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ds-300ml",
@@ -8557,7 +10198,22 @@
       "page": 105,
       "extra_pages": []
     },
-    "notes": "无产品优势文字;液体页电压与功率分两行(额定电压/总功率)。"
+    "notes": "无产品优势文字;液体页电压与功率分两行(额定电压/总功率)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "酱油、醋、水、牛奶、豆浆、果汁、饮料、食用油、汤水调料水、药液、料酒等无杂质纯液体专用",
+            "en": "Widely used in soy sauce, vinegar, water, milk, soy milk, juice, beverages, cooking oil, soup, seasoning liquid, medicinal liquid, cooking wine, and other pure liquids without impurities."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-300ml",
@@ -8637,7 +10293,22 @@
       "page": 106,
       "extra_pages": []
     },
-    "notes": "技术参数标题英文印为小写 'Technical parameter'。"
+    "notes": "技术参数标题英文印为小写 'Technical parameter'。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "只需设置灌装时间及袋长,自动定量抽液封包,省心高效率自动化工作,带一键清洗功能,操作简单",
+            "en": "Just set the filling time and bag length, automatic quantitative liquid extraction and packaging, worry free and efficient High efficiency, automated operation, with one-button cleaning function, simple to operate."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-100ml",
@@ -8724,7 +10395,22 @@
       "page": 107,
       "extra_pages": []
     },
-    "notes": "型号印为 DB-100ML,灌装范围仅 3-10ml(长条袋,符合长条装定位)。封口方式单格内中英混印。"
+    "notes": "型号印为 DB-100ML,灌装范围仅 3-10ml(长条袋,符合长条装定位)。封口方式单格内中英混印。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "集精准计量灌装、自动制袋封口与成品输出于一体,实现连续式生产,大幅提升效率。可根据需求配置打码机或光标等功能",
+            "en": "Integrating precise metering and filling, automatic bag making and sealing, and finished product output to achieve continuous production and greatly improve efficiency. It can be configured with functions such as coding machine or cursor according to needs."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ds-500ml",
@@ -8883,7 +10569,22 @@
     "source": {
       "page": 109,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "可自动完成液体的灌装、封口、打码等工序,提高生产效率,减少人工成本和误差。",
+            "en": "It can automatically complete liquid filling, sealing, coding and other processes, improve production efficiency, reduce labor costs and errors."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-1500ml",
@@ -8963,7 +10664,22 @@
       "page": 110,
       "extra_pages": []
     },
-    "notes": "中文名印为'大型液体机1500ML'(无'背封'二字),英文副标题含 Back Seal。可选配置:色带打码机 Ribbon coding machine、光标 Cursor、传送带 Conveyor belt、普通拉膜电机 Film pulling motor。"
+    "notes": "中文名印为'大型液体机1500ML'(无'背封'二字),英文副标题含 Back Seal。可选配置:色带打码机 Ribbon coding machine、光标 Cursor、传送带 Conveyor belt、普通拉膜电机 Film pulling motor。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "集精准计量灌装、自动制袋封口与成品输出于一体,实现连续式生产,大幅提升效率。可根据需求配置打码机或光标等功能",
+            "en": "Integrating precise metering and filling, automatic bag making and sealing, and finished product output to achieve continuous production and greatly improve efficiency. It can be configured with functions such as coding machine or cursor according to needs."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-200ml",
@@ -9043,7 +10759,35 @@
       "page": 111,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。"
+    "notes": "缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "气动系统输出力均匀,受电压波动影响小,灌装量精准、高效连续完成防滴灌装、封口等动作。",
+            "en": "The output force of the pneumatic system is uniform, less affected by voltage fluctuations, and the filling volume is precise, efficiently and continuously complete actions such as anti drip filling and sealing."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "酱油、醋、水、牛奶、豆浆、果汁、饮料、食用油、汤水调料水、药液、料酒等无杂质纯液体专用",
+            "en": "Widely used in soy sauce, vinegar, water, milk, soy milk, juice, beverages, cooking oil, soup, seasoning liquid, medicinal liquid, cooking wine, and other pure liquids without impurities."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-200ml",
@@ -9123,7 +10867,22 @@
       "page": 112,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。技术参数标题英文印为小写 'Technical parameter'。"
+    "notes": "缺失:整机重量(栏位空白)。技术参数标题英文印为小写 'Technical parameter'。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "纯液体专用,定量灌装、制袋封袋,自动完成\n可连袋不切断:在袋与袋之间仅留易撕线或连接点,实现连袋输出。",
+            "en": "Pure liquid specific, quantitative filling, bag making and sealing, automatic completion\nCan be connected without cutting: Bags can be connected without being cut, leaving only an easy-tear line or connection point between the bags, thus achieving continuous bag output."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-500ml",
@@ -9203,7 +10962,22 @@
       "page": 113,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。栏目标题英文印为单数 'Product Advantage'。可选配置:色带打码机 Ribbon coding machine、光标 Cursor、PLC触控屏电脑版 PLC touch screen、普通拉膜电机 Film pulling motor。"
+    "notes": "缺失:整机重量(栏位空白)。栏目标题英文印为单数 'Product Advantage'。可选配置:色带打码机 Ribbon coding machine、光标 Cursor、PLC触控屏电脑版 PLC touch screen、普通拉膜电机 Film pulling motor。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "通过灌装时间调节灌装容量,适用于各类纯液体产品。\n计量、灌装、制袋、封切自动完成,无需人工干预,\n气动高效省时不费力",
+            "en": "The filling capacity can be adjusted by filling time, suitable for various pure liquid products. Metering, filling, bag making, and sealing are all completed automatically without manual intervention; pneumatic operation is highly efficient, time-saving, and labor-saving."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-750ml",
@@ -9283,7 +11057,22 @@
       "page": 114,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。栏目标题英文印为单数 'Product Advantage'。"
+    "notes": "缺失:整机重量(栏位空白)。栏目标题英文印为单数 'Product Advantage'。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "纯液体专用,纯牛奶、汤汁、醋、酒精、水、食用油、果汁等,自动计量快速灌装,气动稳定高效,核心动力强",
+            "en": "Specifically designed for pure liquids, including milk, soup, vinegar, alcohol, water, cooking oil, and juice. It features automatic metering and rapid filling, stable and efficient pneumatic operation, and a powerful core motor."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-1500ml",
@@ -9363,7 +11152,22 @@
       "page": 115,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。印刷错误:精准度行英文标签印为'Bag length'(应为 Accuracy),按中文语义归 accuracy。栏目标题为'产品特性 Products Features'(用作产品优势)。可选配置:PLC触控屏电脑版 PLC control panel、铝支架款拉膜电机 Aluminum bracket pull film motor、普通拉膜电机 Film pulling motor。"
+    "notes": "缺失:整机重量(栏位空白)。印刷错误:精准度行英文标签印为'Bag length'(应为 Accuracy),按中文语义归 accuracy。栏目标题为'产品特性 Products Features'(用作产品优势)。可选配置:PLC触控屏电脑版 PLC control panel、铝支架款拉膜电机 Aluminum bracket pull film motor、普通拉膜电机 Film pulling motor。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "如需包装更大容量,可按需定制专属设备,电脑版操作可改PLC系统触控屏控制",
+            "en": "For larger packaging capacities, customized equipment can be provided. The computer board operation can be modified to a PLC system with touchscreen control."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kb-200ml",
@@ -9450,7 +11254,22 @@
       "page": 116,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。印刷错误:精准度行英文标签印为'Bag length'(应为 Accuracy),按中文语义归 accuracy。栏目标题为'产品特性 Products Features'(用作产品优势)。"
+    "notes": "缺失:整机重量(栏位空白)。印刷错误:精准度行英文标签印为'Bag length'(应为 Accuracy),按中文语义归 accuracy。栏目标题为'产品特性 Products Features'(用作产品优势)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "高速度连续生产,产能远高于手工分装,适用于食品调味品、饮料、日化、农资药液等多行业。",
+            "en": "Capable of high-speed continuous production, its production capacity greatly outperforms manual filling. Widely applicable to multiple industries such as food seasonings, beverages, daily chemicals and agricultural liquid pesticides."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "kb-c50ml",
@@ -9543,7 +11362,22 @@
       "/images/machines/kb-c50ml.webp",
       "/images/machines/extra/p118.webp"
     ],
-    "notes": "缺失:整机重量(栏位空白)。印刷错误:精准度行英文标签印为'Bag length'(应为 Accuracy),按中文语义归 accuracy。卷膜宽度中文值带'(固定一个尺寸)'备注,英文列无。栏目标题为'产品特性 Products Features'(用作产品优势)。p118 案例页归本机型。 p118 内容:'定制案例 Custom Solutions - Liquid Packaging Machine 液体机包装机',四例:(1)气动液体包装机包装长条装液体 Pneumatic liquid packaging machine, packaging long liquid strips;(2)包装2.5-5kg液体超大型气动液体机 Packaging 2.5-5kg liquid ultra large pneumatic liquid machine;(3)定制四边封&甩刀四面平切口 Customized four side seal bag & rotary cutter, four-sided flat cut;(4)多种液体混合包装,定制多头电脑板操控,多管道各自定量灌装 Multi-liquid mixing packaging, customized multi-head control panel, separate quantitative filling through multiple pipelines。"
+    "notes": "缺失:整机重量(栏位空白)。印刷错误:精准度行英文标签印为'Bag length'(应为 Accuracy),按中文语义归 accuracy。卷膜宽度中文值带'(固定一个尺寸)'备注,英文列无。栏目标题为'产品特性 Products Features'(用作产品优势)。p118 案例页归本机型。 p118 内容:'定制案例 Custom Solutions - Liquid Packaging Machine 液体机包装机',四例:(1)气动液体包装机包装长条装液体 Pneumatic liquid packaging machine, packaging long liquid strips;(2)包装2.5-5kg液体超大型气动液体机 Packaging 2.5-5kg liquid ultra large pneumatic liquid machine;(3)定制四边封&甩刀四面平切口 Customized four side seal bag & rotary cutter, four-sided flat cut;(4)多种液体混合包装,定制多头电脑板操控,多管道各自定量灌装 Multi-liquid mixing packaging, customized multi-head control panel, separate quantitative filling through multiple pipelines。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "产品袋型差异化,圆角、V型易撕口,适合果汁、原浆、漱口水、精华液、提升转化率。兼容PET/PE、复合膜、镀铝膜、铝箔膜等主流液体复合包装材料;",
+            "en": "Differentiated pouch shapes, rounded corners, V-shaped tear notches. Ideal for fruit juices, purees, mouthwash and essence liquids to boost conversion rates. Compatible with mainstream liquid composite packaging materials including PET/PE, composite films, aluminized films and aluminum foil films."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qx-ls100",
@@ -9630,7 +11464,22 @@
       "page": 119,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。封口方式的值只印中文(三边封 / 背封),英文值沿用中文。"
+    "notes": "缺失:整机重量(栏位空白)。封口方式的值只印中文(三边封 / 背封),英文值沿用中文。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+            "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-ls200ml",
@@ -9710,7 +11559,22 @@
       "page": 120,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。无封口方式行。"
+    "notes": "缺失:整机重量(栏位空白)。无封口方式行。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+            "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-ls200ml",
@@ -9790,7 +11654,22 @@
       "page": 121,
       "extra_pages": []
     },
-    "notes": "画册参数表标签与数值错位:从料斗容量行起数值整体下移一行(料斗容量行印±1ml,精准度行印5-20cm,卷膜宽度行印3-16cm,袋长范围行印220V,电压功率行印450W,整机尺寸行印57x127x145cm),料斗容量值缺失。按数值类型归位录入:±1ml=精准度,5-20cm=卷膜宽度,3-16cm=袋长范围,220V=电压,450W=总功率(参照同系列 QS-LS200ML 为 220V / 450W)。缺失:料斗容量、整机重量。电压与功率在画册里分占两行,已拆成 voltage 与 power 两条。本页印产品优势、无适用产品。"
+    "notes": "画册参数表标签与数值错位:从料斗容量行起数值整体下移一行(料斗容量行印±1ml,精准度行印5-20cm,卷膜宽度行印3-16cm,袋长范围行印220V,电压功率行印450W,整机尺寸行印57x127x145cm),料斗容量值缺失。按数值类型归位录入:±1ml=精准度,5-20cm=卷膜宽度,3-16cm=袋长范围,220V=电压,450W=总功率(参照同系列 QS-LS200ML 为 220V / 450W)。缺失:料斗容量、整机重量。电压与功率在画册里分占两行,已拆成 voltage 与 power 两条。本页印产品优势、无适用产品。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC触控屏幕易操作,气缸定量灌装、制袋、封口、切袋,可根据需求加配搅拌器、打码机、光标等功能",
+            "en": "The PLC control panel is easy to operate. It features cylinder-based quantitative filling, bag making, sealing, and bag cutting. Additional functions such as a mixer, coding machine, and cursor can be added as needed."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-ls500ml",
@@ -9870,7 +11749,22 @@
       "page": 122,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。页底有可选配置:加搅拌器 Vertical mixer、加压桶 Pressurized lid、保温桶 Insulated hopper、按键款电脑板 Keypad control panel。"
+    "notes": "缺失:整机重量(栏位空白)。页底有可选配置:加搅拌器 Vertical mixer、加压桶 Pressurized lid、保温桶 Insulated hopper、按键款电脑板 Keypad control panel。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+            "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-ls1000ml",
@@ -9950,7 +11844,22 @@
       "page": 123,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。"
+    "notes": "缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
+            "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-ls3000ml",
@@ -10190,7 +12099,22 @@
       "page": 125,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。画册英文标签 'Air requiremen' 为截断拼写。包装速度 30-50bags/min 照抄(明显高于同类机型,疑似笔误,未改)。"
+    "notes": "缺失:整机重量(栏位空白)。画册英文标签 'Air requiremen' 为截断拼写。包装速度 30-50bags/min 照抄(明显高于同类机型,疑似笔误,未改)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC触控屏幕易操作,气缸定量灌装、制袋、封口、切袋,可根据需求加配搅拌器、打码机、光标等功能",
+            "en": "PLC touch screen is easy to operate, piston quantitative filling, bag making, sealing and cutting. Can be configured with vertical mixer, ribbon coding machine, cursor and other functions as required."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "q4-ls200ml",
@@ -10270,7 +12194,22 @@
       "page": 126,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。画册气动需知英文标签印作 'Air requiremen'(截断拼写),已按 Air requirement 记录。"
+    "notes": "缺失:整机重量(栏位空白)。画册气动需知英文标签印作 'Air requiremen'(截断拼写),已按 Air requirement 记录。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "四重封边,防漏能力更强,酱料、药膏、面膜泥、护发膏等膏体小样包装,不易夹料渗漏,长途物流挤压不易爆袋,大幅降低次品率。",
+            "en": "Quad-seal for enhanced leakproof performance. Perfect for paste sachets including sauces, ointments, mask mud and hair cream. Stop material trapping & leakage, resist bag breakage in long haul transport, cut reject rates significantly."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qjl-ls200ml",
@@ -10370,7 +12309,22 @@
       "/images/machines/qjl-ls200ml.webp",
       "/images/machines/extra/p128.webp"
     ],
-    "notes": "p128 为'定制案例 立式膏体包装机'案例页(葫芦口袋型、四边封连袋不切断、做加压盖辅助流动性差物料灌装/异型袋包装、PLC系统加配搅拌器),无参数表,归本机型。灌装范围 3-100ml 与型号名 200ML 不一致,照抄。"
+    "notes": "p128 为'定制案例 立式膏体包装机'案例页(葫芦口袋型、四边封连袋不切断、做加压盖辅助流动性差物料灌装/异型袋包装、PLC系统加配搅拌器),无参数表,归本机型。灌装范围 3-100ml 与型号名 200ML 不一致,照抄。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "夹持和拉伸装置是核心部件,使封口更服贴袋子更美观,可实现对膏体物料的均匀灌装,每一袋标准化。",
+            "en": "The clamping and stretching mechanism is a core component designed to ensure a neat, wrinkle-free seal and a visually appealing bag appearance. It enables uniform filling of viscous materials, ensuring standardization for every single bag."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qx-ws100ml",
@@ -10457,7 +12411,22 @@
       "page": 129,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。'适用产品'标题下印的文字实为产品优势性质内容,按画册位置录入 application。"
+    "notes": "缺失:整机重量(栏位空白)。'适用产品'标题下印的文字实为产品优势性质内容,按画册位置录入 application。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "整机体积紧凑占地小,定量自动完成制袋、灌装、封口、切断,1名工人看管多台机器、收集成品即可,大幅替代人工分装,降低长期用工成本。",
+            "en": "Compact footprint. Automatically forms bags, fills, seals and cuts. A single worker can manage multiple units merely for finished product collection, greatly replacing manual packaging and lowering long-term labor expenses."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-ws200ml",
@@ -10537,7 +12506,22 @@
       "page": 130,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。"
+    "notes": "缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "辣椒油、蒜蓉酱、火锅底料、豆瓣酱、果酱、辣椒酱、水、酱油、凝胶、番茄酱等酱料、膏体、液体一机多用",
+            "en": "Widely used in chili oil, garlic paste, hot pot base, broad bean paste, jam, chili sauce, water, soy sauce, gel, tomato paste and more."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-ws200ml",
@@ -10617,7 +12601,22 @@
       "page": 131,
       "extra_pages": []
     },
-    "notes": "缺失:整机重量(栏位空白)。"
+    "notes": "缺失:整机重量(栏位空白)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "PLC触控屏幕易操作,料斗带搅拌功能速度可调,气缸定量、防滴漏灌装、制袋、封口、切袋自动完成",
+            "en": "PLC touch screen is easy to operate, hopper with an adjustable-speed mixer, automatically completes piston filling (anti-drip), bag making, sealing and cutting."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qb-ws500ml",
@@ -11009,7 +13008,35 @@
       "/images/machines/qg-3t100.webp",
       "/images/machines/extra/p135.webp"
     ],
-    "notes": "p135 为'按需定制 水平给袋式包装机 Pre-made Bag Packaging Machine'简介页(产品特性、主攻三大类产品、成品袋展示图),无参数表,归本机型;其 advantages/application 取自 p135。本页三个型号共用一张表,上方两张机器图:左图对应 QG-3T100,右图对应 QG-3T500/QG-3T999(依外形推测)。精准度英文列无单独英文,沿用中文'(因物料而异)'。 整机尺寸只印一个值 120x100x187cm(跨列),按图录入于 QG-3T100,QG-3T500/QG-3T999 无独立尺寸值,缺失:整机尺寸(未印)。气动需知跨三列共用一值。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+    "notes": "p135 为'按需定制 水平给袋式包装机 Pre-made Bag Packaging Machine'简介页(产品特性、主攻三大类产品、成品袋展示图),无参数表,归本机型;其 advantages/application 取自 p135。本页三个型号共用一张表,上方两张机器图:左图对应 QG-3T100,右图对应 QG-3T500/QG-3T999(依外形推测)。精准度英文列无单独英文,沿用中文'(因物料而异)'。 整机尺寸只印一个值 120x100x187cm(跨列),按图录入于 QG-3T100,QG-3T500/QG-3T999 无独立尺寸值,缺失:整机尺寸(未印)。气动需知跨三列共用一值。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品优势",
+          "en": "Product Advantages"
+        },
+        "items": [
+          {
+            "zh": "全程自动完成取袋、开袋、计量、充填、封口、成品输出,无需人工干预。兼容预制袋、自立袋、真空袋等多种袋型,可快速切换不同规格。封口方式多样,密封牢固,可定制抽真空、充气等功能,有效锁鲜、防潮、防氧化,延长保质期。配置可视安全防护门、避免操作事故;可联动喷码等设备,满足追溯与合规要求。",
+            "en": "The entire process, including bag picking, bag opening, metering, filling, sealing, and finished product output, is completed automatically without manual intervention. Compatible with various pre-made bag types such as stand-up pouches and vacuum bags, enabling quick switching between different specifications. Multiple sealing methods are available with firm sealing performance. Customizable functions like vacuum pumping and gas flushing are offered to effectively retain freshness, prevent moisture and oxidation, and extend shelf life. Equipped with visible safety protective doors to avoid operational accidents; can be linked with coding equipment to meet traceability and compliance requirements."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "颗粒条形产品:五谷、坚果、茶叶、膨化零食、饲料、化肥、药材、红枣、瓜子、五金、饰品、咖啡豆、枸杞等;纯粉末产品:面粉、淀粉、玉米粉、豆粉、奶粉、咖啡粉、奶茶粉、益生菌粉、工业粉末、抹茶粉等;膏液产品:番茄酱、沙拉酱、果酱、凝胶、酱料、洗涤剂、水、花生酱、芝麻酱、蚝油等",
+            "en": "Granular & strip products: grains, nuts, tea, puffed snacks, pet food, chemical fertilizer, medicinal herbs, red dates, melon seeds, hardware, accessories, coffee beans, wolfberries, etc. Powder products: flour, starch, corn powder, soybean powder, milk powder, coffee powder, milk tea powder, probiotic powder, industrial powder, matcha powder, etc. Paste & liquid products: tomato paste, salad dressing, jam, gel, sauces, laundry detergent, water, peanut butter, sesame paste, oyster sauce, etc."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qg-3t500",
@@ -11214,7 +13241,22 @@
       "page": 137,
       "extra_pages": []
     },
-    "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+    "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "螺杆计量装置通过螺杆的旋转,精准计量,通过吸盘从储袋库中精准抓取预制袋,水平运送开袋充填,高频封袋自动化完成",
+            "en": "The auger metering device ensures precise measurement through auger rotation. The system uses suction cups to accurately pick up pre-made bags from the bag magazine, transports them horizontally for opening and filling, and completes the process with heat sealing automatically."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qg-lg200",
@@ -11280,7 +13322,22 @@
       "page": 137,
       "extra_pages": []
     },
-    "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+    "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "螺杆计量装置通过螺杆的旋转,精准计量,通过吸盘从储袋库中精准抓取预制袋,水平运送开袋充填,高频封袋自动化完成",
+            "en": "The auger metering device ensures precise measurement through auger rotation. The system uses suction cups to accurately pick up pre-made bags from the bag magazine, transports them horizontally for opening and filling, and completes the process with heat sealing automatically."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qg-lg500",
@@ -11346,7 +13403,22 @@
       "page": 137,
       "extra_pages": []
     },
-    "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+    "notes": "整机尺寸只印一个值 120x84x174cm(跨列),按图录入于 QG-LG100;QG-LG200/QG-LG500 缺失:整机尺寸(未印)。气动需知跨三列共用一值,英文标签印作 'Air requiremen'(截断拼写)。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "螺杆计量装置通过螺杆的旋转,精准计量,通过吸盘从储袋库中精准抓取预制袋,水平运送开袋充填,高频封袋自动化完成",
+            "en": "The auger metering device ensures precise measurement through auger rotation. The system uses suction cups to accurately pick up pre-made bags from the bag magazine, transports them horizontally for opening and filling, and completes the process with heat sealing automatically."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qg-1000ml",
@@ -11412,7 +13484,22 @@
       "page": 138,
       "extra_pages": []
     },
-    "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+    "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "膏体灌装通过气缸调节灌装量,智能控制系统,可实现取袋、开袋、灌装、封口、输出等全流程自动化操作,有效提高生产效率,降低人工成本",
+            "en": "Paste filling volume is adjusted via pneumatic cylinders, and the intelligent control system automates the entire process—from bag picking, opening, filling, and sealing to final output. This effectively boosts production efficiency and reduces labor costs."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qg-200ml",
@@ -11485,7 +13572,22 @@
       "page": 138,
       "extra_pages": []
     },
-    "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+    "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "膏体灌装通过气缸调节灌装量,智能控制系统,可实现取袋、开袋、灌装、封口、输出等全流程自动化操作,有效提高生产效率,降低人工成本",
+            "en": "Paste filling volume is adjusted via pneumatic cylinders, and the intelligent control system automates the entire process—from bag picking, opening, filling, and sealing to final output. This effectively boosts production efficiency and reduces labor costs."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qg-500ml",
@@ -11551,7 +13653,22 @@
       "page": 138,
       "extra_pages": []
     },
-    "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)"
+    "notes": "整机尺寸只印一个值 120x84x163cm(跨列),按图录入于 QG-200ML;QG-500ML/QG-1000ML 缺失:整机尺寸(未印)。气动需知跨三列共用一值。型号印作小写 'QG-200ml/QG-500ml/QG-1000ml',按要求转为大写。三个型号共用页面上的一张机器图。表下注:因机器外形和功能在不断的升级中,以上参数仅供参考,请以实际机型为准!(Note: Due to the continuous upgrading of the machine's appearance and functions, the above parameters are for reference only. Please refer to the actual model for accuracy!)",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "膏体灌装通过气缸调节灌装量,智能控制系统,可实现取袋、开袋、灌装、封口、输出等全流程自动化操作,有效提高生产效率,降低人工成本",
+            "en": "Paste filling volume is adjusted via pneumatic cylinders, and the intelligent control system automates the entire process—from bag picking, opening, filling, and sealing to final output. This effectively boosts production efficiency and reduces labor costs."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-340",
@@ -11630,7 +13747,22 @@
       "/images/machines/dz-340.webp",
       "/images/machines/extra/p139.webp"
     ],
-    "notes": "p139 为'支持定制 商用真空机 Commercial Vacuum Machine'简介页(采用大功率真空泵、真空度可达-0.1MPa;可包装肉类/海鲜/干货/卤料/预制菜等;可调真空时间/封口时间/日期打印;不挑袋子:光面袋/阴阳袋/铝箔袋/纹路袋/手提袋/米砖袋;定制范围:加深真空仓/加高机身/304材质),无参数表,归本机型。该简介页的通用特性文字未录入本条 advantages。"
+    "notes": "p139 为'支持定制 商用真空机 Commercial Vacuum Machine'简介页(采用大功率真空泵、真空度可达-0.1MPa;可包装肉类/海鲜/干货/卤料/预制菜等;可调真空时间/封口时间/日期打印;不挑袋子:光面袋/阴阳袋/铝箔袋/纹路袋/手提袋/米砖袋;定制范围:加深真空仓/加高机身/304材质),无参数表,归本机型。该简介页的通用特性文字未录入本条 advantages。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "台式设计体积小、放置桌面工作,移动搬运方便,适合小商铺、小型工厂及家庭厨房使用。机身不锈钢材质,搭配透明有机玻璃真空盖,易清洁又能直观观察包装过程,本款主要专攻各种干货产品。",
+            "en": "This tabletop model features a small footprint, making it ideal for placement on countertops. Its lightweight construction allows for easy movement and transportation, making it perfect for small shops, home kitchens, and small-scale factories. Constructed from stainless steel with a transparent acrylic vacuum lid, the machine is easy to clean while providing a clear view of the packaging process. This model is specialized in packaging various dry goods."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-390-flat-980w",
@@ -11703,7 +13835,22 @@
       "page": 141,
       "extra_pages": []
     },
-    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "可视真空仓,能够直观地观察抽真空和封口过程状态。及时发现可能出现的问题,如袋子未放好、抽气不充分等。",
+            "en": "The transparent chamber allows for direct observation of the vacuuming and sealing process. This enables users to promptly identify potential issues, such as misaligned bags or insufficient vacuum levels."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-390-flat-1500w",
@@ -11776,7 +13923,22 @@
       "page": 141,
       "extra_pages": []
     },
-    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "可视真空仓,能够直观地观察抽真空和封口过程状态。及时发现可能出现的问题,如袋子未放好、抽气不充分等。",
+            "en": "The transparent chamber allows for direct observation of the vacuuming and sealing process. This enables users to promptly identify potential issues, such as misaligned bags or insufficient vacuum levels."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-390-convex-980w",
@@ -11849,7 +14011,22 @@
       "page": 142,
       "extra_pages": []
     },
-    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空32cm长度以内产品,如:腊肉、烧鸡、烤鸭、排骨、海鲜、熟玉米等干湿产品,最大袋子可用35x40cm内,小袋一次多袋。",
+            "en": "This model can vacuum products up to 32cm in length, suitable for wet and dry items like cured meat, roast chicken, duck, ribs, seafood, and cooked corn. It accommodates bags up to 35x40cm, and multiple smaller bags can be sealed simultaneously."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-390-convex-1500w",
@@ -11922,7 +14099,22 @@
       "page": 142,
       "extra_pages": []
     },
-    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。"
+    "notes": "型号重复:p141(平盖)与 p142(凸盖)均印 DZ-390。本页参数表有两列(980W/1500W),已拆成两条记录。两列真空泵印为 2.0LX2 与 20L,照抄(疑似第二列漏写 X2/笔误)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空32cm长度以内产品,如:腊肉、烧鸡、烤鸭、排骨、海鲜、熟玉米等干湿产品,最大袋子可用35x40cm内,小袋一次多袋。",
+            "en": "This model can vacuum products up to 32cm in length, suitable for wet and dry items like cured meat, roast chicken, duck, ribs, seafood, and cooked corn. It accommodates bags up to 35x40cm, and multiple smaller bags can be sealed simultaneously."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-400",
@@ -12068,7 +14260,22 @@
       "page": 144,
       "extra_pages": []
     },
-    "notes": "总功率印 580W 而同系列更小的 DZ-400 为 1800W,照抄(疑似笔误,未改)。"
+    "notes": "总功率印 580W 而同系列更小的 DZ-400 为 1800W,照抄(疑似笔误,未改)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空40cm长度以内产品,如:腊肉、烧鸡、烤鸭、排骨、海鲜、熟玉米等干湿产品,大米5kg手提袋一次1袋,最大袋子可用40x50cm内,小袋一次多袋。",
+            "en": "This model can vacuum products up to 40cm in length, suitable for wet and dry items like cured meat, roast chicken, duck, ribs, seafood, and cooked corn. It can vacuum one 5kg rice bag (with handles) at a time, or accommodate bags up to 40x50cm. Multiple smaller bags can be sealed simultaneously."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-520",
@@ -12214,7 +14421,22 @@
       "page": 146,
       "extra_pages": []
     },
-    "notes": "型号印刷不一致:中文标题印 DZ-620/620型真空机,英文副标题印 DZ-560 Vacuum Machine;按 DZ-620 录入,name_en 保留画册原印的 DZ-560。参数表有两列,两列仅真空泵与重量不同(20L 与 20LX2;87.8kg 与 103.8kg),拆成两条记录;画册两列未印列标题。页面有'实拍真空视频-咨询查看'说明。"
+    "notes": "型号印刷不一致:中文标题印 DZ-620/620型真空机,英文副标题印 DZ-560 Vacuum Machine;按 DZ-620 录入,name_en 保留画册原印的 DZ-560。参数表有两列,两列仅真空泵与重量不同(20L 与 20LX2;87.8kg 与 103.8kg),拆成两条记录;画册两列未印列标题。页面有'实拍真空视频-咨询查看'说明。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空60cm长度以内产品,如:羊腿、腊肉、烤鹅、排骨、鱼、莲藕等干湿产品,大米10kg手提袋一次1袋,最大袋子可用60x70cm内,小袋一次多袋。",
+            "en": "This model can vacuum products up to 60cm in length, suitable for wet and dry items like lamb legs, cured meat, roast geese, ribs, fish, and lotus roots. It can vacuum one 10kg rice bag (with handles) at a time, or accommodate bags up to 60x70cm. Multiple smaller bags can be sealed simultaneously."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-620-double-pump-20lx2",
@@ -12287,7 +14509,22 @@
       "page": 146,
       "extra_pages": []
     },
-    "notes": "型号印刷不一致:中文标题印 DZ-620/620型真空机,英文副标题印 DZ-560 Vacuum Machine;按 DZ-620 录入,name_en 保留画册原印的 DZ-560。参数表有两列,两列仅真空泵与重量不同(20L 与 20LX2;87.8kg 与 103.8kg),拆成两条记录;画册两列未印列标题。页面有'实拍真空视频-咨询查看'说明。"
+    "notes": "型号印刷不一致:中文标题印 DZ-620/620型真空机,英文副标题印 DZ-560 Vacuum Machine;按 DZ-620 录入,name_en 保留画册原印的 DZ-560。参数表有两列,两列仅真空泵与重量不同(20L 与 20LX2;87.8kg 与 103.8kg),拆成两条记录;画册两列未印列标题。页面有'实拍真空视频-咨询查看'说明。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空60cm长度以内产品,如:羊腿、腊肉、烤鹅、排骨、鱼、莲藕等干湿产品,大米10kg手提袋一次1袋,最大袋子可用60x70cm内,小袋一次多袋。",
+            "en": "This model can vacuum products up to 60cm in length, suitable for wet and dry items like lamb legs, cured meat, roast geese, ribs, fish, and lotus roots. It can vacuum one 10kg rice bag (with handles) at a time, or accommodate bags up to 60x70cm. Multiple smaller bags can be sealed simultaneously."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-720",
@@ -12359,7 +14596,22 @@
     "source": {
       "page": 147,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "商用大型机,提高产量,生鲜、肉类、干货均可真空。小袋23x35cm一次真空6袋,大袋70x70cm一次1袋。",
+            "en": "This heavy-duty commercial machine significantly boosts productivity. It is suitable for vacuum sealing fresh produce, meat, and dry goods. It offers flexible capacity: vacuum seal 6 small bags (23x35cm) simultaneously or 1 large bag (70x70cm) per cycle."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-820",
@@ -12432,7 +14684,22 @@
       "page": 148,
       "extra_pages": []
     },
-    "notes": "整机尺寸印 76x87x76cm,与 DZ-720 相同,而真空室更大,照抄(疑似与 DZ-720 重复的笔误,未改)。"
+    "notes": "整机尺寸印 76x87x76cm,与 DZ-720 相同,而真空室更大,照抄(疑似与 DZ-720 重复的笔误,未改)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "干湿两用真空密封,广泛适用各行业,小袋20x35cm一次真空8袋,大袋80x70cm一次1袋",
+            "en": "Versatile across industries, this machine handles both wet and dry applications. It offers flexible capacity: vacuum seal 8 small bags (20x35cm) simultaneously or 1 large bag (80x70cm) per cycle."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-850",
@@ -12505,7 +14772,22 @@
       "page": 149,
       "extra_pages": []
     },
-    "notes": "封口长度印 52cmx2 但真空室长边 70cm,照抄(明显偏小,疑似笔误,未改)。"
+    "notes": "封口长度印 52cmx2 但真空室长边 70cm,照抄(明显偏小,疑似笔误,未改)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空长度70cm内的产品 25x40cm一次真空4袋 大袋50x80cm一次1袋",
+            "en": "This model can vacuum products up to 70cm in length. Vacuum seal 4 bags of 25x40cm at once. Vacuum seal 1 bag of 50x80cm at once."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-950",
@@ -12577,7 +14859,22 @@
     "source": {
       "page": 150,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空长度80cm内的产品 30x45cm一次真空4袋 大袋60x90cm一次1袋",
+            "en": "This model can vacuum products up to 80cm in length. Vacuum seal 4 bags of 30x45cm at once. Vacuum seal 1 bag of 60x90cm at once."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-1050",
@@ -12650,7 +14947,22 @@
       "page": 151,
       "extra_pages": []
     },
-    "notes": "整机尺寸印 86x66x76cm,与真空室 90x54x12cm 的长度不相称(整机宽度小于真空室长度),照抄(疑似笔误,未改)。"
+    "notes": "整机尺寸印 86x66x76cm,与真空室 90x54x12cm 的长度不相称(整机宽度小于真空室长度),照抄(疑似笔误,未改)。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "单室4根封口条,一次可摆放多排小袋产品,批量真空包装,提速降本规模化生产。前后90cm长或左右52cm长封口条可设单独使用。",
+            "en": "This single-chamber model has 4 seal bars, can vacuum multiple rows of small bags at once. This significantly speeds up production and reduces costs, making it ideal for large-scale operations. The seal bars can be used independently: either the front/back bars (90cm) or the left/right bars (52cm)."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "dz-1300",
@@ -12722,7 +15034,22 @@
     "source": {
       "page": 152,
       "extra_pages": []
-    }
+    },
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "适用产品",
+          "en": "Applications"
+        },
+        "items": [
+          {
+            "zh": "本款可真空120cm长度以内产品,如带鱼、火腿、全羊、等各类较长产品,大袋可用50x130cm,小袋25x65cm可一次真空4袋。",
+            "en": "This model can vacuum products up to 120cm in length, suitable for large items like belt fish, hams, and whole lambs. It accommodates bags up to 50x130cm, or vacuum seal 4 bags of 25x65cm at once."
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mz-380-980w",
@@ -12795,7 +15122,39 @@
       "page": 153,
       "extra_pages": []
     },
-    "notes": "参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(39kg 与 40.5kg)不同,拆成两条记录;画册两列未印列标题。"
+    "notes": "参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(39kg 与 40.5kg)不同,拆成两条记录;画册两列未印列标题。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "大米、杂粮等颗粒状物料包装成砖形,通过搭配模具抽真空包装后,具有保鲜、防潮、防变质等效果,且便于仓储运输。",
+            "en": "Ideal for packaging granular materials such as rice and grains into brick shapes. When used with specialized molds, the vacuum packaging offers excellent freshness preservation, moisture resistance, and anti-deterioration properties, while also making storage and transportation more efficient."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "真空数量",
+          "en": "Vacuum Capacity"
+        },
+        "items": [
+          {
+            "zh": "大米0.5kg-1kg一次真空6袋",
+            "en": "Rice Bags (0.5kg - 1kg): 6 bags at once"
+          },
+          {
+            "zh": "大米2.5kg-5kg一次真空2袋",
+            "en": "Rice Bags (2.5kg - 5kg): 2 bags at once"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mz-380-1800w",
@@ -12868,7 +15227,39 @@
       "page": 153,
       "extra_pages": []
     },
-    "notes": "参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(39kg 与 40.5kg)不同,拆成两条记录;画册两列未印列标题。"
+    "notes": "参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(39kg 与 40.5kg)不同,拆成两条记录;画册两列未印列标题。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "产品特性",
+          "en": "Product Features"
+        },
+        "items": [
+          {
+            "zh": "大米、杂粮等颗粒状物料包装成砖形,通过搭配模具抽真空包装后,具有保鲜、防潮、防变质等效果,且便于仓储运输。",
+            "en": "Ideal for packaging granular materials such as rice and grains into brick shapes. When used with specialized molds, the vacuum packaging offers excellent freshness preservation, moisture resistance, and anti-deterioration properties, while also making storage and transportation more efficient."
+          }
+        ]
+      },
+      {
+        "kind": "text",
+        "title": {
+          "zh": "真空数量",
+          "en": "Vacuum Capacity"
+        },
+        "items": [
+          {
+            "zh": "大米0.5kg-1kg一次真空6袋",
+            "en": "Rice Bags (0.5kg - 1kg): 6 bags at once"
+          },
+          {
+            "zh": "大米2.5kg-5kg一次真空2袋",
+            "en": "Rice Bags (2.5kg - 5kg): 2 bags at once"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mz-680-980w",
@@ -12941,7 +15332,34 @@
       "page": 154,
       "extra_pages": []
     },
-    "notes": "型号印刷不一致:标题印 DZ-680(中文标题 680型米砖真空机),英文副标题印 MZ-680 Rice Brick Vacuum Machine;按图中大标题印的 DZ-680 录入(page_index 为 MZ-680,系列同为 MZ 米砖机,建议复核后统一为 MZ-680)。本页文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(66kg 与 68.4kg)不同,拆成两条记录;画册两列未印列标题。"
+    "notes": "型号印刷不一致:标题印 DZ-680(中文标题 680型米砖真空机),英文副标题印 MZ-680 Rice Brick Vacuum Machine;按图中大标题印的 DZ-680 录入(page_index 为 MZ-680,系列同为 MZ 米砖机,建议复核后统一为 MZ-680)。本页文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(66kg 与 68.4kg)不同,拆成两条记录;画册两列未印列标题。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "真空数量",
+          "en": "Vacuum Capacity"
+        },
+        "items": [
+          {
+            "zh": "大米0.5kg-1kg一次真空10袋",
+            "en": "Rice Bags (0.5kg - 1kg): 10 bags at once"
+          },
+          {
+            "zh": "大米2.5kg一次真空6袋",
+            "en": "Rice Bags (2.5kg): 6 bags at once"
+          },
+          {
+            "zh": "大米5kg一次真空4袋",
+            "en": "Rice Bags (5kg): 4 bags at once"
+          },
+          {
+            "zh": "也可真空茶叶、坚果、肉类、生鲜等产品",
+            "en": "Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mz-680-1800w",
@@ -13014,7 +15432,34 @@
       "page": 154,
       "extra_pages": []
     },
-    "notes": "型号印刷不一致:标题印 DZ-680(中文标题 680型米砖真空机),英文副标题印 MZ-680 Rice Brick Vacuum Machine;按图中大标题印的 DZ-680 录入(page_index 为 MZ-680,系列同为 MZ 米砖机,建议复核后统一为 MZ-680)。本页文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(66kg 与 68.4kg)不同,拆成两条记录;画册两列未印列标题。"
+    "notes": "型号印刷不一致:标题印 DZ-680(中文标题 680型米砖真空机),英文副标题印 MZ-680 Rice Brick Vacuum Machine;按图中大标题印的 DZ-680 录入(page_index 为 MZ-680,系列同为 MZ 米砖机,建议复核后统一为 MZ-680)。本页文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(980W/1800W),两列仅总功率、真空泵(2.0LX2 与 20L)、整机重量(66kg 与 68.4kg)不同,拆成两条记录;画册两列未印列标题。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "真空数量",
+          "en": "Vacuum Capacity"
+        },
+        "items": [
+          {
+            "zh": "大米0.5kg-1kg一次真空10袋",
+            "en": "Rice Bags (0.5kg - 1kg): 10 bags at once"
+          },
+          {
+            "zh": "大米2.5kg一次真空6袋",
+            "en": "Rice Bags (2.5kg): 6 bags at once"
+          },
+          {
+            "zh": "大米5kg一次真空4袋",
+            "en": "Rice Bags (5kg): 4 bags at once"
+          },
+          {
+            "zh": "也可真空茶叶、坚果、肉类、生鲜等产品",
+            "en": "Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mz-880",
@@ -13087,7 +15532,34 @@
       "page": 155,
       "extra_pages": []
     },
-    "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。"
+    "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "真空数量",
+          "en": "Vacuum Capacity"
+        },
+        "items": [
+          {
+            "zh": "大米0.5kg-1kg一次真空12袋",
+            "en": "Rice Bags (0.5kg - 1kg): 12 bags at once"
+          },
+          {
+            "zh": "大米2.5kg一次真空8袋",
+            "en": "Rice Bags (2.5kg): 8 bags at once"
+          },
+          {
+            "zh": "大米5kg一次真空6袋",
+            "en": "Rice Bags (5kg): 6 bags at once"
+          },
+          {
+            "zh": "也可真空茶叶、坚果、肉类、生鲜等产品",
+            "en": "Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mz-1100-1800w",
@@ -13160,7 +15632,34 @@
       "page": 156,
       "extra_pages": []
     },
-    "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(1800W/2900W),两列仅总功率、真空泵(20L 与 20LX2)、整机重量不同,拆成两条记录;画册未印列标题。"
+    "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(1800W/2900W),两列仅总功率、真空泵(20L 与 20LX2)、整机重量不同,拆成两条记录;画册未印列标题。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "真空数量",
+          "en": "Vacuum Capacity"
+        },
+        "items": [
+          {
+            "zh": "大米0.5kg-1kg一次真空16袋",
+            "en": "Rice Bags (0.5kg - 1kg): 16 bags at once"
+          },
+          {
+            "zh": "大米2.5kg一次真空10袋",
+            "en": "Rice Bags (2.5kg): 10 bags at once"
+          },
+          {
+            "zh": "大米5kg一次真空8袋",
+            "en": "Rice Bags (5kg): 8 bags at once"
+          },
+          {
+            "zh": "也可真空茶叶、坚果、肉类、生鲜等产品",
+            "en": "Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "mz-1100-2900w",
@@ -13233,6 +15732,33 @@
       "page": 156,
       "extra_pages": []
     },
-    "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(1800W/2900W),两列仅总功率、真空泵(20L 与 20LX2)、整机重量不同,拆成两条记录;画册未印列标题。第二列整机重量画册印作 117.4g,明显单位笔误,已修正为 117.4kg。"
+    "notes": "文字块标题为'真空数量 Vacuum capacity',内容录入 advantages 栏。参数表有两列(1800W/2900W),两列仅总功率、真空泵(20L 与 20LX2)、整机重量不同,拆成两条记录;画册未印列标题。第二列整机重量画册印作 117.4g,明显单位笔误,已修正为 117.4kg。",
+    "sections": [
+      {
+        "kind": "text",
+        "title": {
+          "zh": "真空数量",
+          "en": "Vacuum Capacity"
+        },
+        "items": [
+          {
+            "zh": "大米0.5kg-1kg一次真空16袋",
+            "en": "Rice Bags (0.5kg - 1kg): 16 bags at once"
+          },
+          {
+            "zh": "大米2.5kg一次真空10袋",
+            "en": "Rice Bags (2.5kg): 10 bags at once"
+          },
+          {
+            "zh": "大米5kg一次真空8袋",
+            "en": "Rice Bags (5kg): 8 bags at once"
+          },
+          {
+            "zh": "也可真空茶叶、坚果、肉类、生鲜等产品",
+            "en": "Also suitable for vacuum packaging tea, nuts, meat, fresh produce, etc"
+          }
+        ]
+      }
+    ]
   }
 ]

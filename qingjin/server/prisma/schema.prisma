@@ -20,6 +20,11 @@ enum MachineStatus {
   HIDDEN
 }
 
+enum SectionKind {
+  TEXT
+  GALLERY
+}
+
 enum VideoStatus {
   UPLOADING
   PROCESSING
@@ -116,6 +121,7 @@ model Machine {
   updatedAt     DateTime       @updatedAt
   params        MachineParam[]
   images        MachineImage[]
+  sections      MachineSection[]
   videoId       String?
   video         Video?         @relation(fields: [videoId], references: [id], onDelete: SetNull)
 
@@ -140,6 +146,40 @@ model MachineParam {
   @@index([machineId, sort])
 }
 
+/// A titled block on the machine page: advantages, features, applications, product display, custom cases...
+/// TEXT holds bullet lines; GALLERY holds pictures with captions.
+model MachineSection {
+  id        String            @id @default(cuid())
+  machineId String
+  machine   Machine           @relation(fields: [machineId], references: [id], onDelete: Cascade)
+  kind      SectionKind
+  titleZh   String
+  titleEn   String
+  /// Optional intro paragraph shown under the title (e.g. the text beside custom-case pictures).
+  descZh    String?
+  descEn    String?
+  sort      Int               @default(0)
+  items     MachineSectionItem[]
+
+  @@index([machineId, sort])
+}
+
+model MachineSectionItem {
+  id        String         @id @default(cuid())
+  sectionId String
+  section   MachineSection @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  /// TEXT: the line itself. GALLERY: the caption (may be empty).
+  textZh    String         @default("")
+  textEn    String         @default("")
+  /// GALLERY only. Restrict keeps a picture from being deleted while a page still shows it.
+  mediaId   String?
+  media     Media?         @relation(fields: [mediaId], references: [id], onDelete: Restrict)
+  sort      Int            @default(0)
+
+  @@index([sectionId, sort])
+  @@index([mediaId])
+}
+
 model Media {
   id           String         @id @default(cuid())
   path         String         @unique
@@ -152,6 +192,7 @@ model Media {
   usage        String         @default("machine")
   createdAt    DateTime       @default(now())
   machineImages MachineImage[]
+  sectionItems  MachineSectionItem[]
 }
 
 model MachineImage {

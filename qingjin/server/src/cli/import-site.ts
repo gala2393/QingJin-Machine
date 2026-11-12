@@ -117,6 +117,25 @@ async function importAll(machines: SiteMachine[], categories: SiteCategory[], si
     for (const publicPath of gallery(m)) mediaIds.push(await importMachineImage(m.id, publicPath));
     const mediaId = mediaIds[0] ?? null;
 
+    // Section pictures go through the same hash lookup, so a picture shared with the gallery is stored once.
+    const sections: { kind: 'TEXT' | 'GALLERY'; titleZh: string; titleEn: string; descZh: string | null; descEn: string | null; sort: number; items: { textZh: string; textEn: string; mediaId: string | null; sort: number }[] }[] = [];
+    for (const [si, s] of (m.sections ?? []).entries()) {
+      const items: (typeof sections)[number]['items'] = [];
+      for (const [ii, it] of s.items.entries()) {
+        const itemMedia = it.image ? await importMachineImage(m.id, it.image) : null;
+        items.push({ textZh: it.zh, textEn: it.en, mediaId: itemMedia, sort: (ii + 1) * 10 });
+      }
+      sections.push({
+        kind: s.kind === 'gallery' ? 'GALLERY' : 'TEXT',
+        titleZh: s.title.zh,
+        titleEn: s.title.en,
+        descZh: s.desc?.zh || null,
+        descEn: s.desc?.en || null,
+        sort: (si + 1) * 10,
+        items,
+      });
+    }
+
     await prisma.$transaction(async (tx) => {
       const row = await tx.machine.upsert({ where: { slug: m.id }, create: { slug: m.id, ...fields }, update: fields });
       await tx.machineParam.deleteMany({ where: { machineId: row.id } });
@@ -141,6 +160,11 @@ async function importAll(machines: SiteMachine[], categories: SiteCategory[], si
             update: { isCover: i === 0, sort: i * 10 },
           });
         }
+      }
+      await tx.machineSection.deleteMany({ where: { machineId: row.id } });
+      for (const s of sections) {
+        const { items, ...head } = s;
+        await tx.machineSection.create({ data: { ...head, machineId: row.id, items: { create: items } } });
       }
     });
     imported++;
@@ -258,9 +282,16 @@ async function verify(machines: SiteMachine[], categories: SiteCategory[]): Prom
     const { notes: _n, source: _s, ...original } = m;
     // Pictures are stored flat and identical files are stored once, so a path in the export can be
     // another machine's file name. Compare pictures by content, everything else exactly.
-    const { image: dbImage, images: dbImages, ...dbRest } = rest;
-    const { image: _i, images: _is, ...siteRest } = original;
+    const { image: dbImage, images: dbImages, sections: dbSections, ...dbRest } = rest;
+    const { image: _i, images: _is, sections: siteSections, ...siteRest } = original;
     if (!isDeepStrictEqual(dbRest, siteRest)) fail(`${m.id} content differs`);
+    const stripImages = (list: typeof siteSections) =>
+      (list ?? []).map((s) => ({ ...s, items: s.items.map(({ image: _img, ...it }) => it) }));
+    if (!isDeepStrictEqual(stripImages(dbSections), stripImages(siteSections))) fail(`${m.id} sections differ`);
+    const sectionImages = (list: typeof siteSections) => (list ?? []).flatMap((s) => s.items.map((it) => it.image ?? ''));
+    const wantSecImgs = sectionImages(siteSections).map((p) => (p ? createHash('sha256').update(readFileSync(join(siteDir, 'public', p))).digest('hex') : ''));
+    const gotSecImgs = sectionImages(dbSections).map((p) => (p ? createHash('sha256').update(readFileSync(join(uploadDir, p.replace(/^\/images\//, '')))).digest('hex') : ''));
+    if (!isDeepStrictEqual(wantSecImgs, gotSecImgs)) fail(`${m.id} section pictures differ`);
     const shaOfSite = (p: string) => createHash('sha256').update(readFileSync(join(siteDir, 'public', p))).digest('hex');
     const shaOfDb = (p: string) => createHash('sha256').update(readFileSync(join(uploadDir, p.replace(/^\/images\//, '')))).digest('hex');
     const wantShas = [...new Set(gallery(m).map(shaOfSite))];

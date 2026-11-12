@@ -101,6 +101,28 @@ export interface MachineImage {
   isCover: boolean
 }
 
+export type SectionKind = 'TEXT' | 'GALLERY'
+
+export interface SectionItem {
+  textZh: string
+  textEn: string
+  /** GALLERY only. */
+  mediaId?: string | null
+  /** Read-only preview data returned by the server for gallery items. */
+  url?: string | null
+  width?: number | null
+  height?: number | null
+}
+
+export interface MachineSection {
+  kind: SectionKind
+  titleZh: string
+  titleEn: string
+  descZh?: string | null
+  descEn?: string | null
+  items: SectionItem[]
+}
+
 export type VideoStatus = 'UPLOADING' | 'PROCESSING' | 'READY' | 'FAILED'
 
 export interface MachineVideo {
@@ -145,6 +167,7 @@ export interface MachineDetail {
   updatedAt: string
   params: MachineParam[]
   images: MachineImage[]
+  sections: MachineSection[]
   videoId: string | null
   video: MachineVideo | null
 }
@@ -166,6 +189,7 @@ export interface MachineInput {
   notes?: string
   params: MachineParam[]
   images: { mediaId: string; isCover: boolean }[]
+  sections?: MachineSection[]
   videoId?: string | null
 }
 
