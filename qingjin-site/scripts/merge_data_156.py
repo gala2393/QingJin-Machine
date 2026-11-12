@@ -257,6 +257,21 @@ GROUP_DESC[(12, "a")] = {
 }
 
 
+def _load_blue_groups():
+    """Batch 2: the blue-band groups, captions kept in work156/blue_groups.py next to the crop boxes."""
+    import importlib.util
+
+    spec = importlib.util.spec_from_file_location("blue_groups", Path(__file__).resolve().parent / "work156" / "blue_groups.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    for pg, (kind, caps) in mod.GROUPS.items():
+        SECTION_GROUPS[(pg, "a")] = (kind, _caps(*caps))
+    specs = json.loads((Path(__file__).resolve().parent / "work156" / "section_specs.json").read_text(encoding="utf-8"))
+    tiles = {(g["page"], g["group"]): len(g["tiles"]) for g in specs}
+    for pg in mod.SHOWCASE:
+        SECTION_GROUPS[(pg, "a")] = ("showcase", [NO_CAP] * tiles[(pg, "a")])
+
+
 def _check_group_specs():
     specs = json.loads((Path(__file__).resolve().parent / "work156" / "section_specs.json").read_text(encoding="utf-8"))
     tiles = {(g["page"], g["group"]): len(g["tiles"]) for g in specs}
@@ -291,6 +306,7 @@ def variant_slug(v):
 
 
 def main():
+    _load_blue_groups()
     _check_group_specs()
     raw = []
     for path in sorted(SRC.glob("part_*.json")):

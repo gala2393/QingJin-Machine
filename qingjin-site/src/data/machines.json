@@ -4772,7 +4772,38 @@
       "page": 46,
       "extra_pages": []
     },
-    "notes": "参数表两列,列标题为'三边封/3-side seal'与'背封/Back Seal',已按列标题标注。整机重量行三边封列为空白,仅背封列印 67kg。型号 DB-500 与 p48 重复(见 p48 条目);两者 id 会冲突,需区分。可选配置:色带打码机、光标、上料机 Feeding machine、传送带。"
+    "notes": "参数表两列,列标题为'三边封/3-side seal'与'背封/Back Seal',已按列标题标注。整机重量行三边封列为空白,仅背封列印 67kg。型号 DB-500 与 p48 重复(见 p48 条目);两者 id 会冲突,需区分。可选配置:色带打码机、光标、上料机 Feeding machine、传送带。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon Printer",
+            "image": "/images/machines/sec-p046-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p046-a-2.webp"
+          },
+          {
+            "zh": "上料机",
+            "en": "Feeding machine",
+            "image": "/images/machines/sec-p046-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p046-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "ds-l200",
@@ -4873,6 +4904,35 @@
             "en": "Widely used in various irregular materials, such as tea leaves, flower tea, herbal medicine, red dates, nuts, potato chips, snacks, hardware screws, banana chips, tablets, dried vegetables, grains, and other granular, strip, or sliced products."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p047-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p047-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p047-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p047-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -4961,7 +5021,38 @@
       "page": 48,
       "extra_pages": []
     },
-    "notes": "图中型号印 DB-500,与 p46 型号相同,但名称不同:p46 为'500克中型背封包装机/500g Medium Back Seal Packaging Machine'(速度 7-12bags/min,功率 750W,尺寸 56x75x165cm,重量 67kg),p48 为'500克中型螺旋包装机/500g Medium Spiral Packaging Machine'(速度 7-10bags/min,功率 770W,尺寸 56x75x155cm,重量 67kg)。model 字段均照抄 DB-500,id 会冲突,建议 id 用 db-500 / db-500-spiral 等区分;p48 型号疑似应为 DB-L500(对应 DS-L200 的螺旋系列),但图中印 DB-500,未改。可选配置:色带打码机、光标、加充氮气接口 Add nitrogan gas flushing(原文拼写 nitrogan)、传送带。"
+    "notes": "图中型号印 DB-500,与 p46 型号相同,但名称不同:p46 为'500克中型背封包装机/500g Medium Back Seal Packaging Machine'(速度 7-12bags/min,功率 750W,尺寸 56x75x165cm,重量 67kg),p48 为'500克中型螺旋包装机/500g Medium Spiral Packaging Machine'(速度 7-10bags/min,功率 770W,尺寸 56x75x155cm,重量 67kg)。model 字段均照抄 DB-500,id 会冲突,建议 id 用 db-500 / db-500-spiral 等区分;p48 型号疑似应为 DB-L500(对应 DS-L200 的螺旋系列),但图中印 DB-500,未改。可选配置:色带打码机、光标、加充氮气接口 Add nitrogan gas flushing(原文拼写 nitrogan)、传送带。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon Printer",
+            "image": "/images/machines/sec-p048-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p048-a-2.webp"
+          },
+          {
+            "zh": "加充氮气接口",
+            "en": "Add nitrogen gas flushing",
+            "image": "/images/machines/sec-p048-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p048-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-g999",
@@ -5170,6 +5261,35 @@
             "en": "PLC system touch screen, intuitive parameter adjustment, quick to use and flexible operation, widely applicable to small particle powder products. Pneumatic operation is smooth, precise and efficient automatic weighing and packaging."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p051-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p051-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p051-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p051-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -5258,7 +5378,38 @@
       "page": 52,
       "extra_pages": []
     },
-    "notes": "可选配置:色带打码机 Ribbon coding machine、光标 Cursor、加大料斗 Replace the storage hopper、传送带 Conveyor belt。"
+    "notes": "可选配置:色带打码机 Ribbon coding machine、光标 Cursor、加大料斗 Replace the storage hopper、传送带 Conveyor belt。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon coding machine",
+            "image": "/images/machines/sec-p052-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p052-a-2.webp"
+          },
+          {
+            "zh": "加大料斗",
+            "en": "Replace the storage hopper",
+            "image": "/images/machines/sec-p052-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p052-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-2t100",
@@ -5366,6 +5517,35 @@
             "en": "Dual-station weighing and intelligent PLC control ensure stable and efficient packaging; widely applicable to various granular and powder products, offering multi-purpose versatility."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p053-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p053-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p053-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p053-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -5466,6 +5646,35 @@
           {
             "zh": "定制款袋型,双工位轮流称重灌装或混合,高精度包装各种粉剂产品,固定模具只支持一个膜宽规格。",
             "en": "Customized bag type, dual station rotating weighing and filling or mixing, high-precision packaging of various powder products, fixed mold only supports one film width specification."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p054-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p054-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p054-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p054-a-4.webp"
           }
         ]
       }
@@ -5569,6 +5778,35 @@
             "en": "Multiple weighing and rotating filling of a single product, faster packaging speed. Quantitative mixing and filling of multiple products, convenient and worry free packaging. Recommend customized multi head scales based on demand."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p055-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p055-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p055-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p055-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -5664,6 +5902,35 @@
             "en": "Four sided sealed packaging, intelligent button computer version, easy to operate and handle, widely packaged with various small particle powder products, one machine for multiple uses"
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p057-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p057-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p057-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p057-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -5757,6 +6024,35 @@
           {
             "zh": "定制款袋型,双工位轮流称重灌装或混合,高精度包装各种小颗粒及粉剂产品,四面封口平切美观。",
             "en": "Customized bag type, dual station rotating weighing and filling or mixing, high-precision packaging of various small particles and powder products, four sided sealing and flat cutting for beautiful appearance."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p058-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p058-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p058-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p058-a-4.webp"
           }
         ]
       }
@@ -5963,6 +6259,35 @@
             "en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p060-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p060-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p060-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p060-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -6072,6 +6397,35 @@
             "en": "Outstanding efficiency: Pneumatic drive with fast response, suitable for particle, powder, and standardized packaging needs. Strong stability: The pneumatic transmission structure is simple, with minimal wear and low failure rate."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon Printer",
+            "image": "/images/machines/sec-p061-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p061-a-2.webp"
+          },
+          {
+            "zh": "加搅拌器",
+            "en": "Blender",
+            "image": "/images/machines/sec-p061-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p061-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -6171,6 +6525,35 @@
           {
             "zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,气动机运行平稳,精准高效自动称重包装。",
             "en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p062-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p062-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p062-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p062-a-4.webp"
           }
         ]
       }
@@ -6275,6 +6658,35 @@
             "en": "Automatic weighing, filling, bag making, sealing and bag cutting. Optional date printer, photoelectric mark (cursor) and other functions available upon request."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "支持非标定制",
+          "en": "Non-standard Customization Supported"
+        },
+        "items": [
+          {
+            "zh": "加真空功能",
+            "en": "Add vacuum function",
+            "image": "/images/machines/sec-p063-a-1.webp"
+          },
+          {
+            "zh": "加充氮气",
+            "en": "Add nitrogen gas",
+            "image": "/images/machines/sec-p063-a-2.webp"
+          },
+          {
+            "zh": "加封口挂孔",
+            "en": "Add hanging holes",
+            "image": "/images/machines/sec-p063-a-3.webp"
+          },
+          {
+            "zh": "加排气孔",
+            "en": "Add exhaust holes",
+            "image": "/images/machines/sec-p063-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -6368,6 +6780,35 @@
           {
             "zh": "封口时,两侧插角向中心推动,使成袋外观更美观、立体。设备可自动完成称重、灌装、制袋、封口及切袋工序,并可根据需求选配打码机、光标等功能。",
             "en": "During sealing, the two corners are pushed towards the center, forming a neat and aesthetically pleasing gusset bag. The system automatically completes weighing, filling, bag making, sealing, and bag cutting. Optional configurations include a date printer, cursor tracking, and other functions as required."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p064-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p064-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p064-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p064-a-4.webp"
           }
         ]
       }
@@ -6472,6 +6913,35 @@
             "en": "Automated weighing and packaging with standardized sealing and airplane holes, allowing convenient hanging display of products."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p065-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p065-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p065-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p065-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -6571,6 +7041,35 @@
           {
             "zh": "PLC系统触控屏,参数调节直观,上手快操作灵活,气动机运行平稳,精准高效自动称重包装。",
             "en": "PLC system touch screen, intuitive parameter adjustment, easy to learn and flexible to operate, smooth operation of the pneumatic motor, precise and efficient automatic weighing and packaging."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p066-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p066-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p066-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p066-a-4.webp"
           }
         ]
       }
@@ -6673,6 +7172,30 @@
           {
             "zh": "氮气包装,锁住酥脆口感避免变软对零食产品关键的优势,运输减少碰撞受损,保护零食形态,减少破碎。",
             "en": "Nitrogen packaging locks in crispy texture and prevents food from turning soft, serving as a crucial advantage for snack products. It lessens collision damage during transportation, preserves snack shape and reduces breakage."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p067-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p067-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p067-a-3.webp"
           }
         ]
       }
@@ -7018,6 +7541,35 @@
             "en": "Automatic weighing, filling, bag making, sealing, bag cutting. Can be configured with date printer, cursor and other functions as required."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon Printer",
+            "image": "/images/machines/sec-p070-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p070-a-2.webp"
+          },
+          {
+            "zh": "上料机",
+            "en": "Feeding machine",
+            "image": "/images/machines/sec-p070-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p070-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -7120,6 +7672,35 @@
             "en": "PLC system with touch screen, intuitive parameter adjustment, quick to use and flexible operation, smooth operation of pneumatic motor, precise and efficient automatic weighing and packaging."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p071-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p071-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p071-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p071-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -7219,6 +7800,35 @@
           {
             "zh": "通过两个工位交替作业,可快速精准完成称重与包装,提升生产效率,且适用产品丰富:粮食谷物、干货坚果、宠物食品、粉末状、化肥农药、医药类、五金电子类等范围广",
             "en": "By alternating between two workstations, weighing and packaging can be quickly and accurately completed, improving production efficiency. It is suitable for a wide range of products, including grains, dry nuts, pet food, powders, fertilizers and pesticides, pharmaceuticals, hardware and electronics, etc"
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p072-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p072-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p072-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p072-a-4.webp"
           }
         ]
       }
@@ -7323,6 +7933,35 @@
             "en": "Automatic weighing, filling, bag making, sealing, bag cutting. Can be configured with date printer, cursor and other functions as required."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "粉末上料机",
+            "en": "Screw Feeding Machine",
+            "image": "/images/machines/sec-p073-a-1.webp"
+          },
+          {
+            "zh": "Z型上料机",
+            "en": "Z-type feeding machine",
+            "image": "/images/machines/sec-p073-a-2.webp"
+          },
+          {
+            "zh": "上料机",
+            "en": "Feeding machine",
+            "image": "/images/machines/sec-p073-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p073-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -7422,6 +8061,35 @@
           {
             "zh": "兼容物料范围广:颗粒、粉末、条状物料均可适配、五谷粮食、饲料、茶叶、药材、化肥、调料粉末、坚果零食、塑胶粒子、粉体原料、五金配件等",
             "en": "Wide compatibility with various materials: suitable for granular, powdery and strip-shaped materials, including grains, animal feed, tea, medicinal herbs, fertilizers, seasoning powder, nut snacks, plastic pellets, powder raw materials, hardware accessories, etc."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p074-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p074-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p074-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p074-a-4.webp"
           }
         ]
       }
@@ -7532,6 +8200,25 @@
             "en": "Widely used in grains, melon seeds, coffee beans, tea powder, instant powders, feed, fertilizers, seeds, beads, snacks, desiccants, goji berries, peanuts, laundry detergent, pine nuts, and other small granular products."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p075-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p075-a-2.webp"
+          }
+        ]
       }
     ]
   },
@@ -7620,7 +8307,38 @@
       "page": 76,
       "extra_pages": []
     },
-    "notes": "参数表有两列但只印一个型号 QB-LB100;params 取第1列。第2列:灌装范围 10-200g;包装速度 25-50bags/min;精准度 ±1-3g;料斗容量 50L;卷膜宽度 20-34cm;袋长范围 3-22cm;电压功率 220V/600W;整机尺寸 61x97x168cm;整机重量 112kg。第1列整机重量空白(缺失:整机重量)。英文副标题原印 'Pnuematic'(拼写错误)。可选配置:色带打码机 Ribbon Printer、光标 Cursor、定制304材质 Customized 304 material、传送带 Conveyor belt。"
+    "notes": "参数表有两列但只印一个型号 QB-LB100;params 取第1列。第2列:灌装范围 10-200g;包装速度 25-50bags/min;精准度 ±1-3g;料斗容量 50L;卷膜宽度 20-34cm;袋长范围 3-22cm;电压功率 220V/600W;整机尺寸 61x97x168cm;整机重量 112kg。第1列整机重量空白(缺失:整机重量)。英文副标题原印 'Pnuematic'(拼写错误)。可选配置:色带打码机 Ribbon Printer、光标 Cursor、定制304材质 Customized 304 material、传送带 Conveyor belt。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon Printer",
+            "image": "/images/machines/sec-p076-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p076-a-2.webp"
+          },
+          {
+            "zh": "定制304材质",
+            "en": "Customized 304 material",
+            "image": "/images/machines/sec-p076-a-3.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p076-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-lb100",
@@ -7734,6 +8452,25 @@
             "en": "Widely used in grains, melon seeds, coffee beans, tea powder, instant powders, feed, fertilizers, seeds, beads, snacks, desiccants, goji berries, peanuts, laundry detergent, pine nuts, and other small granular products."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p077-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p077-a-2.webp"
+          }
+        ]
       }
     ]
   },
@@ -7820,6 +8557,35 @@
           {
             "zh": "三边封平切口包装袋型,配有成品输送带自动分拣量杯式快速灌装高达120包/分钟,自带警示器工作状态一目了然",
             "en": "Three sided sealed flat cut packaging bag type, equipped with automatic sorting of finished product conveyor belt, measuring cup type fast filling up to 120 bags/minute, with built-in warning device for clear working status"
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p078-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p078-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p078-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p078-a-4.webp"
           }
         ]
       }
@@ -7944,6 +8710,25 @@
             "en": "Widely use in flour, starch, seasoning powders, industrial powders, milk tea powder, coffee powder, corn powder, beverage powder, probiotics powder, and other types of pure powders."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p079-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p079-a-2.webp"
+          }
+        ]
       }
     ]
   },
@@ -8032,7 +8817,33 @@
       "page": 80,
       "extra_pages": []
     },
-    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 无产品优势/适用产品文字。底部可选配置:色带打码机 Ribbon Printer、光标 Cursor、传送带 Conveyor belt。"
+    "notes": "英文标签印刷错位:包装速度行英文标签印为'Accuracy',精准度行英文标签印为'Precision'(按画册原样录入,key按中文语义)。 无产品优势/适用产品文字。底部可选配置:色带打码机 Ribbon Printer、光标 Cursor、传送带 Conveyor belt。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon Printer",
+            "image": "/images/machines/sec-p080-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p080-a-2.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p080-a-3.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "qs-jl50",
@@ -8146,6 +8957,25 @@
             "en": "Flour, starch, seasoning powder, industrial powder, milk tea powder, coffee powder, corn powder, beverage powder, probiotics powder, and other pure powders"
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p081-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p081-a-2.webp"
+          }
+        ]
       }
     ]
   },
@@ -8239,6 +9069,35 @@
           {
             "zh": "螺杆计量,精准灌装;夹拉封口,冲切一体。固定一个膜宽不可替换,搭配PLC系统,实现稳定高效的粉末包装。",
             "en": "Auger metering ensures precise filling; clamping and sealing, along with punching and cutting, are integrated. A fixed, non-replaceable film width, combined with a PLC system, enables stable and efficient powder packaging."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p082-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p082-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p082-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p082-a-4.webp"
           }
         ]
       }
@@ -8987,6 +9846,35 @@
             "en": "Four counting stations, capable of mixing and packaging four types of products, with precise counting. Widely used in hardware, screws, nuts, washers, wood chips, electronic components, toys, jewelry, desiccant bags, lollipops, beads, small green oranges, and other granular solid materials."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p091-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p091-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p091-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p091-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -9079,6 +9967,35 @@
           {
             "zh": "五金配件、电子元件、干货零食、玩具、塑料配件、食品等不规则产品",
             "en": "Application: Widely used in hardware accessories, electronic components, dried goods and snacks, toys, plastic parts, food, and other irregularly shaped products."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "物料平台",
+            "en": "Material platform",
+            "image": "/images/machines/sec-p093-a-1.webp"
+          },
+          {
+            "zh": "圆筒翻领",
+            "en": "Cylindrical lapel",
+            "image": "/images/machines/sec-p093-a-2.webp"
+          },
+          {
+            "zh": "平行输送带",
+            "en": "Parallel conveyor belt",
+            "image": "/images/machines/sec-p093-a-3.webp"
+          },
+          {
+            "zh": "红外感应/脚踏板",
+            "en": "Infrared sensing/foot pedal",
+            "image": "/images/machines/sec-p093-a-4.webp"
           }
         ]
       }
@@ -9412,6 +10329,35 @@
             "en": "Pneumatic motors are more stable and efficient, assisting manual labor to increase production. The compact design of the body takes up less space, eliminating the need for large areas of space for placement and making it easy to move and adjust the placement position."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p095-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p095-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p095-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p095-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -9709,6 +10655,30 @@
           {
             "zh": "人工放料,机器自动完成制袋、封口、切膜、主打人机协同,适合异形件、多品类、中小批量生产。简单培训即可上岗,无需专业设备技术员;上手快,老人也会使用。",
             "en": "Manual feeding; automatic bag forming, sealing and film cutting. Human-machine collaborative packaging.Ideal for special-shaped parts, diversified products and small & medium batch production. Easy operation with brief training, no specialist technician required. Simple to master, suitable for senior operators."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p097-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p097-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p097-a-3.webp"
           }
         ]
       }
@@ -10864,6 +11834,35 @@
             "en": "Widely used in soy sauce, vinegar, water, milk, soy milk, juice, beverages, cooking oil, soup, seasoning liquid, medicinal liquid, cooking wine, and other pure liquids without impurities."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p105-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p105-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p105-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p105-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -10957,6 +11956,35 @@
           {
             "zh": "只需设置灌装时间及袋长,自动定量抽液封包,省心高效率自动化工作,带一键清洗功能,操作简单",
             "en": "Just set the filling time and bag length, automatic quantitative liquid extraction and packaging, worry free and efficient High efficiency, automated operation, with one-button cleaning function, simple to operate."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p106-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p106-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p106-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p106-a-4.webp"
           }
         ]
       }
@@ -11061,6 +12089,35 @@
             "en": "Integrating precise metering and filling, automatic bag making and sealing, and finished product output to achieve continuous production and greatly improve efficiency. It can be configured with functions such as coding machine or cursor according to needs."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p107-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p107-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p107-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p107-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -11142,7 +12199,38 @@
       "page": 108,
       "extra_pages": []
     },
-    "notes": "无产品优势/适用产品文字。可选配置:色带打码机 Ribbon coding machine、光标 Cursor、传送带 Conveyor belt、普通拉膜电机 Film pulling motor。"
+    "notes": "无产品优势/适用产品文字。可选配置:色带打码机 Ribbon coding machine、光标 Cursor、传送带 Conveyor belt、普通拉膜电机 Film pulling motor。",
+    "sections": [
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon coding machine",
+            "image": "/images/machines/sec-p108-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p108-a-2.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p108-a-3.webp"
+          },
+          {
+            "zh": "普通拉膜电机",
+            "en": "Film pulling motor",
+            "image": "/images/machines/sec-p108-a-4.webp"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "db-750ml",
@@ -11233,6 +12321,35 @@
           {
             "zh": "可自动完成液体的灌装、封口、打码等工序,提高生产效率,减少人工成本和误差。",
             "en": "It can automatically complete liquid filling, sealing, coding and other processes, improve production efficiency, reduce labor costs and errors."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p109-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p109-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p109-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p109-a-4.webp"
           }
         ]
       }
@@ -11328,6 +12445,35 @@
           {
             "zh": "集精准计量灌装、自动制袋封口与成品输出于一体,实现连续式生产,大幅提升效率。可根据需求配置打码机或光标等功能",
             "en": "Integrating precise metering and filling, automatic bag making and sealing, and finished product output to achieve continuous production and greatly improve efficiency. It can be configured with functions such as coding machine or cursor according to needs."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon coding machine",
+            "image": "/images/machines/sec-p110-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p110-a-2.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p110-a-3.webp"
+          },
+          {
+            "zh": "普通拉膜电机",
+            "en": "Film pulling motor",
+            "image": "/images/machines/sec-p110-a-4.webp"
           }
         ]
       }
@@ -11438,6 +12584,25 @@
             "en": "Widely used in soy sauce, vinegar, water, milk, soy milk, juice, beverages, cooking oil, soup, seasoning liquid, medicinal liquid, cooking wine, and other pure liquids without impurities."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p111-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p111-a-2.webp"
+          }
+        ]
       }
     ]
   },
@@ -11531,6 +12696,35 @@
           {
             "zh": "纯液体专用,定量灌装、制袋封袋,自动完成\n可连袋不切断:在袋与袋之间仅留易撕线或连接点,实现连袋输出。",
             "en": "Pure liquid specific, quantitative filling, bag making and sealing, automatic completion\nCan be connected without cutting: Bags can be connected without being cut, leaving only an easy-tear line or connection point between the bags, thus achieving continuous bag output."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p112-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p112-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p112-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p112-a-4.webp"
           }
         ]
       }
@@ -11628,6 +12822,35 @@
             "en": "The filling capacity can be adjusted by filling time, suitable for various pure liquid products. Metering, filling, bag making, and sealing are all completed automatically without manual intervention; pneumatic operation is highly efficient, time-saving, and labor-saving."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon coding machine",
+            "image": "/images/machines/sec-p113-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p113-a-2.webp"
+          },
+          {
+            "zh": "PLC触控屏电脑版",
+            "en": "PLC touch screen",
+            "image": "/images/machines/sec-p113-a-3.webp"
+          },
+          {
+            "zh": "普通拉膜电机",
+            "en": "Film pulling motor",
+            "image": "/images/machines/sec-p113-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -11723,6 +12946,35 @@
             "en": "Specifically designed for pure liquids, including milk, soup, vinegar, alcohol, water, cooking oil, and juice. It features automatic metering and rapid filling, stable and efficient pneumatic operation, and a powerful core motor."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p114-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p114-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p114-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p114-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -11816,6 +13068,30 @@
           {
             "zh": "如需包装更大容量,可按需定制专属设备,电脑版操作可改PLC系统触控屏控制",
             "en": "For larger packaging capacities, customized equipment can be provided. The computer board operation can be modified to a PLC system with touchscreen control."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "PLC触控屏电脑版",
+            "en": "PLC control panel",
+            "image": "/images/machines/sec-p115-a-1.webp"
+          },
+          {
+            "zh": "铝支架数拉膜电机",
+            "en": "Aluminum bracket pull film motor",
+            "image": "/images/machines/sec-p115-a-2.webp"
+          },
+          {
+            "zh": "普通拉膜电机",
+            "en": "Film pulling motor",
+            "image": "/images/machines/sec-p115-a-3.webp"
           }
         ]
       }
@@ -12130,6 +13406,35 @@
             "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p119-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p119-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p119-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p119-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -12223,6 +13528,35 @@
           {
             "zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
             "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p120-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p120-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p120-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p120-a-4.webp"
           }
         ]
       }
@@ -12320,6 +13654,35 @@
             "en": "The PLC control panel is easy to operate. It features cylinder-based quantitative filling, bag making, sealing, and bag cutting. Additional functions such as a mixer, coding machine, and cursor can be added as needed."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p121-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p121-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p121-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p121-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -12415,6 +13778,35 @@
             "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "加搅拌器",
+            "en": "Vertical mixer",
+            "image": "/images/machines/sec-p122-a-1.webp"
+          },
+          {
+            "zh": "加压桶",
+            "en": "Pressurized lid",
+            "image": "/images/machines/sec-p122-a-2.webp"
+          },
+          {
+            "zh": "保温桶",
+            "en": "Insulated hopper",
+            "image": "/images/machines/sec-p122-a-3.webp"
+          },
+          {
+            "zh": "按键款电脑板",
+            "en": "Keypad control panel",
+            "image": "/images/machines/sec-p122-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -12508,6 +13900,35 @@
           {
             "zh": "蜂蜜、番茄酱、沙拉酱、果汁、酸奶、花生酱、果酱、酱料、洗衣液、沐浴露、酱油、牛奶等各类膏液带流动性产品",
             "en": "Widely used in honey, ketchup, salad dressing, juice, yogurt, peanut butter, jam, sauces, laundry detergent, shower gel, soy sauce, milk, and other liquid or paste-like products with fluid properties."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p123-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p123-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p123-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p123-a-4.webp"
           }
         ]
       }
@@ -12765,6 +14186,35 @@
             "en": "PLC touch screen is easy to operate, piston quantitative filling, bag making, sealing and cutting. Can be configured with vertical mixer, ribbon coding machine, cursor and other functions as required."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "加搅拌器",
+            "en": "Vertical mixer",
+            "image": "/images/machines/sec-p125-a-1.webp"
+          },
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon coding machine",
+            "image": "/images/machines/sec-p125-a-2.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p125-a-3.webp"
+          },
+          {
+            "zh": "按键款电脑版",
+            "en": "Keypad control panel",
+            "image": "/images/machines/sec-p125-a-4.webp"
+          }
+        ]
       }
     ]
   },
@@ -12858,6 +14308,35 @@
           {
             "zh": "四重封边,防漏能力更强,酱料、药膏、面膜泥、护发膏等膏体小样包装,不易夹料渗漏,长途物流挤压不易爆袋,大幅降低次品率。",
             "en": "Quad-seal for enhanced leakproof performance. Perfect for paste sachets including sauces, ointments, mask mud and hair cream. Stop material trapping & leakage, resist bag breakage in long haul transport, cut reject rates significantly."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p126-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p126-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p126-a-3.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p126-a-4.webp"
           }
         ]
       }
@@ -12975,6 +14454,30 @@
             "en": "The clamping and stretching mechanism is a core component designed to ensure a neat, wrinkle-free seal and a visually appealing bag appearance. It enables uniform filling of viscous materials, ensuring standardization for every single bag."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p127-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p127-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p127-a-3.webp"
+          }
+        ]
       }
     ]
   },
@@ -13077,6 +14580,30 @@
             "en": "Compact footprint. Automatically forms bags, fills, seals and cuts. A single worker can manage multiple units merely for finished product collection, greatly replacing manual packaging and lowering long-term labor expenses."
           }
         ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "可选配置",
+          "en": "Optional Configurations"
+        },
+        "items": [
+          {
+            "zh": "色带打码机",
+            "en": "Ribbon coding machine",
+            "image": "/images/machines/sec-p129-a-1.webp"
+          },
+          {
+            "zh": "光标",
+            "en": "Cursor",
+            "image": "/images/machines/sec-p129-a-2.webp"
+          },
+          {
+            "zh": "传送带",
+            "en": "Conveyor belt",
+            "image": "/images/machines/sec-p129-a-3.webp"
+          }
+        ]
       }
     ]
   },
@@ -13170,6 +14697,30 @@
           {
             "zh": "辣椒油、蒜蓉酱、火锅底料、豆瓣酱、果酱、辣椒酱、水、酱油、凝胶、番茄酱等酱料、膏体、液体一机多用",
             "en": "Widely used in chili oil, garlic paste, hot pot base, broad bean paste, jam, chili sauce, water, soy sauce, gel, tomato paste and more."
+          }
+        ]
+      },
+      {
+        "kind": "gallery",
+        "title": {
+          "zh": "成品展示",
+          "en": "Finished Product Display"
+        },
+        "items": [
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p130-a-1.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p130-a-2.webp"
+          },
+          {
+            "zh": "",
+            "en": "",
+            "image": "/images/machines/sec-p130-a-3.webp"
           }
         ]
       }
