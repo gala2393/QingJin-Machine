@@ -2,7 +2,7 @@
 
 基于 Astro 7、TypeScript 和 Tailwind CSS 4 的中英双语静态网站。当前版本包含 178 台设备、9 个分类，以及产品参数、图集、文字和图片板块。
 
-正式入口：[中文](https://qingjinmachinery.cn/zh/) · [English](https://qingjinmachinery.cn/en/)
+正式入口：[网站首页](https://www.qingjinmachinery.cn) · [English](https://www.qingjinmachinery.cn/en/)
 
 ## 开发与构建
 
@@ -75,6 +75,8 @@ npm.cmd run build
 4. 通过发布中心或 `npm run publish:site:prod` 生成正式版本。
 5. 验证中英文页面、静态资源、站点地址和备案链接。
 
-公共页脚展示 [](https://beian.miit.gov.cn/)。公安联网备案数据码不得作为页脚内容；正式公安备案号在取得后单独配置。
+公共页脚通过构建变量 `ICP_RECORD_NUMBER` 读取部署专属信息，源码和 `.env.example` 不保留真实值。未设置、空字符串或仅空格时不输出该链接。
+
+独立构建可复制本目录的 `.env.example` 为被忽略的 `.env`，仅在本地填写。API 发布时由服务器环境传入；修改后需要重新发布。更新已上线环境前必须保留并核对其私有配置，不能用仓库空值替换。公安联网备案数据码不得作为页脚内容。
 
 完整流程见 [生产部署指南](../腾讯云部署流程.md)。上传本地 `dist/` 或推送 GitHub 不会自动更新后台管理的正式版本。

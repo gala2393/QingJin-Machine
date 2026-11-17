@@ -40,6 +40,8 @@ services:
       KEEP_RELEASES: ${KEEP_RELEASES:-10}
       PREVIEW_PORT: 4400
       PREVIEW_PUBLIC_URL: https://${PREVIEW_HOST:?set PREVIEW_HOST in .env}
+      # Deployment-specific public filing text, deliberately blank in the repository.
+      ICP_RECORD_NUMBER: ${ICP_RECORD_NUMBER:-}
       # Hops in front of the API: nginx = 1, Cloudflare + nginx = 2.
       TRUST_PROXY: ${TRUST_PROXY:-2}
       # Must match the nginx location that proxies to the API.

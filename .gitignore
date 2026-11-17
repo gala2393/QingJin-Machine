@@ -15,6 +15,16 @@ __pycache__/
 *.local
 *.pem
 *.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ecdsa
+id_ed25519
+.secrets/
+/certs/
+/qingjin/deploy/certs/
 
 # Runtime data (anchored to avoid excluding source modules)
 /qingjin/server/.devdb/

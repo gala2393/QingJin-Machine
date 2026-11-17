@@ -2,7 +2,7 @@
 
 中英双语包装机械产品展示与内容管理平台，集产品目录、设备参数、机型对比、企业展示、联系咨询和后台发布于一体。
 
-[中文网站](https://qingjinmachinery.cn/zh/) · [English](https://qingjinmachinery.cn/en/) · [管理后台](https://admin.qingjinmachinery.cn/admin/) · [部署指南](腾讯云部署流程.md) · [版本记录](CHANGELOG.md)
+[网站首页](https://www.qingjinmachinery.cn) · [English](https://www.qingjinmachinery.cn/en/) · [部署指南](腾讯云部署流程.md) · [版本记录](CHANGELOG.md)
 
 ## 项目概况
 
@@ -14,7 +14,6 @@
 | 网站语言 | 简体中文、英文 |
 | 正式域名 | `qingjinmachinery.cn`，`www` 跳转至主域名 |
 | 管理域名 | `admin.qingjinmachinery.cn`，预览与 API 通过同域名代理 |
-| ICP 网站备案号 | [](https://beian.miit.gov.cn/) |
 
 以上目录数量为本版本源码基线；生产内容以数据库和成功发布的快照为准。Git 标签与后台的 `v11` 等网站发布编号是两套独立记录，不互相替代。
 
@@ -27,7 +26,7 @@
 - 同时比较最多 4 台设备，支持带机型信息的联系入口。
 - 展示工厂照片、资质资料及企业介绍。
 - 提供电话、邮件、WhatsApp、微信等联系渠道。
-- 输出 canonical、hreflang、Open Graph 和 sitemap，公共页脚展示 ICP 备案链接。
+- 输出 canonical、hreflang、Open Graph 和 sitemap。
 
 ### 内容管理
 
@@ -81,6 +80,8 @@ npm.cmd --prefix qingjin-site run dev
 
 默认访问 `http://localhost:4321`。完整后台开发需要 PostgreSQL、API 和管理界面，启动方式见 [系统开发说明](qingjin/README.md#本地开发)。
 
+本地空数据库可按系统说明初始化管理员 `admin`，示例密码为 `1234567890`。这不是线上凭据，也不是自动创建的默认账号；生产必须另设强密码。配置模板中的真实密码、密钥和部署专属信息均留空，并附填写说明。
+
 独立构建展示站：
 
 ```powershell
@@ -116,7 +117,7 @@ git diff --check
 - 模板更新需要更新 API 镜像并重新发布；推送 GitHub 不会自动部署。
 - 数据库恢复与内容回滚是不同操作，执行前须确认目标环境及备份。
 - 源码中的联系配置可能保留示例值，真实联系方式及企业资料应由运营方在后台维护并验证。
-- 公安联网备案数据码不属于公开备案号，不写入网页或版本库；取得正式公安备案号后再单独配置展示。
+- 部署专属信息由运维方在被忽略的环境文件中填写，不随公开源码分发，见 [仓库安全说明](qingjin/docs/repository-safety.md)。
 
 ## 项目资料
 

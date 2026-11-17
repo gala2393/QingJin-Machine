@@ -47,6 +47,8 @@ npm.cmd --prefix qingjin-site ci
 
 仅在尚无配置文件时，将 `qingjin/server/.env.example` 复制为 `.env`，按实际环境设置数据库连接和随机 JWT 密钥。不得覆盖已有环境文件。
 
+模板中的数据库连接、JWT 密钥、管理员密码及页脚部署值故意留空，须在被忽略的 `.env` 中填写。生成 JWT 密钥可用 `node -e "console.log(require('crypto').randomBytes(48).toString('base64url'))"`，不能照抄公开固定字符串。
+
 ### 数据库
 
 ```powershell
@@ -54,6 +56,8 @@ npm.cmd --prefix qingjin/server run db:dev
 ```
 
 默认开发数据位于 `qingjin/server/.devdb`，使用端口 5433。不要让本地开发命令连接生产数据库。
+
+`db:dev` 的固定凭据只用于本地开发，配套连接示例为 `postgresql://qingjin:qingjin_dev@127.0.0.1:5433/qingjin`，应仅填入本地 `.env`；它不是生产数据库连接。
 
 ### API
 
@@ -63,13 +67,17 @@ npm.cmd --prefix qingjin/server run db:dev
 npm.cmd run db:generate
 npm.cmd run db:migrate
 npm.cmd run import:site
-# 仅首次初始化：通过安全输入设置 ADMIN_USERNAME、ADMIN_PASSWORD 后运行
+# 仅隔离的本地空数据库首次演示，生产不得使用下列示例密码：
+$env:ADMIN_USERNAME='admin'
+$env:ADMIN_PASSWORD='1234567890'
 npm.cmd run seed:admin
+Remove-Item Env:ADMIN_USERNAME
+Remove-Item Env:ADMIN_PASSWORD
 npm.cmd run publish:site
 npm.cmd run dev
 ```
 
-管理员密码至少 10 位，建议使用密码管理器生成的随机密码。`seed:admin` 会按用户名创建或重置账号，并撤销刷新会话；不能用于已有环境的普通部署或账号改名。
+上述示例创建 `admin`，密码为 `1234567890`，仅用于本地演示，不是线上账号或自动默认密码。真实环境密码至少 10 位，应使用密码管理器生成的随机强密码。`seed:admin` 会按用户名创建或重置账号，并撤销刷新会话；不能用于已有环境的普通部署或账号改名。
 
 ### 管理界面
 
@@ -93,7 +101,7 @@ API 的本地已发布站点与 Astro 开发服务均可能使用 4321，不要�
 - 登录按来源限频，受保护请求重新检查账号状态和角色。
 - 停用账号立即阻止受保护访问；刷新会话撤销不等于立即撤销所有已签发访问令牌。
 - 修改用户名应保留原用户 ID，避免丢失发布和审计关联。
-- 账号、密码、令牌及实际环境密钥不保存到文档或 Git。
+- 真实账号、密码、令牌及实际环境密钥不保存到文档或 Git；公开初始化示例不得用于生产。
 
 ## 生产部署
 
