@@ -1,4 +1,5 @@
-# Apply after docker-compose.yml, always using project name qingjin.
+# Apply after docker-compose.yml, followed by docker-compose.new-edge.yml.
+# qj.sh fixes the Compose project name to qingjin.
 name: qingjin
 services:
   db:
@@ -11,8 +12,8 @@ services:
     mem_limit: 896m
     environment:
       NODE_OPTIONS: --max-old-space-size=512
-      SITE_URL: https://api.learnstudy.cloud
-      PREVIEW_PUBLIC_URL: https://admin.learnstudy.cloud
+      SITE_URL: https://qingjinmachinery.cn
+      PREVIEW_PUBLIC_URL: https://admin.qingjinmachinery.cn
       TRUST_PROXY: 2
       KEEP_RELEASES: 3
     image: local/qingjin-api:tencent
@@ -33,4 +34,4 @@ services:
 networks:
   ingress:
     external: true
-    name: learning-assistant_learning-net
+    name: qingjin_ingress

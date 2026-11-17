@@ -1,0 +1,16 @@
+# Dedicated HTTPS ingress for the Tencent Cloud deployment.
+services:
+  edge:
+    image: nginx:1.27-alpine
+    restart: unless-stopped
+    mem_limit: 64m
+    depends_on:
+      - nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /opt/qingjin/edge/conf.d:/etc/nginx/conf.d:ro
+      - /opt/qingjin/certs:/etc/nginx/ssl/qingjin:ro
+    networks:
+      - ingress
