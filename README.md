@@ -1,62 +1,127 @@
-# 青瑾机械网站与后台
+# 青瑾机械 · QING JIN MACHINERY
 
-青瑾机械（QING JIN MACHINERY）的中英双语包装机械产品展示与询盘网站，配套企业内部使用的后台管理系统。网站面向需要采购分装、包装、灌装及输送设备的国内外客户，帮助客户了解产品、比较机型参数，并联系厂家咨询选型和报价；后台用于持续维护产品资料、网站内容及发布版本。
+中英双语包装机械产品展示与内容管理平台，集产品目录、设备参数、机型对比、企业展示、联系咨询和后台发布于一体。
 
-## 网站是做什么的
+[中文网站](https://qingjinmachinery.cn/zh/) · [English](https://qingjinmachinery.cn/en/) · [管理后台](https://admin.qingjinmachinery.cn/admin/) · [部署指南](腾讯云部署流程.md) · [版本记录](CHANGELOG.md)
 
-将纸质产品画册整理为可搜索、可对比的在线产品目录，让客户从“查找设备”进入“了解参数、比较机型、联系询价”的流程，同时展示工厂照片与资质资料，方便客户了解厂家。
+## 项目概况
 
-当前源码包含画册整理的 107 台设备，分为 8 类：智能分装机、智能包装机、液体包装机、膏体包装机、半自动灌装机、真空包装机、智能上料机和传送带。产品数量会随后续维护和发布变化。
+| 项目 | 当前状态 |
+| --- | --- |
+| 源码版本 | `v1.0.0`，以 Git 标签标识 |
+| 产品目录 | 178 台设备、9 个分类，来源于画册 156 |
+| 详情内容 | 双语参数、产品图集、文字及图片板块，支持产品视频 |
+| 网站语言 | 简体中文、英文 |
+| 正式域名 | `qingjinmachinery.cn`，`www` 跳转至主域名 |
+| 管理域名 | `admin.qingjinmachinery.cn`，预览与 API 通过同域名代理 |
+| ICP 网站备案号 | [](https://beian.miit.gov.cn/) |
 
-### 客户可以做什么
+以上目录数量为本版本源码基线；生产内容以数据库和成功发布的快照为准。Git 标签与后台的 `v11` 等网站发布编号是两套独立记录，不互相替代。
 
-- **浏览与查找设备**：切换中文或英文，按产品分类筛选，搜索型号，查看设备图片和参数。
-- **比较机型**：将最多 4 台设备加入对比，集中查看参数差异，辅助采购选型。
-- **了解厂家**：查看公司介绍、工厂照片及证书图片。
-- **联系询价**：从产品页进入带机型提示的联系页面，使用配置好的电话、邮件、WhatsApp 或微信联系厂家，沟通设备需求和报价。
+## 核心功能
 
-典型使用流程：进入产品中心 → 筛选或搜索设备 → 查看详情与参数 → 对比候选机型 → 联系厂家确认需求和报价。
+### 产品展示
 
-### 企业后台可以做什么
+- 按分类、型号和中英文名称查找设备。
+- 浏览设备参数、图片、产品优势、适用产品、配置及案例资料。
+- 同时比较最多 4 台设备，支持带机型信息的联系入口。
+- 展示工厂照片、资质资料及企业介绍。
+- 提供电话、邮件、WhatsApp、微信等联系渠道。
+- 输出 canonical、hreflang、Open Graph 和 sitemap，公共页脚展示 ICP 备案链接。
 
-- **维护产品资料**：管理分类、参数模板、设备信息、产品图片、上架状态和推荐机型，支持 Excel 导入导出。
-- **维护网站内容**：修改中英公司资料、联系方式、工厂照片及证书图片，统一管理媒体资源。
-- **控制内容上线**：先保存修改，再预览并发布；查看待发布差异、构建日志和历史版本，支持回滚。
-- **查看运营数据**：通过仪表盘了解访问趋势、热门设备、搜索词和询盘渠道点击情况，为产品展示和销售跟进提供参考。
-- **管理内部协作**：设置用户与角色权限，查看操作日志，并管理数据库和图片备份。
+### 内容管理
 
-### 使用范围与上线准备
+- 管理分类、参数模板、机型、推荐顺序、图片及产品视频。
+- 编辑双语文字板块和图片板块，调整详情内容顺序。
+- 维护公司资料、联系方式、工厂照片、证书及微信二维码。
+- 保存后预览、发布，查看差异、日志和历史版本，按快照重新构建回滚版本。
+- 使用 Excel 预检查及导入导出、角色权限、操作审计、访问统计和数据备份。
 
-本项目的业务定位是企业产品展示、设备选型辅助和采购询盘，交易与报价由客户和厂家进一步沟通。访问统计中的询盘渠道点击不等于已成交订单。
+本项目用于产品介绍、选型辅助和采购咨询，不包含在线支付或订单交易流程。当前联系页没有在线询盘表单，`formEndpoint` 为兼容字段；联系入口点击不代表有效询盘或成交。
 
-仓库中的电话、邮箱和 WhatsApp 仍包含占位信息，微信二维码尚未配置。正式使用前需在站点设置中填写真实资料并发布，实际验证各联系渠道可用。当前联系页没有在线询盘表单，数据结构中的 `formEndpoint` 为兼容字段。
+## 技术架构
 
-## 项目组成
+| 模块 | 技术 |
+| --- | --- |
+| 展示站 | Astro 7、TypeScript、Tailwind CSS 4 |
+| 管理界面 | Vue 3、Vite 8、Element Plus、Pinia |
+| 后端 API | NestJS 11、Prisma 7、PostgreSQL 16 |
+| 媒体处理 | Sharp、FFmpeg |
+| 运行与部署 | Node.js 24、Docker、Docker Compose、Nginx |
 
-仓库统一管理展示站、后台界面、API 和部署配置。保留原有目录，后台通过 `SITE_DIR` 引用展示站。
-
-| 目录 | 内容 | 开发与部署说明 |
-| --- | --- | --- |
-| `qingjin-site/` | Astro 展示站、产品数据、图片及画册处理脚本 | [展示站说明](qingjin-site/README.md) |
-| `qingjin/admin/` | Vue 后台管理界面 | [后台说明](qingjin/admin/README.md) |
-| `qingjin/server/` | NestJS API、Prisma 模型与迁移 | [系统说明](qingjin/README.md) |
-| `qingjin/deploy/` | Docker Compose、Nginx、备份脚本 | [部署说明](qingjin/README.md#生产部署海外服务器--cloudflare) |
-
-完整开发阶段、8 份模块专题及验证范围见 [项目开发记录](PROJECT_HISTORY.md)。
-
-## 本地验证
-
-使用 Node.js 24，在各模块安装锁文件指定的依赖后执行：
-
-```powershell
-npm --prefix qingjin-site run check
-npm --prefix qingjin-site run build
-npm --prefix qingjin/server run db:generate
-npm --prefix qingjin/server run typecheck
-npm --prefix qingjin/server run build
-npm --prefix qingjin/admin run build
+```text
+浏览器
+  └─ edge Nginx：HTTPS、域名跳转
+      └─ 内部 Nginx：展示站、后台静态文件、同源代理
+          ├─ API：鉴权、内容管理、预览、发布构建
+          └─ PostgreSQL：业务数据、账号、快照与审计
+备份服务：定时归档数据库和上传文件
 ```
 
-Prisma 生成命令需要按系统说明配置本地 `.env`。本地数据库、上传文件、备份、发布产物、环境密钥及生成的 Prisma 客户端均不纳入 Git。
+生产环境使用独立 Compose 项目和网络，不依赖其他业务的容器。只有入口服务发布 80/443，数据库、API 和预览端口不对公网开放。
 
-展示站已包含运行所需的静态图片和数据。重新处理画册时需另行准备根目录的 `画册33.pdf` 及 `scripts/work/` 中间资料；这些本地素材保持原样，不随源码推送。根目录三个空 Vue 临时文件也不纳入版本控制。
+## 仓库结构
+
+| 路径 | 内容 | 文档 |
+| --- | --- | --- |
+| `qingjin-site/` | 展示站、静态目录及画册处理工具 | [展示站说明](qingjin-site/README.md) |
+| `qingjin/admin/` | 管理界面 | [后台说明](qingjin/admin/README.md) |
+| `qingjin/server/` | API、模型、数据库迁移 | [系统说明](qingjin/README.md) |
+| `qingjin/deploy/` | Compose、Nginx、备份脚本 | [部署指南](腾讯云部署流程.md) |
+| `qingjin/docs/` | 接口约定与模块设计记录 | [项目开发记录](PROJECT_HISTORY.md) |
+
+## 本地运行
+
+需要 Node.js 24 和 npm。仅运行展示站时，在仓库根目录执行：
+
+```powershell
+npm.cmd --prefix qingjin-site ci
+npm.cmd --prefix qingjin-site run dev
+```
+
+默认访问 `http://localhost:4321`。完整后台开发需要 PostgreSQL、API 和管理界面，启动方式见 [系统开发说明](qingjin/README.md#本地开发)。
+
+独立构建展示站：
+
+```powershell
+$env:SITE_URL='https://qingjinmachinery.cn'
+npm.cmd --prefix qingjin-site run check
+npm.cmd --prefix qingjin-site run build
+```
+
+生产发布由 API 读取数据库快照并构建，不应直接上传本地 `dist` 覆盖正式站点。
+
+## 验证与发布
+
+在依赖安装完成后，从仓库根目录逐项执行：
+
+```powershell
+npm.cmd --prefix qingjin-site run check
+npm.cmd --prefix qingjin-site run build
+npm.cmd --prefix qingjin/server run db:generate
+npm.cmd --prefix qingjin/server run typecheck
+npm.cmd --prefix qingjin/server run build
+npm.cmd --prefix qingjin/admin run typecheck
+npm.cmd --prefix qingjin/admin run build
+git diff --check
+```
+
+每项成功后再执行下一项。Prisma 生成所需环境配置见系统说明。涉及写入、发布或恢复的冒烟测试仅在隔离环境执行，不作为生产日常巡检命令。
+
+## 部署与运维
+
+生产入口、证书、端口、首次初始化、更新、备份及回滚操作见 [腾讯云部署与运维指南](腾讯云部署流程.md)。
+
+- 数据卷、上传文件、备份、构建产物、环境文件、私钥和管理员凭据不进入 Git。
+- 模板更新需要更新 API 镜像并重新发布；推送 GitHub 不会自动部署。
+- 数据库恢复与内容回滚是不同操作，执行前须确认目标环境及备份。
+- 源码中的联系配置可能保留示例值，真实联系方式及企业资料应由运营方在后台维护并验证。
+- 公安联网备案数据码不属于公开备案号，不写入网页或版本库；取得正式公安备案号后再单独配置展示。
+
+## 项目资料
+
+- [版本记录](CHANGELOG.md)
+- [项目开发记录](PROJECT_HISTORY.md)
+- [画册 156 数据核验清单](qingjin-site/画册156问题清单.md)
+- [历史画册核验记录](qingjin-site/画册问题清单.md)
+- [接口约定](qingjin/docs/api-phase456.md)

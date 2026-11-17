@@ -4,7 +4,7 @@
 
 qingjin/server/prisma/schema.prisma 定义用户、刷新令牌、分类、参数模板、机型、参数、媒体、图片关联、站点设置、发布版本、审计日志、访问事件和每日统计。
 
-现有迁移目录依次为 20261014130034_init、20261014130311_model_key 和 20261014143855_track_channel。迁移名称只用于标识数据库变更，不据此推定其他功能完成时间。
+现有迁移目录依次为 `20261014130034_init`、`20261014130311_model_key`、`20261014143855_track_channel`、`20261017120000_machine_video` 和 `20261112054416_machine_sections`，覆盖基础模型、型号检索键、统计渠道、产品视频及详情内容板块。迁移名称仅标识数据库变更。
 
 机型状态为 DRAFT、PUBLISHED、HIDDEN；发布状态为 PENDING、BUILDING、SUCCESS、FAILED。数据库中的上架状态与已经构建上线的页面需要分别理解。
 
@@ -34,4 +34,4 @@ qingjin/server/prisma/schema.prisma 定义用户、刷新令牌、分类、参�
 
 依据 qingjin/server/src/auth/auth.service.ts、auth.guard.ts、qingjin/server/src/users/users.service.ts，以及 qingjin/admin/src/router/index.ts。
 
-本次只整理实现说明，未创建用户、修改密码或执行令牌重用测试。建议在隔离环境验证并发刷新、停用账号、角色变更及最后管理员保护。
+本专题记录鉴权实现，不包含管理员凭据。并发刷新、停用账号、角色变更及最后管理员保护应在隔离环境测试；当前版本的构建与生产检查结果见 [版本记录](../../../CHANGELOG.md)。

@@ -1,34 +1,43 @@
 # 展示站与画册数据整理
 
-## 业务目标
+## 产品定位
 
-面向国内外包装机械采购客户，提供中英双语产品目录，支持查找设备、阅读参数、比较机型和联系厂家咨询报价。以下内容根据当前源码整理，文档更新时间不代表各功能的原始完成时间。
+面向国内外包装机械采购客户，提供中英双语产品目录、设备查找、参数阅读、机型对比、企业展示及联系咨询。网站不包含在线支付或订单交易功能。
 
-## 数据处理流程
+## 数据来源
 
-1. qingjin-site/scripts/extract_pages.py 提取画册页面。
-2. qingjin-site/scripts/crop_assets.py 裁剪品牌、工厂和证书素材。
-3. qingjin-site/scripts/crop_machines.py 裁剪设备图片。
-4. qingjin-site/scripts/merge_data.py 合并分段转录数据。
-5. 合并后的人工核对问题见 [画册问题清单](../../../qingjin-site/画册问题清单.md)。重新合并前应比较结果，避免覆盖人工修正。
+当前目录来源于画册 156，包含 178 台设备、9 个分类。初始画册 33 的 107 台设备和 8 个分类作为历史资料保留，不再代表当前目录。
 
-当前静态数据包含 107 台设备、8 个分类。原始 PDF 和 scripts/work 中间资料不随源码分发；展示站运行所需的数据和静态图片已纳入仓库。
+| 数据 | 工具或位置 |
+| --- | --- |
+| 当前目录转录与合并 | `qingjin-site/scripts/merge_data_156.py` |
+| 当前产品图片裁剪 | `qingjin-site/scripts/crop_machines_156.py` |
+| 产品与分类 | `qingjin-site/src/data/` |
+| 品牌、产品、工厂及资质图片 | `qingjin-site/public/images/` |
+| 当前数据核验 | [画册 156 数据核验清单](../../../qingjin-site/画册156问题清单.md) |
+| 历史数据核验 | [画册 33 数据核验清单](../../../qingjin-site/画册问题清单.md) |
 
-## 页面与组件
+原始 PDF、页面渲染及大型中间资料不随源码分发。重新生成数据可能覆盖人工修正，执行前必须保留工作副本并核对差异。
 
-| 页面 | 职责 | 仓库内源码 |
-| --- | --- | --- |
-| 双语首页 | 品牌、推荐机型、工厂资料 | qingjin-site/src/pages/[lang]/index.astro |
-| 产品中心 | 分类筛选、型号搜索 | qingjin-site/src/pages/[lang]/products/index.astro |
-| 产品详情 | 设备图片与参数 | qingjin-site/src/pages/[lang]/products/[id].astro |
-| 对比页面 | 最多 4 台机型参数对比 | qingjin-site/src/pages/[lang]/compare/index.astro |
-| 关于页面 | 工厂照片与证书 | qingjin-site/src/pages/[lang]/about/index.astro |
-| 联系页面 | 电话、邮件、WhatsApp、微信及机型提示 | qingjin-site/src/pages/[lang]/contact/index.astro |
+## 页面结构
 
-qingjin-site/src/utils/index.ts 读取静态 JSON，计算目录数量，兼容历史推荐列表和后台导出的推荐标记。实际依赖版本以 package.json 和锁文件为准。
+| 页面 | 职责 |
+| --- | --- |
+| 双语首页 | 品牌、推荐机型、工厂与资质资料 |
+| 产品中心 | 分类筛选、型号与名称搜索 |
+| 产品详情 | 参数、图集、视频、文字与图片板块 |
+| 对比页面 | 最多 4 台设备的参数比较 |
+| 关于页面 | 企业介绍、工厂照片及证书 |
+| 联系页面 | 联系渠道、二维码及机型提示 |
 
-## 使用边界与验证
+页面位于 `qingjin-site/src/pages/[lang]/`。当前目录含 166 个文字板块和 81 个图片板块；参数来源存疑和待录入图片在核验清单中跟踪，不以推测数据替代原始材料。
 
-当前联系页没有在线询盘表单；URL 中的 model 参数用于显示咨询机型，不代表创建订单。仓库配置仍有占位联系方式，上线前需填写真实信息并逐一验证。
+## 域名与合规展示
 
-本会话此前已通过展示站检查与构建，生成 226 个页面。本次文档更新不代表重新处理了画册，也不代表真实销售渠道已验收。后续应检查双语页面、搜索、对比限制与联系链接。
+`SITE_URL` 默认值为 `https://qingjinmachinery.cn`，统一用于 canonical、hreflang、Open Graph 和 sitemap。中英文页面共用 `Footer.astro`，展示 ICP 网站备案号并链接工信部查询入口。
+
+公安联网备案数据码不是公开备案号，不属于页面内容；正式公安备案信息在取得后单独配置。
+
+## 验证边界
+
+ICP备案版本构建生成 368 个 HTML 页面，367 个公共页脚全部通过号码和链接检查。真实联系渠道、企业资质和全部画册参数需要业务方确认，构建成功不代表这些资料已完成真实性审核。

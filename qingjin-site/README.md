@@ -1,48 +1,80 @@
-# 青瑾机械产品展示站 / QING JIN MACHINERY Showcase
+# 青瑾机械产品展示站
 
-基于 Astro 5 + Tailwind CSS v4 的中英双语静态站，收录画册中全部 107 台设备及参数。
+基于 Astro 7、TypeScript 和 Tailwind CSS 4 的中英双语静态网站。当前版本包含 178 台设备、9 个分类，以及产品参数、图集、文字和图片板块。
 
-## 常用命令
+正式入口：[中文](https://qingjinmachinery.cn/zh/) · [English](https://qingjinmachinery.cn/en/)
 
-```bash
-npm install
-npm run dev        # 本地开发 http://localhost:4321
-npm run build      # 生成静态站到 dist/
-npm run preview    # 预览 dist/
-npx astro check    # 类型检查
+## 开发与构建
+
+需要 Node.js 24。以下命令在本目录执行：
+
+```powershell
+npm.cmd ci
+npm.cmd run dev
+npm.cmd run check
+npm.cmd run build
+npm.cmd run preview
 ```
 
-`dist/` 可直接部署到任意静态托管（Nginx、Netlify、Vercel、Cloudflare Pages、阿里云 OSS 等）。
+开发服务默认使用 `http://localhost:4321`。构建结果位于 `dist/`，不提交到 Git。
 
-## 页面
+站点地址默认使用 `https://qingjinmachinery.cn`。其他环境应在构建前设置 `SITE_URL`：
 
-| 路径 | 说明 |
-|---|---|
-| `/zh/`、`/en/` | 首页（根路径按浏览器语言跳转） |
-| `/{lang}/products/` | 产品中心：分类筛选 + 搜索，支持 `?cat=&q=` |
-| `/{lang}/products/{id}/` | 产品详情与参数表 |
-| `/{lang}/compare/` | 机型对比（最多 4 台，可用 `?ids=a,b,c` 直接打开） |
-| `/{lang}/about/` | 工厂实拍与资质证书 |
-| `/{lang}/contact/` | 联系方式与微信二维码（支持 `?model=` 显示咨询机型） |
+```powershell
+$env:SITE_URL='https://qingjinmachinery.cn'
+npm.cmd run build
+```
 
-## 需要修改的内容
+该值影响 canonical、hreflang、Open Graph 和 sitemap。更改域名后必须重新构建，不能只修改 Nginx。
 
-- **联系方式**：`src/data/site.json` 中的电话、邮箱、WhatsApp、微信目前是占位值，请替换为真实信息。
-- **微信二维码**：联系页显示 `site.json` 的 `wechatQr` 图片，为空时显示占位图；在后台「站点设置 → 微信二维码」上传后发布即可。
-- **域名**：`astro.config.mjs` 的 `site`（用于 canonical 与 sitemap）。
+## 页面与功能
 
-## 数据与图片
+| 路径 | 功能 |
+| --- | --- |
+| `/zh/`、`/en/` | 双语首页 |
+| `/{lang}/products/` | 分类筛选及型号、名称搜索，支持 `?cat=&q=` |
+| `/{lang}/products/{id}/` | 产品参数、图片、视频及内容板块 |
+| `/{lang}/compare/` | 最多 4 台设备对比，支持 `?ids=a,b,c` |
+| `/{lang}/about/` | 企业介绍、工厂照片与资质资料 |
+| `/{lang}/contact/` | 联系方式与二维码，支持 `?model=` 机型提示 |
 
-- 设备数据：`src/data/machines.json`（107 台），分类：`src/data/categories.json`。
-  每条记录的 `notes` 字段记录了识别存疑之处，仅供内部核对，页面不展示。
-- 图片：`public/images/`（`machines/` 产品图，`hero/`、`factory/`、`certs/`、`brand/`）。
+根路径根据浏览器语言跳转。联系页没有在线提交表单；`formEndpoint` 为历史兼容字段。
 
-数据和图片均由 `scripts/` 下的 Python 脚本（仅依赖 Pillow）从画册生成：
+## 数据与媒体
 
-1. `extract_pages.py`：从 `画册33.pdf` 提取页面并拆分为左右半页（`scripts/work/halves/`）。
-2. `crop_assets.py`：裁剪首屏、工厂、证书、Logo 与 favicon。
-3. `merge_data.py`：合并 `scripts/work/data/part_*.json` 生成 `machines.json`。
-   注意：`machines.json` 生成后已按画册逐条核对并手工修正（核对记录在 `scripts/work/verify/result_*.json`），重新运行此脚本会覆盖这些修正。
-4. `crop_machines.py [半页编号...]`：裁剪产品图，可只重裁指定半页，例如 `py scripts\crop_machines.py 23 60`。
+| 路径 | 内容 |
+| --- | --- |
+| `src/data/machines.json` | 178 台设备及双语参数、图集和内容板块 |
+| `src/data/categories.json` | 9 个分类 |
+| `src/data/site.json` | 企业资料和联系配置的初始快照 |
+| `public/images/` | 品牌、产品、工厂、证书及详情图片 |
+| `src/components/Footer.astro` | 中英文公共页脚和 ICP 备案链接 |
 
-如需替换某台设备的图片，直接用同名文件覆盖 `public/images/machines/{id}.webp` 即可。
+当前目录具有 166 个文字板块和 81 个图片板块，分别覆盖 142 台和 79 台设备。数据中的 `notes`、`source` 为内部维护信息，不应展示在公开页面。
+
+生产系统以 PostgreSQL 为内容源，发布服务在临时工作目录生成该版本的 JSON 再构建。仓库 JSON 不代表后台实时内容，不得通过重新导入覆盖运营人员的修改。
+
+## 画册处理
+
+画册 156 为当前产品目录来源，历史画册 33 的核验资料单独保留：
+
+- [当前目录核验清单](画册156问题清单.md)
+- [历史目录核验清单](画册问题清单.md)
+
+当前处理工具为 `scripts/merge_data_156.py` 和 `scripts/crop_machines_156.py`，裁剪信息及转录资料位于 `scripts/work156/`。原始 PDF、渲染页和大型临时素材不纳入仓库。
+
+重新生成会覆盖手工维护的数据。执行前应保存工作副本、核对画册版本并检查差异，不得把素材重生成当作常规上线命令。
+
+## 生产发布
+
+展示站源码与构建依赖封装在 API 镜像中。修改页面模板、样式、默认站点地址或页脚后，必须：
+
+1. 更新服务器源码并构建 API 镜像。
+2. 重建 API 容器，确认服务就绪。
+3. 检查并平滑重载内部 Nginx。
+4. 通过发布中心或 `npm run publish:site:prod` 生成正式版本。
+5. 验证中英文页面、静态资源、站点地址和备案链接。
+
+公共页脚展示 [](https://beian.miit.gov.cn/)。公安联网备案数据码不得作为页脚内容；正式公安备案号在取得后单独配置。
+
+完整流程见 [生产部署指南](../腾讯云部署流程.md)。上传本地 `dist/` 或推送 GitHub 不会自动更新后台管理的正式版本。

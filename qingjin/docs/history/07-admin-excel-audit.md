@@ -35,4 +35,4 @@
 
 依据 qingjin/admin/src/router/index.ts、qingjin/admin/src/views/ImportExportView.vue、qingjin/server/src/excel/excel.service.ts、qingjin/server/src/audit/audit.service.ts、qingjin/server/src/audit/audit-logs.controller.ts 及 Prisma 模型。
 
-本次未应用 Excel、修改账号或写入业务审计。建议在隔离数据中测试重复 slug、错误分类、参数替换、权限及事务失败回滚。
+重复 slug、错误分类、参数替换、权限及事务失败回滚应在隔离数据中测试。生产管理员账号、密码、令牌与审计中的个人信息不纳入版本库。
